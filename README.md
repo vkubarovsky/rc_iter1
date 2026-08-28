@@ -187,6 +187,24 @@ same floor to ALL blocks, so at floor >= 1 it was also squeezing H_T^u (whose ow
 slope is only 0.24 at xB = 0.6) and T00, giving a spurious dchi2 = +285.  The
 expensive constraint is on H_T^u at high xB, not on H_T^d.
 
+### Is the d-steeper-than-u ordering acceptable?  YES (tcut_test.py)
+
+Imposing slope(H_T^d) >= slope(H_T^u) costs dchi2 = +21.3 over the full range, and
+ALL of it sits in one place: eta sigma_U at -t > 1.2 (+20.6 on 26 points).  pi0
+sigma_U improves by 5 and pi0 sigma_LT by 2.6; sigma_TT and the BSA blocks do not
+move.  Restricting the fit to -t <= 1.2, where the handbag/twist-3 description is
+meant to hold at all, the cost drops to **+6.1 chi2 on 513 points** - noise.
+
+Independent support: forcing his slope ordering also drags the H_T normalisation
+ratio to his value without being asked.  R_HT = -0.157 (slope >= 0 only) ->
+-0.516 (d >= u, full range) -> -0.880 (d >= u, -t <= 1.2), against VPK's global
+n_d/n_u = -0.78.  Two separate pieces of his global fit come out consistent at
+once, so this is not a fit to a single number.
+
+Caveat: the constraint SATURATES - the fit puts d exactly equal to u (1.30-1.37
+at xB = 0.25), never strictly steeper.  A genuinely steeper d has to be imposed
+by hand (fitpar_slope_d2.76.npy, +26.4 on the full range).
+
 ### Left over: the Ebar_T curvature
 
 The b2 t^2 term is untouched by this constraint and still turns the Ebar_T^u

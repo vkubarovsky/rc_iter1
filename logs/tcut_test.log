@@ -1,0 +1,5 @@
+fit restricted to -t <= 1.2
+  slope>=0  chi2    755.4/513 pts  chi2/ndf 1.5544   pi0  315.1  eta  143.4   slopes x=0.25: u 1.31 d -0.00   R_HT -0.309  R_ET 0.723
+      d>=u  chi2    761.5/513 pts  chi2/ndf 1.5670   pi0  314.1  eta  146.7   slopes x=0.25: u 1.30 d 1.30   R_HT -0.880  R_ET 0.755
+
+cost of the ordering inside the validity region: d_chi2 = +6.1   (full t range it was +21.3)
