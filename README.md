@@ -316,6 +316,40 @@ holds it awake.  Both scripts honour a STOP file between jobs.  Passes: 200k the
 1M per mode; eta results live on phallbvpk-mac and must be rsynced back to
 /Volumes/wd_14tb/mc/ampgen_cmp/ before plotting.  Full note in that run dir's README.
 
+## BIN-AVERAGED REFIT -- the final amp2026s (2026-08-28 night)
+
+VPK supplied the two publications; both give the same grid (PRC 90 025205 and
+PRC 95 035202, Tables I-III): 7 Q2 bins 1.0-4.6, 7 xB bins 0.10-0.58, 8 |t| bins
+0.09-2.00, and -- the point -- the quoted Q2, xB, t of a bin are the MEAN over
+the accepted volume, not bin centres.  `bins.py` rebuilds that volume (box cut by
+W > 2, E' > 0.8, 21-45 deg, and by the |t| >= |tmin(Q2,xB)| boundary that sweeps
+across the low-t bins).  VALIDATION: the reconstructed volume means reproduce the
+published means -- eta rms 0.0012 in -t, 0.009 in Q2; pi0 rms 0.017 in -t,
+0.014 in Q2, all 194 bins matched.  `fit_binned.py` then averages the model over
+that volume inside the fit (15522 quadrature nodes; BSA and eg1 stay
+point-evaluated, their binning is not in these papers).
+
+| variant | par | chi2 | chi2/ndf | b2 | R_ET | slope H_T^d at xB=0.25 |
+|---|---|---|---|---|---|---|
+| free (no slope constraints) | 27 | 1080.1 | 1.5452 | 0.399 | 0.817 (+1.8) | **-0.60** |
+| + slope >= 0 and d >= u | 27 | 1090.7 | 1.5604 | 0.382 | 0.917 (+2.5) | 1.37 |
+| **+ b2 removed = amp2026s** | **26** | **1159.0** | **1.6557** | 0 | 1.181 (+4.3) | 1.51 |
+
+TWO NEGATIVE RESULTS, both worth keeping:
+* Bin averaging does NOT remove b2.  Dropping it still costs +68 (it was +71
+  point-evaluated).  The near-tmin leverage is real, but the curvature the data
+  want is not a bin-centring artefact.
+* Bin averaging does NOT remove the H_T^d pathology.  The free fit still runs to
+  a slope of -0.60 at xB = 0.25 (-0.62 point-evaluated).  The growing d-quark
+  form factor is what the data prefer; only the constraint stops it.
+The bias itself is small: chi2 1083.7 -> 1080.1 free, 1108.1 -> 1090.7 constrained.
+
+PRODUCTION MODEL (VPK's call: remove b2, refit, install): the 26-parameter
+bin-averaged constrained fit, `fitpar_amp2026s.npy`, installed as exclurad_py
+`pi0.amp2026s` / `eta.amp2026s` / `pi0n.amp2026s`, verified to 8e-15.
+R_HT = -0.321, R_ET = 1.181, db_ET = 3.705, slopes u = d = 1.51 at xB = 0.25.
+The +4.3 sigma R_ET pull is the standing caveat on this model.
+
 ## NEXT STEPS, in order
 
 1. Re-check the RC fixed point with amp2026s (`./iterate.sh i3 fitpar_amp2026s.npy`)
