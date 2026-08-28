@@ -27,12 +27,27 @@ VALIDATED: eta_py(vpk2013)/delta13_fortran = 1.0021, 16-84% [0.998,1.004] on
 |---|---|---|---|
 | published data (amp2021 fit) | -- | -- | 1.479 |
 | iteration 1 (RC from amp2021) | -2.9% | -0.8% | 1.548 |
-| iteration 2 (RC from i1) | running | running | |
+| iteration 2 (RC from i1) | NOT DONE -- see below | | |
 
 r(pi0) median 1.019, r(eta) median 1.007.  The channel-DEPENDENT shift is the
 physically important part: it moves the eta/pi0 ratio and hence the flavour
 ratios.  Compare July: pi0 -6%..-1.5% with a strong xB slope; ours is nearly
 flat, i.e. the amplitude model already sits close to the fixed point in shape.
+
+## Where iteration 2 stopped
+
+Launched (`./iterate.sh i2 fitpar_i1.npy`) and killed mid-way on purpose: the
+context was tightening, and while it ran I restored
+`exclurad_py/models/amp2021_par.npy` to the published-data parameters, which
+swapped the model under the running workers.  Its partial output was deleted.
+Nothing downstream used it.  To resume, from a clean tree:
+
+    cd ~/rc_iter1 && ./iterate.sh i2 fitpar_i1.npy      # ~25 min
+    # then compare fitpar_i2.npy with fitpar_i1.npy; if the drift is small,
+    # freeze as amp2026 and install into exclurad_py.
+
+NOTE the coupling: `iterate.sh` writes the seed into the exclurad_py model
+parameter file.  Do not touch that file while an iteration runs.
 
 ## Files
 
