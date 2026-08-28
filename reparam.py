@@ -8,7 +8,7 @@ Blocks carrying a b': H_T^u, H_T^d, Ebar_T^u (E_T^d inherits it), T00.
 
     ~/.venv/bin/python3 reparam.py <old.npy> <new.npy>
 
-amplitudes.py must already be in the NEW convention (LX0 = 0); the round-trip
+amplitudes.py must already be in the NEW convention (no offset); the round-trip
 check below compares against a grid dumped with the old code.
 """
 import math, sys

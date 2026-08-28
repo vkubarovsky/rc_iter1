@@ -49,7 +49,6 @@ ALPHA, HC2, PI = 0.00729927, 389379.36, math.pi
 # xB = 0.15; convert old parameter files with reparam.py (b_new = b + 1.897 b').
 # NOTE exclurad_py/models/_amplitude_fit.py and its amp2021/amp2026 .npy files
 # are still in the OLD convention - convert on install, never copy raw.
-LX0 = 0.0
 K_T = 0.863
 K_L = 1.0/((math.cos(math.radians(-21.2))
             - math.sqrt(2)*(1.17/1.26)*math.sin(math.radians(-9.2)))*1.26)  # = 0.695
@@ -78,7 +77,7 @@ def epsilon(xB, Q2, E):
     return (1 - y - 0.25*g2*y*y)/(1 - y + y*y/2 + 0.25*g2*y*y)
 
 def _flavour(p, t, xB, Q2):
-    L = math.log(xB) - LX0   # = ln xB
+    L = math.log(xB)
     HTu = p[0]*math.exp((p[1]+p[2]*L)*t)*Q2**(p[3]/2)
     HTd = p[4]*math.exp((p[5]+p[6]*L)*t)*Q2**(p[7]/2)
     ETu = p[8]*math.exp((p[9]+p[10]*L)*t + p[12]*t*t)*Q2**(p[11]/2)
