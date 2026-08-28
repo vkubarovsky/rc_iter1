@@ -253,9 +253,59 @@ zero chi2 cost.  If a shape that is monotone by construction is wanted for the
 paper (dipole-like exp(bt)/(1 - t/L^2)^n instead of exp(bt + b2 t^2)), that is a
 form change to be tested separately - not needed for production.
 
+## FINAL MODEL: amp2026s with b2 REMOVED (2026-08-28, VPK's call)
+
+"We don't need exact data description.  We have what we have."  b2 was mostly a
+near-tmin fudge (see below), so it is gone: 26 parameters, every form factor a
+pure falling exponential, no slope reversal possible at any t.
+`fit_final.py` -> `fitpar_amp2026s.npy`, installed as exclurad_py `*.amp2026s`
+(verified end to end, 1.7e-14).  All EIGHT seeds converge to the same minimum.
+
+| model | par | chi2 | chi2/ndf |
+|---|---|---|---|
+| amp2026 (unconstrained) | 27 | 1083.7 | 1.5504 |
+| slope >= 0 only | 27 | 1086.9 | 1.5549 |
+| + d >= u ordering, b2 kept | 27 | 1108.1 | 1.5853 |
+| **+ b2 removed = amp2026s** | **26** | **1179.1** | **1.6845** |
+
+Blocks: pi0 587.0/354, eta 229.8/228, bsa_pi0 246.4/62, bsa_eta 6.0/12,
+bsa_c12 38.2/30, eg1 71.8/40.  Slopes (b + b' ln xB), all positive everywhere:
+
+    block        b     b'   |  xB = 0.10  0.15  0.25  0.40  0.60
+    H_T^u    -0.468 -1.448  |      2.86  2.28  1.54  0.86  0.27
+    H_T^d    -0.468 -1.447  |      2.86  2.28  1.54  0.86  0.27   (constraint saturated)
+    Ebar_T^u  0.854 -0.262  |      1.46  1.35  1.22  1.09  0.99
+    Ebar_T^d  4.548 -0.262  |      5.15  5.05  4.91  4.79  4.68
+    T00       0.751 -0.723  |      2.42  2.12  1.75  1.41  1.12
+
+R_HT = -0.357, db_ET = 3.694, R_L = -0.657, delta(t) = 1.98 + 0.68 t,
+sigma_L/sigma_T = 0.0560 (unmoved through all of this).
+
+**WATCH THIS: R_ET = 1.214, a +4.5 sigma pull on the forward-limit prior
+(0.54 +- 0.15).**  Removing the curvature is paid for in the Ebar_T d/u ratio -
+the fit needs the steep d exponential to bend the pi0 sigma_TT shape that b2
+used to bend.  It was +2.0 in amp2026 and +2.7 with b2 kept.  Everything that
+depends on R_ET (neutron predictions, the flavour interpretation) now rests on a
+number the prior disagrees with.
+
+Generator-level change vs amp2026 at Q2 = 2.2, xB = 0.25 (this is what the
+overnight sweep will show): pi0 sigma_T +1% at -t = 0.15, -6% at 0.3, +7% at 1.0,
+**-42% at 2.0**; pi0 sigma_TT **-30% at 0.15**, -20% at 0.3, +16% at 1.0, -45% at
+2.0; eta sigma_T -12% to -28% over 0.3-1.5 and -59% at 2.0.  The large-|t| drop
+is the removed b2 tail; the small-|t| sigma_TT drop is the removed curvature.
+
+### Overnight sweep launched 2026-08-28 18:36
+
+`/Volumes/wd_14tb/mc/ampgen_s_run/run.sh` -> rad_pi0, born_pi0, rad_eta, born_eta,
+200k each, output `/Volumes/wd_14tb/mc/ampgen_s/`, logs in that run dir.
+Mirrors the amp2026 baseline `/Volumes/wd_14tb/mc/ampgen_run/cyc01` exactly
+(same kinematics, same base seed 20260828, --jobs 8) so the two are directly
+comparable.  Caveat recorded in its README: the baseline stored no environment,
+so neither run sets the frozen-convention exports of run_production_100k.sh.
+
 ## NEXT STEPS, in order
 
-1. Re-check the RC fixed point with amp2026s (`./iterate.sh i3 fitpar_prod.npy`)
+1. Re-check the RC fixed point with amp2026s (`./iterate.sh i3 fitpar_amp2026s.npy`)
    and re-run the generator baseline against it.
 2. Push VPK's global-fit GPDs through our hard kernel and compare convolution to
    convolution -- the only way to settle the inverted slope ordering.  Now sharper:

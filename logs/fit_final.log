@@ -1,0 +1,26 @@
+  seed fitpar_nob2.npy        chi2+pen   1199.31  nfev 13
+  seed fitpar_prod.npy        chi2+pen   1199.31  nfev 50
+  seed fitpar_slope_order.npy chi2+pen   1199.31  nfev 46
+  seed fitpar_slope.npy       chi2+pen   1199.31  nfev 111
+  seed fitpar_amp2026_lx.npy  chi2+pen   1199.31  nfev 111
+  seed ET_N+20%               chi2+pen   1199.31  nfev 40
+  seed ET_N-20%               chi2+pen   1199.31  nfev 33
+  seed HTd flat               chi2+pen   1199.31  nfev 65
+
+=== amp2026s (b2 removed) === 726 pts, 26 par: chi2/ndf = 1179.1/700 = 1.6845   penalty 0.004  R_ET prior pull +4.5
+        pi0:   587.0/354
+        eta:   229.8/228
+    bsa_pi0:   246.4/62
+    bsa_eta:     6.0/12
+    bsa_c12:    38.2/30
+        eg1:    71.8/40
+
+        block        b  b_prime |    0.10    0.15    0.25    0.40    0.60
+        H_T^u   -0.468   -1.448 |    2.86    2.28    1.54    0.86    0.27
+        H_T^d   -0.468   -1.447 |    2.86    2.28    1.54    0.86    0.27
+     Ebar_T^u    0.854   -0.262 |    1.46    1.35    1.22    1.09    0.99
+     Ebar_T^d    4.548   -0.262 |    5.15    5.05    4.91    4.79    4.68
+          T00    0.751   -0.723 |    2.42    2.12    1.75    1.41    1.12
+
+   R_HT(t=0) -0.357   R_ET 1.214   db_ET 3.694   R_L -0.657   delta(t) 1.98+0.68t   sigma_L/sigma_T 0.0560
+saved fitpar_amp2026s.npy

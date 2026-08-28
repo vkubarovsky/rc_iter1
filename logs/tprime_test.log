@@ -1,0 +1,7 @@
+-t' > 0.3: pi0 66/118 bins, eta 52/76 bins, BSA 36+8+22, eg1 28
+
+                chi2   npts  chi2/ndf      pi0      eta  b2
+   b2 free     601.2    448    1.4280    290.8    150.2  +0.204
+    b2 = 0     612.1    448    1.4505    305.3    149.2  +0.000
+
+cost of dropping b2 away from tmin: dchi2 = +10.9   (full data set: +71.0)
