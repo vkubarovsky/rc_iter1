@@ -294,14 +294,27 @@ overnight sweep will show): pi0 sigma_T +1% at -t = 0.15, -6% at 0.3, +7% at 1.0
 2.0; eta sigma_T -12% to -28% over 0.3-1.5 and -59% at 2.0.  The large-|t| drop
 is the removed b2 tail; the small-|t| sigma_TT drop is the removed curvature.
 
-### Overnight sweep launched 2026-08-28 18:36
+### Overnight sweep launched 2026-08-28 18:36, restarted 18:39 and split 18:56
 
-`/Volumes/wd_14tb/mc/ampgen_s_run/run.sh` -> rad_pi0, born_pi0, rad_eta, born_eta,
-200k each, output `/Volumes/wd_14tb/mc/ampgen_s/`, logs in that run dir.
-Mirrors the amp2026 baseline `/Volumes/wd_14tb/mc/ampgen_run/cyc01` exactly
-(same kinematics, same base seed 20260828, --jobs 8) so the two are directly
-comparable.  Caveat recorded in its README: the baseline stored no environment,
-so neither run sets the frozen-convention exports of run_production_100k.sh.
+The first launch hit the generator's own warning: with sigma_LT' nonzero and
+EXACT_ACCEPT off, the eta table is built at a single helicity and the sample's
+beam-spin asymmetry is biased.  Our models have sigma_LT' by construction and the
+morning baseline recorded no environment, so the baseline cannot serve as the
+comparison set.  Killed, cleaned, and relaunched with the frozen production
+exports, generating BOTH models under identical conditions.
+
+Split across the two machines by CHANNEL (VPK freed phallbvpk-mac), so that every
+model-to-model comparison stays inside one machine:
+
+    pi0   vpkmacmini      /Volumes/wd_14tb/mc/ampgen_s_run/run_pi0.sh  --jobs 8
+    eta   phallbvpk-mac   ~/ampgen_cmp_run/run_eta.sh                  --jobs 10
+
+phallbvpk-mac runs an rsync of the mini working tree (~/exclurad_mini): its git
+clone was at 5be26dd with no amplitude model files, and generating on older
+generator code is exactly the mismatch farm_switch.sh warns about.  caffeinate
+holds it awake.  Both scripts honour a STOP file between jobs.  Passes: 200k then
+1M per mode; eta results live on phallbvpk-mac and must be rsynced back to
+/Volumes/wd_14tb/mc/ampgen_cmp/ before plotting.  Full note in that run dir's README.
 
 ## NEXT STEPS, in order
 
