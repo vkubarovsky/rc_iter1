@@ -350,10 +350,25 @@ bin-averaged constrained fit, `fitpar_amp2026s.npy`, installed as exclurad_py
 R_HT = -0.321, R_ET = 1.181, db_ET = 3.705, slopes u = d = 1.51 at xB = 0.25.
 The +4.3 sigma R_ET pull is the standing caveat on this model.
 
+## Production runs launched 2026-08-28 19:52
+
+`pi0.amp2026s` on vpkmacmini, `eta.amp2026s` on phallbvpk-mac, both from GitHub
+branch `amp2026s` commit 1dfc6ef (the laptop got a fresh clone in
+~/exclurad_amp2026s; its old rsync tree and the earlier ampgen_cmp attempts were
+deleted).  200k born + 200k rad + 1M born + 1M rad per channel, frozen production
+conventions with EXACT_ACCEPT=1.  200k born done in under a minute per channel
+(200000 events, 8/10 parts).  Run dir and full note:
+/Volumes/wd_14tb/mc/ampgen2026s_run/README.md.
+
 ## NEXT STEPS, in order
 
-1. Re-check the RC fixed point with amp2026s (`./iterate.sh i3 fitpar_amp2026s.npy`)
-   and re-run the generator baseline against it.
+1. Re-check the RC fixed point with amp2026s (`./iterate.sh i3 fitpar_amp2026s.npy`).
+   The model moved a lot in eta at large |t|, so the fixed point is not obviously
+   still there.  NOTE iterate.sh calls the point-evaluated fit_clas12.py, not the
+   bin-averaged fit_binned.py - decide which before running it.
+2. R_ET is pulled +4.3 sigma.  Either the forward-limit prior is wrong for this
+   parameterisation, or Ebar_T needs the shape freedom that b2 used to provide in
+   a form that cannot reverse (dipole).  This is the first thing to settle.
 2. Push VPK's global-fit GPDs through our hard kernel and compare convolution to
    convolution -- the only way to settle the inverted slope ordering.  Now sharper:
    we know the chi2 cost of adopting his ordering outright is only ~25.
