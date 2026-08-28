@@ -22,7 +22,7 @@ k = 0.863 for the transverse twist-3 sector (chiral condensate factors),
 k = 0.695 for the longitudinal twist-2 sector (decay constants only).
 
 Parameter vector p (21):
-  0-3   HT_u  N,b,b',c        }  D-sector (T01m=U01m), P2 seed
+  0-3   HT_u  N,b,b',c   slope(xB) = b + b' ln xB        }  D-sector (T01m=U01m), P2 seed
   4-7   HT_d  N,b,b',c        }
   8-12  ET_u  N,b,b',c,b2     }  U01p sector, P2 seed
   13    R_ET  (ET_d = R*ET_u*exp(db*t), prior 0.54+-0.15)
@@ -43,7 +43,13 @@ import numpy as np
 
 Mp, Mpi0, Meta = 0.938272, 0.1349766, 0.547862
 ALPHA, HC2, PI = 0.00729927, 389379.36, math.pi
-LX0 = math.log(0.15)
+# Slope convention (2026-08-28): the t-slopes are written as b + b' ln xB,
+# i.e. b is the slope extrapolated to xB = 1 and -b' is the Regge alpha'.
+# The earlier convention had L = ln xB - ln 0.15, so that b was the slope at
+# xB = 0.15; convert old parameter files with reparam.py (b_new = b + 1.897 b').
+# NOTE exclurad_py/models/_amplitude_fit.py and its amp2021/amp2026 .npy files
+# are still in the OLD convention - convert on install, never copy raw.
+LX0 = 0.0
 K_T = 0.863
 K_L = 1.0/((math.cos(math.radians(-21.2))
             - math.sqrt(2)*(1.17/1.26)*math.sin(math.radians(-9.2)))*1.26)  # = 0.695
@@ -72,7 +78,7 @@ def epsilon(xB, Q2, E):
     return (1 - y - 0.25*g2*y*y)/(1 - y + y*y/2 + 0.25*g2*y*y)
 
 def _flavour(p, t, xB, Q2):
-    L = math.log(xB) - LX0
+    L = math.log(xB) - LX0   # = ln xB
     HTu = p[0]*math.exp((p[1]+p[2]*L)*t)*Q2**(p[3]/2)
     HTd = p[4]*math.exp((p[5]+p[6]*L)*t)*Q2**(p[7]/2)
     ETu = p[8]*math.exp((p[9]+p[10]*L)*t + p[12]*t*t)*Q2**(p[11]/2)

@@ -140,17 +140,75 @@ H_T^d has a NEGATIVE t-slope over the WHOLE measured xB range -- the form factor
 grows with |t| everywhere, not just at an edge.  H_T^u reaches only 0.24 at
 xB = 0.6, i.e. the whole H_T sector misbehaves at high xB.
 
+## Step 1 DONE (2026-08-28 evening): reparameterisation + slope constraint
+
+Convention changed everywhere in this repo: `exp[(b + b' ln xB) t]`, i.e. b is
+the slope at xB = 1 and -b' is alpha'.  `reparam.py` converts (b_new = b + 1.8971 b',
+`to_old` is the inverse) and the change was verified EXACT: 4.99e-14 max relative
+difference on 2619 structure-function values over a (channel, xB, Q2, t) grid.
+
+TRAP: parameter files are now in TWO conventions.  New (ln xB): `fitpar_amp2026_lx.npy`,
+`fitpar_slope*.npy`.  Old (offset): `fitpar_i1/i2`, `fitpar_A/B/C_prior`,
+`fitpar_amp2021_published`, everything in `~/pi0_eta_amplitude_model`, and BOTH
+.npy files inside exclurad_py (whose `models/_amplitude_fit.py` still has the
+offset).  `iterate.sh` now converts with `reparam.to_old` before installing;
+`fit_clas12.py`'s default seed is the new-convention `fitpar_slope.npy`.
+
+Constrained refit (`fit_slope.py`, data/ = iteration 2, R_ET prior kept):
+slope >= 0 on xB in [0.1, 0.6] for all five blocks, penalty at the two endpoints
+(the slope is linear in ln xB).  Cost: **chi2 1083.7 -> 1086.9, +3.1 for zero new
+parameters**, chi2/ndf 1.5504 -> 1.5549.  `fitpar_slope.npy`.
+
+H_T^d lands exactly ON the boundary (slope 0.00, i.e. a t-INDEPENDENT d-quark
+H_T; b -0.883 -> -0.006, b' -0.189 -> -0.001, N -1.79 -> -2.87).  So the data
+really do pull that slope negative; the constraint is active, not decorative.
+R_HT(t=0) -0.099 -> -0.157, R_ET 0.838 -> 0.920 (prior pull +2.0 -> +2.5),
+db_ET 3.35 -> 3.04.  In the measured region the model barely moves: sigma_U(pi0)
+within 0.1-2.4%, sigma_TT within 3%, sigma_U(eta) within 4%, sigma_L/sigma_T
+0.055 -> 0.056.  **The RC fixed point therefore survives - no new RC iteration
+is needed for this change.**
+
+### How much does a FALLING H_T^d cost? (`scan_slope.py`, logs/scan_slope2.log)
+
+All blocks kept >= 0, floor scanned on H_T^d alone:
+
+| floor on slope(H_T^d) | 0 | 0.25 | 0.5 | 0.75 | 1.0 | 1.5 | 2.0 | 2.76 | >= slope(H_T^u) |
+|---|---|---|---|---|---|---|---|---|---|
+| d_chi2 vs amp2026 | +3.1 | +7.2 | +12.5 | +16.7 | +18.4 | +21.4 | +23.7 | +26.4 | +24.5 |
+
+The floor is always active (H_T^d sits on it), but the curve is FLAT: forcing the
+d-quark H_T to be as steep as VPK's global fit (2.76) costs only dchi2 = 26 for
+zero parameters, and imposing his ORDERING (d steeper than u) costs 24.5.  The
+H_T^d slope is therefore only weakly determined - the sign of the disagreement in
+the open problem below is real, but its chi2 significance is modest.
+
+WARNING about the first scan (logs/scan_slope.log, superseded): it applied the
+same floor to ALL blocks, so at floor >= 1 it was also squeezing H_T^u (whose own
+slope is only 0.24 at xB = 0.6) and T00, giving a spurious dchi2 = +285.  The
+expensive constraint is on H_T^u at high xB, not on H_T^d.
+
+### Left over: the Ebar_T curvature
+
+The b2 t^2 term is untouched by this constraint and still turns the Ebar_T^u
+effective slope (b + b' ln xB + 2 b2 t) negative at -t = 2.7 (xB = 0.15) and 2.45
+(xB = 0.40) - INSIDE the declared generator validity window
+`_AMP_VALIDITY mt = (0.0, 2.5)` in exclurad_py.  Beyond the turnover Ebar_T grows
+with |t|.  Either tighten that window to -t <= 2.0 or constrain b2; the fit
+region only reaches -t = 1.75, so nothing in the fit decides it.
+
 ## NEXT STEPS, in order
 
-1. Reparameterise (drop ln 0.15), then add the constraint b + b' ln xB > 0 over
-   xB in [0.1, 0.6] as a penalty (two inequalities per block: the slope is
-   linear in ln xB, so checking the endpoints suffices).  Refit.  This fixes
-   H_T^d physically instead of tying its shape (variant B), and is the cheapest
-   remaining item.  DO THIS FIRST -- it changes the model, so the paper and the
-   generator runs should follow it, not precede it.
-2. Push VPK's global-fit GPDs through our hard kernel and compare convolution to
-   convolution -- the only way to settle the inverted slope ordering.
-3. Rewrite ~/pi0eta-rc-2026-paper with the self-consistent result.
+1. Decide what to install: `fitpar_slope.npy` (slope >= 0, +3.1) is the minimal
+   physical fix; `fitpar_slope_d2.76.npy` / `fitpar_slope_order.npy` (+26 / +24.5)
+   are the variants that agree with the global-fit slope ordering.  Whatever is
+   chosen has to be converted with `reparam.to_old` on the way into exclurad_py,
+   and the amp2026 generator baseline in OneDrive
+   Work/2026_pi0_amplitudes/generator/ re-run against it.
+2. Fix the Ebar_T large-|t| turnover (constrain b2, or cap the validity window).
+3. Push VPK's global-fit GPDs through our hard kernel and compare convolution to
+   convolution -- the only way to settle the inverted slope ordering.  Now sharper:
+   we know the chi2 cost of adopting his ordering outright is only ~25.
+4. Rewrite ~/pi0eta-rc-2026-paper with the self-consistent result.
 
 ## Operational lesson
 

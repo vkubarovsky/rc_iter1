@@ -5,7 +5,9 @@ import numpy as np
 from scipy.optimize import least_squares
 import amplitudes as amp
 import os
-SEED=os.environ.get("SEED","/Users/vpk/pi0_eta_amplitude_model/fitpar_amp27c.npy")
+# seeds must be in the ln xB slope convention (reparam.py); the pre-2026-08-28
+# files (fitpar_i1/i2, fitpar_amp2021_published, ~/pi0_eta_amplitude_model) are NOT.
+SEED=os.environ.get("SEED","/Users/vpk/rc_iter1/fitpar_slope.npy")
 OUTP=os.environ.get("OUTP","fitpar_i1.npy")
 
 E_XS,E_BSA,E_EG1,E_C12=5.75,5.776,5.9,10.6
