@@ -214,16 +214,35 @@ effective slope (b + b' ln xB + 2 b2 t) negative at -t = 2.7 (xB = 0.15) and 2.4
 with |t|.  Either tighten that window to -t <= 2.0 or constrain b2; the fit
 region only reaches -t = 1.75, so nothing in the fit decides it.
 
+## PRODUCTION MODEL: amp2026s (2026-08-28, VPK's call)
+
+`fit_prod.py` -> `fitpar_prod.npy`, installed by `install_amp2026s.sh` as
+exclurad_py models `pi0.amp2026s` / `eta.amp2026s` / `pi0n.amp2026s`.
+Constraints, all at zero new parameters:
+  b + b' ln xB >= 0 per block on xB in [0.1, 0.6];
+  slope(H_T^d) >= slope(H_T^u)  (the global-fit ordering);
+  Ebar_T slope including 2 b2 t >= 0 out to -t = 2.5 -- FREE (dchi2 = -0.1);
+    it only moves b2 0.391 -> 0.365 and pushes the turnover to -t = 2.49.
+chi2 = 1108.1, chi2/ndf 1.5853 (amp2026: 1083.7 / 1.5504).  H_T slopes at
+xB = 0.25: u = d = 1.39 (the ordering constraint saturates).  R_HT = -0.495,
+R_ET = 0.957.  Verified end to end: exclurad_py amp2026s vs fitpar_prod agrees
+to 2e-14, so the to_old conversion on install is right.
+
+amp2026 is left registered and frozen - the OneDrive generator baseline
+(Work/2026_pi0_amplitudes/generator/) was produced with it.
+
+WHAT ACTUALLY MOVED (Q2 = 2.2, xB = 0.25): pi0 sigma_T within 5% out to -t = 1.75
+(-15% at 2.4, the curvature constraint biting), but **eta sigma_T falls by 6.5%
+at -t = 0.2, 17% at 1.2, 26% at 1.75, 36% at 2.4**.  That is the ordering being
+paid for, and it is large enough that the RC fixed point should be re-checked:
+`./iterate.sh i3 fitpar_prod.npy` (~25 min, overwrites data/ and the exclurad_py
+amp2021 parameters).  Generator runs must be redone against amp2026s.
+
 ## NEXT STEPS, in order
 
-1. Decide what to install: `fitpar_slope.npy` (slope >= 0, +3.1) is the minimal
-   physical fix; `fitpar_slope_d2.76.npy` / `fitpar_slope_order.npy` (+26 / +24.5)
-   are the variants that agree with the global-fit slope ordering.  Whatever is
-   chosen has to be converted with `reparam.to_old` on the way into exclurad_py,
-   and the amp2026 generator baseline in OneDrive
-   Work/2026_pi0_amplitudes/generator/ re-run against it.
-2. Fix the Ebar_T large-|t| turnover (constrain b2, or cap the validity window).
-3. Push VPK's global-fit GPDs through our hard kernel and compare convolution to
+1. Re-check the RC fixed point with amp2026s (`./iterate.sh i3 fitpar_prod.npy`)
+   and re-run the generator baseline against it.
+2. Push VPK's global-fit GPDs through our hard kernel and compare convolution to
    convolution -- the only way to settle the inverted slope ordering.  Now sharper:
    we know the chi2 cost of adopting his ordering outright is only ~25.
 4. Rewrite ~/pi0eta-rc-2026-paper with the self-consistent result.

@@ -1,0 +1,5 @@
+reference: d>=u without the curvature constraint, chi2 = 1108.2
+
+ d>=u + curvature(-t<=2.5)  chi2  1108.1  chi2/ndf 1.5853  pi0  517.7 eta  227.4  b2 +0.365  ET turnover -t= 2.49  u 1.39 d 1.39  R_HT -0.495 R_ET 0.957 pen 0.04
+
+saved fitpar_prod.npy   (cost of the curvature constraint: -0.1)
