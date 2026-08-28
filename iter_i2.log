@@ -1,0 +1,9 @@
+pi0: matched 1867/1867 points to the RC ratio
+pi0: 118 (Q2,xB,t) groups -> sf_pi0_i2.txt
+   median chi2/ndf 1.29
+pi0: 118 rows -> data/strfun_pi0.data
+eta: matched 1245/1245 points to the RC ratio
+eta: 76 (Q2,xB,t) groups -> sf_eta_i2.txt
+   median chi2/ndf 1.10
+eta: 76 rows -> data/strfun_eta.data
+ITER i2 DONE
