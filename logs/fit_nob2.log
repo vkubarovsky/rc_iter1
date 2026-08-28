@@ -1,0 +1,5 @@
+  b2 free (prod)  27 par  chi2  1108.1  chi2/ndf 1.5853   pi0  517.7  eta  227.4   pi0 sigma_TT: -t<0.8 123.2  -t>0.8  41.4   b2 +0.365
+          b2 = 0  26 par  chi2  1179.1  chi2/ndf 1.6845   pi0  587.0  eta  229.8   pi0 sigma_TT: -t<0.8 155.2  -t>0.8  40.8   b2 +0.000
+
+cost of dropping b2: dchi2 = +71.0 for one parameter
+Ebar_T^u slope now: xB=0.1: 1.46  xB=0.25: 1.22  xB=0.6: 0.99   (no turnover at any t)

@@ -238,6 +238,21 @@ paid for, and it is large enough that the RC fixed point should be re-checked:
 `./iterate.sh i3 fitpar_prod.npy` (~25 min, overwrites data/ and the exclurad_py
 amp2021 parameters).  Generator runs must be redone against amp2026s.
 
+### Is b2 needed at all?  YES, strongly (fit_nob2.py)
+
+Freezing b2 = 0 under the same production constraints: chi2 1108.1 -> 1179.1,
+**dchi2 = +71 for one parameter**.  The damage is exactly where the term was
+invented for: pi0 sigma_TT at -t < 0.8 goes 123.2 -> 155.2, while -t > 0.8 is
+unchanged (41.4 -> 40.8) and eta does not move (227.4 -> 229.8).  Without the
+curvature the exponential has to flatten to reach the large-|t| points
+(Ebar_T^u slope at xB = 0.25: 2.07 -> 1.22) and then misses at small |t|.
+
+So the protez is load-bearing: the data demand curvature in Ebar_T^u at small
+|t|.  Its unphysical large-|t| tail is contained by the -t <= 2.5 constraint at
+zero chi2 cost.  If a shape that is monotone by construction is wanted for the
+paper (dipole-like exp(bt)/(1 - t/L^2)^n instead of exp(bt + b2 t^2)), that is a
+form change to be tested separately - not needed for production.
+
 ## NEXT STEPS, in order
 
 1. Re-check the RC fixed point with amp2026s (`./iterate.sh i3 fitpar_prod.npy`)
