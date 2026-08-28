@@ -111,3 +111,50 @@ Also learned from his tables: a negative d-slope is a LIMITED-t-RANGE artefact -
 his ET bd was -2.54 for |t|<1 and +0.57 on the full range.  And Peter's
 approximate tmin/xi vs the exact ones shifts his parameters by 20-25%; our
 amplitude fit uses exact tmin and xi, matching his preferred column.
+
+## alpha' correction and the reparameterisation (end of 2026-08-28)
+
+We DO have alpha': it is minus our b'.  Matching the GK form
+exp[t(b_GK - alpha' ln x)] to ours exp[t(b + b'(ln xB - ln 0.15))] gives
+
+    b' = -alpha'          b_ours = b_GK + 1.897 alpha'
+
+so our b IS the effective slope at xB = 0.15, by construction of the offset.
+Our alpha' are 3-5x larger than VPK's global-fit values (0.22 vs 0.04-0.07 for
+EbarT; 1.13 vs 0.265 for H_T) -- likely the source of the inverted slope
+ordering, since a large alpha' makes the effective slope strongly x-dependent
+and we compared at a single x = 0.15.
+
+VPK's proposal (adopt): drop the ln 0.15 offset entirely, b_new = b + 1.897 b'.
+EXACT reparameterisation, no refit.  Then slope(xB) = b_new + b' ln xB and the
+physical requirement slope > 0 is trivial to check.  Values for amp2026:
+
+    block       N     b_new     b'   | slope at xB = 0.10 0.15 0.25 0.40 0.60
+    H_T^u    18.06   -0.344 -1.134   |   2.27  1.81  1.23  0.70  0.24
+    H_T^d    -1.79   -0.883 -0.189   |  -0.45 -0.53 -0.62 -0.71 -0.79  NEGATIVE
+    EbarT^u  94.82    1.762 -0.219   |   2.27  2.18  2.07  1.96  1.87
+    EbarT^d  79.50    5.111 -0.219   |   5.62  5.53  5.41  5.31  5.22
+    T00^u/d  25.87/-6.00 0.906 -0.820|   2.79  2.46  2.04  1.66  1.33
+
+H_T^d has a NEGATIVE t-slope over the WHOLE measured xB range -- the form factor
+grows with |t| everywhere, not just at an edge.  H_T^u reaches only 0.24 at
+xB = 0.6, i.e. the whole H_T sector misbehaves at high xB.
+
+## NEXT STEPS, in order
+
+1. Reparameterise (drop ln 0.15), then add the constraint b + b' ln xB > 0 over
+   xB in [0.1, 0.6] as a penalty (two inequalities per block: the slope is
+   linear in ln xB, so checking the endpoints suffices).  Refit.  This fixes
+   H_T^d physically instead of tying its shape (variant B), and is the cheapest
+   remaining item.  DO THIS FIRST -- it changes the model, so the paper and the
+   generator runs should follow it, not precede it.
+2. Push VPK's global-fit GPDs through our hard kernel and compare convolution to
+   convolution -- the only way to settle the inverted slope ordering.
+3. Rewrite ~/pi0eta-rc-2026-paper with the self-consistent result.
+
+## Operational lesson
+
+After pkill on a script name, ALSO kill "spawn_main": multiprocessing workers on
+macOS carry only `from multiprocessing.spawn import spawn_main` in their command
+line, survive the parent, and keep burning CPU.  One such orphan ran 6h42m at
+99% on phallbvpk-mac after a mistaken run there was "stopped".
