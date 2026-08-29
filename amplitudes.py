@@ -80,8 +80,21 @@ def _flavour(p, t, xB, Q2):
     L = math.log(xB)
     HTu = p[0]*math.exp((p[1]+p[2]*L)*t)*Q2**(p[3]/2)
     HTd = p[4]*math.exp((p[5]+p[6]*L)*t)*Q2**(p[7]/2)
-    ETu = p[8]*math.exp((p[9]+p[10]*L)*t + p[12]*t*t)*Q2**(p[11]/2)
-    ETd = p[13]*ETu*math.exp(p[14]*t)
+    if len(p) > 27:
+        # Independent Ebar_T^d block (VPK, 2026-08-28): same functional form as u,
+        # its own N, b, b', nQ.  b2 is gone; its slot p[12] now carries b'_d.
+        #   p[13] = N_d   p[14] = b_d   p[12] = b'_d   p[27] = nQ_d
+        ETu = p[8]*math.exp((p[9]+p[10]*L)*t)*Q2**(p[11]/2)
+        ETd = p[13]*math.exp((p[14]+p[12]*L)*t)*Q2**(p[27]/2)
+        if len(p) > 31:
+            # optional xB shape F(xB) = xB^alpha (1-xB)^n, separately for u and d
+            #   p[28] alpha_u  p[29] n_u   p[30] alpha_d  p[31] n_d
+            ETu *= xB**p[28]*(1.0-xB)**p[29]
+            ETd *= xB**p[30]*(1.0-xB)**p[31]
+    else:
+        # legacy 27-parameter layout: ET_d tied to ET_u by a ratio and a slope shift
+        ETu = p[8]*math.exp((p[9]+p[10]*L)*t + p[12]*t*t)*Q2**(p[11]/2)
+        ETd = p[13]*ETu*math.exp(p[14]*t)
     bxL = p[21] if len(p) > 21 else 0.0
     Lu  = p[15]*math.exp((p[16] + bxL*L)*t)*Q2**(p[17]/2)
     Ld  = p[18]*Lu

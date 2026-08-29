@@ -1,0 +1,7 @@
+data chi2 only (constraint terms excluded);  Hall-A measures 0.28 +- 0.07
+
+variant      chi2 chi2/ndf
+  prior    1190.1   1.6978  R_ET  1.145  R_HT  -0.056  db  3.83  sigTT(n)/sigTT(p)  0.57  pi0  597.6 eta  234.3 bsa  287.6
+   none    1129.9   1.6119  R_ET  3.000  R_HT  -0.170  db  4.63  sigTT(n)/sigTT(p)  0.90  pi0  546.8 eta  231.8 bsa  287.1
+  halla    1149.8   1.6403  R_ET  2.800  R_HT  -0.111  db  6.06  sigTT(n)/sigTT(p)  0.67  pi0  572.4 eta  230.3 bsa  285.2
+   both    1201.1   1.7134  R_ET  0.975  R_HT  -0.021  db  4.16  sigTT(n)/sigTT(p)  0.50  pi0  605.8 eta  233.7 bsa  288.2

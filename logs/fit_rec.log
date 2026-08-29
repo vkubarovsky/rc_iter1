@@ -1,0 +1,5 @@
+chi2 always quoted with the ORIGINAL De Masi errors.  Hall-A n/p = 0.28 +- 0.07
+
+ variant  par     chi2 chi2/ndf
+     rec   27   1117.6   1.5989  ETd/ETu(-t=.3)  +0.68  HTd/HTu(-t=.3)  -0.08  slopes u/d 1.20/6.87  n/p  0.60  pi0  551.6 eta  219.1 bsa  245.0 eg1  58.1
+rec_nohalla   27   1075.0   1.5379  ETd/ETu(-t=.3)  +1.20  HTd/HTu(-t=.3)  -0.20  slopes u/d 1.05/5.13  n/p  1.42  pi0  501.6 eta  221.9 bsa  244.8 eg1  62.2

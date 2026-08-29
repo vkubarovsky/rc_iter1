@@ -1,0 +1,5 @@
+quadrature: 15522 nodes over 194 bins
+ variant  par      chi2  chi2/ndf
+    asis   26    1159.0    1.6557  nQ_u  +0.95 nQ_d  -6.00  N_d/N_u -0.321  R_ET 1.181 (+4.3 sig)  pi0  580.1 eta  222.7
+    tied   25    1168.4    1.6667  nQ_u  +0.97 nQ_d  +0.97  N_d/N_u -0.055  R_ET 1.114 (+3.8 sig)  pi0  588.9 eta  224.5
+   loose   26    1161.7    1.6596  nQ_u  +0.95 nQ_d  -3.00  N_d/N_u -0.195  R_ET 1.176 (+4.2 sig)  pi0  582.9 eta  223.7

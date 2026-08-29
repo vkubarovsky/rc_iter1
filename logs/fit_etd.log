@@ -1,0 +1,7 @@
+Hall-A neutron ratio for reference: 0.28 +- 0.07
+
+   variant  par     chi2 chi2/ndf
+      free   28   1075.0   1.5401  N_d/N_u  +5.610  b_d   2.81 b'_d  -1.67 nQ_d  +0.32  slope_d(0.25)  5.13 (u 1.05)  n/p  1.42  pi0  501.6 eta  221.9 bsa  289.2 eg1  62.2
+      tieQ   27   1077.0   1.5407  N_d/N_u  +4.351  b_d   3.46 b'_d  -1.23 nQ_d  +1.04  slope_d(0.25)  5.17 (u 1.05)  n/p  1.35  pi0  505.0 eta  220.1 bsa  289.4 eg1  62.5
+      nobx   27   1081.4   1.5471  N_d/N_u  +4.177  b_d   5.35 b'_d  +0.00 nQ_d  +1.26  slope_d(0.25)  5.35 (u 1.07)  n/p  1.18  pi0  512.2 eta  218.6 bsa  290.0 eg1  60.5
+ tieQ_nobx   26   1081.4   1.5449  N_d/N_u  +4.152  b_d   5.35 b'_d  +0.00 nQ_d  +1.28  slope_d(0.25)  5.35 (u 1.07)  n/p  1.18  pi0  512.2 eta  218.6 bsa  290.0 eg1  60.6

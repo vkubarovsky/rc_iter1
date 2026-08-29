@@ -360,6 +360,69 @@ conventions with EXACT_ACCEPT=1.  200k born done in under a minute per channel
 (200000 events, 8/10 parts).  Run dir and full note:
 /Volumes/wd_14tb/mc/ampgen2026s_run/README.md.
 
+## NIGHT OF 2026-08-28/29: the prior comes out, Ebar_T^d gets its own block
+
+VPK's corrections, in the order they landed, each one right:
+
+1. **The R_ET prior was applied at the wrong level.**  R_ET is a ratio of
+   CONVOLUTIONS (GPD x hard kernel), kappa_T^d/kappa_T^u = 0.54 +- 0.15 is a
+   ratio of first MOMENTS.  They coincide only if u and d share an x shape.
+   The prior entered as a literal extra residual, `(p[13]-0.54)/0.15`, in every
+   fit since P2.  Removed.
+2. **With the prior gone, b2 is not needed at all.**  b2 = 0 and one parameter
+   fewer now gives chi2 1079.9 vs 1083.7 for amp2026 WITH b2.  Every earlier
+   statement that "dropping b2 costs 71" was measuring the prior's pull on
+   R_ET, not the data.
+3. **db = 4 was not a parameterisation artefact.**  Giving Ebar_T^d its own free
+   N, b, b', nQ (VPK's proposal) changes nothing: the fit still wants a steep d,
+   slope 5.1 against 1.05 for u, and gains only 5 chi2.  It is the data.
+4. **R_ET at t = 0 is meaningless** - t = 0 lies below |tmin|.  At the physical
+   point -t = 0.3 the same fits give Ebar_T^d/Ebar_T^u = 1.2-1.4, not 4-5.
+   All ratios are now quoted at xB = 0.25, Q2 = 2.2, -t = 0.3.
+5. **F(xB) = xB^alpha (1-xB)^n**: the (1-xB)^n factor does nothing (n -> 0), the
+   xB^alpha factor buys 7 chi2 for one parameter.  Split u/d shapes buy 14 for
+   four.  It also makes the normalisations degenerate with alpha - exactly what
+   VPK remembered from the earlier attempts.
+
+| variant | par | chi2 | chi2/ndf | ET_d/ET_u at -t=0.3 | sigTT(n)/sigTT(p) |
+|---|---|---|---|---|---|
+| amp2026 (b2 + prior) | 27 | 1083.7 | 1.5504 | - | 0.59 |
+| amp2026s as installed (prior, d>=u) | 26 | 1159.0 | 1.6557 | - | 0.9 |
+| no prior, tied ET_d, b2=0 | 26 | 1079.9 | 1.5427 | 1.20 | 1.21 |
+| + independent ET_d block | 28 | 1075.0 | 1.5401 | 1.20 | 1.42 |
+| + F(xB) split | 32 | 1060.7 | 1.5284 | 1.42 | 0.85 |
+| **+ Hall-A + phase gauge (CANDIDATE)** | **31** | **1069.8** | **1.5392** | **1.44** | **0.45** |
+| no F, + Hall-A + gauge | 27 | 1117.6 | 1.5989 | 0.68 | 0.60 |
+| no F, gauge only | 27 | 1075.0 | 1.5379 | 1.20 | 1.42 |
+
+Two more findings:
+* **phi_CE is pure gauge.**  Fixing it at 0 costs exactly 0.0 chi2 and removes the
+  4e4 errors on the three phases: only combinations of them are observable.
+* **eg1-dvcs is what forces a large d.**  Between the "no d" and "d spike"
+  branches the eg1 chi2 goes 120.9 -> 62.2, and it is the DOUBLE-SPIN moments
+  that do it: A_LL^const 39.9 -> 18.6 and A_LL^cos 33.2 -> 9.7.  A_LL^const
+  ~ Re(T01* U01) is the direct H_T x Ebar_T interference.
+  The Hall-A neutron ratio pulls the opposite way.  With F(xB) free, satisfying
+  Hall-A costs only 9 chi2; without it, 43.
+* **The De Masi BSA carries 245 of the 1070.**  Its pull rms is 1.95 and its
+  point-to-point scatter inside a bin is twice the quoted (figure-extracted)
+  errors, so most of that is underestimated errors, not model failure.  Doubling
+  those errors changes no ratio by more than 0.03.
+
+CANDIDATE for production: `fitpar_n2_final.npy` (31 par).  Figures and the
+anchored parameter table: OneDrive Work/2026_pi0_amplitudes/candidate_2026_08_29/,
+repo figures/*_cand31.png, params_cand31.md.
+
+STILL OPEN, in order of how much they bother me:
+1. Ebar_T^d slope 5.11 +- 0.50 against 1.09 +- 0.04 for u - eight sigma apart,
+   and it means the d distribution is twice as wide in impact parameter.  Nothing
+   in the data forbids it and nothing in the model explains it.
+2. sigma_TT(n)/sigma_TT(p) = 0.45 against Hall-A 0.28 +- 0.07 even WITH that
+   datum in the fit: still 2.4 sigma, and the model cannot go lower without
+   breaking eg1.
+3. The normalisations at t = 0 are degenerate with alpha; only the anchored
+   values mean anything.  A proper fix is to fit in anchored variables.
+
 ## NEXT STEPS, in order
 
 1. Re-check the RC fixed point with amp2026s (`./iterate.sh i3 fitpar_amp2026s.npy`).

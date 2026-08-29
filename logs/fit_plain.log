@@ -1,0 +1,46 @@
+  seed fitpar_amp2026s.npy        chi2+pen   1079.89
+  seed fitpar_prior_none.npy      chi2+pen   1079.89
+  seed fitpar_prior_halla.npy     chi2+pen   1079.89
+  seed fitpar_tied.npy            chi2+pen   1079.89
+  seed fitpar_amp2026_lx.npy      chi2+pen   1079.89
+
+=== PLAIN FIT (no prior, slope>=0 only, b2=0) === 726 pts, 26 par: chi2/ndf = 1079.9/700 = 1.5427   penalty 0.001
+        pi0:   510.2/354
+        eta:   218.8/228
+    bsa_pi0:   245.3/62
+    bsa_eta:     3.7/12
+    bsa_c12:    41.0/30
+        eg1:    60.7/40
+
+   parameter        value      on a bound?
+   HT_u N          19.2145
+   HT_u b          -0.2543
+   HT_u b'         -1.0859
+   HT_u nQ          1.2332
+   HT_d N          -8.6062
+   HT_d b          -0.2567
+   HT_d b'         -0.5010
+   HT_d nQ         -1.7818
+   ET_u N          56.0658
+   ET_u b           0.7204
+   ET_u b'         -0.2515
+   ET_u nQ          1.2164
+   ET_u b2          0.0000
+   R_ET             4.1857
+   db_ET            4.2219
+   T00 N           28.3592  <-- ON THE BOUND
+   T00 b            0.8532
+   T00 nQ           1.6866
+   R_L             -0.3252
+   delta0           1.9802
+   delta1           0.5784
+   T00 b'          -0.8883
+   rho_CE           0.1969
+   phi_CE           0.0916
+   phi_w           -0.7355
+   rho_nf           1.0209
+   phi_nf           1.9192
+
+   slopes: {'H_T^u': np.float64(1.25), 'H_T^d': np.float64(0.44), 'Ebar_T^u': np.float64(1.07), 'T00': np.float64(2.08), 'Ebar_T^d': np.float64(5.29)}
+   R_HT -0.448   R_ET 4.186   sigma_TT(n)/sigma_TT(p) = 1.21   (Hall-A: 0.28 +- 0.07)
+   sigma_L/sigma_T = 0.0609

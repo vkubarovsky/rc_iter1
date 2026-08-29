@@ -1,0 +1,9 @@
+all fits: no R_ET prior, independent Ebar_T^d, slope >= 0 only.  Hall-A n/p = 0.28 +- 0.07
+
+     variant  par     chi2 chi2/ndf
+         noF   28   1075.0   1.5401  ETd/ETu(-t=0.3)  +1.199  slope u/d 1.05/5.13  n/p  1.42  a_u +0.00 n_u +0.00 a_d +0.00 n_d +0.00  pi0  501.6 eta  221.9 eg1  62.2
+    F_common   30   1066.2   1.5319  ETd/ETu(-t=0.3)  +1.135  slope u/d 1.06/5.33  n/p  1.27  a_u +0.47 n_u +0.38 a_d +0.47 n_d +0.38  pi0  492.6 eta  220.2 eg1  61.1
+     F_split   32   1060.7   1.5284  ETd/ETu(-t=0.3)  +1.424  slope u/d 1.05/5.05  n/p  0.85  a_u +0.64 n_u +0.11 a_d +0.14 n_d +3.03  pi0  484.1 eta  224.4 eg1  61.8
+F_1mx_common   29   1075.0   1.5423  ETd/ETu(-t=0.3)  +1.199  slope u/d 1.05/5.13  n/p  1.42  a_u +0.00 n_u -0.01 a_d +0.00 n_d -0.01  pi0  501.6 eta  221.9 eg1  62.2
+ F_xa_common   29   1067.6   1.5317  ETd/ETu(-t=0.3)  +1.172  slope u/d 1.06/5.36  n/p  1.29  a_u +0.37 n_u +0.00 a_d +0.37 n_d +0.00  pi0  492.6 eta  221.2 eg1  61.6
+ F_1mx_split   30   1073.0   1.5416  ETd/ETu(-t=0.3)  +1.333  slope u/d 1.05/5.01  n/p  1.16  a_u +0.00 n_u -0.31 a_d +0.00 n_d +1.86  pi0  499.1 eta  223.9 eg1  62.0

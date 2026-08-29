@@ -1,0 +1,4 @@
+  File "/Users/vpk/rc_iter1/fit_halla.py", line 2
+    form factors fall -- slope b + b' ln xB >= 0 on xB in [0.1, 0.6].  b2 = 0.
+                                   ^
+SyntaxError: unterminated string literal (detected at line 2)
