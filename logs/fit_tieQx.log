@@ -1,0 +1,24 @@
+
+=== tieQx_data === 726 pts, 25 par: chi2/ndf = 1090.5/701 = 1.5556
+        pi0:   503.0/354
+        eta:   233.7/228
+    bsa_pi0:   245.8/62
+    bsa_eta:     3.9/12
+    bsa_c12:    40.4/30
+        eg1:    63.6/40
+   nQ: H_T +1.465 (u=d)   Ebar_T +0.991 (u=d)   T00 +1.568
+   at xB=0.25, Q2=2.2, -t=0.3:  H_T d/u -0.240   Ebar_T d/u +1.302   T00 d/u -0.286
+   slopes at xB=0.25: H_T^u 1.21  H_T^d 0.54  Ebar_T^u 1.04  Ebar_T^d 5.09  T00 2.13
+   sigma_TT(n)/sigma_TT(p) = 1.41 (Hall-A 0.28+-0.07)   sigma_L/sigma_T = 0.0582
+
+=== tieQx_halla === 726 pts, 25 par: chi2/ndf = 1145.8/701 = 1.6346
+        pi0:   566.2/354
+        eta:   229.0/228
+    bsa_pi0:   245.1/62
+    bsa_eta:     4.7/12
+    bsa_c12:    40.4/30
+        eg1:    60.4/40
+   nQ: H_T +1.435 (u=d)   Ebar_T +1.183 (u=d)   T00 +1.684
+   at xB=0.25, Q2=2.2, -t=0.3:  H_T d/u -0.125   Ebar_T d/u +0.497   T00 d/u -0.109
+   slopes at xB=0.25: H_T^u 1.31  H_T^d 0.30  Ebar_T^u 1.19  Ebar_T^d 7.02  T00 2.03
+   sigma_TT(n)/sigma_TT(p) = 0.67 (Hall-A 0.28+-0.07)   sigma_L/sigma_T = 0.0550
