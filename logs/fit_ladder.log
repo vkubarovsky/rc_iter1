@@ -1,0 +1,9 @@
+ratios quoted at xB=0.25, Q2=2.2, -t=0.3.  Hall-A n/p = 0.28 +- 0.07
+
+   variant  par     chi2 chi2/ndf
+      free   27   1075.0   1.5379  HTd/HTu  -0.20  ETd/ETu  +1.20  slope HT u/d 1.22/ 0.56  ET u/d 1.05/ 5.13  nQ HT u/d +1.31/-1.34 ET u/d +1.13/+0.32  n/p  1.42  pi0  501.6 eta  221.9 eg1  62.2
+        nQ   25   1084.3   1.5468  HTd/HTu  -0.23  ETd/ETu  +1.21  slope HT u/d 1.25/ 0.38  ET u/d 1.06/ 5.12  nQ HT u/d +1.21/+1.21 ET u/d +1.16/+1.16  n/p  1.33  pi0  509.2 eta  223.3 eg1  63.9
+     nQ+bx   23   1120.8   1.5944  HTd/HTu  -0.18  ETd/ETu  +0.90  slope HT u/d 1.25/ 0.99  ET u/d 1.12/ 5.98  nQ HT u/d +1.13/+1.13 ET u/d +1.48/+1.48  n/p  1.03  pi0  538.4 eta  229.4 eg1  64.0
+   nQ+bx+b   21   1271.3   1.8032  HTd/HTu  +0.15  ETd/ETu  -0.06  slope HT u/d 1.59/ 1.59  ET u/d 1.24/ 1.24  nQ HT u/d +0.89/+0.89 ET u/d +1.31/+1.31  n/p  0.21  pi0  657.2 eta  235.5 eg1  90.1
+   HT tied   24   1101.6   1.5693  HTd/HTu  -0.23  ETd/ETu  +1.12  slope HT u/d 1.23/ 1.23  ET u/d 1.09/ 5.61  nQ HT u/d +1.26/+1.26 ET u/d +1.08/+0.80  n/p  1.40  pi0  517.3 eta  226.9 eg1  69.6
+   ET tied   24   1254.8   1.7875  HTd/HTu  +0.25  ETd/ETu -65.25  slope HT u/d 1.46/ 2.76  ET u/d 1.27/ 1.27  nQ HT u/d +0.59/+5.45 ET u/d +1.51/+1.51  n/p  4.19  pi0  650.7 eta  230.2 eg1  88.0

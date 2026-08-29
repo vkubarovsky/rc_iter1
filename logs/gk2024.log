@@ -1,0 +1,52 @@
+33 GK_2024 tables
+
+  eta Q2=1.17 xB=0.134: 7 points
+  eta Q2=1.39 xB=0.17: 7 points
+  eta Q2=1.62 xB=0.187: 5 points
+  eta Q2=1.77 xB=0.224: 7 points
+  eta Q2=1.88 xB=0.271: 6 points
+  eta Q2=1.95 xB=0.313: 3 points
+  eta Q2=2.11 xB=0.238: 2 points
+  eta Q2=2.24 xB=0.276: 6 points
+  eta Q2=2.26 xB=0.335: 6 points
+  eta Q2=2.35 xB=0.404: 5 points
+  eta Q2=2.73 xB=0.343: 5 points
+  eta Q2=2.77 xB=0.424: 4 points
+  eta Q2=3.25 xB=0.43: 4 points
+  eta Q2=3.3 xB=0.497: 2 points
+  eta Q2=3.69 xB=0.451: 3 points
+  eta Q2=3.77 xB=0.513: 3 points
+  pi0 Q2=1.14 xB=0.131: 8 points
+  pi0 Q2=1.38 xB=0.169: 8 points
+  pi0 Q2=1.61 xB=0.186: 8 points
+  pi0 Q2=1.74 xB=0.223: 8 points
+  pi0 Q2=1.87 xB=0.27: 8 points
+  pi0 Q2=1.95 xB=0.313: 6 points
+  pi0 Q2=2.1 xB=0.238: 7 points
+  pi0 Q2=2.21 xB=0.275: 8 points
+  pi0 Q2=2.24 xB=0.332: 7 points
+  pi0 Q2=2.34 xB=0.403: 6 points
+  pi0 Q2=2.71 xB=0.336: 8 points
+  pi0 Q2=2.75 xB=0.423: 5 points
+  pi0 Q2=3.12 xB=0.362: 4 points
+  pi0 Q2=3.23 xB=0.428: 5 points
+  pi0 Q2=3.29 xB=0.496: 4 points
+  pi0 Q2=3.68 xB=0.451: 5 points
+  pi0 Q2=3.76 xB=0.513: 4 points
+
+184 matched points
+
+--- pi0: 109 bins ---
+observable   chi2 GK_2024   chi2 our fit
+         U          909.3          110.1
+        TT          248.8          144.0
+        LT          203.5          185.9
+sigma_L/sigma_T at the first bin: GK 0.119, ours 0.032
+
+--- eta: 75 bins ---
+observable   chi2 GK_2024   chi2 our fit
+         U       552983.8           94.5
+        TT         1219.4           79.3
+        LT          178.2           50.6
+sigma_L/sigma_T at the first bin: GK 0.014, ours 0.055
+
