@@ -1,0 +1,7 @@
+Hall-A: 6 proton (sigma_T) + 4 neutron (sigma_U) points
+
+         variant  par     chi2 chi2/ndf
+  1 phase, no HA   24   1111.0   1.5826 | phases +0.00 +1.28 +0.00 | slope ET u/d 1.10/ 4.62  n/p  2.01  L/T 0.059 | CLAS  1111.0 HallA  381.3/30
+ 3 phases, no HA   26   1110.4   1.5862 | phases -1.31 +1.28 -0.71 | slope ET u/d 1.10/ 4.62  n/p  2.02  L/T 0.060 | CLAS  1110.4 HallA  383.4/30
+ 1 phase + HallA   24   1293.9   1.7676 | phases +0.00 +0.25 +0.00 | slope ET u/d 1.16/ 6.48  n/p  0.97  L/T 0.060 | CLAS  1156.1 HallA  137.7/30
+3 phases + HallA   26   1283.9   1.7588 | phases -1.12 +0.24 -0.29 | slope ET u/d 1.16/ 6.47  n/p  0.97  L/T 0.066 | CLAS  1152.1 HallA  131.8/30

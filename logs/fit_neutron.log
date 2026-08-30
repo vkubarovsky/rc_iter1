@@ -1,0 +1,24 @@
+
+=== n_only === 738 pts, 26 par: chi2/ndf = 1160.8/712 = 1.6304
+        pi0:   550.5/354
+        eta:   235.7/228
+    bsa_pi0:   246.4/62
+    bsa_eta:     3.4/12
+    bsa_c12:    40.7/30
+        eg1:    59.4/40
+      HallA:    24.7/12
+   phases  H_T +1.200   Ebar_T +0.500   T00 +0.913  rad
+   slopes at xB=0.25: H_T^u 1.25  H_T^d 1.25  Ebar_T^u 1.14  Ebar_T^d 6.27  T00 2.07
+   d/u at -t=0.3:  H_T -0.406   |Ebar_T| 0.820   n/p 0.970   sigma_L/sigma_T 0.0582
+
+=== n_and_p === 756 pts, 26 par: chi2/ndf = 1252.1/730 = 1.7152
+        pi0:   560.0/354
+        eta:   236.4/228
+    bsa_pi0:   243.8/62
+    bsa_eta:     3.3/12
+    bsa_c12:    41.2/30
+        eg1:    62.3/40
+      HallA:   105.1/30
+   phases  H_T +1.143   Ebar_T +0.500   T00 +1.116  rad
+   slopes at xB=0.25: H_T^u 1.27  H_T^d 1.27  Ebar_T^u 1.15  Ebar_T^d 6.37  T00 2.04
+   d/u at -t=0.3:  H_T -0.406   |Ebar_T| 0.852   n/p 0.998   sigma_L/sigma_T 0.0655
