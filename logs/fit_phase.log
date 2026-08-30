@@ -1,0 +1,7 @@
+model B for reference: 23 par, chi2 1133.6, slope ET u/d 1.10/5.94, n/p 1.09
+
+     variant  par     chi2 chi2/ndf
+        none   25   1133.6   1.6171 | phases HT/ET/T00 +0.00 +0.00 +0.00 | slope ET u/d 1.10/ 5.94  HT u/d 1.21/1.21  n/p  1.09 | pi0  537.4 eta  240.5 bsa  291.7 eg1  64.0
+          ET   26   1111.0   1.5871 | phases HT/ET/T00 +0.00 +1.28 +0.00 | slope ET u/d 1.10/ 4.62  HT u/d 1.13/1.13  n/p  2.01 | pi0  526.8 eta  231.3 bsa  294.9 eg1  58.0
+       HT+ET   27   1110.1   1.5882 | phases HT/ET/T00 +3.13 +1.43 +0.00 | slope ET u/d 1.07/ 4.13  HT u/d 1.15/2.88  n/p  2.34 | pi0  518.4 eta  224.8 bsa  305.6 eg1  61.3
+   all three   28   1110.4   1.5908 | phases HT/ET/T00 -1.31 +1.28 -0.71 | slope ET u/d 1.10/ 4.62  HT u/d 1.13/1.13  n/p  2.02 | pi0  525.9 eta  230.7 bsa  295.2 eg1  58.6

@@ -1,0 +1,5 @@
+computed L-T phase: 0.292 rad at xB=0.25, Q2=2.2;  the fit had 2.00
+
+    variant  par     chi2
+   phi_calc   24   1132.9 | phi_du  computed delta     2.00 | slope ET u/d 1.10/ 5.92 n/p  1.10 | sigma_L/sigma_T 0.0575 | pi0  537.4 eta  240.9 bsa  291.7 eg1  62.9
+ delta_calc   22   1270.2 | phi_du  computed delta computed | slope ET u/d 1.09/ 5.93 n/p  1.21 | sigma_L/sigma_T 0.1843 | pi0  570.2 eta  247.3 bsa  322.5 eg1 130.3

@@ -41,6 +41,15 @@ Level-3 unlock (present only if len(p) > 22):
 import math, cmath, os
 import numpy as np
 
+_PT = None
+def _phi_du(xi):
+    """Computed relative u-d phase, interpolated from phase_table.npz."""
+    global _PT
+    if _PT is None:
+        d = np.load(os.path.join(os.path.dirname(os.path.abspath(__file__)), "phase_table.npz"))
+        _PT = (d["xi"], d["ET"])
+    return float(np.interp(xi, _PT[0], _PT[1]))
+
 Mp, Mpi0, Meta = 0.938272, 0.1349766, 0.547862
 ALPHA, HC2, PI = 0.00729927, 389379.36, math.pi
 # Slope convention (2026-08-28): the t-slopes are written as b + b' ln xB,
@@ -113,6 +122,22 @@ def amplitudes(p, ch, t, xB, Q2):
     tp = t - tmin(mM, Q2, xB)
     if tp >= 0: return None
     HT, ET, LL = _flavour(p, t, xB, Q2)
+    if len(p) > 36 and p[35] <= -9.0:
+        # phases COMPUTED from the convolution (phase_table.npz), not fitted:
+        # phi_du(xi) = arg<F^d> - arg<F^u> for a GK-like x shape.
+        ph = _phi_du(ksi(xB, Q2))
+        HT = (HT[0], HT[1]*cmath.exp(1j*ph))
+        ET = (ET[0], ET[1]*cmath.exp(1j*ph))
+    elif len(p) > 36:
+        # Relative u-d phases (2026-08-29).  Each flavour convolution is complex
+        # in its own right: Im = pi F(xi,xi,t) from the pole, Re from the
+        # principal value, and the two have different t-slopes, so u and d do not
+        # share a phase.  The overall phase of a channel is unobservable, so u is
+        # kept real and only d carries one.  The flavour sum is then complex, and
+        # the near-cancellation 2u - d in the eta channel is no longer exact.
+        HT = (HT[0], HT[1]*cmath.exp(1j*p[34]))
+        ET = (ET[0], ET[1]*cmath.exp(1j*p[35]))
+        LL = (LL[0], LL[1]*cmath.exp(1j*p[36]))
     A  = Afac(Q2, xB)
     xi = ksi(xB, Q2)
     kin = -tp/(8*Mp*Mp)
