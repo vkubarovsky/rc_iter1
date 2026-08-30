@@ -1,0 +1,6 @@
+76 matched (pi0, eta) bins
+
+    variant  par     chi2 chi2/ndf
+   absolute   23   1133.6   1.6125 | pi0  537.4/354 eta  240.5/228 R    0.0/0 bsa  291.7 eg1  64.0 | slope ET u/d 1.10/ 5.94 ETd/u +0.98 n/p  1.09
+ ratio_stat   23   1196.6   1.7022 | pi0  542.0/354 eta  123.4/152 R  166.9/76 bsa  292.5 eg1  71.7 | slope ET u/d 1.16/ 6.30 ETd/u +0.95 n/p  1.07
+ ratio_syst   23   1127.5   1.6038 | pi0  534.1/354 eta  123.5/152 R  112.4/76 bsa  291.1 eg1  66.3 | slope ET u/d 1.14/ 6.14 ETd/u +0.95 n/p  1.07

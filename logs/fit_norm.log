@@ -1,0 +1,8 @@
+cross-section chi2 only in the total; BSA/eg1 are ratios and are not scaled
+
+         variant  par     chi2 chi2/ndf
+   prod, no norm   25   1092.0   1.5578 | lam  1.000 rho  1.000 | slope ET u/d 1.04/ 5.09  ETd/u +1.31  n/p  1.41 | pi0  502.8 eta  235.1
+     prod + norm   27   1092.0   1.5623 | lam  1.000 rho  1.000 | slope ET u/d 1.04/ 5.09  ETd/u +1.31  n/p  1.41 | pi0  502.8 eta  235.1
+ sector, no norm   23   1133.6   1.6125 | lam  1.000 rho  1.000 | slope ET u/d 1.10/ 5.94  ETd/u +0.98  n/p  1.09 | pi0  537.4 eta  240.5
+   sector + norm   25   1130.7   1.6130 | lam  1.000 rho  1.034 | slope ET u/d 1.10/ 5.89  ETd/u +0.98  n/p  1.09 | pi0  536.7 eta  238.8
+ sector,rho free   25   1110.7   1.5844 | lam  1.000 rho  1.208 | slope ET u/d 1.09/ 6.43  ETd/u +0.91  n/p  1.05 | pi0  524.5 eta  238.2
