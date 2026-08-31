@@ -16,8 +16,25 @@ Conventions
     for pi0, 0.27 sigma for eta); the *_rc columns are the same extraction
     after our improved radiative correction.
 """
-import json, os
+import json, math, os
 import numpy as np, pandas as pd
+
+M, MPI, META = 0.9382720813, 0.1349768, 0.547862
+def tmin_of(Q2, xB, meson="pi0"):
+    """|t| at theta*=0, from Q2 and xB.  For Hall-A y21 this must be evaluated at
+    the xB LABEL of the setting, not at <xB>: the published |t| column was built
+    as tmin + t', with tmin computed that way, and feeding <xB> instead would
+    shift t' by up to a factor three."""
+    m = MPI if meson == "pi0" else META
+    W2 = M*M + Q2*(1-xB)/xB; W = math.sqrt(W2)
+    Eg = (W2 - Q2 - M*M)/(2*W); pg = math.sqrt(Eg*Eg + Q2)
+    Ep = (W2 + m*m - M*M)/(2*W); pp = math.sqrt(max(Ep*Ep - m*m, 0.0))
+    return -(m*m - Q2 - 2*(Eg*Ep - pg*pp))
+
+# Table I of PRL 127 152301: (Q2, Ebeam) -> <xB>, W2, eps as published
+HA21 = {(3.11,7.38):(0.36,6.51,0.61), (3.57,8.52):(0.36,7.29,0.62), (4.44,10.59):(0.36,8.79,0.63),
+        (2.67,4.49):(0.48,3.81,0.51), (4.06,8.85):(0.45,5.62,0.71), (5.16,8.85):(0.46,6.67,0.55),
+        (6.56,10.99):(0.46,8.32,0.52), (5.49,8.52):(0.59,4.58,0.66), (8.31,10.59):(0.60,6.46,0.50)}
 PUB = "/Users/vpk/OneDrive/My_Publications"
 SF  = ["s_u","stat_U","sys_U","s_LT","stat_LT","sys_LT","s_TT","stat_TT","sys_TT"]
 rows_x, rows_a = [], []
@@ -36,6 +53,8 @@ for meson, src, ref in (("pi0","sf_pi0_both.txt","PRC 90 025205 (2014)"),
         r = dict(exp="CLAS6_y12", meson=meson, target="p",
                  Q2=v[6], xB=v[7], t=-v[8],
                  Q2_bin=v[0], xB_bin=v[1], t_bin=-v[2], group=f"{meson}{int(v[5]):02d}",
+                 tmin=tmin_of(v[6], v[7], meson), tprime=v[8]-tmin_of(v[6], v[7], meson),
+                 xB_mean=v[7],
                  eps=v[3], npts_phi=int(v[4]), Ebeam=5.75, sigma_meaning="sigma_U",
                  chi2ndf_phi=v[9], chi2ndf_phi_rc=v[19], in_fit="yes",
                  source=ref+" supplemental, phi table")
@@ -50,7 +69,11 @@ for line in open("data/halla_pi0.data"):
     v = line.split(); p = v[0] == "p_T"
     Q2 = float(v[1])
     r = dict(exp="HallA_y16" if p else "HallA_y17", meson="pi0", target="p" if p else "n",
-             Q2=Q2, xB=float(v[2]), t=-float(v[3]), Q2_bin=np.nan, xB_bin=np.nan, t_bin=np.nan, group=None, eps=np.nan, npts_phi=np.nan,
+             Q2=Q2, xB=float(v[2]), t=-float(v[3]),
+             Q2_bin=Q2, xB_bin=float(v[2]), t_bin=np.nan,
+             group=("ha16_%.2f" % Q2) if p else "ha17_1.75",
+             tmin=tmin_of(Q2, float(v[2])), tprime=float(v[3])-tmin_of(Q2, float(v[2])),
+             xB_mean=float(v[2]), eps=np.nan, npts_phi=np.nan,
              Ebeam=EB[Q2] if p else "E07-007 pair", sigma_meaning="sigma_T",
              chi2ndf_phi=np.nan, chi2ndf_phi_rc=np.nan,
              in_fit="yes" if not p else "no",
@@ -64,8 +87,17 @@ for line in open("data/halla_pi0.data"):
 for line in open("data/halla_more.data"):
     if line.startswith("#") or not line.strip(): continue
     v = line.split()
-    r = dict(exp=v[0], meson="pi0", target="p", Q2=float(v[3]), xB=float(v[4]),
-             t=-abs(float(v[5])), Q2_bin=np.nan, xB_bin=np.nan, t_bin=np.nan, group=None, eps=np.nan, npts_phi=np.nan, Ebeam=float(v[15]),
+    Q2, xB, mt, E = float(v[3]), float(v[4]), abs(float(v[5])), float(v[15])
+    key = None
+    if v[0] == "HallA_y21":
+        key = min(HA21, key=lambda k: (k[0]-Q2)**2 + 0.01*(k[1]-E)**2)
+        if abs(key[0]-Q2) > 0.02 or abs(key[1]-E) > 0.02: key = None
+    r = dict(exp=v[0], meson="pi0", target="p", Q2=Q2, xB=xB, t=-mt,
+             Q2_bin=Q2, xB_bin=xB, t_bin=np.nan,
+             group=(f"ha21_{sorted(HA21).index(key):02d}" if key else f"ha11_{Q2:.2f}"),
+             tmin=tmin_of(Q2, xB), tprime=mt-tmin_of(Q2, xB),
+             xB_mean=(HA21[key][0] if key else xB),
+             eps=(HA21[key][2] if key else np.nan), npts_phi=np.nan, Ebeam=E,
              sigma_meaning="sigma_U", chi2ndf_phi=np.nan, chi2ndf_phi_rc=np.nan,
              in_fit="no",
              source="PRL 127 152301 (2021)" if v[0]=="HallA_y21" else "PRC 83 025201 (2011)",
@@ -76,8 +108,10 @@ for line in open("data/halla_more.data"):
 # --- COMPASS ----------------------------------------------------------------
 d = pd.read_excel("/Users/vpk/hepgen_mac/data/All_experiment.xlsx")
 for _, q in d[d.exp == "COMPASS_y20"].iterrows():
-    r = dict(exp="COMPASS_y20", meson="pi0", target="p", Q2=q.Q2, xB=q.xB, t=-abs(q.t), Q2_bin=np.nan, xB_bin=np.nan, t_bin=np.nan, group=None,
-             eps=np.nan, npts_phi=np.nan, Ebeam=q.Ebeam, sigma_meaning="sigma_U",
+    r = dict(exp="COMPASS_y20", meson="pi0", target="p", Q2=q.Q2, xB=q.xB, t=-abs(q.t),
+             Q2_bin=q.Q2, xB_bin=q.xB, t_bin=np.nan, group="compass_00",
+             tmin=tmin_of(q.Q2, q.xB), tprime=abs(q.t)-tmin_of(q.Q2, q.xB),
+             xB_mean=q.xB, eps=np.nan, npts_phi=np.nan, Ebeam=q.Ebeam, sigma_meaning="sigma_U",
              chi2ndf_phi=np.nan, chi2ndf_phi_rc=np.nan, in_fit="no",
              source="COMPASS, Phys. Lett. B 805 135454 (2020)", **blank_rc())
     for k in SF: r[k] = getattr(q, k, 0.0) if k in d.columns else 0.0
@@ -130,7 +164,8 @@ for k, g in Aa.groupby(["exp","observable"], sort=False):
         t=f"{g.t.min():.4f}..{g.t.max():.4f}", Ebeam=str(g.Ebeam.iloc[0]),
         RC_refit="no", in_fit=g.in_fit.iloc[0], source=g.source.iloc[0]))
 S = pd.DataFrame(sets)
-cols = ["exp","meson","target","group","Q2","xB","t","Q2_bin","xB_bin","t_bin","eps","npts_phi",
+cols = ["exp","meson","target","group","Q2","xB","t","tmin","tprime","xB_mean",
+        "Q2_bin","xB_bin","t_bin","eps","npts_phi",
         "Ebeam","sigma_meaning","chi2ndf_phi","chi2ndf_phi_rc","in_fit","source"] + SF + [c+"_rc" for c in SF]
 X = X[[c for c in cols if c in X.columns]]
 with pd.ExcelWriter("pi0_eta_database.xlsx", engine="openpyxl") as w:
@@ -140,6 +175,7 @@ with pd.ExcelWriter("pi0_eta_database.xlsx", engine="openpyxl") as w:
     # t and xB carry more digits than Excel shows by default
     sh = w.sheets["cross_sections"]
     fmt = {"Q2":"0.000000","xB":"0.000000","t":"0.000000","eps":"0.000000",
+           "tmin":"0.000000","tprime":"0.000000","xB_mean":"0.000000",
            "Q2_bin":"0.00","xB_bin":"0.000","t_bin":"0.00",
            "chi2ndf_phi":"0.0000","chi2ndf_phi_rc":"0.0000"}
     for c in SF + [c+"_rc" for c in SF]: fmt[c] = "0.0000"
