@@ -1,0 +1,543 @@
+                                                                                                                   week ending
+PRL 118, 222002 (2017)                 PHYSICAL REVIEW LETTERS                                                     2 JUNE 2017
+
+
+
+       Rosenbluth Separation of the π0 Electroproduction Cross Section Off the Neutron
+M. Mazouz,1,† Z. Ahmed,2 H. Albataineh,3 K. Allada,4 K. A. Aniol,5 V. Bellini,6 M. Benali,7 W. Boeglin,8 P. Bertin,7,9
+  M. Brossard,7 A. Camsonne,9 M. Canan,10 S. Chandavar,11 C. Chen,12 J.-P. Chen,9 M. Defurne,13 C. W. de Jager,9,*
+    R. de Leo,14 C. Desnault,15 A. Deur,9 L. El Fassi,16 R. Ent,9 D. Flay,17 M. Friend,18 E. Fuchey,7 S. Frullani,19,*
+     F. Garibaldi,19 D. Gaskell,9 A. Giusa,6 O. Glamazdin,20 S. Golge,21 J. Gomez,9 O. Hansen,9 D. Higinbotham,9
+  T. Holmstrom,22 T. Horn,23 J. Huang,4 M. Huang,24 G. M. Huber,25 C. E. Hyde,10,7 S. Iqbal,5 F. Itard,7 Ho. Kang,26
+Hy. Kang,26 A. Kelleher,27 C. Keppel,9 S. Koirala,10 I. Korover,28 J. J. LeRose,9 R. Lindgren,29 E. Long,30 M. Magne,7
+J. Mammei,31 D. J. Margaziotis,5 P. Markowitz,8 A. Martí Jiménez-Argüello,32,15 F. Meddi,19 D. Meekins,9 R. Michaels,9
+  M. Mihovilovic,33 N. Muangma,4 C. Muñoz Camacho,7,15 P. Nadel-Turonski,9 N. Nuruzzaman,12 R. Paremuzyan,15
+A. Puckett,34 V. Punjabi,35 Y. Qiang,9 A. Rakhman,2 M. N. H. Rashad,10 S. Riordan,36 J. Roche,11 G. Russo,6 F. Sabatié,13
+K. Saenboonruang,29,37 A. Saha,9,* B. Sawatzky,9,17 L. Selvy,30 A. Shahinyan,38 S. Sirca,33 P. Solvignon,9,* M. L. Sperduto,6
+R. Subedi,39 V. Sulkosky,4 C. Sutera,6 W. A. Tobias,29 G. M. Urciuoli,40 D. Wang,29 B. Wojtsekhowski,9 H. Yao,17 Z. Ye,29
+                     L. Zana,2 X. Zhan,41 J. Zhang,9 B. Zhao,27 Z. Zhao,29 X. Zheng,29 and P. Zhu29
+
+                                           (Jefferson Lab Hall A Collaboration)
+                                  1
+                                           Faculté des Sciences de Monastir, Monastir 5000, Tunisia
+                                             2
+                                               Syracuse University, Syracuse, New York 13244, USA
+                                    3
+                                      Texas A&M University-Kingsville, Kingsville, Texas 78363, USA
+                         4
+                           Massachusetts Institute of Technology,Cambridge, Massachusetts 02139, USA
+                         5
+                           California State University, Los Angeles, Los Angeles, California 90032, USA
+                                                   6
+                                                     INFN/Sezione di Catania, 95125 Catania, Italy
+              7
+               Clermont université, université Blaise Pascal, CNRS/IN2P3, Laboratoire de physique corpusculaire,
+                                                           FR-63000 Clermont-Ferrand, France
+                                       8
+                                         Florida International University, Miami, Florida 33199, USA
+                    9
+                     Thomas Jefferson National Accelerator Facility, Newport News, Virginia 23606, USA
+                                           10
+                                             Old Dominion University, Norfolk, Virginia 23529, USA
+                                                      11
+                                                        Ohio University, Athens, Ohio 45701, USA
+                                              12
+                                                Hampton University, Hampton, Virginia 23668, USA
+                                   13
+                                      Irfu, CEA, Université Paris-Saclay, 91191 Gif-sur-Yvette, France
+                                                          14
+                                                            Università di Bari, 70121 Bari, Italy
+                                 15
+                                    Institut de Physique Nucléaire CNRS-IN2P3, Orsay 91405, France
+                      16
+                        Rutgers, The State University of New Jersey, Piscataway, New Jersey 08854, USA
+                                        17
+                                           Temple University, Philadelphia, Pennsylvania 19122, USA
+                                 18
+                                    Carnegie Mellon University, Pittsburgh, Pennsylvania 15213, USA
+                                                       19
+                                                          INFN/Sezione Sanità, 00161 Roma, Italy
+                              20
+                                 Kharkov Institute of Physics and Technology, Kharkov 61108, Ukraine
+                            21
+                              North Carolina Central University, Durham, North Carolina 27701, USA
+                                            22
+                                               Longwood University, Farmville, Virginia 23909, USA
+                                  23
+                                    The Catholic University of America, Washington, DC 20064, USA
+                                            24
+                                               Duke University, Durham, North Carolina 27708, USA
+                                     25
+                                        University of Regina, Regina, Saskatchewan S4S 0A2, Canada
+                                             26
+                                                Seoul National University, Seoul 08826, South Korea
+                                 27
+                                    College of William and Mary, Williamsburg, Virginia 23187, USA
+                                                      28
+                                                         Tel Aviv University, Tel Aviv 69978, Israel
+                                        29
+                                           University of Virginia, Charlottesville, Virginia 22904, USA
+                                                   30
+                                                      Kent State University, Kent, Ohio 44242, USA
+                                  31
+                                     University of Massachusetts, Amherst, Massachusetts 01003, USA
+                                32
+                                  Facultad de Física, Universidad de Valencia, Valencia 46100, Spain
+                                                 33
+                                                   University of Ljubljana, 1000 Ljubljana, Slovenia
+                             34
+                               Los Alamos National Laboratory, Los Alamos, New Mexico 87545, USA
+                                            35
+                                               Norfolk State University, Norfolk, Virginia 23529, USA
+                                       36
+                                         Stony Brook University, Stony Brook, New York 11794, USA
+                                        37
+                                          Kasetsart University, Chatuchak, Bangkok, 10900, Thailand
+                                              38
+                                                 Yerevan Physics Institute, Yerevan 375036, Armenia
+
+
+0031-9007=17=118(22)=222002(6)                            222002-1                      © 2017 American Physical Society
+                                                                                                                                 week ending
+PRL 118, 222002 (2017)                     PHYSICAL REVIEW LETTERS                                                               2 JUNE 2017
+                                   39
+                                  Georges Washington University, Washington, DC 20052, USA
+                                          40
+                                            INFN/Sezione di Roma, 00185 Roma, Italy
+                                  41
+                                    Argonne National Laboratory, Lemont, Illinois 60439, USA
+                  (Received 25 January 2017; revised manuscript received 14 April 2017; published 1 June 2017)
+                  We report the first longitudinal-transverse separation of the deeply virtual exclusive π 0 electroproduction
+              cross section off the neutron and coherent deuteron. The corresponding four structure functions dσ L =dt,
+              dσ T =dt, dσ LT =dt, and dσ TT =dt are extracted as a function of the momentum transfer to the recoil system at
+              Q2 ¼ 1.75 GeV2 and xB ¼ 0.36. The ed → edπ 0 cross sections are found compatible with the small values
+              expected from theoretical models. The en → enπ 0 cross sections show a dominance from the response to
+              transversely polarized photons, and are in good agreement with calculations based on the transversity
+              generalized parton distributions of the nucleon. By combining these results with previous measurements of
+              π 0 electroproduction off the proton, we present a flavor decomposition of the u and d quark contributions to
+              the cross section.
+
+              DOI: 10.1103/PhysRevLett.118.222002
+
+
+
+   Understanding the internal three-dimensional structure               suppressed by a factor of 1=Q2 at sufficiently high values of
+of nucleons in terms of quarks and gluons is a major                    Q2 [12]. In the case of π 0 electroproduction, it was
+challenge of modern hadronic physics. Two complemen-                    suggested in Refs. [13,14] that a large contribution to
+tary approaches have been used in the past in order to                  the transverse amplitude could arise from the convolution
+achieve this goal. On the one hand, nucleon form factors                of the transversity GPDs of the nucleon with a twist-3
+(FFs) measured in elastic electron scattering provide                   quark-helicity flip pion DA. Model calculations including
+information on the transverse charge and current distribu-              the transversity GPDs have successfully described recent
+tions inside the nucleon [1]. On the other hand, parton                 π 0 electroproduction data on a proton target, measured at
+distribution functions (PDFs) measured in deeply inelastic              Jefferson Lab (JLab) [15–18]. Measurements of π 0 electro-
+scattering (DIS) characterize the longitudinal momentum                 production on the neutron are extremely interesting as they
+distribution of the underlying quarks and gluons [2].                   provide the exciting possibility to separate the individual
+Twenty years ago, FFs and PDFs were unified within                      contributions of the u and d quarks to the cross sections,
+the formalism of generalized parton distributions (GPDs)                when combined with measurements from a proton target at
+[3–5]. GPDs are universal functions encoding a wealth of                the same kinematics.
+information about the nucleon internal structure such as                   The differential cross section of deeply virtual π 0
+the correlation between the transverse position of quarks               production is given by [19]:
+and gluons (partons) and their longitudinal momenta [6].
+GPDs also provide access to the contribution of quark and                                             
+                                                                            d4 σ      1 d2 ΓA             dσ T     dσ
+gluon orbital angular momenta to the nucleon spin [4].                              ¼                          þϵ L
+Eight GPDs for each quark flavor q describe nucleon                     dQ2 dxB dtdϕ 2π dQ2 dxB dt                  dt
+                                                                                                                                       
+structure at leading order in 1=Q (twist-2). They correspond                           pﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃ dσ TL           dσ TT
+                                                                                     × 2ϵð1 þ ϵÞ                 cos ϕ þ ϵ       cos 2ϕ ;
+to each combination of nucleon and parton helicities.                                                       dt              dt
+The four chiral-even GPDs (Hq , Eq , H    ~ q , and E~ q ) conserve
+                                                                                                                                        ð1Þ
+the helicity of the parton whereas the four chiral-odd, or
+transversity GPDs (HqT , EqT , H~ qT , and E~ qT ), flip the parton
+                                                                        where ϕ is the angle between the hadronic and leptonic
+helicity [7,8].                                                         planes following the Trento Convention [20]. The virtual
+   GPDs parametrize the structure of the target independ-               photon flux factor d2 ΓA and photon polarization ϵ are
+ently of the reaction [7]. Chiral-even GPDs can be accessed             defined by
+experimentally via hard exclusive processes such as deeply
+virtual Compton scattering (DVCS) and deeply virtual
+                                                                                     d2 ΓA   α y2 ð1 − xB Þ 1
+meson electroproduction (DVMP) in the Bjorken limit                                        ¼                  ;
+Q2 → ∞ and t=Q2 ≪ 1 at fixed xB . Recent results on                                 dQ2 dxB 2π xB Q2 1 − ϵ
+DVCS show the validity of this limit at values of Q2 as low                                          1 − y − Q2 =ð2EÞ2
+                                                                                            ϵ¼                             :            ð2Þ
+as 1.5 GeV2 [9–11]. In the case of DVMP, the longitudinal                                        1 − y þ y2 =2 þ Q2 =ð2EÞ2
+scattering amplitude factorizes into a hard perturbative
+contribution and a soft convolution of the nucleon GPDs                 Figure 1 shows the lowest order Feynman diagram of the
+and the meson distribution amplitude (DA). The trans-                   reaction and includes definitions of the kinematic variables.
+verse virtual photo-production amplitude is proven to be                The ϕ dependence in Eq. (1) allows the extraction of the
+
+                                                                222002-2
+                                                                                                                                                                   week ending
+PRL 118, 222002 (2017)                             PHYSICAL REVIEW LETTERS                                                                                         2 JUNE 2017
+
+                                                                                                            16
+                                                                                                            14
+                                                                                                                                             × 10
+
+
+
+
+                                                                                       Nb of events (103)
+                                                                                                            12
+                                                                                                            10
+                                                                                                            8
+                                                                                                            6
+                                                                                                            4
+                                                                                                            2
+                                                                                                            0
+                                                                                                                 0   0.2   0.4   0.6   0.8   1   1.2   1.4   1.6     1.8   2
+                                                                                                                                         M '2    2
+                                                                                                                                           X (GeV )
+FIG. 1. Diagram of the coherent π 0 electroproduction reaction
+on the nucleon (M ¼ M N , xB ¼ 0.36) or deuteron (M ¼ M d ,
+                                                                                   FIG. 2. Corrected missing mass squared M 02                      0 0
+                                                                                                                                       X for Dðe; e π ÞX
+xB ¼ 0.18) with the dominant π 0 → γγ decay mode. The minimal                                                                                0 0
+                                                                                   (solid circles) and normalized Fermi-smeared Hðe; e π ÞX events
+jtj value is tmin ¼ ðQ2 þ m2π0 Þ2 =ð4W 2 Þ − ðj ⃗qc:m: j − j ⃗q0c:m: jÞ2 , where   (open circles). Bars show statistical uncertainties. The difference
+mπ 0 is the π 0 mass, q0 ¼ q1 þ q2 , and the c.m. superscript refers               between the two distributions (squares) is scaled by a factor 10 for
+to the target −π 0 center-of-mass frame.                                           clarity. The blue and magenta bands (both scaled ×10), show the
+                                                                                   simulated nðe; e0 π 0 Þn and dðe; e0 π 0 Þd yields, respectively, fit to
+interference terms dσ TL =dt and dσ TT =dt while measure-                          the data by minimizing Eq. (6). These bands include the statistical
+ments of the total cross section at two incident beam                              uncertainty of the fit. The total fit to the open squares distribution
+energies and fixed Q2 and xB separate dσ T =dt and dσ L =dt.                       is shown by the solid (red) histogram.
+    In JLab Hall A experiment E08-025, we measured the
+Dðe; e0 π 0 ÞX reaction, with the primary goal of extracting                                                                 jmγγ − mπ0 j < 4σ mγγ ;                       ð3Þ
+the nðe; eπ 0 Þn cross section in the quasi-free approxima-
+tion. We perform a Rosenbluth separation, based on data
+taken with incident beam energies E ¼ 4.455 (ϵ ¼ 0.65)                                                       M02    2                            2
+                                                                                                              X ¼ M X þ Cðmγγ − mπ 0 Þ < 0.95 GeV ;
+and 5.550 GeV (ϵ ¼ 0.79). A 15-cm-long liquid deuterium                                                                                0.5 GeV2 < M02
+                                                                                                                                                   X;                      ð4Þ
+(LD2) target was used as a quasifree neutron target. The
+quasifree π 0 electroproduction events off the proton are                          where σ mγγ is the resolution of the reconstructed π 0
+subtracted using the data from experiment E07-007 [18],                            invariant mass, and the empirical factor C ¼ 13 GeV takes
+similarly to the analysis of DVCS off the neutron in                               into account the natural correlation between the invariant
+Ref. [21]. These two experiments ran concurrently with                             mass and missing mass originating from energy fluctua-
+liquid hydrogen (LH2) and LD2 targets interchanged daily                           tions in the calorimeter. Figure 2 shows the corrected
+to minimize systematic uncertainties. Scattered electrons                          missing mass squared M02   X obtained at E ¼ 4.455 GeV for
+were detected with 10−4 momentum resolution in the left                            LH2 and LD2 data sets where M2X is calculated with a
+high resolution spectrometer (HRS) of Hall A [22], which                           target 4-vector p corresponding to a nucleon at rest.
+determined accurately the electron scattering kinematics                           Accidentals were subtracted from these spectra and the
+centered at xB ¼ 0.36 and Q2 ¼ 1.75 GeV2 . The two                                 LH2 data were normalized to the same integrated lumi-
+photons from the π 0 decay were detected in an electro-                            nosity as the LD2 data.
+magnetic calorimeter composed of a 13 × 16 array of                                                                                       ⃗ ¼
+                                                                                        The average momentum transfer to the target hjΔji
+3 × 3 × 18.6 cm3 PbF2 crystals, resulting in a ½0; 2π
+coverage in ϕ and ½0; 0.25 GeV2 range in t0 ¼ tmin − t.                           hj ⃗q − q⃗ ji in the kinematics of this experiment is much
+                                                                                              0
+
+A 3.1% energy resolution at 3.16 GeV and a 0.6 ns                                  larger than the average np relative momentum in the
+π 0 -electron coincidence time resolution was achieved by                          deuteron wave function hjp⃗ F ji. Below the threshold for
+means of a 1 GHz flash ADC system in each calorimeter                              the production of a second pion, the impulse approximation
+channel. The calibration of the calorimeter was performed                          is expected to accurately describe the exclusive
+with elastic Hðe; e0Calo pHRS Þ data from dedicated runs in                        Dðe; e0 π 0 ÞX yield, with X ¼ np ⊕ d. Thus, we write the
+which the scattered electrons were detected in the calo-                           cross section as the sum of the coherent elastic channel
+rimeter, with energy predetermined by the kinematics of the                        dðe; e0 π 0 Þd and two incoherent quasielastic contributions:
+elastic recoil proton in the HRS. The calorimeter calibration
+was monitored continuously a p    posteriori          by tracking the              Dðe; e0 π 0 ÞX ¼ dðe; e0 π 0 Þd þ nðe; e0 π 0 Þn þ pðe; e0 π 0 Þp:
+                                    ﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃ
+2-photon invariant mass mγγ ¼ ðq1 þ q2 Þ2 and the ep →                                                                                                                     ð5Þ
+eπ 0 X missing mass squared M 2X ¼ ðq þ p − q1 − q2 Þ2 .
+Exclusive π 0 electroproduction events are selected for each                       We subtract the pðe; e0 π 0 Þp yield from the deuterium data
+ðt0 ; ϕÞ bin by applying a bidimensional cut:                                      by normalizing our Hðe; e0 π 0 ÞX data to the luminosity of
+
+                                                                            222002-3
+                                                                                                                                                               week ending
+PRL 118, 222002 (2017)                      PHYSICAL REVIEW LETTERS                                                                                            2 JUNE 2017
+
+the LD2 data. The Fermi-momentum p⃗ F of bound protons                                                                    X
+                                                                                                                          3 600                    2
+                                                                                                                    2               N exp
+                                                                                                                                      i − Ni
+                                                                                                                                              sim
+inside the deuteron is statistically added to the LH2 data                                                          χ ¼                   exp            ;                ð6Þ
+                                                                                                                              i¼1
+                                                                                                                                         δi
+following the distribution given in Ref. [23] since this effect
+is intrinsically present in the M02 X spectrum of the LD2 data.
+The Fermi-momentum smearing increases the width of the                  where N exp
+                                                                                  i    (N sim
+                                                                                          i ) is the number of experimental (simu-
+missing mass distribution by less than 1%. The result of the            lated) events in bin i and δexp     i   is the corresponding
+subtraction of the Hðe; e0 π 0 ÞX data from the Dðe; e0 π 0 ÞX          uncertainty. The kinematic factors appearing in Eq. (1)
+yield is shown in Fig. 2. The dðe; e0 π 0 Þd and nðe; e0 π 0 Þn         are convoluted with the experimental acceptance and
+channels are, in principle, kinematically separated by                  resolution in the computation of N sim   i . The eight cross-
+                                                                                                         n;d 0
+ΔM02                                                                    section structure functions dσ Λ ðt Þ=dt (Λ ¼ T, L, LT, TT)
+     X ¼ tð1 − M=M d Þ ≈ t=2, where M d is the deuteron
+mass. This kinematic shift, due to the calculation of M 2X              that define N sim
+                                                                                        i   are the free parameters of the fit for each
+                 ⃗ is exploited in the procedure described              t0 bin. The minimization of Eq. (6) yields a value of
+using pðMN ; 0Þ,
+below to separate the contributions of the quasifree neutron            χ 2 =ndf ¼ 0.98.
+                                                                            Figure 3 shows the measured ϕ-dependent photoabsorption
+and coherent deuteron channels in the total π 0 electro-
+                                                                        cross section for both beam energies and for the lowest t0 bin.
+production cross section.
+                                                                        The d2 σ n =dtdϕ cross section is almost independent of the
+   Figure 2 illustrates that the exclusive π 0 electroproduction
+                                                                        beam energy, indicating a dominance of the transverse res-
+events are primarily localized below the production thresh-
+                                                                        ponse. The d2 σ d =dtdϕ cross section is found negligible
+old for a second pion: M02                           2
+                                   X < ðM þ mπ 0 Þ ≈ 1.15 GeV .
+                                                                   2
+                                               02                2      within uncertainties for all ϕ bins. The fit to the M 02X distri-
+However, we apply a nominal cut of MX < 0.95 GeV to
+                                                                        bution is shown in Fig. 2, which also illustrates that the LD2–
+minimize any contamination of inclusive events that might
+                                                                        LH2 yield is dominated by the neutron contribution in the
+arise from resolution effects (see Fig. 2 in Ref. [18] for more
+                                                                        exclusive region. In Fig. 4, we display the ϕ-independent
+details). The resulting events below this M 02    X cut are divided     cross section dσ T þ ϵdσ L for the two beam energies, sepa-
+into 12 × 2 × 5 × 30 bins in ϕ, E, t0 , and M02     X , respectively.   rated into the fitted quasifree neutron and coherent deuteron
+The first two variables allow the independent extraction of             channels. The highest t0 bin is used in the analysis to treat bin
+the four structure functions of the π 0 electroproduction cross         migration effects and is not shown herein. The figure again
+section while the binning in M 02  X enables the separation of the      shows the clear separation of the neutron signal. The coherent
+dðe; e0 π 0 Þd and nðe; e0 π 0 Þn contributions.                        deuteron cross sections are found to be very small and
+   A Monte Carlo simulation of the experimental setup is                compatible with theoretical calculations based on chiral-even
+based on the GEANT4 toolkit [24]. It includes both external             deuteron GPDs, which predict cross-section values smaller
+and real internal radiative effects based on calculations               than 1 nb=GeV2 in similar kinematics [28].
+described in Ref. [25]. A comparison with the radiative                     Figure 5 shows the four extracted structure functions for
+calculations of Ref. [26] at our central kinematics showed              the neutron and the deuteron as functions of t0 . The neutron
+agreement within 2%. The virtual internal effects are
+applied as a global correction factor to the extracted cross
+
+
+
+                                                                        2 π [ d σ + r d σ ] (μb/GeV2)
+                                                                                                        0.5
+sections. The HRS acceptance is modeled by an R function
+[27] defining correlated multidimensional boundaries.                                                   0.4
+
+Only the overlapping (Q2 ,xB ) phase space between the                   d
+                                                                                                        0.3
+
+
+
+
+                                                                              dtd φ   dtd φ
+                                                                        2
+
+two beam energy settings is considered. The calorimeter                                                 0.2
+energy resolution in the pðe; e0 π 0 Þp simulation is smeared           2
+                                                                          n
+                                                                                                        0.1
+to match the M 02                                  0
+                  X distribution in each (E, t , ϕ) bin of the                                           0
+LH2 data. These bin-by-bin resolution smearing factors are                                         -0.1
+also applied to the nðe; e0 π 0 Þn and dðe; e0 π 0 Þd simulated                                               100       200
+                                                                                                                    φ (deg)
+                                                                                                                                    300        100           200
+                                                                                                                                                         φ (deg)
+                                                                                                                                                                    300
+
+data. The Fermi smearing described above is also applied to
+the simulated nðe; e0 π 0 Þn yields. The systematic uncer-              FIG. 3. Total cross section 2π½d2 σ n =dtdϕ þ rðd2 σ d =dtdϕÞ as
+tainty of this smearing procedure as well the asymmetric                a function of ϕ at E ¼ 4.45 GeV (left) and E ¼ 5.55 GeV (right),
+systematic uncertainty originated from the inclusive yield              in the bin ht0 i ¼ 0.025 GeV2 (neutron kinematics), equivalently
+under the M02                                                           ht0 i ¼ 0.021 GeV2 (deuteron kinematics), with r ¼ 1.27 (left)
+               X cut are evaluated by varying the cut applied
+around its nominal value. They are found to be bin                      and r ¼ 1.33 (right) being the ratio deuteron-neutron of the
+                                                                        virtual photon flux convoluted with the experimental acceptance.
+dependent and were added quadratically to the 3.1%                      The error-bars show the statistical uncertainty. The boxes around
+normalization uncertainty listed in Ref. [18].                          the points show the total systematic uncertainties. The blue and
+   We fit the simulated yield to the experimental distribu-             magenta bands represent the contributions of 2πðd2 σ n =dtdϕÞ and
+tions for all bins in ϕ, E, t0 , and M02 X . To wit, we minimize        2πðd2 σ d =dtdϕÞ, respectively, including the statistical uncertainty
+      2
+the χ :                                                                 of the fit.
+
+
+                                                                 222002-4
+                                                                                                                                                                                    week ending
+PRL 118, 222002 (2017)                                       PHYSICAL REVIEW LETTERS                                                                                                2 JUNE 2017
+
+                                                                                                                          0.6
+
+                                                                                                     dσT
+                      0.5
+                                                                                                                          0.4
+
+
+dσT dσL                                                                                                  (μb/GeV 2)
+                      0.4                                                                                                 0.2
+                                                                                                                           0
+
+
+    +∈    (μb/GeV2)
+                      0.3
+                                         n(e,e' π 0 )n                                                dt                                                                   n(e,e' π 0 )n
+                                                                                                                         -0.2
+                      0.2                                                                                                -0.4
+                                         d(e,e' π 0 )d                                                                                                                     d(e,e' π 0 )d
+ dt    dt
+                                                                                                                         -0.6
+                      0.1
+
+                        0                                                                                                 0.6
+
+                                                                                                     dσL
+                                                                                                                          0.4
+                      -0.1                                                                                                0.2
+
+                                                                                                         (μb/GeV 2)
+                                0.05      0.1      0.15     0.05       0.1       0.15
+                                                                                                                           0
+                                       t' (GeV2)                   t' (GeV2)
+                                                                                                      dt
+                                                                                                                         -0.2
+                                                                                                                         -0.4
+FIG. 4. The ϕ-independent photoproduction cross sections                                                                 -0.6
+extracted from the fit, as functions of t0 , and separated into
+                                                                                                                         0.05                                                       t min - t (GeV 2 )
+
+
+                                                                                                     d σ TT
+quasifree neutron and coherent deuteron contributions:                                                                     0
+dσ nT =dt þ ϵðdσ nL =dtÞ and dσ dT =dt þ ϵðdσ dL =dtÞ. The data in the
+                                                                                                            (μb/GeV 2)
+                                                                                                                      -0.05
+left and right panels were obtained at E ¼ 4.45 and                                                                      -0.1
+E ¼ 5.55 GeV, respectively. The error bars show the statistical                                        dt             -0.15
+uncertainty from the fit. The blue and magenta bands represent                                                           -0.2
+the systematic errors. The solid lines are theoretical calculations                                                   -0.25
+for the neutron from Ref. [14].                                                                                          0.06                                                      t min - t (GeV 2 )
+
+
+
+                                                                                                   d σ LT
+                                                                                                                         0.04
+                                                                                                                         0.02
+
+                                                                                                          (μb/GeV2)
+                                                                                                                           0
+cross sections are dominated by                 and        dσ nT =dt           dσ nTT =dt,                            -0.02
+while the terms involving a longitudinal response are                                                dt               -0.04
+compatible with zero within uncertainties and are in good                                                             -0.06
+
+agreement with previous results off a proton target at the                                                                      0.02   0.04   0.06   0.08    0.1    0.12   0.14   0.16      0.18
+
+same kinematics [18]. The neutron measurements are                                                                                                    t min - t (GeV 2 )
+
+compared to a calculation based on both quark helicity-
+conserving GPDs and quark helicity-flip (transversity)                                        FIG. 5. Structure functions dσ T =dt, dσ L =dt, dσ TL =dt, and
+                                                                                              dσ TT =dt as a function of t0 ¼ tmin − t for the neutron (blue)
+GPDs [14], and show good agreement for all structure
+                                                                                              and the deuteron (red). The filled bands around the points show
+functions, with a slight overestimation of jdσ nTT =dtj. The                                  systematic uncertainties. The solid lines are theoretical calcu-
+experimental dσ nL =dt term is also compatible with the VGG                                   lations for the neutron from Ref. [14].
+model [29] based on chiral-even GPDs, which predicts
+dσ nL =dt < 4 nb=GeV2 for all t0 bins. Together with pre-
+vious measurements of dσ T =dt and dσ TT =dt on the proton                                    with similar equations for jhĒT ij2. The different flavor
+[18] and extensive unseparated measurements before                                            weights of the proton and neutron targets allow us to
+[15–17], these new results provide strong support to the                                      separately determine jhH uT ij and jhHdT ij (similarly jhĒuT ij
+exciting idea that transversity GPDs can be accessed via                                      and jhĒdT ij) by combining the data we report herein and π 0
+neutral pion electroproduction in the high Q2 regime.                                         electroproduction cross sections on the proton measured at
+   Within the modified factorization approach of [14],                                        the same kinematics as in Ref. [18]. The unknown relative
+dσ T =dt and dσ TT =dt are functions of hHT i and hĒT i, which                               phase between the u and d convolutions is treated as a
+are convolutions of the elementary γ  q → q0 π 0 amplitude                                   systematic uncertainty in the separation. The flavor-
+with the transversity GPDs HT and ĒT ¼ 2H      ~ T þ ET :                                    separated results assuming no relative phase between the
+                                                                                              u and d convolutions are presented in Fig. 6, with the bands
+                             dσ T    h                      t0            i                   indicating their variation when the phase takes all possible
+                                  ¼ Λ ð1 − ξ2 ÞjhH T ij2 −     2
+                                                                 jhĒT ij2 ;            ð7Þ   values between 0 and π. This phase could be resolved with
+                              dt                           8M
+                                                                                              exclusive pðγ  ; ηpÞ data in the same kinematics [30].
+                                        dσ TT     t0                                          Figure 6 shows that the magnitudes of the u-quark con-
+                                              ¼Λ     jhĒT ij2 :                        ð8Þ
+                                         dt      8M2                                          volutions are larger than the d-quark convolutions for all t
+                                                                                              bins. The results in Fig. 6 also demonstrate that the u-quark
+In these equations ΛðQ2 ; xB Þ is a phase space factor [17]                                   nucleon helicity nonflip term jhĒuT ij is larger than the
+and ξ ≃ xB =ð2 − xB Þ is the skewness variable. For a proton                                  nucleon helicity flip term jhHuT ij. The comparison to the
+and a neutron target, the quark-flavor structures of jhH T ij2                                Goloskokov-Kroll model [14] shows good agreement for
+(neglecting strange quarks) are                                                               jhHT ij for both quark flavors but an underestimation for
+                                                                                            jhĒuT ij. The GPD HT parametrization is constrained in the
+               p;n 2    1  2 u;d    1 d;u 2
+           jhHT ij ¼  hHT i þ hHT i ;                   ð9Þ                                 forward limit by the transversity parton distributions.
+                        2 3           3                                                       However, no similar experimental constraint is available
+
+                                                                                        222002-5
+                                                                                                                                    week ending
+PRL 118, 222002 (2017)                        PHYSICAL REVIEW LETTERS                                                               2 JUNE 2017
+
+                  20                                                               *
+                                                              u
+                                                         |〈 H T 〉 |                Deceased
+                                                                                   †
+                  15                                          d                    mazouz@jlab.org
+                                                         |〈 H T 〉 |           [1] R. Hofstadter and R. McAllister, Phys. Rev. 98, 217 (1955).
+                  10
+     |〈 H T 〉 |                                                               [2] J. I. Friedman, H. W. Kendall, and R. E. Taylor, Rev. Mod.
+                    5
+                                                                                  Phys. 63, 573 (1991).
+                    0                                                         [3] D. Mueller, D. Robaschik, B. Geyer, F. M. Dittes, and J.
+                   -5                                                             Horejsi, Fortschr. Phys. 42, 101 (1994).
+                           0.2   0.25         0.3      0.35
+                                                                              [4] X.-D. Ji, Phys. Rev. Lett. 78, 610 (1997).
+                100                                            u
+                                                        -t|〈 E
+                                                             (GeV〉2|)         [5] A. V. Radyushkin, Phys. Rev. D 56, 5524 (1997).
+                  80                                           T
+                                                               d              [6] M. Burkardt, Int. J. Mod. Phys. A 18, 173 (2003).
+                  60                                     |〈 E T 〉 |
+                                                                              [7] M. Diehl, Phys. Rep. 388, 41 (2003).
+   |〈 E T 〉 |     40
+                                                                              [8] P. Hoodbhoy and X.-D. Ji, Phys. Rev. D 58, 054006 (1998).
+                  20                                                          [9] C. Muñoz Camacho et al. (Jefferson Lab Hall A Collabo-
+                    0                                                             ration, Hall A DVCS Collaboration), Phys. Rev. Lett. 97,
+                  -20                                                             262002 (2006).
+                  -40                                                        [10] M. Defurne et al. (Jefferson Lab Hall A), Phys. Rev. C 92,
+                    0.15   0.2   0.25         0.3      0.35
+                                  -t (GeV2)                                       055202 (2015).
+                                                                             [11] H. S. Jo et al. (CLAS Collaboration), Phys. Rev. Lett. 115,
+FIG. 6. Magnitude of the nucleon helicity-flip hHT i (top) and                    212003 (2015).
+nonflip hĒT i (bottom) transversity terms for u (squares) and d             [12] J. C. Collins, L. Frankfurt, and M. Strikman, Phys. Rev. D
+(circles) quarks assuming no relative phase between them. The                     56, 2982 (1997).
+boxes around the points represent the variation of the results               [13] S. Ahmad, G. R. Goldstein, and S. Liuti, Phys. Rev. D 79,
+when their relative phase varies between 0 and π. Bars show the                   054014 (2009).
+quadratic sum of the statistical and systematic uncertainties of the         [14] S. Goloskokov and P. Kroll, Eur. Phys. J. A 47, 112 (2011).
+data. Solid (dashed) lines are calculations from the Goloskokov-             [15] E. Fuchey, A. Camsonne, C. Munoz Camacho, M. Mazouz,
+Kroll model [14] for u (d) quark.                                                 G. Gavalian et al., Phys. Rev. C 83, 025201 (2011).
+                                                                             [16] I. Bedlinskiy et al. (CLAS Collaboration), Phys. Rev. Lett.
+                                                                                  109, 112001 (2012).
+for ĒT . The constraints on ĒT are mainly taken from lattice               [17] I. Bedlinskiy et al. (CLAS Collaboration), Phys. Rev. C 90,
+QCD calculations [31].                                                            025205 (2014).
+   In conclusion, we have separated the four unpolarized                     [18] M. Defurne, M. Mazouz et al., Phys. Rev. Lett. 117, 262001
+structure functions of π 0 electroproduction off the neutron at                   (2016).
+                                                                             [19] D. Drechsel and L. Tiator, J. Phys. G 18, 449 (1992).
+Q2 ¼ 1.75 GeV2 and xB ¼ 0.36 in the t0 range ½0; 0.2 GeV2 .                 [20] A. Bacchetta, U. D’Alesio, M. Diehl, and C. A. Miller,
+Similar measurements are obtained for coherent π 0 electro-                       Phys. Rev. D 70, 117504 (2004).
+production off the deuteron at xB ¼ 0.18. The latter are                     [21] M. Mazouz et al. (Jefferson Lab Hall A Collaboration),
+found to be very small and according to theoretical expect-                       Phys. Rev. Lett. 99, 242501 (2007).
+ations. Neutron results show a dominance of the transverse                   [22] J. Alcorn et al., Nucl. Instrum. Methods Phys. Res., Sect. A
+response confirming the transversity GPD approach for the                         522, 294 (2004).
+description of this process. By combining neutron and                        [23] M. Lacombe, B. Loiseau, J. M. Richard, R. VinhMau, J.
+proton results, we have performed the first flavor decom-                         Conte, P. Pires, and R. deTourreil, Phys. Rev. C 21, 861 (1980).
+position of the u and d quark contributions to the cross                     [24] S. Agostinelli and others (GEANT4 Collaboration), Nucl.
+                                                                                  Instrum. Methods Phys. Res., Sect. A 506, 250 (2003).
+section. Additional information from η meson electropro-
+                                                                             [25] M. Vanderhaeghen, J. M. Friedrich, D. Lhuillier, D.
+duction will soon help constraint the relative phase between                      Marchand, L. Van Hoorebeke, and J. Van de Wiele, Phys.
+the u and d quark contributions.                                                  Rev. C 62, 025501 (2000).
+   We thank P. Kroll, S. Goloskokov, M. Guidal, M.                           [26] A. Afanasev, I. Akushevich, V. Burkert, and K. Joo, Phys.
+                                                                                  Rev. D 66, 074004 (2002).
+Vanderhaeghen, and B. Pire for valuable information about
+                                                                             [27] M. Rvachev, Effective Use of Hall A Spectrometers
+their work and providing the results of their models. We                          with R-Functions, Hall A Technical Note Jlab-TN-01-055
+acknowledge essential work of the JLab accelerator staff                          (Jefferson Lab, 2001).
+and the Hall A technical staff. This work was supported by                   [28] F. Cano and B. Pire, Eur. Phys. J. A 19, 423 (2004).
+the Department of Energy (DOE), the National Science                         [29] M. Vanderhaeghen, P. A. M. Guichon, and M. Guidal, Phys.
+Foundation, the French Centre National de la Recherche                            Rev. D 60, 094017 (1999).
+Scientifique, the Agence Nationale de la Recherche, the                      [30] I. Bedlinskiy et al. (CLAS Collaboration), Phys. Rev. C 95,
+Commissariat à l’énergie atomique et aux énergies alter-                          035202 (2017).
+natives and P2IO Laboratory of Excellence. Jefferson                         [31] M. Gockeler, P. Hagler, R. Horsley, Y. Nakamura, D. Pleiter,
+Science Associates, LLC, operates Jefferson Lab for the                           P. E. L. Rakow, A. Schafer, G. Schierholz, H. Stuben, and
+U.S. DOE under U.S. DOE Contract No. DE-AC05-                                     J. M. Zanotti (QCDSF Collaboration, UKQCD Collabora-
+                                                                                  tion), Phys. Rev. Lett. 98, 222001 (2007).
+060R23177.
+
+
+                                                                        222002-6
+

@@ -87,10 +87,25 @@ for line in open("data/halla_pi0.data"):
     rows_x.append(r)
 
 # --- Hall-A unseparated ------------------------------------------------------
+NAME11 = {(2.350,0.369):"Kin3", (1.941,0.368):"Kin2",
+          (2.155,0.335):"KinX3", (2.073,0.394):"KinX2"}
+for v in np.loadtxt("data/halla_y11.data"):
+    Q2, xB, eps, tm, tp = v[0], v[1], v[2], v[3], v[4]
+    kin = NAME11[min(NAME11, key=lambda k: (k[0]-Q2)**2 + (k[1]-xB)**2)]
+    r = dict(exp="HallA_y11", meson="pi0", target="p", Q2=Q2, xB=xB, t=-(tm+tp),
+             tmin=tm, tprime=tp, tp_low=np.nan, tp_up=np.nan, xB_mean=xB,
+             Q2_bin=Q2, xB_bin=xB, t_bin=np.nan, group=f"ha11_{kin}",
+             eps=eps, npts_phi=np.nan, Ebeam=5.752, sigma_meaning="sigma_U",
+             chi2ndf_phi=np.nan, chi2ndf_phi_rc=np.nan, in_fit="no",
+             source="PRC 83 025201 (2011), tables IV-VII", **blank_rc())
+    for k, c in zip(SF, range(5, 14)): r[k] = v[c]
+    for k, c in zip(SFP, range(14, 17)): r[k] = v[c]
+    rows_x.append(r)
+
 for line in open("data/halla_more.data"):
     if line.startswith("#") or not line.strip(): continue
     v = line.split()
-    if v[0] == "HallA_y21": continue      # superseded by the supplemental table below
+    if v[0] in ("HallA_y21", "HallA_y11"): continue   # rebuilt from the papers above
     Q2, xB, mt, E = float(v[3]), float(v[4]), abs(float(v[5])), float(v[15])
     key = None
     if v[0] == "HallA_y21":

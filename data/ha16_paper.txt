@@ -1,0 +1,453 @@
+                                                                                                             week ending
+PRL 117, 262001 (2016)                PHYSICAL REVIEW LETTERS                                            23 DECEMBER 2016
+
+
+
+                  Rosenbluth Separation of the π0 Electroproduction Cross Section
+M. Defurne,1,† M. Mazouz,2 Z. Ahmed,3 H. Albataineh,4 K. Allada,5 K. A. Aniol,6 V. Bellini,7 M. Benali,8 W. Boeglin,9
+ P. Bertin,8,10 M. Brossard,8 A. Camsonne,10 M. Canan,11 S. Chandavar,12 C. Chen,13 J.-P. Chen,10 C. W. de Jager,10,*
+    R. de Leo,14 C. Desnault,15 A. Deur,10 L. El Fassi,16 R. Ent,10 D. Flay,17 M. Friend,18 E. Fuchey,8 S. Frullani,19
+   F. Garibaldi,19 D. Gaskell,10 A. Giusa,7 O. Glamazdin,20 S. Golge,21 J. Gomez,10 O. Hansen,10 D. Higinbotham,10
+  T. Holmstrom,22 T. Horn,23 J. Huang,5 M. Huang,24 G. M. Huber,41 C. E. Hyde,11,8 S. Iqbal,6 F. Itard,8 Ho. Kang,25
+Hy. Kang,25 A. Kelleher,26 C. Keppel,10 S. Koirala,11 I. Korover,27 J. J. LeRose,10 R. Lindgren,28 E. Long,29 M. Magne,8
+J. Mammei,30 D. J. Margaziotis,6 P. Markowitz,9 A. Martí Jiménez-Argüello,31,15 F. Meddi,19 D. Meekins,10 R. Michaels,10
+  M. Mihovilovic,32 N. Muangma,5 C. Muñoz Camacho,8,15 P. Nadel-Turonski,10 N. Nuruzzaman,13 R. Paremuzyan,15
+A. Puckett,33 V. Punjabi,34 Y. Qiang,10 A. Rakhman,3 M. N. H. Rashad,11 S. Riordan,35 J. Roche,12 G. Russo,7 F. Sabatié,1
+      K. Saenboonruang,28,36 A. Saha,10,* B. Sawatzky,10,17 L. Selvy,29 A. Shahinyan,37 S. Sirca,32 P. Solvignon,10,*
+M. L. Sperduto,7 R. Subedi,38 V. Sulkosky,5 C. Sutera,7 W. A. Tobias,28 G. M. Urciuoli,39 D. Wang,28 B. Wojtsekhowski,10
+          H. Yao,17 Z. Ye,28 L. Zana,3 X. Zhan,40 J. Zhang,10 B. Zhao,26 Z. Zhao,28 X. Zheng,28 and P. Zhu28
+
+                                          (Jefferson Lab Hall A Collaboration)
+                              1
+                                    Irfu, CEA, Université Paris-Saclay, 91191 Gif-sur-Yvette, France
+                                                 2
+                                                  Faculté des sciences de Monastir, 5000 Tunisia
+                                            3
+                                             Syracuse University, Syracuse, New York 13244, USA
+                                   4
+                                     Texas A&M University-Kingsville, Kingsville, Texas 78363, USA
+                        5
+                          Massachusetts Institute of Technology, Cambridge, Massachusetts 02139, USA
+                        6
+                          California State University, Los Angeles, Los Angeles, California 90032, USA
+                                                 7
+                                                   INFN/Sezione di Catania, 95125 Catania, Italy
+             8
+              Clermont Université, Université Blaise Pascal, CNRS/IN2P3, Laboratoire de physique corpusculaire,
+                                                         FR-63000 Clermont-Ferrand, France
+                                      9
+                                       Florida International University, Miami, Florida 33199, USA
+                   10
+                     Thomas Jefferson National Accelerator Facility, Newport News, Virginia 23606, USA
+                                         11
+                                            Old Dominion University, Norfolk, Virginia 23529, USA
+                                                    12
+                                                      Ohio University, Athens, Ohio 45701, USA
+                                            13
+                                               Hampton University, Hampton, Virginia 23668, USA
+                                                        14
+                                                          Università di Bari, 70121 Bari, Italy
+                                15
+                                   Institut de Physique Nucléaire CNRS-IN2P3, Orsay 91400, France
+                     16
+                       Rutgers, The State University of New Jersey, Piscataway, New Jersey 08854, USA
+                                       17
+                                         Temple University, Philadelphia, Pennsylvania 19122, USA
+                                18
+                                   Carnegie Mellon University, Pittsburgh, Pennsylvania 15213, USA
+                                                     19
+                                                        INFN/Sezione Sanità, 00161 Roma, Italy
+                             20
+                                Kharkov Institute of Physics and Technology, Kharkov 61108, Ukraine
+                           21
+                             North Carolina Central University, Durham, North Carolina 27701, USA
+                                           22
+                                              Longwood University, Farmville, Virginia 23909, USA
+                                 23
+                                   The Catholic University of America, Washington, DC 20064, USA
+                                          24
+                                             Duke University, Durham, North Carolina 27708, USA
+                                          25
+                                             Seoul National University, Seoul 151-747, South Korea
+                                26
+                                   College of William and Mary, Williamsburg, Virginia 23187, USA
+                                                    27
+                                                       Tel Aviv University, Tel Aviv 69978, Israel
+                                      28
+                                         University of Virginia, Charlottesville, Virginia 22904, USA
+                                                 29
+                                                    Kent State University, Kent, Ohio 44242, USA
+                                 30
+                                    University of Massachusetts, Amherst, Massachusetts 01003, USA
+                               31
+                                 Facultad de Física, Universidad de Valencia, Valencia 46071, Spain
+                                               32
+                                                 University of Ljubljana, 1000 Ljubljana, Slovenia
+                            33
+                              Los Alamos National Laboratory, Los Alamos, New Mexico 87545, USA
+                                          34
+                                             Norfolk State University, Norfolk, Virginia 23529, USA
+                                     35
+                                        Stony Brook University, Stony Brook, New York 11794, USA
+                                      36
+                                         Kasetsart University, Chatuchak, Bangkok, 10900, Thailand
+                                             37
+                                               Yerevan Physics Institute, Yerevan 375036, Armenia
+                                     38
+                                        George Washington University, Washington, DC 20052, USA
+
+
+0031-9007=16=117(26)=262001(6)                           262001-1                      © 2016 American Physical Society
+                                                                                                                          week ending
+PRL 117, 262001 (2016)                   PHYSICAL REVIEW LETTERS                                                      23 DECEMBER 2016
+                                           39
+                                           INFN/Sezione di Roma, 00185 Roma, Italy
+                                  40
+                                  Argonne National Laboratory, Lemont, Illinois 60439, USA
+                               41
+                                 University of Regina, Regina, Saskatchewan S4S 0A2, Canada
+              (Received 27 July 2016; revised manuscript received 3 October 2016; published 23 December 2016)
+                We present deeply virtual π 0 electroproduction cross-section measurements at xB ¼ 0.36 and three
+             different Q2 values ranging from 1.5 to 2 GeV2 , obtained from Jefferson Lab Hall A experiment E07-007.
+             The Rosenbluth technique is used to separate the longitudinal and transverse responses. Results demonstrate
+             that the cross section is dominated by its transverse component and, thus, is far from the asymptotic limit
+             predicted by perturbative quantum chromodynamics. Nonetheless, an indication of a nonzero longitudinal
+             contribution is provided by the measured interference term σ LT . Results are compared with several models
+             based on the leading-twist approach of generalized parton distributions (GPDs). In particular, a fair
+             agreement is obtained with models in which the scattering amplitude includes convolution terms of chiral-
+             odd (transversity) GPDs of the nucleon with the twist-3 pion distribution amplitude. This experiment,
+             together with previous extensive unseparated measurements, provides strong support to the exciting idea that
+             transversity GPDs can be accessed via neutral pion electroproduction in the high-Q2 regime.
+
+             DOI: 10.1103/PhysRevLett.117.262001
+
+
+
+
+   Deep exclusive reactions have been the subject of intense         [13,14] Collaborations at Jefferson Lab (JLab). It was
+experimental and theoretical work in the past decades, as            suggested in Refs. [15,16] that for neutral meson production
+they provide clean probes of the internal three-dimensional          the twist-3 quark-helicity flip pion DAs coupled with the
+structure of hadrons. We present here measurements of the            transversity GPDs of the proton would create a large cross
+differential cross section for the forward exclusive electro-        section for transversely polarized virtual photons, without
+production reaction ep → epπ 0 . These results are the first         violating the QCD factorization theorem. These calculations
+separation of the differential cross section for longitudinally      are in good agreement (within model uncertainties) with the
+and transversely polarized virtual photons of exclusive π 0          unseparated cross sections of Refs. [13,14]. The present
+electroproduction in the electron-scattering kinematics of           study is undertaken to verify whether or not the separated
+deep inelastic scattering (DIS). A diagram of this process,          cross sections for longitudinally and transversely polarized
+including definitions of the kinematic variables, is pre-            virtual photons can be accurately described by a formalism
+sented in Fig. 1.                                                    based on leading-twist GPDs.
+   The quantum chromodynamics (QCD) factorization                       The deeply virtual meson production cross section can
+theorems predict that deep virtual meson production should           be written in the following form [17]:
+be dominated by the longitudinal virtual photoproduction
+cross section [1]. In the Bjorken limit Q2 → ∞ and t=Q2 ≪                                                       
+                                                                         d4 σ     1 d2 Γ               2          dσ T     dσ
+1 at fixed xB , the longitudinal scattering amplitude factor-          2
+                                                                                ¼               2
+                                                                                                  ðQ ; xB ; EÞ         þϵ L
+                                                                     dQ dxB dtdϕ 2π dxB dQ                         dt       dt
+izes into a hard perturbative contribution, the leading-twist                                                                   
+generalized parton distributions (GPDs) of the nucleon and                         pﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃ dσ TL           dσ
+                                                                                 þ 2ϵð1 þ ϵÞ                 cos ϕ þ ϵ TT cos 2ϕ ;
+the pion distribution amplitude (DA) [1–3]. GPDs describe                                               dt              dt
+the three-dimensional structure of hadrons by correlating                                                                                 ð1Þ
+the internal transverse position of partons to their longi-
+tudinal momentum [4–6]. In the case of a nucleon and at
+leading twist, four chiral-even GPDs conserve the helicity
+of the parton, whereas four chiral-odd GPDs, also referred
+to as transversity GPDs, flip its helicity. While a rigorous
+factorization proof has not been established for the trans-
+verse virtual photoproduction amplitude, it is proven to be
+suppressed by a factor of 1=Q with respect to its longi-
+tudinal counterpart [1].
+   The leading-twist approximation is in good agreement              FIG. 1. Diagram of the exclusive π 0 electroproduction
+with high-Q2 electroproduction data for photon [7–9] and             reaction, identified by the π 0 → γγ decay mode. The value
+vector meson production [10,11]. On the other hand, the              of t with minimal jtj can be evaluated as tmin ¼
+collinear approximation underestimates by about one order            ðQ2 þ m2π Þ2 =ð4W 2 Þ − ðjqc:m: j − jq0CM jÞ2 , with jqc:m: j and jq0CM j
+of magnitude the total π 0 electroproduction cross sections          the norms of q~ and q~0 , respectively, in the pπ 0 final state center-
+measured at Q2 ≃ 2 GeV2 by the Hall A [12] and CLAS                  of-mass frame.
+
+
+                                                             262001-2
+                                                                                                                               week ending
+PRL 117, 262001 (2016)                   PHYSICAL REVIEW LETTERS                                                           23 DECEMBER 2016
+
+TABLE I.      E07-007 ep → epπ 0 kinematic settings.                 The calibration of the calorimeter was done in two steps.
+                                                                  First, we used elastic scattering Hðe; e0Calo pHRS Þ events.
+Setting        Q2 (GeV2 )       xB       Ebeam (GeV)        ϵ     This calibration required dedicated runs, since the polarity
+Kin1              1.50         0.36         3.355         0.52    of the HRS had to be reversed to allow proton detection. We
+                                            5.55          0.84    performed elastic calibrations at the beginning, middle, and
+Kin2              1.75         0.36         4.455         0.65    end of the experiment. A resolution of 3.1% at 3.16 GeV
+                                            5.55          0.79    was measured, with a position resolution of 3 mm at
+Kin3              2.00         0.36         4.455         0.53    110 cm from the target. Between elastic calibrations,
+                                            5.55          0.72    channel gains were observed to drift up to 10%. We
+                                                                  attributed these changes to radiation damage of the PbF2
+                                                                  crystals. In order to correct for the calibration coefficient
+where E is the incident lepton energy in the target rest          drifts between the elastic run periods, we used exclusive
+frame and ϕ the angle between the leptonic and hadronic           π 0 data from our Hðe; e0 γγÞX sample. By assuming
+plane defined according to the Trento convention [18]. The        M2ep→eγγX ¼ M 2 and mγγ ¼ mπ0 , the sum of the energies
+factor ðd2 Γ=dxB dQ2 ÞðQ2 ; xB ; EÞ is the virtual photon flux,
+                                                                  of the two decay photons was determined and used to
+and ϵ is the degree of longitudinal polarization defined as
+                                                                  compute the calibration coefficients. The combination of
+(y ¼ ½q · P=½k · P):
+                                                                  both elastic and exclusive π 0 calibrations provided a
+                                                                  continuous invariant mass resolution of 9.5 MeV through
+            d2 Γ    2               α Q2 1 − xB 1
+                  ðQ  ; x   ; EÞ ¼                    ;    ð2Þ    the full run period.
+          dxB dQ2                  8π M2 E2 x3B 1 − ϵ
+                          B
+                                                                     The data acquisition was triggered by an electron
+                                                                  detection signal in the HRS, formed by the coincidence
+                          1 − y − Q2 =4E2                         of the gas Cherenkov detector and the plastic scintillator
+                ϵ¼                              ;          ð3Þ
+                     1 − y þ y2 =2 þ Q2 =ð4E2 Þ                   plane S2m of the HRS [19]. In order to select neutral pions,
+                                                                  we studied two-cluster events in the calorimeter with an
+M being the proton mass.                                          energy deposit larger than 500 MeV in each cluster and
+   Experiment E07-007 ran in JLab Hall A from October to          within 3 ns of the electron detection. To account for the
+December, 2010. One of its goals was to separate the              natural correlation between the measured M2ep→eγγX and
+exclusive transverse and longitudinal π 0 electroproduction       mγγ values, we define a corrected missing mass squared:
+cross sections using the Rosenbluth technique, consisting
+of measurements at two different values of the incident
+                                                                                   M 2X ¼ M2ep→eγγX þ C × ðmγγ − mπ 0 Þ;                          ð4Þ
+electron energy at each setting. Table I lists the three Q2
+settings measured, each of them at two different values of ϵ.
+   The electron beam was incident on a 15-cm-long liquid          with the empirical value C ¼ 12 GeV. Figure 2 shows
+H2 target, for a typical luminosity of 2 × 1037 cm−2 s−1 .        the M2X distribution of the Hðe; e0 γγÞX events. Exclusive
+Scattered electrons were detected in a high resolution            events are selected by requiring 100 < mγγ < 170 MeV
+spectrometer (HRS), with 10−4 momentum resolution                 and M 2X < 0.95 GeV2 . Contamination from the diffractive
+and better than 2 mr horizontal angular resolution [19].          ep → epω reaction with a 8.5% branching-ratio ω → π 0 γ
+The two photons of the π 0 decays were detected in a PbF2
+electromagnetic calorimeter consisting of a 13 × 16 array
+of 3 × 3 × 18.6 cm3 crystals, coupled to mesh-dynode                                                                       Data
+                                                                                                                           MC simulation
+photomultipliers. Each calorimeter channel was continu-           1500                                                     Data - MC simulation
+ously sampled by a 1 GHz flash Analog-to-Digital con-
+verter system that recorded the signal over 128 ns. The high      1000
+
+resolution in the electron kinematics accurately determined
+the event-by-event ðQ2 ; xB Þ values. The fast Cherenkov           500
+
+signal from the calorimeter allowed a coincident time
+resolution between the electron and π 0 detections of
+                                                                       0
+                                                                       0.5   0.6     0.7   0.8   0.9       1         1.1    1.2   1.3    1.4      1.5
+0.6 ns. The vertex resolution of the HRS and position                                                  M2X (GeV 2)
+resolution of the calorimeter accurately determined the π 0
+direction and thus the kinematical variables t and ϕ. The         FIG. 2. Distribution of the Hðe; e0 γγÞX events within cuts
+measured energy in the calorimeter is used to identify π 0        for Kin3 at Ebeam ¼ 5.55 GeV and tmin − t < 0.15 GeV2 . The
+                                                                  Monte Carlo (MC) simulation is represented by the open crosses,
+events through the two-photon invariant mass mγγ ¼
+pﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃﬃ                                             whereas the triangles show the estimated inclusive yield obtained
+   ðq1 þ q2 Þ2 and to ensure the exclusivity of the reaction      by subtracting the simulation from the data. The vertical dotted
+using the ep → eγγX missing mass squared M 2ep→eγγX .             line illustrates the M 2X < 0.95 GeV2 cut applied in the analysis.
+
+
+                                                            262001-3
+                                                                                                                    week ending
+PRL 117, 262001 (2016)                  PHYSICAL REVIEW LETTERS                                                 23 DECEMBER 2016
+
+decay was estimated to be smaller than 0.3% within our            TABLE II. Q dependence obtained from the fit of the t-
+acceptance and cuts based on the measurements performed           integrated responses, with statistical and systematics uncertainties
+in Ref. [20]. The inclusive yield obtained by subtracting the     added in quadrature, by the function A=Qnexp . The QCD asymp-
+simulation from the data is below 2% for M 2X < 0.95 GeV2         totic limit of each term is ∼Q−ntheo .
+and treated as a point-to-point systematic uncertainty. The
+                                                                  Term                             nexp                          ntheo
+number of accidental Hðe; e0 γγÞX triple coincidences is
+estimated by measuring the number of two-photon events            dσ T =dt                        92                             8
+detected in the calorimeter for each of the three possible        dσ TT =dt                       42                             8
+timings with respect to the scattered electron: one photon in     dσ TL =dt                      26  5                           7
+time and one out of time, both out of time but in time
+between themselves, and both out of time with the electron
+and with each other. Finally, an analysis of three-cluster        calculations by Vanderhaeghen et al. [21]. A comparison
+events was performed in order to correct for the fraction of      with the radiative calculations of Ref. [22] at our central
+exclusive π 0 events where one of the three clusters was an       kinematics showed agreement within 2%. The HRS accep-
+accidental photon coincidence. This correction was applied        tance is modeled by an R function that defines the distance
+bin by bin and found to be 5% on average.                         of the particle from the HRS acceptance bound [23]. Our
+   The different terms of the unpolarized π 0 cross section       cut on M 2X to ensure exclusivity removes a significant
+are extracted by minimizing the following χ 2 defined             fraction of exclusive π 0 events. This is compensated by
+between the number of experimental and simulated events:          applying an identical cut on the simulated data. For this to
+                                                                  be accurate, the experimental and MC simulated M 2X (and
+                       X    N exp
+                                             2                   mγγ ) distributions should have exactly the same widths and
+                               i − Ni
+                       N               sim
+                  2
+                 χ ¼               exp            ;        ð5Þ    positions. These parameters are dominated by the calibra-
+                                 σi
+                       i¼0                                        tion and resolution of the electromagnetic calorimeter
+                                                                  crystals. Thus, great care was taken to locally reproduce
+where the sum runs over all experimental bins of one Q2           the calorimeter energy and position resolutions in the MC
+setting, including data at two different values of ϵ. The         simulation. While the number of π 0 events removed by the
+variable N exp
+           i     is the number of events in the experimental      M2X cut depends on ϕ and t, its systematic uncertainty was
+                exp
+bin i, with σ i being its corresponding uncertainty. The          found almost independent of the kinematics, with a value
+number of simulated events N sim  i  is given by                  of 2% estimated by varying the applied cut. In order to
+                      Z                                           propagate this point-to-point uncertainty to the extraction
+                              dσ
+          N sim
+            i    ¼  L         2
+                                       dtdQ2 dxB dϕ;    ð6Þ       of the four structure functions, we added it in quadrature to
+                        i dtdQ  dxB dϕ                            the statistical uncertainty when computing the σ expi  of each
+                                                                  bin in Eq. (5).
+with L the experimental integrated luminosity, corrected by          Table III lists the different sources of correlated system-
+the data acquisition dead time. The integration is performed      atic uncertainties. A check of our global normalization was
+with a MC simulation, convoluting the known kinematical           made by extracting the DIS cross section in each of our
+dependences of the cross section with the experimental            kinematic settings. Results agree within the uncertainty
+acceptance. We limit the analysis to the overlapping              listed in Table III with the parametrization of the DIS cross
+(Q2 ;xB )-phase space between the two beam-energy set-            section in Ref. [24].
+tings. After minimization of Eq. (5), the unknown Q2                 Figure 3 presents the electroproduction cross section
+dependences of dσ T =dt, dσ L =dt, dσ TT =dt, and dσ TL =dt are   2πðd2 σ=dtdϕÞ for the three different Q2 values and the
+fitted to the results and included into the MC simulation in
+order to account for the leading variations of the cross
+section within bins. A second χ 2 minimization is per-            TABLE III. Normalization systematic uncertainties in the
+formed, which provides stable results over further iterations     extracted π 0 electroproduction cross sections. They are approx-
+and yields the final results we present herein, with              imately correlated in ϕ and t.
+χ 2 =d:o:f: ¼ 76=60, 83=80, and 61=60, respectively, for          Systematic uncertainty                                       Value
+Q2 ¼ 1.5, 1.75, and 2.0 GeV2 . No Q2 dependence is
+included for dσ L =dt, as results are found compatible with       HRS acceptance cut                                            1%
+                                                                  Gas Cherenkov detector efficiency                            0.5%
+zero in all experimental bins. Table II shows the Q
+                                                                  HRS tracking efficiency                                      0.5%
+dependences obtained. The small HRS acceptance does               π 0 detection efficiency                                     0.5%
+not allow for an xB -dependence study.                            Radiative corrections                                         2%
+    The Monte Carlo (MC) simulation is based on the               Dead time and luminosity                                      2%
+GEANT4 toolkit. It includes radiative corrections follow-
+                                                                  Total                                                        3.12%
+ing the procedure described in Ref. [8] based on
+
+                                                            262001-4
+                                                                                                                         week ending
+PRL 117, 262001 (2016)                              PHYSICAL REVIEW LETTERS                                          23 DECEMBER 2016
+                     2.8
+
+
+                     2.4
+
+
+                      2
+
+
+
+
+  2π d σ (μb/GeV2)
+                     1.6
+
+
+
+    dtdΦ
+  2                  1.2
+
+
+                     0.8
+
+
+                     0.4
+
+
+                      0
+                           0   60   120    180      240   300   360
+                                          Φ (deg)
+
+
+FIG. 3. 2πðd2 σ=dtdϕÞ for Q2 ¼ 1.5 (triangles), 1.75 (squares),
+and 2 GeV2 (circles) at xB ¼ 0.36 and tmin − t ¼ 0.025 GeV2 .
+The cross sections extracted at low (high) ϵ are shown in open
+(solid) symbols [and dashed (solid) lines].
+
+
+lowest t0 ¼ tmin − t bin, as a function of ϕ. The cross
+section is almost independent of ϵ, indicating that most of
+the signal is coming from its transversely polarized
+component.
+   The uncertainties of the Rosenbluth separated ðdσ L =dtÞ
+and ðdσ T =dtÞ are amplified by the limited lever arm in ϵ
+and the small ratio ðdσ L =dtÞ=ðdσ T =dtÞ. Once the normali-
+zation uncertainty is propagated, σ L is found to be
+compatible with zero, as seen in Fig. 4. However, the
+interference cross section ðdσ TL =dtÞ is nonzero, which
+means that ðdσ L =dtÞ, though small, is not negligible.
+The fact that ðdσ T =dtÞ ≫ ðdσ L =dtÞ shows that this kin-
+ematic regime is still far from the asymptotic prediction of
+perturbative QCD. These results are compared to previous
+unseparated measurements at similar kinematics from
+the Hall A [12] (Q2 ¼ 1.9 GeV2 , xB ¼ 0.36) and CLAS
+[13,14] (Q2 ¼ 2.2 GeV2 , xB ¼ 0.33) Collaborations. Results
+are compatible within uncertainties, but the region of direct
+kinematic overlap is limited to our highest Q2 setting.
+Several models are also shown in Fig. 4. The leading-twist
+chiral-even GPD Vanderhaeghen-Guichon-Guidal (VGG)
+model [2] predicts a very small longitudinal cross section,
+compatible with our results. Two models, incorporating
+both the chiral-even and chiral-odd GPDs, are also shown               FIG. 4. dσ T (full circles), dσ L (open circles), dσ TL (triangles),
+in Fig. 4 [16,25]. In these models, leading-twist chiral-odd           and dσ TT (squares) as a function of tmin − t for Q2 ¼ 1.5 (left),
+(transversity) GPDs of the nucleon are coupled to a twist-3            1.75 (center), and 2 GeV2 (right) at xB ¼ 0.36. The full
+DA of the pion, and singularities that otherwise prevent               lines are predictions from Ref. [16] and the long-dashed
+                                                                       lines from Ref. [25]. The short-dashed line show the VGG
+collinear factorization in the case of transversely polarized
+                                                                       model [2] for dσ L. Solid boxes around the points show
+virtual photons are regularized by the transverse momen-               normalization systematic uncertainties; for dσ L and dσ T ,
+tum k⊥ of the quarks and antiquarks making up the meson.               these uncertainties are strongly anticorrelated. Previous
+These models are in good agreement with our results for                unseparated measurements (σ U ¼ σ T þ ϵσ L ) at similar,
+both ðdσ T =dtÞ and ðdσ L =dtÞ within the experimental                 but not equal, kinematics are also shown and described in
+uncertainties. However, they predict the opposite sign for             the text.
+
+
+
+
+                                                                  262001-5
+                                                                                                                  week ending
+PRL 117, 262001 (2016)                  PHYSICAL REVIEW LETTERS                                               23 DECEMBER 2016
+
+ðdσ TL =dtÞ and do not reproduce the Q dependence of the           [4] D. Mueller, D. Robaschik, B. Geyer, F. M. Dittes, and J.
+interference terms listed in Table II, especially for σ TL =dt.        Horejsi, Fortschr. Phys. 42, 101 (1994).
+   In conclusion, we have performed the L=T separation of          [5] X.-D. Ji, Phys. Rev. Lett. 78, 610 (1997).
+                                                                   [6] A. V. Radyushkin, Phys. Rev. D 56, 5524 (1997).
+the π 0 electroproduction cross section for Q2 ¼ 1.5, 1.75,
+                                                                   [7] A. Airapetian et al. (HERMES Collaboration), J. High
+and 2.0 GeV2 at xB ¼ 0.36. ðdσ L =dtÞ, though compatible               Energy Phys. 06 (2008) 066.
+with zero, is also consistent with the leading-twist pre-          [8] M. Defurne et al. (Jefferson Lab Hall A Collaboration),
+dictions of a model of the chiral-even GPDs [2]. We                    Phys. Rev. C 92, 055202 (2015).
+observe fair agreement (particularly at our largest Q2             [9] H. S. Jo et al. (CLAS Collaboration), Phys. Rev. Lett. 115,
+kinematic) between these results and two models incorpo-               212003 (2015).
+rating transversity GPD. This supports the prediction of a        [10] G. Wolf, Rep. Prog. Phys. 73, 116202 (2010).
+chirally enhanced helicity-flip pion distribution amplitude       [11] L. Favart, M. Guidal, T. Horn, and P. Kroll, Eur. Phys. J. A
+[15,16] and the exciting possibility of accessing trans-               52, 158 (2016).
+                                                                  [12] E. Fuchey et al., Phys. Rev. C 83, 025201 (2011).
+versity GPDs of the nucleon through exclusive π 0 electro-        [13] I. Bedlinskiy et al. (CLAS Collaboration), Phys. Rev. Lett.
+production for Q2 ≥ 1.5 GeV2.                                          109, 112001 (2012).
+   We thank G. Goldstein, S. Goloskokov, M. Guidal,               [14] I. Bedlinskiy et al. (CLAS Collaboration), Phys. Rev. C 90,
+                                                                       025205 (2014).
+P. Kroll, S. Liuti, and M. Vanderhaeghen for valuable             [15] S. Ahmad, G. R. Goldstein, and S. Liuti, Phys. Rev. D 79,
+information about their work and providing the results of              054014 (2009).
+their models. We acknowledge essential work of the JLab           [16] S. Goloskokov and P. Kroll, Eur. Phys. J. A 47, 112
+accelerator staff and the Hall A technical staff. This work            (2011).
+was supported by the Department of Energy (DOE), the              [17] D. Drechsel and L. Tiator, J. Phys. G 18, 449 (1992).
+National Science Foundation, the French Centre National           [18] A. Bacchetta, U. D’Alesio, M. Diehl, and C. A. Miller,
+de la Recherche Scientifique, the Agence Nationale de la               Phys. Rev. D 70, 117504 (2004).
+Recherche, the Commissariat à l’énergie atomique et aux           [19] J. Alcorn et al., Nucl. Instrum. Methods Phys. Res., Sect. A
+énergies alternatives, and P2IO Laboratory of Excellence.              522, 294 (2004).
+                                                                  [20] L. Morand et al. (CLAS Collaboration), Eur. Phys. J. A 24,
+Jefferson Science Associates, LLC, operates Jefferson Lab
+                                                                       445 (2005).
+for the U.S. DOE under U.S. DOE Contract No. DE-AC05-             [21] M. Vanderhaeghen, J. M. Friedrich, D. Lhuillier, D.
+060R23177.                                                             Marchand, L. Van Hoorebeke, and J. Van de Wiele, Phys.
+                                                                       Rev. C 62, 025501 (2000).
+                                                                  [22] A. Afanasev, I. Akushevich, V. Burkert, and K. Joo, Phys.
+                                                                       Rev. D 66, 074004 (2002).
+    *
+     Deceased.                                                    [23] M. Rvachev, Jefferson Lab, Hall A Technical Note Report
+    †
+     maxime.defurne@cea.fr                                             No. Jlab-TN-01-055, 2001.
+ [1] J. C. Collins, L. Frankfurt, and M. Strikman, Phys. Rev. D   [24] A. Accardi, M. E. Christy, C. E. Keppel, W. Melnitchouk, P.
+     56, 2982 (1997).                                                  Monaghan, J. G. Morfin, and J. F. Owens, Phys. Rev. D 81,
+ [2] M. Vanderhaeghen, P. A. M. Guichon, and M. Guidal, Phys.          034016 (2010).
+     Rev. D 60, 094017 (1999).                                    [25] G. R. Goldstein, J. O. Hernandez, and S. Liuti, Phys. Rev. D
+ [3] K. Goeke, M. V. Polyakov, and M. Vanderhaeghen, Prog.             84, 034007 (2011).
+     Part. Nucl. Phys. 47, 401 (2001).
+
+
+
+
+                                                            262001-6
+

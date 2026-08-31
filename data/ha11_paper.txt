@@ -1,0 +1,1167 @@
+                                                 PHYSICAL REVIEW C 83, 025201 (2011)
+
+                       Exclusive neutral pion electroproduction in the deeply virtual regime
+E. Fuchey,1,2 A. Camsonne,1,3 C. Muñoz Camacho,1,4 M. Mazouz,5,6 G. Gavalian,7 E. Kuchina,8 M. Amarian,7 K. A. Aniol,9
+ M. Beaumel,4 H. Benaoum,10 P. Bertin,1,3 M. Brossard,1 M. Canan,7 J.-P. Chen,3 E. Chudakov,3 B. Craver,11 F. Cusanno,12
+ C. W. de Jager,3 A. Deur,3 C. Ferdi,1 R. Feuerbach,3 J.-M. Fieschi,1 S. Frullani,12 M. Garçon,4 F. Garibaldi,12 O. Gayou,13
+     R. Gilman,8 J. Gomez,3 P. Gueye,14 P. A. M. Guichon,4 B. Guillon,5 O. Hansen,3 D. Hayes,7 D. W. Higinbotham,3
+ T. Holmstrom,15 C. E. Hyde,1,7 H. Ibrahim,7 R. Igarashi,16 F. Itard,1 X. Jiang,8 H. S. Jo,17 L. J. Kaufman,18 A. Kelleher,15
+A. Kolarkar,19 G. Kumbartzki,8 G. Laveissiere,1 J. J. LeRose,3 R. Lindgren,11 N. Liyanage,11 H.-J. Lu,20 D. J. Margaziotis,9
+    Z.-E. Meziani,21 K. McCormick,8 R. Michaels,3 B. Michel,1 B. Moffit,15 P. Monaghan,13 S. Nanda,3 V. Nelyubin,11
+  M. Potokar,22 Y. Qiang,13 R. D. Ransome,8 J.-S. Réal,5 B. Reitz,3 Y. Roblin,3 J. Roche,3 F. Sabatié,4 A. Saha,3 S. Sirca,22
+      K. Slifer,11 P. Solvignon,21 R. Subedi,23 V. Sulkosky,15 P. E. Ulmer,7 E. Voutier,5 K. Wang,11 L. B. Weinstein,7
+                                        B. Wojtsekhowski,3 X. Zheng,24 and L. Zhu25
+                                            (Jefferson Lab Hall A Collaboration)
+1
+    Clermont Université, Université Blaise Pascal, CNRS/IN2P3, Laboratoire de Physique Corpusculaire, FR-63000 Clermont-Ferrand, France
+                                                 2
+                                                   Temple University, Philadelphia, Pennsylvania 19122, USA
+                              3
+                                Thomas Jefferson National Accelerator Facility, Newport News, Virginia 23606, USA
+                                                 4
+                                                   CEA Saclay, IRFU/SPhN, Gif-sur-Yvette FR-91191, France
+                               5
+                                 LPSC, Université Joseph Fourier, CNRS/IN2P3, INPG, FR-38026 Grenoble, France
+                                                         6
+                                                           Faculté des sciences de Monastir, TN-5000 Tunisia
+                                                    7
+                                                      Old Dominion University, Norfolk, Virginia 23508, USA
+                                 8
+                                   Rutgers, The State University of New Jersey, Piscataway, New Jersey 08854, USA
+                                    9
+                                      California State University, Los Angeles, Los Angeles, California 90032, USA
+                                                      10
+                                                         Syracuse University, Syracuse, New York 13244, USA
+                                                11
+                                                   University of Virginia, Charlottesville, Virginia 22904, USA
+                                                             12
+                                                                INFN/Sezione Sanità, IT-00161 Roma, Italy
+                                   13
+                                      Massachusetts Institute of Technology, Cambridge, Massachusetts 02139, USA
+                                                      14
+                                                          Hampton University, Hampton, Virginia 23668, USA
+                                           15
+                                              College of William and Mary, Williamsburg, Virginia 23187, USA
+                                           16
+                                              University of Saskatchewan, Saskatchewan, SK, Canada S7N 5C6
+                                                17
+                                                   Institut de Physique Nucléaire CNRS-IN2P3, Orsay, France
+                                      18
+                                         University of Massachusetts Amherst, Amherst, Massachusetts 01003, USA
+                                                   19
+                                                      University of Kentucky, Lexington, Kentucky 40506, USA
+                    20
+                       Department of Modern Physics, University of Science and Technology of China, Hefei 230026, China
+                                                 21
+                                                    Temple University, Philadelphia, Pennsylvania 19122, USA
+                                            22
+                                               Institut Jozef Stefan, University of Ljubljana, Ljubljana, Slovenia
+                                                            23
+                                                               Kent State University, Kent, Ohio 44242, USA
+                                                24
+                                                   Argonne National Laboratory, Argonne, Illinois 60439, USA
+                                                        25
+                                                           University of Illinois, Urbana, Illinois 61801, USA
+                                                      (Received 16 March 2010; published 2 February 2011)
+
+
+                   We present measurements of the ep → epπ 0 cross section extracted at two values of four-momentum transfer
+                 Q = 1.9 GeV2 and Q2 = 2.3 GeV2 at Jefferson Lab Hall A. The kinematic range allows one to study the
+                   2
+
+                 evolution of the extracted cross section as a function of Q2 and W . Results are confronted with Regge-inspired
+                 calculations and GPD predictions. An intepretation of our data within the framework of semi-inclusive deep
+                 inelastic scattering is also discussed.
+
+                 DOI: 10.1103/PhysRevC.83.025201                    PACS number(s): 13.60.Hb, 13.60.Le, 13.87.Fh, 14.20.Dh
+
+                        I. INTRODUCTION                                   epπ 0 , through virtual photoabsorption. A diagram of this
+   The past decade has shown a strong evolution of the study              process, including definitions of the kinematic variables, is
+of hadron structure through exclusive processes, allowing                 presented in Fig. 1.
+access to the three-dimensional structure of hadrons. Exclusive              Results will be presented for four kinematics. Two of them
+processes include deeply virtual Compton scattering (DVCS)                are defined by the same value of xBj = 0.36 and are called
+and deeply virtual meson production (DVMP). This document                 Kin2 (at Q2 = 1.9 GeV2 ) and Kin3 (at Q2 = 2.3 GeV2 ).
+focuses on the latter, and more precisely on neutral pion                 The two remaining ones are defined by the same value of
+production.                                                               Q2 = 2.1 GeV2 and are called KinX2 (at xBj = 0.40) and
+   We present measurements of the differential cross section              KinX3 (at xBj = 0.33). The behavior of the cross section
+for the forward exclusive electroproduction reaction ep →                 will be compared to different models that are available to
+
+0556-2813/2011/83(2)/025201(14)                                    025201-1                                 ©2011 American Physical Society
+E. FUCHEY et al.                                                                                                           PHYSICAL REVIEW C 83, 025201 (2011)
+
+                                                                                         dependence. An interpretation of exclusive data with semi-
+                                                                                         inclusive mechanisms also exists to explain transverse cross
+                                                                                         sections of hard exclusive charged-pion electroproduction
+                                                                                         [15].
+                                                                                            In the second section details of the experiment are pre-
+                                                                                         sented, while the third section is devoted to the calibration
+                                                                                         of the calorimeter. The formalism of π 0 electroproduction by
+                                                                                         Drechsel and Tiator [16] is presented in the fourth section,
+                                                                                         with a special emphasis on the expressions for the hadronic
+                                                                                         tensors. The fifth section is devoted to the extraction of the
+                                                                                         cross sections and the sixth and seventh sections to the radiative
+                                                                                         corrections and the evaluation of the systematic errors. Finally,
+                                                                                         our results are presented in Sec. VIII, with a discussion and
+                                                                                         conclusions in Secs. IX and X, respectively.
+
+                                                                                                                           II. EXPERIMENT
+                                                                                            The present data were acquired as part of Jefferson Lab
+                                                                                         Hall A experiment E00-110 [17]. Additional details about the
+    FIG. 1. Diagram of the forward π 0 electroproduction reaction                        experimental configuration, calibrations, and analysis can be
+(top), and of the dominant π 0 decay mode (bottom). The kine-                            found in [18,19]. This paper reports on the analysis of the triple
+matic invariants of this reaction are defined as Q2 = −(k − k  )2 ,                     coincidence H (e, e γ γ )X events. A 5.75 GeV electron beam
+xBj = Q2 /(2pq), t = (q − q  )2 , W 2 = s = Mp + Q2 (1/xBj − 1),                        was incident on a 15 cm liquid hydrogen target, for a typical
+and tmin =
+              (Q2 −m2 )2
+                4s
+                   π
+                     − (|q c.m. | − |q  c.m. |)2 , with |q c.m. | and |q  c.m. | the   luminosity of 1037 cm−2 s−1 . Electrons were detected in a
+             
+norms of q, q in the pπ 0 final state center-of-mass frame.
+                                                                                        high resolution spectrometer (HRS) (photons in a 132 element
+                                                                                         PbF2 calorimeter), each measuring 3 × 3 cm2 × 20X0 . The
+                                                                                         high resolution allows one to accurately define (1) the virtual
+describe π 0 electroproduction, including the Regge model and
+                                                                                         photon, having the kinematics centered at a fixed xBj = 0.36
+the generalized parton distribution (GPD) framework.
+    Forward photoproduction at asymptotically high energies                              and two values of Q2 = 1.9 and 2.3 GeV2 , as shown in Fig. 2,
+can be described by the Regge theory, which exploits the ana-                            and (2) the real photon momentum unit vector, thanks to the
+lytic properties of the scattering amplitude in the limit t/s → 0                        vertex resolution of the HRS, and the position resolution of
+[1]. Previous analyses have applied Regge phenomenology                                  the electromagnetic calorimeter.
+to exclusive photo- and electroproduction in the kinematic                                  The validation threshold for the data acquisition trigger was
+range presented here [2,3]. Recent computations with Regge-                              set to about 1 GeV for each photon cluster. For the exclusive
+inspired models exist for our kinematics. These models include                           π 0 → γ γ events, the minimum distance between the centroids
+ρ, ω, and b meson exchange as well as π ± rescattering.                                  of the two clusters that guarantees separation is about 10 cm.
+Among these, there is the t-channel meson-exchange (TME)                                 This is achieved by the minimal opening angle ≈ 2mπ /Eπ and
+model by Laget et al. A brief description of this model has                              the distance from the center of the target to the calorimeter
+been given in [4], and it is described extensively in [5,6].
+Another Regge-inspired computation by Ahmad, Goldstein,                                              2.6
+and Liuti [7] is available for our kinematics.                                                                    M2X<1.15 GeV2
+    Recent JLab Hall C experiments studying the Q2 depen-                                            2.4
+dence of charged-pion electroproduction with a longitudinal-
+
+
+                                                                                         Q2 (GeV2)
+transverse separation were analyzed using the TME formalism                                          2.2
+[8]. In the Bjorken limit Q2 → ∞, and t/Q2  1 at fixed
+xBj , the scattering amplitude is dominated by the leading
+                                                                                                      2
+order (or leading twist) amplitude of GPDs and the pion
+distribution amplitude (DA) [9–11]. The GPDs are light-
+                                                                                                     1.8
+cone matrix elements of nonlocal bilinear quark and gluon
+operators [12–14], unifying the elastic electroweak form
+factors with the forward parton distributions of deep-inelastic                                      1.6
+lepton scattering. Cross section predictions within the GPD                                                0.28     0.3   0.32    0.34      0.36   0.38   0.4   0.42   0.44
+framework exist for the longitudinal cross section σL [10,11].                                                                           x Bj
+With the definitions of [9–11], the cross sections are predicted
+to scale as σL ∼ Q−6 and σT ∼ Q−8 . Thus at sufficiently high                               FIG. 2. (Color online) Distribution of H (e, e π 0 )X events in the
+Q2 , σL will dominate over σT . Beam spin asymmetries for                                [xBj , Q2 ] plane, for Kin2 (xBj = 0.36, Q2 = 1.9 GeV2 ) and Kin3
+forward exclusive π 0 electroproduction have been measured                               (xBj = 0.36, Q2 = 2.3 GeV2 ). Events for KinX2 (xBj = 0.40, Q2 =
+for Q2 > 1 GeV2 [4]. We performed measurements at two Q2                                 2.1 GeV2 ) and KinX3 (xBj = 0.33, Q2 = 2.1 GeV2 ) are bounded by
+values at fixed xB in order to test these predictions of Q2                              the two horizontal lines.
+
+                                                                                   025201-2
+EXCLUSIVE NEUTRAL PION ELECTROPRODUCTION IN . . .                                              PHYSICAL REVIEW C 83, 025201 (2011)
+
+front face L = 110 cm. The achieved coincidence resolving
+time between the scattered electron and either photon cluster                     0.16                   (a)                            (b)
+is 0.6 ns, rms.
+    Figure 2 shows the distribution of H (e, e π 0 )X events
+in the [xBj , Q2 ] plane, for missing mass squared MX2 =                          0.14
+(q + p − q  )2 ⩽ 1.15 GeV2 . The analysis relies only on two
+specific qualities of the experiment:
+                                                                                  0.12
+   (i) Thanks to the resolution of the spectrometer and the
+
+                                                                     mγ γ (GeV)
+       calorimeter, one can use the missing-mass squared to
+       ensure exclusivity. The exclusive sample is selected by
+       putting a cut on the missing-mass squared at the proton
+       plus the pion mass squared.                                                2000                  (c)                             (d)
+  (ii) For exclusive events, the reconstruction of the invariant
+       momentum transfer t and tmin relies on the positions
+       of the reconstructed photons, of which the resolution is
+       better than that of the energy. From this, a resolution                    1000
+       in t better than that in the energy is obtained. All data
+       are presented as a function of tmin − t, which is directly
+       linked to the angle of the pion production relative to                       0
+       the virtual photon direction in the center of mass θπc.m. :                   0     1        2          0        1          2
+       tmin − t = 2q c.m. q c.m. (1 − cos θπc.m. ).                                        M2X (GeV2)                   M2X (GeV 2 )
+    In the ep → e γ1 γ2 X reaction, there are six four-vectors,
+                                                                         FIG. 3. [(a),(b)] Distributions of H (e, e γ γ )X events within cuts
+equivalent to 24 independent kinematic variables. The mea-
+                                                                     in the [MX2 ,mγ γ ] plane for Kin3. (a) Raw distribution showing a clear
+sured four-vectors k, p, and k  , and four-momentum conser-
+                                                                     correlation between these two variables. (b) The same distribution
+vation, reduce the number of independent variables to eight.
+                                                                     after a rotation around (Mp2 ,mπ 0 ) to improve the MX2 resolution.
+The measurement of the two directional vectors k̂(γ1 ) = q1 /q1     [(c),(d)] Projections on the MX2 axis of the [MX2 ,mγ γ ] distributions
+and k̂(γ2 ) = q2 /q2 from the target vertex (reconstructed by the   shown, respectively, in (a) and (b). The lower right panel shows that
+HRS) to the two cluster positions in the calorimeter provides        the resolution is indeed improved by the rotation.
+four more kinematic constraints.
+    Finally, the hypothesis that the observed calorimeter show-      data also provided a consistency check on the efficiency of the
+ers are due to photons (mq1 = mq2 = 0) provides two more             detectors and all associated electronics from the observation
+kinematic constraints. The remaining two unknowns, which             that the elastic cross section agreed with the Kelly form-factor
+we express as m2γ γ = (q1 + q2 )2 and MX2 , are determined by        parametrization [21] at the 1.1% level. During the experiment,
+the previous constraints plus the energy of the two photons.         the light output from the PbF2 blocks decreased by up to
+Figure 3 displays the distribution of the H (e, e γ γ )X events     20%, strongly correlated with the distance of the blocks from
+in the [MX2 , mγ γ ] plane, for Kin3.                                the beam line. We attribute this to radiation damage of the
+    The upper left panel of this figure shows a clear correlation    blocks. In addition, seven blocks, at random positions, showed
+between the two variables in the exclusive region (MX2 ≃ Mp2 ).      much higher radiation damage. One explanation could be
+This is a consequence of resolution fluctuations in the energies     a poorer crystal quality of those crystals. We adjusted the
+E1 and E2 of the two photons issued from a π 0 , which correlate     calibration of each block, assuming an independent linear
+fluctuations in MX2 and mγ γ . The missing mass in the right-        dose versus attenuation curve. In addition to radiation damage,
+hand panels is obtained by an empirical adjustment:                  each crystal received a pileup of low-energy photons in
+                             
+              M 2  = M 2  + C(mγ γ − mπ ),
+               X corr      X raw                               (1)   random coincidence, resulting in a degradation of the energy
+                                                                     resolution, and in a shift in the calibration as a function of its
+with C = 13 GeV. This transformation produces a noticeable           distance to the beam line. This effect was taken into account
+improvement in the MX2 distribution (lower right panel of            through successive steps:
+Fig. 3).
+                                                                             (i) For each block the position of the reconstructed
+                                                                                 missing-mass squared peak was centered at Mp2 through
+                        III. CALIBRATION
+                                                                                 an energy calibration of the experimental data.
+                                  
+   We performed elastic H (e, ecalo   pHRS ) calibrations at the            (ii) A GEANT simulation generated a sharper resolution
+beginning, middle, and end of the experiment [20]. The calori-                   in missing mass than the experimental data for each
+meter was retracted to a position at 5.5 m from the target, in                   calorimeter block. For each block the energy of the
+order to optimize the electron coverage in the calorimeter with                  simulation was calibrated together with a simultaneous
+the proton acceptance of the HRS. These data were used for                       energy smearing, in order to center the reconstructed
+the block calibration. After calibration the calorimeter energy                  missing-mass peak position at Mp2 , and to equate the
+resolution was observed to be 2.4% at 4.2 GeV with a position                    resolution of the simulation to that of the experimental
+resolution of 2 mm at 110 cm from the target. The elastic                        data.
+
+                                                               025201-3
+E. FUCHEY et al.                                                                                                                         PHYSICAL REVIEW C 83, 025201 (2011)
+
+                                                                            TABLE I. Mean deviation and resolution width of the π 0 → γ γ
+                                                                         reconstruction of the data and simulation. Events are selected by
+                                                                         MX2 < 1.15 GeV2 and calorimeter threshold Ethr = 1.0 GeV.
+             9                                             89
+                                                                                                                                                                 
+                                                                                                                                    m − mπ 0 (GeV)                   (m − mπ 0 )2 (GeV)
+
+                                                                                                                                              KIN3
+                                                                         Data                                                           −0.00081                         0.0088
+                                                                         Simulation                                                     +0.00072                         0.0089
+                                                                                                                                              KIN2
+                                                                         Data                                                           −0.00017                         0.0079
+                                                                         Simulation                                                     +0.00191                         0.0085
+                                           *
+                                       γ
+                                                                         better for simulation, applying such a cut will remove more
+                  γ                                                      experimental events than simulation particularly near the beam
+                      1
+             1                                                           where the noise degrades the experimental resolution. This
+                                   γ                                     gives a spurious contribution to the cos φπ term which has to
+             0   10        π0          2                   80
+                                                                         be removed by smearing the simulation resolution.
+                                                                             To this purpose, the momentum of each event i at the nth
+                                                                         iteration contributing to the MX2 distribution of the block µ
+   FIG. 4. (Color online) Projection on the calorimeter of the virtual   is changed from (qµ )in−1 to (qµ )in with a sampling from a
+photons γ ∗ within cuts for Kin3. Also shown is the block relabeling     Gaussian distribution:
+                                                                                                                              
+used for the calorimeter calibration described in the text. The                                (qµ )in−1              i σµ
+calorimeter is viewed from the rear, with the downstream beam                       (qµ )in =            Gauss  (qµ ) n , √     ,   (4)
+passing to the right.                                                                          |qµ |in−1                     2
+                                                                         where
+These calibrations are explained in the following                                                                           
+paragraphs.                                                                                                 σµ =               (σµ )2data − (σµ )2simu ,    (σµ )data > (σµ )simu , (5)
+    We consider only the 90 blocks of the inner calorimeter
+(see Fig. 4 for the labeling), indexed by µ. We will as-                                                    σµ = 0,               (σµ )data < (σµ )simu                               (6)
+sume that the energy of the photon is driven by the block                and (qµ )in is given by Eq. (3), except we put MX2 =
+where the shower makes the largest energy deposit. The                   [ (MX2 )µ simu − (MX2 )µ data ]/2 in this case. The factor 2 in
+90 distributions of missing-mass     squared (MX2 )iµ = (k + P −         the denominator of MX2 is used to ensure a smooth conver-
+k  − qµ − qν )2i = (EX2 )i − (PX )i are built with all events i
+                                  2
+                                                                         gence.
+involving block µ. Note that for each event i, the reconstructed            The results of these iterations are shown in Fig. 5. Figure 6
+missing-mass squared appears in two distributions. To com-               and Table I illustrate the quality of the final calibration
+pare these distributions, two estimators are constructed: the            adjustments. The calibration of the missing-mass squared was
+mean MX2 µ and the sigma σµ of a Gaussian fitted to these
+distributions, over a limited range (0.62 GeV2 < (MX2 )µ <
+
+
+                                                                         <MX2|data>-<MX2|simu> (GeV 2 )
+                                                                                                                     (a)
+1.09 GeV2 ). The calorimeter is calibrated                                                                0.04
+                                                  
+                                          PX .qµ
+             MX = −2qµ EX −
+                   2
+                                                     ,        (2)                                         0.02
+                                           |qµ |
+
+with MX2 = (MX2 )µ − Mp2 . Neglecting the PX term com-                                                     0
+
+pared to EX between the parentheses, we obtain an energy                                                  0.15
+
+
+                                                                         ) (GeV 2)
+correction:                                                                                                          (b)            reference
+                                                                                                                                    iteration0
+                                                                                                           0.1
+                                               MX2                                                                                 iteration4
+              qµi → qµi + qµi = qµi +                 .          (3)                       X simu                                  iteration24
+                                                                         )-σ(M2 |
+                                               2(EX )i                                                    0.05
+
+    We recall here that each event involves two blocks. The
+                                                                                            X data          0
+                                                                         σ(M 2 |
+reconstructed missing mass of one block is then influenced by
+                                                                                                                 0         10      20      30      40       50    60     70       80
+contributions from all other blocks. Because of this, several
+                                                                                                                                                  block number
+iterations are necessary. Then, the missing-mass distribution
+of each block for simulated events is adjusted to get the                   FIG. 5. (Color online) Different iterations of the calibration for
+same missing-mass position and resolution as the experimental            Kin2. The differences between simulation and data of the missing-
+missing-mass distribution.                                               mass peak position (a) and resolution (b) are shown before calibration
+    The missing-mass cut applied to ensure exclusivity is                (crosses), after calibration (open circles), and at a random iteration
+the same for simulation and data, and if the resolution is               during calibration (asterisks).
+
+                                                                   025201-4
+EXCLUSIVE NEUTRAL PION ELECTROPRODUCTION IN . . .                                                                                              PHYSICAL REVIEW C 83, 025201 (2011)
+
+                                                                                                                        with kγ = (W 2 − Mp2 )/2Mp and k and k  the energies of
+
+
+Raw Counts
+                     2000                                                                         data
+                            (a)                                                                                         the incident and scattered electron, respectively. The virtual
+                                                                                                  simu
+                                                                                                  data-simu             photoabsorption cross section is expanded as
+                     1000                                                                                                    d 2 σv (h)      1
+                                                                                                                                        = c.m. c.m. {RT + L RL + RT T cos 2φπ
+                                                                                                                             dt dφπ      2q kγ
+                                                                                                                                           
+                                                                                                                                         + 2 L (1 + )RT L cos φπ
+                       0                                                                                                                    
+
+
+
+  Corrected Counts
+                                         M2p                       M2∆                           Ethr =1.20 GeV                          + h 2 L (1 − )RT L sin φπ },        (9)
+                            (b)                                                                  Ethr =1.12 GeV
+                                                                                                 Ethr =1.05 GeV         where q c.m. = |
+                                                                                                                                        q | × Mp /W is the c.m. virtual photon three-
+                     5000                                                                                               momentum, = 1/[1 + 2(q 2 /Q2 ) tan2 θe /2] is the degree
+                                                                                                                        of linear polarization of the virtual photons, and L / =
+                                                                                                                               2
+                                                                                                                        4Mp2 xBj /Q2 . The response functions are defined as functions
+                                                                 (Mp+2mπ ) 2   (Mp+3mπ ) 2
+                                                    (M +mπ) 2
+                                                                                                                        of the usual hadronic tensor W µν :
+                       00                       1
+                                                          p
+                                                                                             2                                                           Wxx + Wyy
+                                                                                                                                                  RT =               ,            (10)
+                                                                M2X (GeV )
+                                                                               2                                                                              2
+                                                                                                                                                  RL = Wzz ,                      (11)
+    FIG. 6. (Color online) (a) Raw H (e, e π 0 )X missing-mass distri-                                                                   cos φπ RT L = −Re Wxz ,                   (12)
+bution for Kin3 (solid histogram) compared to the simulation (dashed
+                                                                                                                                          sin φπ RT L = −Im Wyz ,                  (13)
+histogram), and the difference between the two (dotted histogram).
+(b) H (e, e π 0 )X missing-mass distribution at different values for the                                                                                    Wxx − Wyy
+                                                                                                                                         cos 2φπ RT T =                     ,       (14)
+calorimeter threshold, corrected with a factor 1/[1 − 2(Ethr /|pπ |)].                                                                                              2
+This correction adds to the distribution all π 0 events missed because                                                     The interference terms RT L and RT L have a leading
+of the threshold value.                                                                                                 sin θπc.m. dependence, and the linear polarization interference
+cross-checked by comparing the invariant-mass distribution                                                              term RT T has a leading sin2 θπc.m. dependence. For this reason,
+of both photons in each event. Table I lists the mean values                                                            we define reduced structure functions r , which remove this
+of these distributions with respect to the pion mass, and their                                                         phase-space dependence, which are directly related to bilinear
+resolution. The agreement of the calibration with the data is                                                           combinations of the CGLN helicity amplitudes Fi [22]:
+                                                                                                                                                                        
+at the 1.9 MeV level, while the widths of these distributions                                                                             rT L             1          RT L
+agree to better than 1 MeV.                                                                                                                          =                        ,     (15)
+                                                                                                                                          r T L       sin θπc.m. RT L
+                                                                                                                                                          RT T
+                                                                                                                                              rT T =               ,                (16)
+                                  IV. CROSS-SECTION ANALYSIS                                                                                           sin2 θπc.m.
+   In order to extract the differential cross section, it is                                                                                     r L = RL ,                         (17)
+advantageous to incorporate all model-independent kine-                                                                                         r T = RT .                          (18)
+matic dependences of the differential cross section into
+                                                                                                                            Since our kinematics cover a wide range in xBj as well as
+the experimental simulation. To this end, we express the
+                                                                                                                        in Q2 , we also have to include the Q2 and the W dependence
+differential cross section in terms of structure functions as
+                                                                                                                        of the hadronic tensor (Wxx + Wyy )/2 + L Wzz = rT + L rL .
+described in the paper of Drechsel and Tiator [16] directly
+                                                                                                                            We perform a preliminary extraction of the cross section
+related to bilinear combinations of the Chew-Goldberger-
+                                                                                                                        on the kinematic points Kin2 and Kin3 (respectively, KinX2
+Low-Nambu (CGLN) helicity amplitudes [22]. We define the
+                                                                                                                        and KinX3) to get an estimate of the Q2 (respectively, W )
+differential phase-space elements d 3 e = dQ2 dxBj dφe and
+                                                                                                                        dependence of the hadronic tensor. The extracted Q2 and W
+d 5 = d 3 e d[tmin − t]dφπ and the equivalent real photon                                                               dependences are then introduced explicitly in the formalism
+energy in the c.m. frame kγc.m. = (W 2 − Mp2 )/2W . Here tmin =                                                         to perform a second “definitive” extraction. The dependence
+(Q2 −m2π )2
+    4s
+            − (|q c.m. | − |q c.m. |)2 with |q c.m. | and |q c.m. | the                                               is modeled in the form (Q2 )n and W δ . With the first iteration,
+norms of q,q in thecenter-of-mass frame. All these quantities                                                        the cross sections changed by 3%, but with a second iteration
+are defined using the convention of Drechsel and Tiator [16]:                                                           the cross sections changed by only 0.3%.
+ẑ axis along the virtual photon, ŷ = (k̂i ∧ k̂f )/ sin θe orthogo-                                                        The results will be presented as four separated cross
+nal to the leptonic plane, and x̂ = ŷ ∧ ẑ.                                                                            sections following the usual decomposition found in the
+    To lowest order in the fine-structure constant α, the                                                               literature:
+                                                                                                                                        
+differential cross section for an electron of helicity h is                                                                d 2 σv    1 dσT          dσL                dσT L
+                                                                                                                                  =           + L        + 2 L (1 + )           cos φπ
+                                    d 5 σ (h)     d 2 σv (h)                                                              dt dφπ 2π dt               dt                   dt
+                                              =              ,                                                    (7)                   dσT T                         dσT L
+                                      d5           dt dφπ                                                                           +         cos 2φπ + h 2 L (1 − )           sin φπ .
+                                                  α k  kγ 1                                                                              dt                             dt
+                                               =               ,                                                  (8)                                                                (19)
+                                                 2π 2 k Q2 1 −
+
+                                                                                                                  025201-5
+E. FUCHEY et al.                                                                                                PHYSICAL REVIEW C 83, 025201 (2011)
+
+                                   V. EXTRACTION                                 response
+   We define a compact notation that summarizes Eq. (9) in
+                                                                                  N (jd ) = Lu                dxd            dxv R(xd , xv )              F (xv )r ,
+the form                                                                                              xd              xv                             
+                      d 5σ          d3                                                                                                                               (21)
+                           =             r =             F (xv )r ,   (20)
+                      d5       
+                                    d3 e                                        where xv summarizes the reaction vertex variables, xd sum-
+                                                                                 marizes the reaction vertex variables as reconstructed in the
+with F (xv ) containing all the kinematic dependence,  ∈                       detector, xd summarizes the range of integration for bin
+{T + L L, T L, T T , T L } and xv summarizing all variables                     jd , xv summarizes the range of integration for all bins
+k, Q2 , xBj , W, t, considered at the vertex. T + L L reflects the               jv , Lu is the integrated luminosity, and R(xd , xv ) is the
+fact that we used only one incident energy and consequently,                     probability distribution for an event originating at the vertex
+we were not able to disentangle dσT and dσL . This notation                      with kinematics xv to be reconstructed by the detector with
+will be convenient to use for the presentation of the extraction                 vertex kinematics xd . This expresses the effects of detector
+process.                                                                         resolution, internal and external radiation, detector efficiency,
+    The experimental data used for the analysis have the                         and anything else that could migrate events from vertex
+kinematical coverage shown in Fig. 2. The analysis includes                      kinematics xv to the detector kinematics xd .
+a complete simulation of the resolution and acceptance of                            For the analysis and simulation, the integral is split into a
+the HRS, the external and internal radiative effects on the                      sum over the bins xv in the kinematic variables at the reaction
+incident and scattered electron, and a GEANT-based simulation                    vertex:
+of the acceptance and response of the PbF2 array. Simulation
+events are generated uniformly in the target vertex v along                        N (jd )
+the beam line, and uniformly in a phase space 5 . This
+results in well-defined values of θπc.m. in each bin. The t                            = Lu         dxd                            dxv R(xd , xv )            F (xv )r .
+                                                                                               xd             jv    xv∈bin jv                            
+bins are the same in the generation and experimental phase
+spaces, but resolution and radiative effects can cause the                                                                                                            (22)
+migration of events from one bin to one of its neighbors
+                                                                                 Because the functions F (xv ) contain the main part of the
+(Fig. 7). Rather than extracting average cross sections in the
+                                                                                 dependence on the variables at the vertex, the quantity r in
+experimental bins, we use the simulation and the theoretical
+                                                                                 a bin xv will be assimilated to its average r xv ≡ rv, in
+form of Eq. (20) to directly extract differential cross sections
+                                                                                 this bin. Then, the last equation can be summarized in a vector
+from the experimental yields.
+                                                                                 notation:
+    We divide the acceptance into 24 equal bins in φπ ∈ [0, 2π ]
+and 8 bins in tmin − t ∈ [0, 0.3] GeV2 for both the helicity                                          N (jd ) =                   Kjd ,jv rjv , ,                  (23)
+dependent and independent parts of the cross section. A bin                                                               jv
+jd in the kinematic variables reconstructed by the detector
+is defined by the limits φπ ∈ [φ(jd ), φ(jd ) + φ(jd )], (tmin −                with
+t) ∈ [(tmin − t)(jd ), (tmin − t)(jd ) + (tmin − t)(jd )], etc. The
+                                                                                  Kjd ,jv = Lu                          R(xd , xv )F (xv )dxd dxv .                 (24)
+statistics N(jd ) in a bin jd are determined by the physical                                        xd    xv∈bin jv
+cross section at the vertex convoluted with the detector
+                                                                                    We then replace the integration by a summation over the
+                                                                                 simulated events i:
+                                                                                                                      F (xv ) 5
+                2.6                                                                           Kjd ,jv = Lu                    ,      (25)
+                                                                                                            i∈{j ,j }
+                                                                                                                       Ngen
+                                                                                                                          v    d
+
+
+                                                                                 where the sum is over events originating in vertex bin jv and re-
+
+    Q2 (GeV2)
+                2.4
+                                                                                 constructed in bin jd . Ngen is the number of events generated in
+                                                                                 the simulation and 5 is the total phase-space factor. The ma-
+                2.2                                                              trices Kjd ,jv are constructed from simulation events, summed
+                                                                                 over all events within cuts. We define Nd = N + + N −
+                                                                                 with N + (N − ) the number of counts within cuts with
+                 2
+                                                                                 positive (negative) electron helicity. The cuts are the same
+                  0                0.1          0.2              0.3             for simulation and data (Table II). The cuts and the corrections
+                                                      2                          are summarized in Tables II and III, respectively.
+                                         tmin-t (GeV )
+                                                                                     A χ 2 is built, assuming that the statistical error on the
+    FIG. 7. (Color online) Raw H (e, e γ γ )X distribution in the
+                                                                                 simulation is much smaller than the statistical error of the
+[tmin − t, Q2 ] plane with cuts for Kin3. The vertical lines delimit             data:
+the bins we chose in tmin − t for our analysis. Superimposed is the
+                                                                                                                                    2
+                                                                                                            Nd − jv Kjd ,jv rjv ,
+(tmin − t) resolution for each alternate bin, showing that each bin is                           χ =
+                                                                                                  2
+                                                                                                                                       .      (26)
+larger than the resolution.                                                                            j
+                                                                                                                      Nd
+                                                                                                           d
+
+
+
+                                                                           025201-6
+EXCLUSIVE NEUTRAL PION ELECTROPRODUCTION IN . . .                                                 PHYSICAL REVIEW C 83, 025201 (2011)
+
+    TABLE II. Cuts applied in the primary extraction. r is the value       the point x jv in a bin jv are obtained by
+of the so-called r function. The r function defines the distance of
+                                                                                               dσ
+the particle from the acceptance bound, and is positive (negative)                                    = F (x jv )rjv , .             (29)
+if the particle is in (out of) the acceptance [23]. The MX2 and Ethr                             dt
+optimizations are presented in Table VIII.                                 The results are displayed in Tables VI and VII. The first table
+                                                                           shows the results for the two kinematics Kin2 and Kin3, which
+                   Spectrometer cuts                                       cover the full kinematic range of the experiment, resulting in
+                     −6.0 cm < v < +7.5 cm                                 two domains of different Q2 , at constant xBj . The second table
+                          |xHRS plane | < 3.5 cm                           shows the results for the two kinematics KinX2 and KinX3,
+                       (Horizontal collimator)                             which only cover the domain between the two horizontal lines
+                          |yHRS plane | < 7.0 cm                           in Fig. 2, in order to have two domains of different xBj at
+                          (Vertical collimator)                            constant Q2 .
+                     |k  − pHRS |/pHRS < 4.5%
+                             r > +0.005 m
+                   Calorimeter cuts                                                      VI. RADIATIVE CORRECTIONS
+                   −15.0 cm < xcalo < +12.0 cm                                The external radiative effects on the incident electron,
+                         |ycalo | < 15.0 cm
+                                                                           and internal real radiative effects at the vertex are treated in
+                   Physics cuts                                            the equivalent radiator approximation [24,25]. Preradiation is
+                   105 MeV < mγ γ < 165 MeV                                modeled by generating an event-by-event energy loss Ein of
+                                                                           the incident electron (E0 ) following a distribution (b ≃ 4/3):
+                                                                                                                          
+                                                                                                          btin + δS /2 Ein btin +δS /2
+     The minimization of χ 2 with respect to the unknown                         Iin (E0 , Ein , tin ) =                               (30)
+quantities rjv , results in a linear system from which the                                                   Ein      E0
+rjv , are extracted. To be fully consistent, one of the two               with
+quantities in the numerator has to be corrected for some                                                      
+                                                                                                   2α     Q2
+instrumental systematic effects (Table III). Note that all vertex                             δS =     ln    −1 ,                       (31)
+bins populate experimental bins, but the detector bin at the                                       π      me
+largest experimental bin in (tmin − t) can receive contributions           where tin is the event-by-event target thickness (in radiation
+from larger values of (tmin − t), not generated in the simulation.         lengths) traversed by the electron before the scattering vertex.
+Hence, although we extract an rjv , value for the last bin, we            The Schwinger term δS models the internal preradiation.
+do not include it in our results; its role is only to populate the         The scattered energy at the vertex is Ev = E0 − Ein −
+lower (tmin − t) bins.                                                     Q2 /(2Mp xBj ). Internal postradiation is modeled by a similar
+     The average values of the kinematic variables Q2 , , xBj ,            distribution in the postradiated energy Eout :
+W , t, tmin , etc., in a bin at the vertex are                                                                    
+                                                                                                    δS /2 Eout δS /2
+                                                                                            Iout =                     .             (32)
+                             i∈xv xv Kjd ,jv rjv ,                                                Eout     Ev
+                  x jv =               
+                                                     .            (27)
+                              i∈xv Kjd ,jv rjv ,                             These radiative effects are treated within the peaking ap-
+   Because the rjv , are by construction constant over the bin            proximation. External postradiation by the scattering electron
+xv and the integrals of FT L , FT T , and FT L cancel when               is modeled with the GEANT3 simulation. Kinematic shifts (e.g.,
+integrating over φπ , we can write                                         in either the norm and direction of q) from external and internal
+                                                                           radiations are fully included in the simulation and thereby
+                                             T + LL
+                                 i∈xv xv Kjd ,jv                          unfolded from the extracted cross sections.
+                   x jv =                  T + LL
+                                                    .             (28)         In addition to these radiative effects incorporated into our
+                                  i∈xv Kjd ,jv                            Monte Carlo simulation, we correct the data for internal virtual
+These values are summarized in Table IV for quantities                     radiation (vacuum polarization and vertex renormalization ef-
+independent of the (tmin − t) bin and in Table V for quantities            fects) as well as the cut-off independent effect of unresolvable
+depending on the (tmin − t) bin. Finally, the cross sections at            soft real radiation. These contributions are calculated by the
+                                                                           following terms, respectively [26]:
+   TABLE III. Correction factors applied in the data analysis. The                              2           
+                                                                                          2α        Q        5
+radiative correction factor is the combination of the virtual radiative        δvacuum =       ln          −     ,
+correction factors (vertex renormalization and vacuum polarization)                       3π        m2e      3
+                                                                                                   2                              
+and the cut-off independent real radiation effects (Sec. VI).                             α 3        Q              1 2 Q2         π2
+                                                                                δvertex =       ln          − 2 − ln             +       ,
+                                                                                          π 2        m2e            2      m2e      6
+Correction                                  Kin3              Kin2                                                   
+                                                                                          α     1        E       1 2 Q2
+Multitracks in HRS                         1.079             1.099              δreal,0 =     − ln2           +     ln
+                                                                                          π     2        E      2       m2e
+Triple cluster in calorimeters             1.035             1.020                                             
+Radiative correction                    0.91 ± 0.02       0.91 ± 0.02                       π2               θe
+                                                                                          −     + Sp cos2            ,                   (33)
+                                                                                             3                2
+
+                                                                     025201-7
+E. FUCHEY et al.                                                                                                 PHYSICAL REVIEW C 83, 025201 (2011)
+
+              TABLE IV. Average quantities weighted with the cross section for the four kinematics of the experiment. Errors are
+           the maximal deviation of the values in the seven tmin − t bins, compared to the averages listed.
+
+                                                  Q2 dependence                                                    xBj dependence
+                                         Kin3                                Kin2                        KinX3                          KinX2
+
+           Nπ 0                        15516                             23429                            5952                          9860
+           Ngen                     2.14 × 109                        2.14 × 109
+             L dt                 5.10 × 109 nb−1                   2.99 × 109 nb−1
+           Q2 (GeV2 )               2.350 ± 0.002                     1.941 ± 0.010               2.155 ± 0.268                      2.073 ± 0.001
+           xBj                      0.368 ± 0.001                     0.368 ± 0.005               0.335 ± 0.045                      0.394 ± 0.003
+           W (GeV)                  2.217 ± 0.004                     2.055 ± 0.012               2.272 ± 0.072                      2.016 ± 0.008
+           tmin (GeV2 )           −0.173 ± 0.001                    −0.170 ± 0.005               −0.137 ± 0.048                     −0.199 ± 0.003
+                                    0.649 ± 0.002                     0.769 ± 0.003               0.648 ± 0.001                      0.768 ± 0.003
+           E0 (GeV)                 5.752 ± 0.001                     5.753 ± 0.001               5.752 ± 0.001                      5.753 ± 0.001
+           E  (GeV)                2.348 ± 0.007                     2.937 ± 0.020               2.321 ± 0.029                      2.951 ± 0.016
+           q lab (GeV)              3.734 ± 0.007                     3.143 ± 0.017               3.732 ± 0.009                      3.151 ± 0.014
+           pπc.m. (GeV)             0.904 ± 0.002                     0.806 ± 0.007               0.937 ± 0.043                      0.783 ± 0.005
+           kγc.m. (GeV)             0.910 ± 0.002                     0.813 ± 0.007               0.942 ± 0.042                      0.790 ± 0.005
+
+
+where Sp(cos2 θe /2) is the Spence function. After an ap-                           the final state, and diffractive ρ + → π + π 0 production via the
+proximate resummation, the correction we apply to the raw                           ep → eρ + n reaction. All these channels can be observed in a
+counts (to obtain the equivalent Born approximation cross                           missing-mass squared distribution (Fig. 6). The H (e, e π 0 )γp
+section) is                                                                         channel originates from the diffractive ep → epω reaction,
+                                                                                    with a 8.5% branching-ratio decay channel [27]. In our
+          rad corr = e−δvertex −δreal,0 (1 − δvacuum /2)2 .              (34)       acceptance, the (e, e π 0 ) missing-mass squared threshold for
+The numerical values for our kinematics are tabulated in                            exclusive ω electroproduction is 1.0 GeV2 , thus slightly lower
+Table III.                                                                          than the N π threshold of 1.15 GeV2 . However, based on
+                                                                                    ep → epω measurements performed by [28], the expected
+                 VII. SYSTEMATIC ERRORS
+                                                                                    background of ωπ 0 γ events for MX2 < 1.15 GeV2 is less
+                                                                                    than 1% of the exclusive H (e, e π 0 )p yield in all tmin − t
+    Two classes of inclusive hadronic electroproduction chan-                       bins.
+nels compete with the exclusive H (e, e π 0 )p reaction: the                          The systematic errors in the extraction method are due to
+H (e, e π 0 )Nπ, Nπ π, . . . channels, with a threshold at MX2 =                   the cut on the missing-mass squared MX2 and on the calorimeter
+(Mp + mπ )2 = 1.15 GeV2 and the H (e, e π 0 )γp channel. The                       threshold Ethr . The stability of the results is checked by varying
+first class includes N ∗ and nonresonant N π production in                          each cut in turn.
+
+                            TABLE V. Values for tmin − t, sin θπc.m. , and sin2 θπc.m. , weighted by the cross section.
+
+                            Q2 dependence                                                                        xBj dependence
+      tmin − t (GeV )
+                    2
+                                    sin θπc.m.                  2
+                                                              sin   θπc.m.              tmin − t (GeV )
+                                                                                                     2
+                                                                                                                       sin θπc.m.               sin2 θπc.m.
+
+                                  Kin3                                                                              KinX3
+      0.0095                        0.077                      0.007                        0.0095                     0.076                     0.007
+      0.0298                        0.144                      0.021                        0.0297                     0.143                     0.020
+      0.0546                        0.194                      0.038                        0.0545                     0.193                     0.037
+      0.0844                        0.241                      0.058                        0.0843                     0.240                     0.058
+      0.1188                        0.285                      0.081                        0.1188                     0.284                     0.081
+      0.1583                        0.328                      0.108                        0.1579                     0.326                     0.106
+      0.2063                        0.372                      0.139                        0.2057                     0.370                     0.137
+                                  Kin2                                                                              KinX2
+      0.0094                        0.085                      0.008                        0.0094                     0.085                      0.008
+      0.0296                        0.159                      0.026                        0.0296                     0.160                      0.026
+      0.0541                        0.215                      0.046                        0.0542                     0.216                      0.047
+      0.0839                        0.267                      0.071                        0.0840                     0.268                      0.072
+      0.1179                        0.315                      0.099                        0.1181                     0.316                      0.100
+      0.1576                        0.362                      0.131                        0.1579                     0.364                      0.133
+      0.2050                        0.410                      0.168                        0.2051                     0.412                      0.170
+
+
+                                                                             025201-8
+EXCLUSIVE NEUTRAL PION ELECTROPRODUCTION IN . . .                                                PHYSICAL REVIEW C 83, 025201 (2011)
+
+   TABLE VI. Separated cross-section values from Eq. (19) (first                  variation are listed in Tables VIII and IX. In each case,
+quoted value) with statistic errors (second quoted value) and sys-                this study is performed with Ethr fixed at 1.0 GeV.
+tematic errors (third quoted value) for each of the seven considered         (ii) For the calorimeter threshold Ethr , the stability of R is
+bins.                                                                             expected when the software threshold is fixed above
+                                                                                  the hardware threshold. Above the hardware threshold,
+tmin − t                              Q2 dependence                               the cut is directly correlated with the π 0 → γ γ decay
+(GeV2 )                  Kin3                        Kin2                         phase space, and the number of events decreases
+                     xBj = 0.369,                xBj = 0.368,                     linearly with Ethr . This comes from the isotropic decay
+                   Q2 = 2.350 GeV2             Q2 = 1.941 GeV2                    of the pion, leading to a flat energy distribution of
+                               dσT /dt + L dσL /dt                                each decay photon. Figure 9 shows for Kin2, the
+                                    (nb/GeV2 )                                    quantity R along with the raw number of counts.
+                                                                                  The stability is indeed no longer observed when the
+0.010                377 ± 10 ± 12                     571 ± 10 ± 24
+                                                                                  statistics are not linear with the threshold, meaning
+0.030                381 ± 12 ± 12                     600 ± 12 ± 25
+0.054                403 ± 10 ± 13                     641 ± 12 ± 27
+                                                                                  the hardware threshold competes with the analysis
+0.084                425 ± 11 ± 14                     673 ± 15 ± 28
+0.118                418 ± 11 ± 14                     645 ± 16 ± 27        TABLE VII. Separated cross-section values from Eq. (19) (first
+0.158                395 ± 13 ± 13                     636 ± 25 ± 27    quoted value) with statistic errors (second quoted value) and sys-
+0.206                384 ± 13 ± 13                     628 ± 36 ± 26    tematic errors (third quoted value) for each of the first seven bins in
+                                         dσT L /dt                      tmin − t for 1.95 GeV2 < Q2 < 2.25 GeV2 .
+0.010               −13 ± 23 ± 10                       17 ± 19 ± 13
+0.030                38 ± 26 ± 24                      −43 ± 22 ± 12    tmin − t                            xBj dependence
+0.054               −25 ± 22 ± 11                      −23 ± 21 ± 12    (GeV ) 2
+                                                                                               KinX3                       KinX2
+0.084               −26 ± 25 ± 13                      −19 ± 27 ± 14                        xBj = 0.335,                xBj = 0.394,
+0.118               −75 ± 24 ± 9                      −103 ± 30 ± 21                      Q2 = 2.155 GeV2            Q2 = 2.073 GeV2
+0.158               −91 ± 30 ± 8                      −185 ± 52 ± 43                                   dσT /dt + L dσL /dt
+0.206              −123 ± 31 ± 10                     −189 ± 74 ± 34                                        (nb/GeV2 )
+                                         dσT T /dt
+                                                                        0.010               439 ± 19 ± 14                   635 ± 17 ± 26
+0.010               −12 ± 23 ± 14                      −39 ± 19 ± 7
+                                                                        0.030               437 ± 22 ± 14                   703 ± 21 ± 29
+0.030               −25 ± 27 ± 15                     −110 ± 24 ± 13
+                                                                        0.054               457 ± 18 ± 15                   683 ± 19 ± 28
+0.054               −74 ± 22 ± 4                      −141 ± 22 ± 17
+                                                                        0.084               442 ± 21 ± 14                   688 ± 23 ± 29
+0.084               −64 ± 25 ± 14                     −174 ± 28 ± 17
+                                                                        0.118               466 ± 22 ± 15                   682 ± 23 ± 28
+0.118              −124 ± 24 ± 16                     −319 ± 29 ± 23
+                                                                        0.158               407 ± 29 ± 13                   662 ± 34 ± 28
+0.158              −137 ± 29 ± 15                     −352 ± 45 ± 53
+                                                                        0.205               406 ± 34 ± 13                   591 ± 44 ± 25
+0.206              −134 ± 30 ± 15                     −343 ± 57 ± 68
+                                                                                                               dσT L /dt
+                                         dσT L /dt
+                                                                        0.010               20 ± 46 ± 38                 −26 ± 30 ± 22
+0.010                  9 ± 49 ± 20                      31 ± 51 ± 15
+                                                                        0.030                2 ± 50 ± 17                −100 ± 37 ± 61
+0.030                119 ± 55 ± 21                     136 ± 61 ± 24
+                                                                        0.054              −28 ± 43 ± 15                 −88 ± 32 ± 54
+0.054                129 ± 46 ± 12                      61 ± 56 ± 41
+                                                                        0.084              −37 ± 50 ± 19                 −68 ± 38 ± 487
+0.084                151 ± 51 ± 30                     123 ± 68 ± 20
+                                                                        0.118              −74 ± 55 ± 27                −170 ± 40 ± 562
+0.118                153 ± 47 ± 17                     120 ± 69 ± 24
+                                                                        0.158             −188 ± 80 ± 27                −155 ± 63 ± 657
+0.158                 87 ± 54 ± 23                     142 ± 91 ± 36
+                                                                        0.205             −174 ± 90 ± 32                −228 ± 82 ± 738
+0.206                127 ± 51 ± 15                      76 ± 99 ± 80
+                                                                                                               dσT T /dt
+                                                                        0.010              −16 ± 44 ± 16                 −63 ± 33 ± 18
+   The variation in the estimator                                       0.030              −44 ± 50 ± 32                 −83 ± 41 ± 22
+                             6
+                                                                        0.054              −63 ± 42 ± 15                −153 ± 36 ± 24
+                                                                        0.084             −114 ± 47 ± 8                 −186 ± 43 ± 78
+                     R=            (rT + L rL )                 (35)
+                                                                        0.118             −156 ± 50 ± 18                −327 ± 44 ± 109
+                           bin=0
+                                                                        0.158             −244 ± 66 ± 35                −247 ± 65 ± 141
+                                                                        0.205             −124 ± 69 ± 42                −444 ± 82 ± 183
+   is used to quantify the systematic errors.
+                                                                                                               dσT L /dt
+    (i) For the exclusivity (MX2 ) cut, we consider the stability       0.010                68 ± 97 ± 35                   −23 ± 84 ± 138
+        interval from 0.9 to 1.10 GeV2 in the MX2 cut. At               0.030                12 ± 109 ± 39                  112 ± 100 ± 104
+        the high end we expect the cross section to have                0.054               236 ± 88 ± 19                    50 ± 90 ± 63
+        contributions from inelastic final states (Fig. 6). At the      0.084               126 ± 99 ± 26                   211 ± 104 ± 95
+        low end, we are removing roughly half of the statistics,        0.118               119 ± 93 ± 22                     3 ± 106 ± 111
+        and we become progressively more sensitive to the               0.158               246 ± 106 ± 89                   78 ± 136 ± 126
+        experimental line shape. The stability of the exclusivity       0.205               177 ± 104 ± 30                   62 ± 146 ± 146
+        cut (e.g., for Kin3) is plotted in Fig. 8. The cuts and
+
+                                                                  025201-9
+E. FUCHEY et al.                                                                                                                          PHYSICAL REVIEW C 83, 025201 (2011)
+
+                                                                                                    TABLE IX. Experimental systematic errors. The first “Total
+                        1.45
+                                                                                                 quadratic” row shows the quadratic sum of all experimental helicity-
+                                                                                                 independent systematic errors. The second “Total quadratic” row
+                                                                                                 shows the quadratic sum of all experimental systematic errors
+
+
+
+Σbin (r +∈L r L) (nb)
+                                                                                                 including helicity-dependent effects.
+                         1.4
+                                                                                                                                                        Kin3              Kin2
+              T
+                                                                                                                                                     KinX3 (%)         KinX2 (%)
+
+                                                                                                 Exclusivity cut                                          1.5             3.0
+                        1.35                                                                     Calorimeter threshold                                           1.0
+                                                                                                 HRS acceptance                                                  2.2
+                                                                                                 Radiative corrections                                           1.5
+                                 0.9    0.95       1      1.05      1.1    1.15     1.2          Target length                                                   0.5
+                                                                     2                           Hadronic tensor integration                                     0.3
+                                                         M2X cut (GeV )
+                                                                                                 Multitracks corrections                                         0.1
+   FIG. 8. (Color online) Total cross section integrated over tmin − t                           3 clusters corrections                                          0.1
+and φπ , for Kin3, as a function of the MX2 cut. The vertical lines                              Luminosity                                                      0.1
+indicate, from left to right, the minimal, optimal, and maximal MX2                              Dead time                                                       0.1
+cut values of the stability domain.                                                              Particle identification                                         0.1
+                                                                                                 Total quadratic                                          3.3             4.2
+                                                                                                 Beam polarization                                               2.0
+                               threshold. The same behavior is shown for Kin3. For               Total quadratic                                          3.9             4.6
+                               both kinematics, the systematic error coming from the
+                               calorimeter threshold is evaluated as ±1%.
+   The optimal cut is set in the middle of the stability interval                                statistics allowed us to achieve, for the φπ -independent cross
+(see Figs. 8 and 9). The stability interval bounds and the                                       section, a statistical precision of 3% for Kin2 and Kin3, and
+optimal values for the MX2 cut and Ethr are listed in Table VIII                                 of 5% for KinX2 and KinX3. This difference is due to the fact
+for both kinematics.                                                                             that we could use the full statistics for Kin2 and Kin3, whereas
+   The reduced structure functions r are extracted at the                                       less than half of the statistics were available for KinX2 and
+optimal value of the cuts. For the structure functions implied                                   KinX3.
+in φπ dependences, systematic errors are taken as the rms                                           Figure 10 shows σT + L σL and Fig. 11 shows σT L , σT T ,
+difference between the r computed at the optimum cuts and                                       and σT L plotted as a function of tmin − t, both for Kin2 and
+the r computed at each of the four extremities of the stability                                 Kin3. Figure 12 shows σT + L σL and Fig. 13 shows σT L ,
+domain.                                                                                          σT T , and σT L , both for KinX2 and KinX3.
+   All instrumental sources of systematic errors are shown                                          We performed fits proportional to sin θπc.m. for σT L and σT L ,
+along with the analysis systematic errors in Table IX. Since                                     and proportional to sin2 θπc.m. for σT T . These fits, including
+all sources of systematic errors are independent, we added                                       statistical and systematic errors, are shown as bands in Figs. 11
+them quadratically. This total systematic error is included in
+Tables VI and VII.                                                                                                         1.7
+
+
+
+
+                                                                                                 Σ bin{r +∈L rL} (µ b)
+                                                VIII. RESULTS                                                             1.65
+                                                                                                                T
+                                           0
+   The exclusive π electroproduction cross section and, in
+particular, the φπ dependences of its separated components                                                                 1.6
+were extracted for Kin2, Kin3, KinX2, and KinX3. Our                                                                                                                            (a)
+
+
+
+
+                                                                                                    Number of events
+                                                                                                                         40000
+    TABLE VIII. Values of the MX2 cut and Ethr defining the global
+cross-section stability domain. Minimum and maximum are the
+                                                                                                                         20000
+bounds of this domain, and optimum is the cut value set in the middle
+of the stability interval.
+                                                                                                                                                                             (b)
+                                                                                                                            0    0.9   0.95      1        1.05   1.1      1.15
+Variable                                       Minimum           Optimum          Maximum
+                                                                                                                                               EThres (GeV)
+                                                  Kin3/KinX3
+MX2 cut (GeV2 )                                 0.90              1.00              1.10             FIG. 9. (Color online) (a) Total cross section integrated over
+Ethr (GeV)                                      1.20              1.275             1.35         tmin − t and φπ , for Kin2, as a function of Ethr . The vertical lines
+                                                  Kin2/KinX2                                     indicate, from left to right, the minimal, optimal, and maximal Ethr
+MX2 cut (GeV2 )                                 0.90              1.00              1.10         values of the stability domain (see Table VIII for Kin3 values).
+Ethr (GeV)                                      1.00              1.075             1.15         (b) The number of events as a function of Ethr . The stability domain
+                                                                                                 for Ethr shows the statistics linearly decreasing with Ethr .
+
+                                                                                           025201-10
+EXCLUSIVE NEUTRAL PION ELECTROPRODUCTION IN . . .                                                                                                                                         PHYSICAL REVIEW C 83, 025201 (2011)
+
+                                      TABLE X. h -dependent hadronic tensor parametriza-
+                                                                                                                                                                    0
+                                  tion for constant xBj . The first error is the statistical error
+
+
+
+
+                                                                                                             dσTL’ /dt, dσTT /dt, d σTL /dt (µ b GeV -2
+                                  and the second is the systematic error.                                                                                  -0.2
+                                                                                                                                                                                Q 2=1.9 GeV2
+                                                                                                                                                                                Q 2=2.3 GeV2                                     (a)
+                                  Q2 dependence                                                                                                            -0.4
+                                  Kin3 xBj = 0.368, Q2 = 2.350 (GeV2 )                                                                                              0
+                                   Wxx −Wyy
+                                       2
+                                           = [−562 ± 62 ± 32] × sin       2
+                                                                              θhc.m. cos 2
+                                                                                  h nb
+                                                                                                                                                           -0.2
+
+                                  Re(Wxz ) = [97 ± 18 ± 8] × sin θhc.m. cos h nb                                                                           -0.4
+                                  Im(Wxz ) = [−206 ± 35 ± 13] × sin θhc.m. sin h nb                                                                        -0.6                                                                  (b)
+                                  Kin2 xBj = 0.368, Q2 = 1.941 (GeV2 )                                                                                       0.4
+                                  Wxx −Wyy
+                                      2
+                                           = [−1024 ± 58 ± 51] × sin2 θhc.m. cos 2 h nb                                                                      0.2
+                                  Re(Wxz ) = [82 ± 17 ± 11] × sin θhc.m. cos h nb                                                                                                                                                (c)
+                                                                                                                                                                    0
+                                  Im(Wxz ) = [−142 ± 38 ± 19] × sin θhCM sin h nb
+                                                                                                                                                           -0.2
+                                                                                                                                                               0                 0.05            0.1               0.15    0.2
+                                                                                                                                                                                                t min-t (GeV 2)
+and 13, and in Tables X and XI. Their reduced χ 2 are below
+1.05 for the Q2 -dependent data, and below 0.75 for the                                                         FIG. 11. σT L (a), σT T (b), and σT L (c) H (e, e π 0 )p cross-section
+xBj -dependent data. This confirms that the main t dependence                                               components as a function of tmin − t for the two Q2 values. Kin2
+of σT L,T L , and σT T is given by sin θπc.m. and sin2 θπc.m. ,                                            is represented by the open circles and Kin3 by the solid circles.
+respectively.                                                                                               Error bars represent statistical errors only. The bands (light for Kin2
+    The lower panel of Fig. 10 (respectively, Fig. 12) also                                                 and dark for Kin3) show fits proportional to sin θπc.m. , sin2 θπc.m. , and
+shows the Q2 dependence (respectively, xBj dependence) for                                                  sin θπc.m. , respectively. Refer to Table VI for more detailed cross-
+the total cross section σT + L σL . To investigate a Q2 or a                                                section values, with statistical and systematic errors.
+xBj dependence, the ratio of σT + L σL for the two kinematics
+is plotted as a function of tmin − t. This ratio is found to be                                                The Q2 and W dependences of the relevant quantities [σT +
+independent of t, thus the value of this ratio is fitted by a                                                L σL , σT , and σL , with our conventions (i.e., Drechsel-Tiator)
+
+constant at the xBj and Q2 values for the two kinematics.                                                   and VGG conventions] have been summarized in Table XII.
+    The dependence of σT + L σL in Figs. 10 and 12 yields the
+following conclusions:                                                                                                                                                                    IX. DISCUSSION
+
+                        (i) The ratio [σT + L σL ]Kin3 /[σT + L σL ]Kin2 is flat in                            In the domain in tmin − t where we extracted cross sections,
+                            tmin − t with a reduced χ 2 of 0.33. The ratio is found to                      the r values from Eqs. (15) and (16) are constant within
+                            be 0.633 ± 0.009, indicating a Q2 dependence of the                             statistics, as evidenced by the fits in Figs. 11 and 13.
+                            total cross section of about 1/Q4.5 .                                              The data we extracted (see the previous section) yield two
+                       (ii) The ratio [σT + L σL ]KinX3 /[σT + L σL ]KinX2 is also                          conclusions with regard to the available models:
+                            flat in tmin − t with a reduced χ 2 of 0.56. This ratio is                                                                     (i) The t-channel meson-exchange model of Laget
+                            found to be 0.660 ± 0.015, indicating a W dependence                                                                               (Fig. 14) is able to describe σT + L σL and σT L , but
+                            of the total cross section of about 1/W 3.5 .                                                                                      neither σT L nor σT T [6].
+
+                                          0.8                                                                                                                             0.8
+
+
+                                                                                                                                    (µb GeV-2)
+               (µb GeV-2)
+                                          0.6                                                                                                                             0.6
+
+                                          0.4                                                                                                                             0.4
+
+
+
+
+                                                                                                            [ σT + ∈L σL]KinX3 dσ + ∈L dσ
+                                                                                                                                                                                  W = 2.0 GeV
+
+
+
+
+[σT + ∈L σL]Kin3 dσ + ∈L dσ
+                                                          2     2
+                                          0.2         Q =1.9 GeV                                                                                                          0.2     W = 2.3 GeV
+                                                      Q2=2.3 GeV2                                    (a)                                                   dt                                                                    (a)
+                               dt          0                                                                                                                               0
+                                            1                                                                                                                               1
+                                                                                                                                                                  KinX2
+                                   Kin2
+
+
+
+
+                                                                                                                                 T       L
+                                                                                                                                                          [σT + ∈L σL]
+                   T       L
+                           [σT + ∈L σL]
+                                          0.5                                                                                                                             0.5
+
+
+                                                                                                     (b)                                                                                                                         (b)
+                                           0                                                                                                                               0
+                                            0      0.05             0.1            0.15       0.2                                                                           0      0.05            0.1              0.15   0.2
+                                                                tmin-t (GeV2)                                                                                                                     tmin-t (GeV2 )
+
+
+   FIG. 10. (a) Separated H (e, e π 0 )p cross section σT + L σL as a                                          FIG. 12. (a) Separated H (e, e π 0 )p cross section σT + L σL as
+function of tmin − t for xBj = 0.36. Error bars represent statistical                                       a function of tmin − t for Q2 = 2.1 GeV2 . Error bars represent
+errors only. (b) Ratio of σT + L σL for the two kinematics as a                                             statistical errors only. (b) Ratio of σT + L σL for the two kinematics
+function of tmin − t. The fit of this ratio (dashed line) indicates the Q2                                  as a function of tmin − t. The fit of this ratio (dashed line) indicates
+dependence of the cross section.                                                                            the W dependence of the cross section.
+
+                                                                                                      025201-11
+E. FUCHEY et al.                                                                                                                                                       PHYSICAL REVIEW C 83, 025201 (2011)
+
+                                                                                                                               TABLE XII. Q2 and W dependences for the total cross section
+                                                0
+                                                                                                                           and the longitudional cross section with Drechsel-Tiator conventions
+
+
+
+
+dσTL’ /dt, dσTT /dt, d σTL /dt (µ b GeV -2)
+                                              -0.2                                                                         and with VGG conventions. For σL , the dependences have been
+                                                           W = 2.0 GeV                                                     evaluated neglecting σT . The Q2 and W dependences of σT alone
+                                                           W = 2.3 GeV                                              (a)
+                                              -0.4                                                                         (i.e., assuming σL = 0) are the same as the Q2 and W dependences of
+                                                0                                                                          σT + L σL .
+                                              -0.2
+
+                                              -0.4                                                                         Quantity                                         Q2 dependence                         W dependence
+                                                                                                                    (b)
+                                              -0.6
+                                                                                                                           σT + L σL                                          (Q2 )−2.39±0.08                     (W )−3.48±0.11
+                                              0.4
+                                                                                                                           σL (Drechsel-Tiator)                               (Q2 )−0.50±0.13                     (W )−0.46±0.57
+                                              0.2                                                                          σL (VGG)                                           (Q2 )−1.50±0.08                      (W )1.28±2.52
+                                                                                                                    (c)
+                                                0
+
+                                              -0.2
+                                                  0           0.05           0.1             0.15           0.2
+                                                                           t min-t (GeV 2)
+                                                                                                                           performed PYTHIA-JETSET calculations using the Lund model
+                                                                                                                           applied to π + transverse cross sections at Hall C kinematics
+   FIG. 13. σT L (a), σT T (b), and σT L (c) H (e, e π 0 )p cross-section                                                [15]. In this model, the virtual photon strikes a quark, with a
+components as a function of tmin − t for the two xBj values. KinX2 is                                                      probability given by the structure functions. Due to this, the
+represented by the open circles and KinX3 by the solid circles. Error                                                      hadronic system fragments into two jets. The jet engendered
+bars represent statistical errors only. The bands (light for KinX2 and                                                     by the single quark gives a pion, and the one engendered by
+dark for KinX3) show fits proportional to sin θπc.m. , sin2 θπc.m. , and                                                   the remainder of the nucleon gives the final neutron. These
+sin θπc.m. , respectively. Refer to Table VII for more detailed cross-                                                     calculations applied to Hall C π + transverse cross sections
+section values, with statistical and systematic errors.                                                                    are in excellent agreement with the data. This gives evidence
+                                                                                                                           that the π + transverse cross section at Q2 > 1 GeV2 above
+                                         (ii) The Q2 dependence of the cross section (Fig. 10                              the resonance region is described by a partonic process.
+                                              and Table XII) demonstrates that we are far from                             This suggests that the present π 0 data could similarly be
+                                              the QCD leading twist prediction of dσL /dt, which                           described by incoherent scattering on the partonic structure
+                                              behaves as 1/Q6 . On the other hand, it is similar                           of the nucleon target.
+                                              to the Q2 dependence of the transverse cross sec-                               For these reasons, we consider our data within the context
+                                              tion for charged pion electroproduction published by                         of semi-inclusive deep inelastic scattering (SIDIS). We can
+                                              Hall C [8].                                                                  try to fit our data with a SIDIS formalism written by
+   Moreover, the π 0 has no charge and no spin, so a
+direct coupling with a virtual photon is suppressed, which                                                                                         0.8                                                *       0
+removes the pion-pole contribution to the longitudinal cross                                                                                                                                     p(γ ,π )p
+section. This suggests that the transverse ep → epπ 0 cross                                                                                        0.6
+                                                                                                                                                                                            σT+εσL
+section is likely to dominate, and transverse ep → enπ +                                                                                           0.4        σT+εσL
+cross sections have already been described by quark frag-
+                                                                                                                                                   0.2
+mentation mechanisms usually used to describe semi-inclusive
+processes.                                                                                                                                           0
+
+
+
+
+                                                                                                                                 dσ/dt (µb/GeV )
+                                                                                                                                 2
+   Horn et al. measured the exclusive π + electroproduction                                                                                        -0.2                                         σTT
+cross section at Q2 = 1.60 and 2.45 GeV2 , with σT and σL                                                                                                       σTT
+separation [8]. The t-channel meson-exchange model by Laget                                                                                         0.7
+                                                                                                                                                    0.6               Q2 = 1.94 GeV2                  Q2 = 2.35 GeV2
+reproduces the σL component. However, the σT component                                                                                                                W = 2.051 GeV                   W = 2.214 GeV
+                                                                                                                                                    0.5
+does not follow the TME model prediction. Kaskulov et al.                                                                                                             X = 0.37                        X = 0.37
+                                                                                                                                                    0.4               ε = 0.77                        ε = 0.60
+                                                                                                                                                    0.3        σTL
+                                                  TABLE XI. h -dependent hadronic tensor parametriza-                                                                                       σTL
+                                                                                                                                                    0.2
+                                              tion for constant Q2 . The first error is the statistical error and                                   0.1
+                                              the second is the systematic error.                                                                     0
+                                                                                                                                                   -0.1                     σ, TL                                 σ, TL
+                                              xBj dependence                                                                                       -0.2
+                                              KinX3 xBj = 0.335, Q2 = 2.155 (GeV2 )                                                                -0.3
+                                                                                                                                                          0   0.5       1     1.5    0    0.5             1        1.5     2
+                                               Wxx −Wyy
+                                                   2
+                                                       = [−770 ± 135 ± 63] × sin2 θhc.m. cos 2 h nb                                                                                    2
+                                                                                                                                                                                -t (GeV )
+                                              Re(Wxz ) = [121 ± 43 ± 17] × sin θhc.m. cos h nb
+                                              Im(Wxz ) = [−278 ± 69 ± 28] × sin θhc.m. sin h nb                               FIG. 14. (Color online) New calculations at Kin2 (left panels)
+                                              KinX2 xBj = 0.394, Q2 = 2.073 (GeV2 )                                        and Kin3 (right panels) of the t-channel meson-exchange model,
+                                              Wxx −Wyy
+                                                  2
+                                                       = [−1003 ± 86 ± 153] × sin2 θhc.m. cos 2 h nb                       including charge-pion rescattering with π N and π  intermedi-
+                                              Re(Wxz ) = [163 ± 24 ± 72] × sin θhc.m. cos h nb                             ate states [6]. Dashed lines: pole contributions and Pomeron cut
+                                              Im(Wxz ) = [−101 ± 58 ± 55] × sin θhc.m. sin h nb                            alone. Dash-dotted lines: without ρ cuts. Full lines: ρ cuts
+                                                                                                                           included.
+
+                                                                                                                     025201-12
+EXCLUSIVE NEUTRAL PION ELECTROPRODUCTION IN . . .                                                                PHYSICAL REVIEW C 83, 025201 (2011)
+
+                                                                                              The authors of [29] adjusted their model to semi-inclusive
+                                                         R=
+                                                            2∈L(1+∈)σTL                   data. They give k⊥   2
+                                                                                                                  = 0.25 GeV2 and p⊥     2
+                                                                                                                                            = 0.20 GeV2 ,
+                                                             σT+∈L σL                     giving a ratio p⊥2     2
+                                                                                                              / k⊥  ∼ 0.8. However, they extracted these
+  0
+                                                                                          values in the inclusive region, implying a high multiplicity of
+                                                             exp, Q2=1.9 GeV 2            particles, whereas in our data, the multiplicity of particles
+                                                                                          is unity. Typically, Anselmino et al. fit their model with
+                                                                                          data covering the range 0.1 < zh < 1.0, with most of the
+                                                                      <p2>
+                                                             model,
+                                                                                   +1.8
+                                                                              =5.8-1.2    statistics within zh < 0.4, whereas our data are within zh >
+-0.2                                                                  <k 2>
+                                                                                          0.9. Furthermore, Kaskulov et al. [15] used a value of 1.4 GeV2
+                                                                                          for the rms transverse momentum of partons in their fit of the
+                                                             exp, Q2=2.3 GeV 2            Hall C π + data.
+                                                                                              The exclusive limit of SIDIS could be defined by a
+-0.4
+    0             0.1             0.2          0.3
+                                                                      <p2>
+                                                                                          SIDIS-inspired model applicable to data at zπ → 1.0 or, more
+                                              pπ (GeV)       model,           =4.1+1.2    practically, when the measured hadron carries such a large
+                                                                      <k 2>       -0.8
+                                                                                          fraction zπ of the total energy of the reaction that it does not
+                        √
+    FIG. 15. Ratio 2σTL +(1+ )σT L
+                                   for Kin2 (open circles) and Kin3                       allow the production of another particle.
+                           L σL
+(solid circles) plotted as a function of pπ ⊥ . Error bars represent                          The HERMES and COMPASS collaborations have pub-
+statistical errors only. We fitted to each kinematics a model by                          lished cos 2φπ moments of π + and π − SIDIS, including zh
+Anselmino et al. in [29] using p⊥2 / k⊥2 as a free parameter,                             up to 0.7 [30]. However, it is not possible to make a direct
+where k⊥2 is the intrinsic transverse momentum of quarks and p⊥2                          comparison to our σT T π 0 data as the π + and π − moments
+is the transverse momentum transferred during the hadronization                           on the proton have different signs and magnitudes for the
+process. The reduced χ 2 of the fits are 2.12 for Kin3 and 2.65 for                       Boer-Mulders effect. On the other hand, the higher twist Cahn
+Kin2.                                                                                     effect, which also contributes to σT T , does not give by itself a
+                                                                                          satisfying description of σT T .
+Anselmino et al. [29]. Equation (38) of [29] gives the cross
+section for semi-inclusive production of a pion (valid for any                                                  X. CONCLUSIONS
+hadron):
+                                                                                              We extracted the separated differential π 0 cross section at
+       d 5 σ p→πX                                                                       Jefferson Lab, Hall A, at four kinematic settings: Kin2 and
+  dxBj dQ2 dzπ d 2 pπ⊥                                                                    Kin3 with a 3% statistical precision, and KinX2 and KinX3
+                                                                                          with a 5% statistical precision. We studied the Q2 dependence
+                2π α 2 eq2
+       ≃                     fq (xBj )Dqh (zπ )                                           of the hadronic tensor with the two first settings and the xBj
+            q
+                   Q4                                                                     dependence with the latter two. The shape and order of the
+                                    √                                                   magnitude of the cross section components indicate that
+                              (2 − y) 1 − y k⊥
+                                             2
+                                               zπ pπ⊥                                     the t-channel meson-exchange model is able to reproduce the
+           × 1 + (1 − y) − 4  2
+                                      2            cos φπ
+                                      pπ⊥ Q2                                              total π 0 cross section, but it would still improvement for the
+                1                                                                         description of the other components.
+           ×  2  e−pπ⊥ / pπ⊥ ,
+                        2   2
+                                                          (36)                                Table XII summarizes the contradiction between our data
+             π pπ⊥                                                                        and the leading twist QCD prediction for high Q2 . Instead of
+where y = pq/pk, zπ = ppπ /pq is the fraction of the                                      an ∼ Q−6 dependence we find, under the assumption that σT
+reaction energy carried by the measured hadron, and the quan-                             is negligible (which is very unlikely), a Q−3 dependence for
+tities between angle brackets are the standard deviations of                              σL . On the other hand, the cross section extracted may show
+transverse momentum distributions, which are approximated                                 an analogy with the formalism of SIDIS at the exclusive limit.
+as Gaussian. k⊥  2
+                    stands for the parton transverse momentum                             Our ep → epπ 0 data and the Hall C ep → epπ + data are
+in the proton, and pπ⊥  2
+                              = p⊥ 2
+                                      + zπ2 k⊥2
+                                                  is the measured                         important bases for studying the applicability of the SIDIS
+transverse momentum of the observed hadron, where p⊥           2                          concepts to exclusive data. To improve the understanding
+stands for the transverse momentum of the hadron with respect                             of our data, we plan to run another π 0 experiment in 2010,
+to the direction of the struck quark. The idea is to adjust the                           at two beam energies, allowing us to disentangle L dσ        dt
+                                                                                                                                                         L
+
+                                                                                                dσT
+ratio of cos φπ over the constant term in brackets of Eq. (36)                            from dt .
+                                      2     2
+by adjusting only the parameter p⊥      / k⊥    :
+    √                                  √                                                                     ACKNOWLEDGMENTS
+      2 L (1 + )σT L           4(2 − y) 1 − yzπ pπ⊥
+                      =                                 . (37)                             We acknowledge the essential work of the JLab accelerator
+       σT + L σL           p⊥
+                             2
+                                + zπ2 Q2 [1 + (1 − y)2 ]
+                           k2        ⊥                                                    division and the Hall A technical staff. This work was
+                                                                                          supported by DOE Contract No. DOE-AC05-06OR23177
+   Two conclusions arise from the fits shown in Fig. 15:                                  under which the Jefferson Science Associates, LLC, operates
+(1) the minus sign affecting the cos φπ term in the SIDIS                                 the Thomas Jefferson National Accelerator Facility. We
+                                               2
+model is in agreement with the σT L and (2) p⊥    must be                                 acknowledge additional grants from DOE, NSF, and the French
+equal to ∼ 5.0 × k⊥ to reproduce the data.
+                  2
+                                                                                          CNRS, ANR, and Commissariat à l’ Energie Atomique.
+
+                                                                                   025201-13
+E. FUCHEY et al.                                                                                 PHYSICAL REVIEW C 83, 025201 (2011)
+
+ [1] G. R. Goldstein and J. F. Owens, Phys. Rev. D 7, 865 (1973).        [18] C. Muñoz Camacho, Ph.D. thesis, Université Paris VI, France,
+ [2] M. Guidal, J. M. Laget, and M. Vanderhaeghen, Nucl. Phys. A              2005.
+     627, 645 (1997).                                                    [19] C. Munoz Camacho et al. (Jefferson Lab Hall A Collaboration),
+ [3] M. Guidal, J. M. Laget, and M. Vanderhaeghen, Phys. Lett. B              Phys. Rev. Lett. 97, 262002 (2006).
+     400, 6 (1997).                                                      [20] M. Mazouz and E. Voutier, Hall A Technical Note
+ [4] R. De Masi et al. (CLAS Collaboration), Phys. Rev. C 77, 042201          Jlab-TN-05-033, Jefferson Lab,2005, [http://hallaweb.jlab.org/
+     (2008).                                                                  publications/Technotes/technote.html].
+ [5] J. M. Laget, Phys. Rev. C 76, 052201 (2007).                        [21] J. J. Kelly, Phys. Rev. C 70, 068202 (2004).
+ [6] J. M. Laget, Phys. Lett. B 695, 199 (2011).                         [22] G. F. Chew, M. L. Goldberger, F. E. Low, and Y. Nambu, Phys.
+ [7] S. Ahmad, G. R. Goldstein, and S. Liuti, Phys. Rev. D 79, 054014         Rev. 106, 1345 (1957).
+     (2009).                                                             [23] M. Rvachev, Hall A Technical Note Jlab-TN-01-055, Jefferson
+ [8] T. Horn et al., Phys. Rev. C 78, 058201 (2008).                          Lab,2001,       [http://hallaweb.jlab.org/publications/Technotes/
+ [9] J. C. Collins, L. Frankfurt, and M. Strikman, Phys. Rev. D 56,           technote.html].
+     2982 (1997).                                                        [24] L. W. Mo and Y.-S. Tsai, Rev. Mod. Phys. 41, 205 (1969).
+[10] K. Goeke, M. V. Polyakov, and M. Vanderhaeghen, Prog. Part.         [25] Y.-S. Tsai, Rev. Mod. Phys. 46, 815 (1974).
+     Nucl. Phys. 47, 401 (2001).                                         [26] M. Vanderhaeghen, J. M. Friedrich, D. Lhuillier, D. Marchand,
+[11] M. Vanderhaeghen, P. A. M. Guichon, and M. Guidal, Phys. Rev.            L. VanHoorebeke, and J. VandeWiele, Phys. Rev. C 62, 025501
+     D 60, 094017 (1999).                                                     (2000).
+[12] D. Mueller, D. Robaschik, B. Geyer, F. M. Dittes, and J. Horejsi,   [27] W. M. Yao et al. (Particle Data Group), J. Phys. G 33, 1
+     Fortschr. Phys. 42, 101 (1994).                                          (2006).
+[13] X.-D. Ji, Phys. Rev. Lett. 78, 610 (1997).                          [28] L. Morand et al. (CLAS Collaboration), Eur. Phys. J. A 24, 445
+[14] A. V. Radyushkin, Phys. Rev. D 56, 5524 (1997).                          (2005).
+[15] M. M. Kaskulov, K. Gallmeister, and U. Mosel, Phys. Rev. D          [29] M. Anselmino, M. Boglione, U. D’Alesio, A. Kotzinian,
+     78, 114022 (2008).                                                       F. Murgia, and A. Prokudin, Phys. Rev. D 71, 074006
+[16] D. Drechsel and L. Tiator, J. Phys. G 18, 449 (1992).                    (2005).
+[17] P. Y. Bertin, C. E. Hyde, R. Ransome, and F. Sabatié, Jefferson    [30] V. Barone, S. Melis, and A. Prokudin, Phys. Rev. D 82, 114025
+     Lab Proposal, E00-110 (2000).                                            (2010).
+
+
+
+
+                                                                   025201-14
+
