@@ -139,13 +139,18 @@ with pd.ExcelWriter("pi0_eta_database.xlsx", engine="openpyxl") as w:
     Aa.to_excel(w, sheet_name="asymmetries", index=False)
     # t and xB carry more digits than Excel shows by default
     sh = w.sheets["cross_sections"]
-    fmt = {"Q2":"0.0000","xB":"0.00000","t":"0.00000","t_bin":"0.00","eps":"0.0000"}
+    fmt = {"Q2":"0.000000","xB":"0.000000","t":"0.000000","eps":"0.000000",
+           "Q2_bin":"0.00","xB_bin":"0.000","t_bin":"0.00",
+           "chi2ndf_phi":"0.0000","chi2ndf_phi_rc":"0.0000"}
+    for c in SF + [c+"_rc" for c in SF]: fmt[c] = "0.0000"
     for j, c in enumerate(X.columns, start=1):
         if c in fmt:
             for i in range(2, len(X)+2): sh.cell(row=i, column=j).number_format = fmt[c]
     sa = w.sheets["asymmetries"]
     for j, c in enumerate(Aa.columns, start=1):
-        if c in ("t","xB","Q2"):
-            for i in range(2, len(Aa)+2): sa.cell(row=i, column=j).number_format = "0.00000"
+        if c in ("t","xB","Q2"): f = "0.000000"
+        elif c in ("value","stat","syst"): f = "0.00000"
+        else: continue
+        for i in range(2, len(Aa)+2): sa.cell(row=i, column=j).number_format = f
 print(f"cross_sections {len(X)}   asymmetries {len(Aa)}   datasets {len(S)}\n")
 print(S.to_string(index=False))
