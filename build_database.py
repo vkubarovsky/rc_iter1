@@ -177,16 +177,48 @@ for _, q in C12.iterrows():
         r[k] = float(getattr(q, c))
     rows_x.append(r)
 
-# --- COMPASS ----------------------------------------------------------------
-d = pd.read_excel("/Users/vpk/hepgen_mac/data/All_experiment.xlsx")
-for _, q in d[d.exp == "COMPASS_y20"].iterrows():
-    r = dict(exp="COMPASS_y20", meson="pi0", target="p", Q2=q.Q2, xB=q.xB, t=-abs(q.t),
-             Q2_bin=q.Q2, xB_bin=q.xB, t_bin=np.nan, group="compass_00",
-             tmin=tmin_of(q.Q2, q.xB), tprime=abs(q.t)-tmin_of(q.Q2, q.xB),
-             xB_mean=q.xB, eps=np.nan, npts_phi=np.nan, Ebeam=q.Ebeam, sigma_meaning="sigma_U",
+# --- COMPASS 2025, three projections of the same events ----------------------
+# Phys. Lett. B 870 (2025) 139832, tables 7+8 (|t|), 9+11 (Q2), 10+11 (nu).
+# This supersedes the 2020 measurement, whose five rows in All_experiment.xlsx
+# carried the bin lower edge as t and a single (Q2, xB) for all five bins.
+# The three projections are the SAME data binned three ways: at most one may
+# enter a fit.  The published systematics are asymmetric; the value stored is
+# the mean of the up and down excursions.
+for line in open("data/compass_y25.data"):
+    if line.startswith("#") or not line.strip(): continue
+    v = line.split()
+    proj, Q2, mt, xB, eps = v[0], float(v[3]), float(v[5]), float(v[7]), float(v[8])
+    sU, esU, syU = float(v[9]), float(v[10]), 0.5*(float(v[11])+float(v[12]))
+    sT, esT, syT = float(v[13]), float(v[14]), 0.5*(float(v[15])+float(v[16]))
+    # sigma_LT is quoted only for the restricted domain of table 6
+    sL, esL, syL = ((float(v[17]), float(v[18]), 0.5*(float(v[19])+float(v[20])))
+                    if len(v) > 20 else (np.nan, np.nan, np.nan))
+    r = dict(exp="COMPASS_y25", meson="pi0", target="p", Q2=Q2, xB=xB, t=-mt,
+             tmin=tmin_of(Q2, xB), tprime=mt-tmin_of(Q2, xB),
+             xB_mean=xB, Q2_bin=Q2, xB_bin=xB, t_bin=np.nan, group=f"compass_{proj}",
+             eps=eps, npts_phi=np.nan, Ebeam=160.0, sigma_meaning="sigma_U",
              chi2ndf_phi=np.nan, chi2ndf_phi_rc=np.nan, in_fit="no",
-             source="COMPASS, Phys. Lett. B 805 135454 (2020)", **blank_rc(), **blank_ltp())
-    for k in SF: r[k] = getattr(q, k, 0.0) if k in d.columns else 0.0
+             source=f"COMPASS, PLB 870 139832 (2025), {proj} projection",
+             **blank_rc())
+    for k, val in zip(SF, (sU, esU, syU, sL, esL, syL, sT, esT, syT)): r[k] = val
+    for k in SFP: r[k] = np.nan
+    rows_x.append(r)
+
+# --- COMPASS 2020 as it stood in All_experiment.xlsx, kept for the record -----
+for _, q in AE[AE.exp == "COMPASS_y20"].iterrows():
+    mt = abs(float(q.t))
+    r = dict(exp="COMPASS_y20", meson="pi0", target="p", Q2=float(q.Q2), xB=float(q.xB),
+             t=-mt, tmin=tmin_of(float(q.Q2), float(q.xB)),
+             tprime=mt-tmin_of(float(q.Q2), float(q.xB)),
+             xB_mean=float(q.xB), Q2_bin=float(q.Q2), xB_bin=float(q.xB), t_bin=np.nan,
+             group="compass_y20", eps=np.nan, npts_phi=np.nan, Ebeam=160.0,
+             sigma_meaning="sigma_U", chi2ndf_phi=np.nan, chi2ndf_phi_rc=np.nan,
+             in_fit="no",
+             source=("superseded by PLB 870 139832 (2025); t here is the bin lower edge "
+                     "and Q2, xB are nominal, not the bin averages"),
+             **blank_rc(), **blank_ltp())
+    for k, c in zip(SF, ("s_u","stat_U","sys_U","s_LT","stat_LT","sys_LT","s_TT","stat_TT","sys_TT")):
+        r[k] = float(getattr(q, c))
     rows_x.append(r)
 
 # --- asymmetries -------------------------------------------------------------
