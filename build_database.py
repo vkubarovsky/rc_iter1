@@ -37,10 +37,13 @@ HA21 = {(3.11,7.38):(0.36,6.51,0.61), (3.57,8.52):(0.36,7.29,0.62), (4.44,10.59)
         (6.56,10.99):(0.46,8.32,0.52), (5.49,8.52):(0.59,4.58,0.66), (8.31,10.59):(0.60,6.46,0.50)}
 PUB = "/Users/vpk/OneDrive/My_Publications"
 SF  = ["s_u","stat_U","sys_U","s_LT","stat_LT","sys_LT","s_TT","stat_TT","sys_TT"]
+SFP = ["s_LTp","stat_LTp","sys_LTp"]        # only Hall-A y21 publishes sigma_LT'
 rows_x, rows_a = [], []
 
 def blank_rc():
     return {c+"_rc": np.nan for c in SF}
+def blank_ltp():
+    return {c: np.nan for c in SFP} | {"tp_low": np.nan, "tp_up": np.nan}
 
 # --- CLAS6, both variants side by side --------------------------------------
 for meson, src, ref in (("pi0","sf_pi0_both.txt","PRC 90 025205 (2014)"),
@@ -78,7 +81,7 @@ for line in open("data/halla_pi0.data"):
              chi2ndf_phi=np.nan, chi2ndf_phi_rc=np.nan,
              in_fit="yes" if not p else "no",
              source=("PRL 117 262001 (2016), table I" if p else "PRL 118 222002 (2017)"),
-             **blank_rc())
+             **blank_rc(), **blank_ltp())
     for k, c in zip(SF, (4,5,None,6,7,None,8,9,None)):
         r[k] = 0.0 if c is None else float(v[c])
     rows_x.append(r)
@@ -87,6 +90,7 @@ for line in open("data/halla_pi0.data"):
 for line in open("data/halla_more.data"):
     if line.startswith("#") or not line.strip(): continue
     v = line.split()
+    if v[0] == "HallA_y21": continue      # superseded by the supplemental table below
     Q2, xB, mt, E = float(v[3]), float(v[4]), abs(float(v[5])), float(v[15])
     key = None
     if v[0] == "HallA_y21":
@@ -101,8 +105,25 @@ for line in open("data/halla_more.data"):
              sigma_meaning="sigma_U", chi2ndf_phi=np.nan, chi2ndf_phi_rc=np.nan,
              in_fit="no",
              source="PRL 127 152301 (2021)" if v[0]=="HallA_y21" else "PRC 83 025201 (2011)",
-             **blank_rc())
+             **blank_rc(), **blank_ltp())
     for k, c in zip(SF, range(6, 15)): r[k] = float(v[c])
+    rows_x.append(r)
+
+# --- Hall-A y21 from the supplemental table II, with sigma_LT' -----------------
+EOF_Y21 = {k[0]: k[1] for k in HA21}          # Q2 -> Ebeam
+for v in np.loadtxt("data/halla_y21.data"):
+    Q2, xB, tlo, tup, tp = v[0], v[1], v[2], v[3], v[4]
+    key = min(HA21, key=lambda k: abs(k[0]-Q2))
+    tm = tmin_of(Q2, xB)
+    r = dict(exp="HallA_y21", meson="pi0", target="p", Q2=Q2, xB=xB, t=-(tm+tp),
+             tmin=tm, tprime=tp, tp_low=tlo, tp_up=tup, xB_mean=HA21[key][0],
+             Q2_bin=Q2, xB_bin=xB, t_bin=np.nan,
+             group=f"ha21_{sorted(HA21).index(key):02d}",
+             eps=HA21[key][2], npts_phi=np.nan, Ebeam=key[1], sigma_meaning="sigma_U",
+             chi2ndf_phi=np.nan, chi2ndf_phi_rc=np.nan, in_fit="no",
+             source="PRL 127 152301 (2021), supplemental table II", **blank_rc())
+    for k, c in zip(SF, range(5, 14)): r[k] = v[c]
+    for k, c in zip(SFP, range(14, 17)): r[k] = v[c]
     rows_x.append(r)
 
 # --- COMPASS ----------------------------------------------------------------
@@ -113,7 +134,7 @@ for _, q in d[d.exp == "COMPASS_y20"].iterrows():
              tmin=tmin_of(q.Q2, q.xB), tprime=abs(q.t)-tmin_of(q.Q2, q.xB),
              xB_mean=q.xB, eps=np.nan, npts_phi=np.nan, Ebeam=q.Ebeam, sigma_meaning="sigma_U",
              chi2ndf_phi=np.nan, chi2ndf_phi_rc=np.nan, in_fit="no",
-             source="COMPASS, Phys. Lett. B 805 135454 (2020)", **blank_rc())
+             source="COMPASS, Phys. Lett. B 805 135454 (2020)", **blank_rc(), **blank_ltp())
     for k in SF: r[k] = getattr(q, k, 0.0) if k in d.columns else 0.0
     rows_x.append(r)
 
@@ -152,7 +173,8 @@ X, Aa = pd.DataFrame(rows_x), pd.DataFrame(rows_a)
 sets = []
 for k, g in X.groupby(["exp","meson","target"], sort=False):
     sets.append(dict(kind="cross section", dataset=" ".join(k),
-        observable=g.sigma_meaning.iloc[0] + ", sigma_LT, sigma_TT", rows=len(g),
+        observable=g.sigma_meaning.iloc[0] + ", sigma_LT, sigma_TT"
+                   + (", sigma_LT'" if g.s_LTp.notna().any() else ""), rows=len(g),
         Q2=f"{g.Q2.min():.2f}-{g.Q2.max():.2f}", xB=f"{g.xB.min():.3f}-{g.xB.max():.3f}",
         t=f"{g.t.min():.4f}..{g.t.max():.4f}",
         Ebeam=", ".join(sorted({str(v) for v in g.Ebeam})),
@@ -165,8 +187,8 @@ for k, g in Aa.groupby(["exp","observable"], sort=False):
         RC_refit="no", in_fit=g.in_fit.iloc[0], source=g.source.iloc[0]))
 S = pd.DataFrame(sets)
 cols = ["exp","meson","target","group","Q2","xB","t","tmin","tprime","xB_mean",
-        "Q2_bin","xB_bin","t_bin","eps","npts_phi",
-        "Ebeam","sigma_meaning","chi2ndf_phi","chi2ndf_phi_rc","in_fit","source"] + SF + [c+"_rc" for c in SF]
+        "tp_low","tp_up","Q2_bin","xB_bin","t_bin","eps","npts_phi",
+        "Ebeam","sigma_meaning","chi2ndf_phi","chi2ndf_phi_rc","in_fit","source"] + SF + SFP + [c+"_rc" for c in SF]
 X = X[[c for c in cols if c in X.columns]]
 with pd.ExcelWriter("pi0_eta_database.xlsx", engine="openpyxl") as w:
     S.to_excel(w, sheet_name="datasets", index=False)
@@ -178,7 +200,8 @@ with pd.ExcelWriter("pi0_eta_database.xlsx", engine="openpyxl") as w:
            "tmin":"0.000000","tprime":"0.000000","xB_mean":"0.000000",
            "Q2_bin":"0.00","xB_bin":"0.000","t_bin":"0.00",
            "chi2ndf_phi":"0.0000","chi2ndf_phi_rc":"0.0000"}
-    for c in SF + [c+"_rc" for c in SF]: fmt[c] = "0.0000"
+    for c in SF + SFP + [c+"_rc" for c in SF]: fmt[c] = "0.0000"
+    for c in ("tp_low","tp_up"): fmt[c] = "0.00"
     for j, c in enumerate(X.columns, start=1):
         if c in fmt:
             for i in range(2, len(X)+2): sh.cell(row=i, column=j).number_format = fmt[c]
