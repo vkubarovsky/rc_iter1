@@ -36,6 +36,8 @@ HA21 = {(3.11,7.38):(0.36,6.51,0.61), (3.57,8.52):(0.36,7.29,0.62), (4.44,10.59)
         (2.67,4.49):(0.48,3.81,0.51), (4.06,8.85):(0.45,5.62,0.71), (5.16,8.85):(0.46,6.67,0.55),
         (6.56,10.99):(0.46,8.32,0.52), (5.49,8.52):(0.59,4.58,0.66), (8.31,10.59):(0.60,6.46,0.50)}
 PUB = "/Users/vpk/OneDrive/My_Publications"
+ALL = ("/Users/vpk/Library/CloudStorage/OneDrive-JeffersonLab/Jlab_OneDrive/"
+       "arXive/pi0_eta_papers/All_experiment.xlsx")
 SF  = ["s_u","stat_U","sys_U","s_LT","stat_LT","sys_LT","s_TT","stat_TT","sys_TT"]
 SFP = ["s_LTp","stat_LTp","sys_LTp"]        # only Hall-A y21 publishes sigma_LT'
 rows_x, rows_a = [], []
@@ -67,10 +69,24 @@ for meson, src, ref in (("pi0","sf_pi0_both.txt","PRC 90 025205 (2014)"),
 
 # --- Hall-A E07-007, Rosenbluth separated -----------------------------------
 EB = {1.50: "3.355 + 5.55", 1.75: "4.455 + 5.55", 2.00: "4.455 + 5.55"}
-for line in open("data/halla_pi0.data"):
-    if line.startswith("#") or not line.strip(): continue
-    v = line.split(); p = v[0] == "p_T"
-    Q2 = float(v[1])
+AE = pd.read_excel(ALL)
+for _, q in AE[AE.exp.isin(["HallA_y16", "HallA_y17"])].iterrows():
+    p = q.exp == "HallA_y16"; Q2 = float(q.Q2); xB = float(q.xB); mt = abs(float(q.t))
+    r = dict(exp=q.exp, meson="pi0", target="p" if p else "n", Q2=Q2, xB=xB, t=-mt,
+             tmin=tmin_of(Q2, xB), tprime=mt-tmin_of(Q2, xB),
+             xB_mean=xB, Q2_bin=Q2, xB_bin=xB, t_bin=np.nan,
+             group=("ha16_%.2f" % Q2) if p else "ha17_1.75",
+             eps=np.nan, npts_phi=np.nan,
+             Ebeam=EB[Q2] if p else "E07-007 pair", sigma_meaning="sigma_T",
+             chi2ndf_phi=np.nan, chi2ndf_phi_rc=np.nan, in_fit="no" if p else "yes",
+             source=("PRL 117 262001 (2016), figure 4" if p else "PRL 118 222002 (2017), figure 5"),
+             **blank_rc(), **blank_ltp())
+    for k, c in zip(SF, ("s_u","stat_U","sys_U","s_LT","stat_LT","sys_LT","s_TT","stat_TT","sys_TT")):
+        r[k] = float(getattr(q, c))
+    rows_x.append(r)
+
+for line in []:
+    v = line.split(); p = True; Q2 = 0.0
     r = dict(exp="HallA_y16" if p else "HallA_y17", meson="pi0", target="p" if p else "n",
              Q2=Q2, xB=float(v[2]), t=-float(v[3]),
              Q2_bin=Q2, xB_bin=float(v[2]), t_bin=np.nan,
@@ -141,6 +157,26 @@ for v in np.loadtxt("data/halla_y21.data"):
     for k, c in zip(SFP, range(14, 17)): r[k] = v[c]
     rows_x.append(r)
 
+# --- CLAS12 2025, preliminary -------------------------------------------------
+C12 = AE[AE.exp == "CLAS12_y25_v0"]
+c12g = {}
+for _, q in C12.iterrows():
+    key = min(c12g, key=lambda k: (k[0]-q.Q2)**2 + 100*(k[1]-q.xB)**2, default=None)
+    if key is None or abs(key[0]-q.Q2) > 0.06 or abs(key[1]-q.xB) > 0.008:
+        key = (round(float(q.Q2), 2), round(float(q.xB), 3)); c12g[key] = len(c12g)
+    mt = abs(float(q.t))
+    r = dict(exp="CLAS12_y25", meson="pi0", target="p", Q2=float(q.Q2), xB=float(q.xB), t=-mt,
+             tmin=tmin_of(float(q.Q2), float(q.xB)), tprime=mt-tmin_of(float(q.Q2), float(q.xB)),
+             xB_mean=float(q.xB),
+             Q2_bin=key[0], xB_bin=key[1], t_bin=np.nan, group=f"c12_{c12g[key]:02d}",
+             eps=np.nan, npts_phi=np.nan, Ebeam=float(q.Ebeam), sigma_meaning="sigma_U",
+             chi2ndf_phi=np.nan, chi2ndf_phi_rc=np.nan, in_fit="no",
+             source="CLAS12 2025, preliminary (All_experiment.xlsx, provenance to be traced)",
+             **blank_rc(), **blank_ltp())
+    for k, c in zip(SF, ("s_u","stat_U","sys_U","s_LT","stat_LT","sys_LT","s_TT","stat_TT","sys_TT")):
+        r[k] = float(getattr(q, c))
+    rows_x.append(r)
+
 # --- COMPASS ----------------------------------------------------------------
 d = pd.read_excel("/Users/vpk/hepgen_mac/data/All_experiment.xlsx")
 for _, q in d[d.exp == "COMPASS_y20"].iterrows():
@@ -184,6 +220,15 @@ for rec, obs in REC.items():
           syst=row[4] if len(row) > 4 else np.nan, Ebeam=5.9, in_fit="yes",
           source=f"Kim et al., PLB 768 168 (2017), CLAS DB {rec}")
 
+# --- Kroll's calculation, kept apart: it is theory, every error is exactly zero
+T = AE[AE.exp == "Peter"].copy()
+T["target"] = T.target.astype(str).str.strip()
+T = T.rename(columns={"exp": "source_tag"})
+T["source_tag"] = "Kroll, calculation at one setting (All_experiment.xlsx)"
+T = T[["source_tag","meson","target","Q2","xB","t","s_u","s_LT","s_TT","Kin_bin"]]
+T = T.rename(columns={"s_u": "sigma_T", "s_LT": "sigma_LT", "s_TT": "sigma_TT",
+                      "Kin_bin": "variant"})
+
 X, Aa = pd.DataFrame(rows_x), pd.DataFrame(rows_a)
 sets = []
 for k, g in X.groupby(["exp","meson","target"], sort=False):
@@ -209,6 +254,7 @@ with pd.ExcelWriter("pi0_eta_database.xlsx", engine="openpyxl") as w:
     S.to_excel(w, sheet_name="datasets", index=False)
     X.to_excel(w, sheet_name="cross_sections", index=False)
     Aa.to_excel(w, sheet_name="asymmetries", index=False)
+    T.to_excel(w, sheet_name="theory", index=False)
     # t and xB carry more digits than Excel shows by default
     sh = w.sheets["cross_sections"]
     fmt = {"Q2":"0.000000","xB":"0.000000","t":"0.000000","eps":"0.000000",
@@ -226,5 +272,5 @@ with pd.ExcelWriter("pi0_eta_database.xlsx", engine="openpyxl") as w:
         elif c in ("value","stat","syst"): f = "0.00000"
         else: continue
         for i in range(2, len(Aa)+2): sa.cell(row=i, column=j).number_format = f
-print(f"cross_sections {len(X)}   asymmetries {len(Aa)}   datasets {len(S)}\n")
+print(f"cross_sections {len(X)}   asymmetries {len(Aa)}   theory {len(T)}   datasets {len(S)}\n")
 print(S.to_string(index=False))
