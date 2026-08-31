@@ -1,0 +1,1622 @@
+                                                                 Phys. Lett. B 870 (2025) 139832
+
+
+                                                             Contents lists available at ScienceDirect
+
+
+                                                                   Physics Letters B
+                                                    journal homepage: www.elsevier.com/locate/physletb
+
+
+Letter
+
+Measurement of the hard exclusive 𝜋 0 muoproduction cross section at
+COMPASS
+The COMPASS Collaboration1
+
+
+a r t i c l e          i n f o                      a b s t r a c t
+
+Editor: Dr. M. Doser                                A new and detailed measurement of the cross section for hard exclusive neutral-pion muoproduction on the pro-
+                                                    ton was performed in a wide kinematic region, with the photon virtuality 𝑄2 ranging from 1 to 8 (GeV/𝑐) 2 and
+Keywords:
+                                                    the Bjorken variable 𝑥Bj ranging from 0.02 to 0.45. The data were collected at COMPASS at CERN using 160
+Exclusive meson production
+𝜋 0 cross-section                                   GeV/𝑐 longitudinally polarised µ+ and µ− beams scattering oﬀ a 2.5 m long liquid hydrogen target. From the
+GPDs                                                average of the measured µ+ and µ− cross sections, the virtual-photon–proton cross section is determined as
+                                                    a function of the squared four-momentum transfer between the initial and ﬁnal state proton in the range
+                                                    0.08 (GeV/𝑐) 2 < |𝑡| < 0.64 (GeV/𝑐) 2 . From its angular distribution, the combined contribution of transversely and
+                                                    longitudinally polarised photons are determined, as well as transverse–transverse and longitudinal–transverse in-
+                                                    terference contributions. They are studied as functions of four-momentum transfer |𝑡|, photon virtuality 𝑄2 and
+                                                    virtual-photon energy 𝜈. The longitudinal–transverse interference contribution is found to be compatible with
+                                                    zero. The signiﬁcant transverse–transverse interference contribution reveals the existence of a dominant contri-
+                                                    bution by transversely polarised photons. This could provide clear experimental evidence for the chiral-odd GPD
+                                                    𝐸 𝑇 . In addition, the existence of a non-negligible contribution of longitudinally polarised photons is suggested
+                                                    by the |𝑡|-dependence of the cross section at 𝑥Bj < 0.1 . Altogether, these results provide valuable input for future
+                                                    modelling of GPDs and thus of cross sections for exclusive pseudo-scalar meson production. Furthermore, they
+                                                    can be expected to facilitate the study of next-to-leading order corrections and higher-twist contributions.
+
+
+
+1. Introduction                                                                       In the collinear approximation, singularities occur for transversely po-
+                                                                                      larised virtual photons and mesons. Regularisation is accomplished
+    Generalised parton distributions (GPDs), as introduced in Refs. [1–               in the framework of phenomenological models as in Refs. [18–22]
+5], are non-perturbative objects, which describe the three-dimensional                by including transverse degrees of freedom of quarks and antiquarks
+structure of the nucleon by correlating transverse spatial positions and              that make up the meson. In these models, such transversely polarised
+longitudinal momentum fractions of the partons (quarks and gluons) of                 virtual-photon contributions are possible provided a quark helicity-ﬂip
+the nucleon. The GPDs contain also rich information about spin and an-                GPD couples to a twist-3 helicity-ﬂip meson wave function and thus
+gular momentum at parton level. They can be accessed by hard exclusive                pseudoscalar meson production involves also the chiral-odd (transver-
+pseudoscalar meson leptoproduction on the nucleon, for which the lead-                sity) GPDs 𝐻T and 𝐸 T .
+ing mechanism is presented in Fig. 1. Collinear factorisation theorems                    The GPDs depend on the average longitudinal momentum fraction
+[6] can be applied to longitudinally polarised virtual photons and estab-             of the active quark 𝑥, half of the transferred longitudinal momentum
+lish that the pseudoscalar meson production amplitude factorises into                 fraction 𝜉, the squared four-momentum transfer between the initial and
+a hard perturbative part and soft components described by the chiral-                 ﬁnal proton 𝑡 and the virtual photon virtuality 𝑄2 = −𝑞 2 , see Fig. 1.
+even GPDs ̃ 𝐻, 𝐸̃ of the nucleon and the twist-2 part of the meson wave               The chiral-even GPD 𝐻   ̃ is related in the forward limit at 𝑡 = 0 to the
+function. Contributions from transversely polarised virtual photons to                quark helicity distribution Δ𝑞(𝑥) measured in deep inelastic scattering
+the production of pseudoscalar mesons are expected to be suppressed in                (DIS), while the chiral-even GPD 𝐸 ̃ has no such counterpart in DIS. Pion-
+the production amplitude by 1∕𝑄 [6], where 𝑄2 is the virtuality of the                pole exchange is expected to give the main contribution to 𝐸  ̃ at small 𝑡
+photon that is exchanged between lepton and proton. However, exper-                         +                         0
+                                                                                      for 𝜋 production, while for 𝜋 production the pion pole is absent. The
+imental data on exclusive 𝜋 + production from HERMES [7] and JLab                     chiral-odd GPDs, 𝐻T and 𝐸 T , which are well described in Refs. [23–26],
+CLAS [8,9] and on exclusive 𝜋 0 production from JLab CLAS [10–13]                     are related to the transversity and the Boer–Mulders parton distribution
+and Hall A [14–17] suggest that such contributions are substantial.                   functions measured in semi-inclusive DIS. The GPD 𝐻T describes the
+
+
+ 1
+     Authors are listed at the end of this paper.
+
+https://doi.org/10.1016/j.physletb.2025.139832
+Received 31 December 2024; Received in revised form 15 July 2025; Accepted 18 August 2025
+Available online 4 September 2025
+0370-2693/© 2025 The Author(s).         Published by Elsevier B.V. Funded by SCOAP³.                 This is an open access article under the CC BY license
+(http://creativecommons.org/licenses/by/4.0/).
+                                                                                                                                          Physics Letters B 870 (2025) 139832
+
+
+                                                                                            virtual photons, respectively, and the subscripts TT, LT and LT′ denote
+                                                                                            interference terms. The sign ∓ of the lepton beam polarisation 𝑃𝑙 corre-
+                                                                                            sponds to the negative and positive helicity of the incoming µ+ and µ− ,
+                                                                                            respectively, which is denoted by ↔. The spin-independent cross section
+                                                                                            can be obtained by averaging the two spin-dependent cross sections as:
+                                                                                                         ( 2 ←       2 → )
+                                                                                            d2 𝜎γ∗ p   1 d 𝜎γ∗ p d 𝜎γ∗ p
+                                                                                                     =            +          .                                   (4)
+                                                                                              d𝑡d𝜙     2   d𝑡d𝜙      d𝑡d𝜙
+
+                                                                                                Using µ+ and µ− beams of exactly opposite polarisation, the last term
+                                                                                            in Eq. (2) cancels upon averaging, which leads to the expression:
+                                                                                                 ∗       [
+                                                                                            d𝜎 γ p     1    d𝜎    d𝜎             d𝜎
+                                                                                                   =       𝜖 L + T + 𝜖 cos(2𝜙) TT                                  (5)
+                                                                                             d𝑡d𝜙     2𝜋     d𝑡    d𝑡             d𝑡
+                                                                                                                 √                     ]
+                                                                                                                                  d𝜎
+                                                                                                                + 2𝜖(1 + 𝜖) cos(𝜙) LT .
+                                                                                                                                    d𝑡
+                                                                                                The cross sections in Eqs. (2) and (5) are related to convolutions of
+                                                                                            GPDs and meson wave functions with individual hard scattering ampli-
+Fig. 1. Leading-twist diagram for hard exclusive 𝜋 0 leptoproduction oﬀ the pro-
+                                                                                            tudes [18], denoted as ⟨𝐹 ⟩ for a GPD 𝐹 :
+ton. Here, 𝑘, 𝑘′ , 𝑞, 𝑞 ′ , 𝑝, 𝑝′ are the four-momenta of incident and outgoing muon,
+                                                                                              d𝜎L [           | ̃ |2
+                                                                                                                            [         ]                 2]
+virtual photon, outgoing 𝜋 0 and of incident and outgoing proton. The squared                     ∝ (1 − 𝜉 2 )|⟨𝐻⟩                  ̃ − 𝑡 𝜉 2 ||⟨𝐸⟩
+                                                                                                                               ̃ ∗ ⟨𝐸⟩
+                                                                                                                  | − 2𝜉 2 ℜ ⟨𝐻⟩                   ̃ || ,         (6)
+four-momentum transfer between initial and ﬁnal proton is denoted by 𝑡, the                    d𝑡             |   |                       4𝑚2 |       |
+                                                                                                                                                p
+average longitudinal momentum fraction of the active quark by 𝑥 and half of
+                                                                                             d𝜎T [           |     |2   𝑡′ |       |2
+                                                                                                                                      ]
+the transferred longitudinal momentum fraction by 𝜉.                                             ∝ (1 − 𝜉 2 )|⟨𝐻𝑇 ⟩| −      |⟨𝐸 T ⟩| ,                                   (7)
+                                                                                              d𝑡             |     |   8𝑚p2 |      |
+                                                                                            d𝜎TT     𝑡′ |       |2
+                                                                                                 ∝       |⟨𝐸 T ⟩| ,                                                      (8)
+correlation between the transverse polarisations of quark and proton.                        d𝑡    16𝑚2p |      |
+It has been shown that in impact-parameter space 𝐸 T is related to a
+                                                                                             d𝜎LT      √       √        [           ]
+sideways shift in the distribution of transversely polarised quarks in an                           ∝ 𝜉 1 − 𝜉 2 −𝑡′ ℜ ⟨𝐻T ⟩∗ ⟨ ̃ 𝐸⟩ ,                              (9)
+unpolarised proton. It can be used to determine the correlation between                        d𝑡
+                                                                                            d𝜎LT′      √       √       [            ]
+transverse quark spin and quark angular momentum and is connected                                   ∝ 𝜉 1 − 𝜉 2 −𝑡′ ℑ ⟨𝐻T ⟩∗ ⟨ ̃ 𝐸⟩ .                            (10)
+to the transverse anomalous magnetic moment of the proton at 𝑡 = 0.                           d𝑡
+In contrast to 𝜋 + production, 𝜋 0 production is dominated by 𝐸 T due to                    Here, 𝑡′ = 𝑡 − 𝑡min with |𝑡min | being the kinematically smallest possible
+the quark ﬂavour decomposition of pions and the relative signs of the                       value of |𝑡|, and 𝑚p is the mass of the proton. The quantity 𝜉 deﬁned
+GPDs for 𝑢 and 𝑑 quarks, while the contributions from ̃    𝐻, 𝐸̃ and 𝐻T are                 in the previous section can be approximated at COMPASS kinematics as
+                                                                                                  𝑥
+signiﬁcantly reduced.                                                                       𝜉 ≈ 2−𝑥Bj , where 𝑥Bj = 𝑄2 ∕(2𝑚p 𝜈).
+                                                                                                   Bj
+    In this paper, we present results for exclusive 𝜋 0 production in muon–
+proton scattering, µp → µ′ p′ 𝜋 0 , which complement the ﬁrst COMPASS                       3. Experimental setup
+results published [27,28] with a comprehensive analysis of a new set of
+data in an extended kinematic domain, thus providing novel input for                            The data were collected during twelve weeks in 2016 using
+GPD models, in particular for the chiral-odd GPDs.                                          the COMPASS setup, which was a ﬁxed-target experiment located
+                                                                                            at the M2 beamline of the CERN Super Proton Synchrotron, using
+2. Formalism                                                                                naturally polarised muon beams of both charges with energies of
+                                                                                            160 GeV/𝑐 .
+   cross section reads                                                                          The incoming muons were detected in a beam momentum spectrom-
+   The cross section for hard exclusive 𝜋 0 production by scattering a                      eter and a beam telescope. The ﬁnal-state particles were detected in
+polarised muon oﬀ an unpolarised proton is given as:                                        a two-stage magnetic spectrometer containing a large variety of track-
+                                     ↔
+                                 d2 𝜎γ                                                      ing detectors, electromagnetic and hadron calorimeters, a ring-imaging
+   d4 𝜎µp
+       ↔
+                                       ∗p
+              = Γ(𝑄2 , 𝜈, 𝐸µ )              ,                                    (1)        Cherenkov detector and muon ﬁlters for particle identiﬁcation. The elec-
+d𝑄2 d𝜈d𝑡d𝜙                        d𝑡d𝜙                                                      tromagnetic calorimeter ECAL1 (ECAL2) was located in the large-angle
+where Γ(𝑄2 , 𝜈, 𝐸µ ) is the transverse-virtual-photon ﬂux [29] for muon                     (small-angle) part of the spectrometer, covering polar angles up to about
+energy 𝐸µ and virtual-photon energy 𝜈 in the proton-target rest frame.                      9 (1.7) degrees around the beam axis. Detailed descriptions of the setup
+The virtual-photon–proton cross section reads:                                              can be found in Refs. [31,32].
+    ↔         [                                                                                 For the measurements to study GPDs, which are described in this
+d2 𝜎γ ∗p    1    d𝜎      d𝜎               d𝜎
+         =     𝜖 L + T + 𝜖 cos (2𝜙) TT                               (2)                    paper, a 2.5 m long liquid-hydrogen target inserted in a recoil-proton
+ d𝑡d𝜙      2𝜋     d𝑡      d𝑡               d𝑡                                               detector CAMERA and a new electromagnetic calorimeter ECAL0 were
+                                                                  ]                         added to the setup. The 4 m long recoil-proton detector consisted of
+             √                 d𝜎LT        √                d𝜎LT′
+           + 2𝜖(1 + 𝜖) cos 𝜙        ∓ |𝑃𝑙 | 2𝜖(1 − 𝜖) sin 𝜙        .                        two concentric barrels equipped with 24 scintillator slabs each. It mea-
+                                d𝑡                           d𝑡
+                                                                                            sured time and distance of ﬂight between the two barrels to determine
+Here, 𝜙 is the angle between lepton-scattering and 𝜋 0 production planes                    momentum and angle of the recoil proton. The ECAL0 calorimeter, lo-
+following the Trento convention [30]. The virtual-photon polarisation                       cated directly downstream of the target, allowed the detection of pho-
+parameter 𝜖 is deﬁned as:                                                                   tons emitted at large polar angles up to 17 degrees, expanding the ac-
+                  2 2
+                                                                                            cessible kinematic domain towards higher values of 𝑥Bj . Compared to
+       1 − 𝑦 − 𝑦 4𝛾                𝜈                 𝑄2                                     the previous measurement in 2012, the ECAL0 acceptance was enlarged
+𝜖=                       ,   𝑦=      ,          𝛾=      ,                        (3)        allowing to cover a larger kinematic range than in Ref. [27]. The ac-
+              2    2 2
+     1 − 𝑦 + 𝑦2 + 𝑦 4𝛾            𝐸µ                 𝜈2
+                                                                                            cessible kinematic domain of the COMPASS spectrometer for measuring
+and 𝜎L , 𝜎T , 𝜎TT , 𝜎LT and 𝜎LT′ are cross sections. Here, the subscripts T and             exclusive 𝜋 0 production ranges from 𝑥Bj ∼ 0.02 to 0.45, which is com-
+L denote the contributions of transversely and longitudinally polarised                     plementary to other experimental facilities.
+
+                                                                                        2
+                                                                                                                                Physics Letters B 870 (2025) 139832
+
+
+                                                                                     2
+    Data were recorded with both positively and negatively charged                 |𝑀𝑋 | < 0.3 (GeV/𝑐 2 ) 2 .
+muon beams. Due to the natural polarisation of the muon beams, which
+originates from the parity-violating decay-in-ﬂight of the parent mesons,          In addition, the range
+µ+ and µ− beams have opposite polarisation. This enables us to measure             0.1061 < 𝑀𝛾𝛾 ∕(GeV/𝑐 2 ) < 0.1605
+the spin-independent cross section, see Eqs. (4) and (5). The absolute
+value of the average polarisation for both beams is about 0.8 with an              is selected for the invariant mass 𝑀𝛾𝛾 . If more than one combination
+uncertainty of about 0.04.                                                         of vertex, cluster pair and recoil-track candidate exist, which satisfy the
+    In contrast to the four weeks long pilot run in 2012, for the 2016 data        aforementioned selection criteria for a given event, the event is excluded
+used in this analysis comparable beam intensities of about 4 ⋅ 106 µ/s             from further analysis.
+were used. The incoming reconstructable muon ﬂux was measured using                    Fig. 2 shows the Δ𝜑 and Δ𝑝T distributions for data obtained with µ+
+a random trigger based on a radioactive decay [33]. A set of selection             and µ− beams. They are compared to Monte Carlo (MC) yields of the
+criteria was applied to ensure the quality of the muon tracks and to keep          exclusive (signal) and non-exclusive (background) processes provided
+intensity variations below 10 %. The integrated luminosity used in this            by the HEPGEN++ and LEPTO generators, respectively. This will be
+analysis is 51.4 pb−1 for the µ+ beam and 44.5 pb−1 for the µ− beam,               explained in more detail in Section 5. A very good agreement between
+measured with a precision of 2 %.                                                  the µ+ and µ− data is observed.
+                                                                                       The purity of the selected events is enhanced by using the over-
+4. Event selection                                                                 constrained kinematics from the combined information coming from
+                                                                                   CAMERA and the spectrometer in a so-called kinematic ﬁt assuming the
+    Event candidates for exclusive 𝜋 0 production are selected from data           reaction µp → µ′ p′ 𝜋 0 . A value smaller than 7 is required for the reduced
+taken in stable beam and spectrometer conditions. An interaction vertex            𝜒 2 in order to minimise the non-exclusive background while keeping
+associated with an incoming muon is required, and only one outgoing                all events from exclusive 𝜋 0 muoproduction. The kinematic ﬁt also al-
+track of the same charge is allowed. The latter is identiﬁed as scattered          lows to considerably improve the precision of the event kinematics, in
+muon by requiring that it traverses more than 15 radiation lengths in              particular for the variables 𝑡, 𝑄2 , 𝜈 and 𝜙.
+the spectrometer and is compatible with the trigger conditions. For in-                The data for further analysis are selected within the following kine-
+coming muons, the same selection criteria are used as in the ﬂux deter-            matic range:
+mination.                                                                          0.08 (GeV/𝑐) 2 < |𝑡| < 0.64 (GeV/𝑐) 2 ,
+    The 𝜋 0 is reconstructed using its dominant two-photon decay. The
+photons are detected in the electromagnetic calorimeters ECAL0 and                    1 (GeV/𝑐) 2 < 𝑄2 < 8 (GeV/𝑐) 2 ,
+ECAL1. About 68 % of the 𝜋 0 sample originates from 2 decay photons                       6.4 GeV < 𝜈 < 40 GeV.
+in ECAL0, 27 % from 2 decay photons in ECAL1 and 5 % from one de-
+cay photon in ECAL0 and another one in ECAL1. The electromagnetic                  5. Background contribution
+calorimeter ECAL2, placed in the small-angle part of the spectrometer,
+is not used in this analysis as it does not provide a signiﬁcant increase in           The main source of background to exclusive 𝜋 0 production origi-
+the statistics of the 𝜋 0 sample. In ECAL1 only clusters not associated with       nates from non-exclusive DIS processes. In order to simulate this back-
+a reconstructed charged track are used, while all clusters are included in         ground process, the LEPTO 6.5.1 generator with the COMPASS tuning
+ECAL0 as there is no tracking system in front of it. Thresholds of 2 GeV           from Ref. [34] is used. Note that events with the topology of exclusive 𝜋 0
+(2.5 GeV) for the higher-energy cluster and of 0.5 GeV (0.63 GeV) for              production are removed from the LEPTO sample. For the simulation of
+the lower-energy cluster in ECAL0 (ECAL1) are used. Compared to the                signal events, i.e. exclusive 𝜋 0 muoproduction, the HEPGEN++ genera-
+previous analysis of the 2012 data, the threshold of the lower energy              tor [35,36] is used. The events from both generators are passed through
+cluster was increased to get a better signature of the photon in the elec-         a complete description of the COMPASS setup [37] and reconstructed
+tromagnetic calorimeters. Using the information from the interaction               in the same way as experimental data.
+vertex and each combination of two clusters, the kinematics of the re-                 The simulated HEPGEN++ and LEPTO Monte Carlo data sets are
+coil proton can be predicted from the momentum balance of the reaction             used to obtain the yields of the exclusive (signal) and non-exclusive
+µp → µ′ p′ 𝜋 0 , 𝜋 0 → γγ. The properties of the recoil proton predicted by        (background) processes, respectively. The procedure starts with the de-
+the spectrometer information are compared to the properties of each                termination of a normalisation factor of each MC data set, 𝑐L and 𝑐H ,
+track candidate reconstructed with the CAMERA system assigning the                 adjusted separately to the data in the studied range in 𝑡, 𝑄2 and 𝜈 us-
+proton mass.                                                                       ing the distribution of the invariant mass 𝑀γγ around the 𝜋 0 peak. The
+    These recoil-proton candidates are examined by using four so-called            𝑀γγ distribution in the full kinematic range is shown in Fig. 3. Subse-
+exclusivity variables in the further selection process. These are i) the           quently, the fraction 𝑟L of non-exclusive background is determined by
+diﬀerence Δ𝜑 between predicted and measured azimuthal angle of the                 adjusting the sum of the HEPGEN++ and the LEPTO MC data sets to
+recoil proton candidate, ii) the diﬀerence Δ𝑝T between predicted and               the experimental data. For this purpose the variables Δ𝑝T and Δ𝜑 are
+measured transverse momentum 𝑝T of the recoil proton candidate with                used, which are sensitive to the exclusivity of the event. The resulting
+respect to the beam direction in the target rest frame, iii) the diﬀerence         fraction of non-exclusive background, 𝑟L = (8 ± 5)%, is independent on
+Δ𝑧 between predicted and measured hit position in the inner ring of                the studied range in 𝑡, 𝑄2 and 𝜈. The background determination method
+CAMERA and iv) the undetected mass 𝑀X2 given by:                                   yields one of the main contributions to the systematic uncertainties. The
+                                                                                   relative systematic uncertainties of the cross section originating from the
+𝑀X2 = (𝑘 + 𝑝 − 𝑘′ − 𝑝′ − 𝑝γ1 − 𝑝γ2 )2 .                                (11)
+                                                                                   background estimation vary from 6 to 16 % depending on the kinematic
+Here, 𝑘, 𝑘′ , 𝑝 and 𝑝′ are the four-momenta of incident muon, outgoing             region. The scaling factor 𝑓 = 𝑐L ⋅ 𝑟L is used to correct the data for non-
+muon, target proton and recoil proton respectively, while 𝑝γ1 and 𝑝γ2              exclusive background, see Section 6.
+denote the four-momenta of the two produced photons. The same con-                     In comparison to the previous analysis of the 2012 data, the LEPTO
+straints as in the previous analysis of the 2012 data are applied to the           fraction was considerably reduced by two reasons. First, the kinematic
+exclusivity variables:                                                             ﬁt with a 𝜒 2 requirement has signiﬁcantly reduced the non-exclusive
+                                                                                   background, and secondly the HEPGEN++ sample was improved by
+|Δ𝜑| < 0.4 rad,
+                                                                                   reweighting the 𝜙, 𝑡 and 𝜈 distributions, in order to obtain a better de-
+|Δ𝑝T | < 0.3 GeV/𝑐 ,                                                               scription of the data. For the 𝜙 reweighting an iterative process is used
+ |Δ𝑧| < 16 cm,                                                                     to include the extracted 𝜙 modulation from the data in the model used
+
+                                                                               3
+                                                                                                                                           Physics Letters B 870 (2025) 139832
+
+
+
+
+                                                                                          Fig. 3. Measured and simulated distributions of 𝑀γγ for data obtained with µ+
+                                                                                          (top) and µ− (bottom) beams. All the distributions are normalised to the same
+                                                                                          muon ﬂux and the simulations are scaled as described in the text. The two dashed
+                                                                                          vertical lines indicate the interval applied for event selection and normalisation.
+                                                                                          The non-exclusive 𝜋 0 background is estimated using LEPTO (blue), while the
+                                                                                          total 𝜋 0 distribution is expected to match the sum of LEPTO and HEPGEN++
+                                                                                          (dark green). (For interpretation of the references to colour in this ﬁgure legend,
+                                                                                          the reader is referred to the web version of this article.)
+
+
+
+                                                                                          in HEPGEN++ according to Eq. (5). The reweighting in 𝑡 and 𝜈 is also
+                                                                                          applied iteratively using two-dimensional data distributions in these two
+                                                                                          variables.
+                                                                                              A very small background originates from the production of exclusive
+                                                                                          ω mesons with the decay ω → 𝜋 0 γ, where the photon is not detected. It
+                                                                                          is estimated by measuring the yield of visible ω mesons in the sample,
+                                                                                          when combining the exclusive 𝜋 0 candidate with every neutral cluster
+                                                                                          of energy above the low threshold. These events are rejected, they rep-
+                                                                                          resent only 2.7 % of the selected events. They allow the normalisation of
+                                                                                          the HEPGEN++ MC for exclusive ω production. In this way, the con-
+                                                                                          tamination of the remaining 𝜋 0 sample with not detected ω mesons is
+                                                                                          evaluated to be about 2.4 % and included in the systematic uncertain-
+                                                                                          ties. A possible contribution of the ω → 𝜋 0 𝜋 + 𝜋 − decay is found to be
+                                                                                          negligible, as well as from the η → 𝜋 0 𝜋 + 𝜋 − or 𝜋 0 𝜋 0 𝜋 0 decay.
+                                                                                              The ﬁnal data set for the analysis of exclusive 𝜋 0 production com-
+                                                                                          prises 1490 events, among which 792 events were collected with the µ+
+                                                                                          beam and 698 events with the µ− beam.
+
+
+
+Fig. 2. Measured and simulated distributions Δ𝜑 (top) and Δ𝑝T (bottom), shown             6. Cross section determination and systematics
+for both µ+ (sub-top) and µ− (sub-bottom) beams. All the distributions are nor-
+malised to the same muon ﬂux and the simulations are scaled as described in                  The virtual-photon–proton cross section is obtained from the mea-
+the text. The two dashed vertical lines indicate the constraints applied for the          sured muon–proton cross section using:
+selection of events. Error bars denote statistical uncertainties. The non-exclusive
+𝜋 0 background is estimated using LEPTO (blue), while the total 𝜋 0 distribution is           ∗
+                                                                                          d𝜎 γ p        1           d𝜎 µp
+expected to match the sum of LEPTO and HEPGEN++ (dark green). (For inter-                        =                           ,                                          (12)
+                                                                                          d|𝑡|d𝜙      2            2
+                                                                                                   Γ(𝑄 , 𝜈, 𝐸µ ) d𝑄 d𝜈d|𝑡|d𝜙
+pretation of the references to colour in this ﬁgure legend, the reader is referred
+to the web version of this article.)
+                                                                                          where the transverse-virtual-photon ﬂux Γ(𝑄2 , 𝜈, 𝐸µ ) is given according
+                                                                                          Ref. [29] by :
+
+                                                                                      4
+                                                                                                                                                                                                    Physics Letters B 870 (2025) 139832
+
+
+                                             Table 1
+                                             Four-dimensional grid used for the calculation of the cross section and acceptance. The full range
+                                             for each variable is given in the bottom row of the table.
+                                                                                          this work                                           Ref. [27]
+                                                                      [        ]              [      ]                                           [       ]
+                                              𝜙 [rad]              |𝑡| GeV/𝑐 2            𝑄2 GeV/𝑐 2               𝜈 [GeV]                    𝑄2 GeV/𝑐 2                 𝜈 [GeV]
+
+                                                      −3𝜋
+                                                −𝜋 –               0.08 – 0.15            1.00 – 1.50               6.40 – 8.50               1.00 – 1.50
+                                                       4
+                                               −3𝜋    −𝜋
+                                                    –              0.15 – 0.22            1.50 – 2.24               8.50 – 11.45              1.50 – 2.24                 8.50 – 11.45
+                                                4      2
+                                               −3𝜋    −𝜋
+                                                    –              0.22 – 0.36            2.24 – 3.34              11.45 – 15.43              2.24 – 3.34                11.45 – 15.43
+                                                4      2
+                                                −𝜋
+                                                    –0             0.36 – 0.5             3.34 – 5.00              15.43 – 20.78              3.34 – 5.00                15.43 – 20.78
+                                                 4
+                                                      𝜋
+                                                   0–              0.5 – 0.64             5.00 – 8.00              20.78 – 26.00                                         20.78 – 28.00
+                                                      4
+                                                  𝜋   𝜋
+                                                    –                                                              26.00 – 40.00
+                                                  4   2
+                                                  𝜋   3𝜋
+                                                    –
+                                                  2    4
+                                                3𝜋
+                                                    –𝜋
+                                                 4
+
+                                                                       [        ]            [        ]                                          [        ]
+                                              Δ𝜙 [rad]             Δ|𝑡| GeV/𝑐 2           Δ𝑄2 GeV/𝑐 2              Δ𝜈 [GeV]                   Δ𝑄2 GeV/𝑐 2                Δ𝜈 [GeV]
+
+
+                                              2𝜋                   0.56                   7.00                     33.60                      4.00                       19.50
+
+
+                                      Table 2
+                                      Summary of the estimated relative systematic uncertainties on the measured |𝑡| and 𝜙-dependent cross
+                                                                                                 d𝜎     d𝜎        d𝜎        d𝜎
+                                      sections and on the extracted cross-section contributions d|𝑡|U = d|𝑡|T + 𝜖 d|𝑡|L and d|𝑡|TT in the full kinematic
+                                      range. The values are given as a percentage. Note that the uncertainty 𝜎↑ (𝜎↓ ) has to be used with positive
+                                      (negative) sign.
+                                        source                            𝜎↑𝑡         𝜎↓𝑡                𝜎↑𝜙                      𝜎↓𝜙                 𝜎U↑           𝜎U↓          𝜎TT↑        𝜎TT↓
+
+                                        µ+ ﬂux                            2           2                  2                        2                   2             2            2           2
+                                        µ− ﬂux                            2           2                  2                        2                   2             2            2           2
+
+                                        acceptance                        4           4                  4                        4                   4             4            4           4
+                                        ECAL0 threshold                   5–7         1                  4–8                      1                   5             1            4           1
+                                        ECAL1 threshold                   1–2         1                  1–3                      1                   1             1            1           1
+
+                                        𝜒 2 of kinematic ﬁt               3           5                  2.0 – 5.6                4.0 – 8.8           3             5            3           4
+                                        Lepto background                  6 – 10      6 – 10             6 – 16                   6 – 16              8.3           8.3          1           1
+                                        Lepto normalisation               2–3         2–3                2–5                      2–5                 2.6           2.6          2           2
+                                        ω background                      0           1.5 – 2.7          0                        1.4 – 5.7           0             2.4          0           2.4
+
+                                        radiative corrections             6           3                  6.3                      3.6                 6             3            2           2
+                                        ∑
+                                                                          12 – 16     10.1 – 13.1        11.6 – 22.4              9.6 – 20.1          13.3          11.7         7.7         7.1
+
+
+
+                                                                                                                          The cross section for each four-dimensional bin is calculated as:
+                                                                                                                     ⟨               ⟩±
+                                [ (                                                                                                                            (      )−1
+                                         2𝑚2µ )
+                                                                                                                             ∗   0 ′
+                   𝛼em (1 − 𝑥Bj )                                                                                        d𝜎 γ p→𝜋 p                  1
+                                                                                                                                           =                    𝑎±                        (15)
+Γ(𝑄2 , 𝜈, 𝐸µ ) =                  𝑦2 1 −                                                           (13)                    d|𝑡|d𝜙             ±           2
+                                                                                                                                              Δ𝑡𝑛 Δ𝜙𝑖 Δ𝑄𝑗 Δ𝜈𝑘   𝑛𝑖𝑗𝑘
+                        2
+                    2𝜋𝑄 𝑦𝐸µ               𝑄2                                                                                          𝑛𝑖𝑗𝑘
+                                 (             )]                                                                         ⎛𝑁𝑛𝑖𝑗𝑘
+                                                                                                                            data ±                         L ±
+                                                                                                                                                          𝑁𝑛𝑖𝑗𝑘                       ⎞
+                          2                𝑄2                                                                             ⎜ ∑          1                   ∑            1             ⎟
+                   +               1−𝑦−          .                                                                       ×⎜        ( 2           ) − 𝑓± ⋅        ( 2                ) ⎟,
+                     1 + 𝑄2 ∕𝜈 2          4𝐸µ2
+                                                                                                                          ⎜ 𝑙=1 Γ 𝑄𝑙 , 𝜈𝑙 , 𝐸𝜇 𝑙           𝑙=1  Γ 𝑄 𝑙
+                                                                                                                                                                      , 𝜈 𝑙 , 𝐸 𝜇 𝑙   ⎟
+                                                                                                                          ⎝                                                           ⎠
+   Here, 𝑚µ denotes the mass of the muon and 𝛼em the electromagnetic                                                 where  denotes the luminosity and 𝑓 the normalisation factor that was
+ﬁne-structure constant.                                                                                              introduced in Section 5. The acceptance denoted as 𝑎𝑛𝑖𝑗𝑘 is determined
+   The cross section is calculated in a four-dimensional grid with                                                   for each four-dimensional phase-space element using the data simulated
+a phase-space element given by ΔΩ𝑛𝑖𝑗𝑘 = Δ|𝑡|𝑛 Δ𝜙𝑖 Δ𝑄2𝑗 Δ𝜈𝑘 . The bin-                                                by HEPGEN++ as the number of reconstructed events divided by the
+ning of the four-dimensional grid is given in the ﬁrst four columns of                                               number of generated events. Within the phase-space element ΔΩ𝑛𝑗𝑘𝑙 ,
+Table 1, while the grid for the variables 𝑄2 and 𝜈 used in the previous                                                 data is the number of measured events and 𝑁 L
+                                                                                                                     𝑁𝑛𝑗𝑘𝑙                                         𝑛𝑗𝑘𝑙
+                                                                                                                                                                        the number of LEPTO
+publication [27] is reported in the last two columns for comparison.
+                                                                                                                     events. The virtual-photon ﬂux enters as a kinematic prefactor applied
+   The cross section can be calculated for each beam charge (denoted
+                                                                                                                     event by event.
+by ± in the following) in a bin ΔΩ𝑛𝑖𝑗𝑘 from the data by subtracting the
+                                                                                                                         The spin-dependent virtual-photon cross section measured with pos-
+LEPTO MC background:
+                                                                                                                     itively or negatively charged muons is obtained in each bin of (|𝑡|, 𝜙):
+                                                                                                                                                                    ⟨                      ⟩±
+⟨                  ⟩±           ⟨     µp→µ′ 𝜋 0 p′ ⟩
+                                                        ±          ⟨      µp→µ′ 𝜋 0 p′ ⟩
+                                                                                            ±                                                             ∑                 ∗
+                                                                                                                                                                        d𝜎 γ p→𝜋 p
+                                                                                                                                                                                     0 ′
+           ′ 0 ′                    d𝜎data                             d𝜎background                                  ⟨                        ⟩±                                                   Δ𝑄2𝑗 Δ𝜈𝑘
+    d𝜎 µp→µ 𝜋 p                                                                                                               ∗         0 ′                   𝑗,𝑘          d|𝑡|d𝜙
+                            =                                  −                                   (14)                  d𝜎 γ p→𝜋 p                                                         𝑛𝑖𝑗𝑘
+        dΩ                              dΩ                                      dΩ                                                                    =                 ∑       2 ∑ Δ𝜈
+                                                                                                                                                                                                              .                  (16)
+                     𝑛𝑖𝑗𝑘                               𝑛𝑖𝑗𝑘                                𝑛𝑖𝑗𝑘                           d|𝑡|d𝜙                                           𝑗 Δ𝑄𝑗  𝑘  𝑘
+                                                                                                                                                 𝑛𝑖
+
+
+
+                                                                                                               5
+                                                                                                                                        Physics Letters B 870 (2025) 139832
+
+
+
+
+Fig. 4. Left: spin-independent virtual-photon cross section integrated over the full 2𝜋-range in 𝜙, presented as a function of |𝑡|. Right: spin-independent virtual-photon
+cross section averaged over the measured |𝑡|-range, presented as a function of 𝜙. The inner error bars indicate the statistical uncertainty, the outer error bars the
+quadratic sum of statistical and systematic uncertainties. The triangles connected by the dashed line represent the Goloskokov–Kroll predictions [18,19,28,40] for
+the experimental bins and the dotted line is a ﬁt of the 𝜙 distribution using Eq. (5).
+
+
+
+
+Fig. 5. Left: spin-independent virtual-photon cross section integrated over the full 2𝜋-range in 𝜙, presented as a function of |𝑡|. Right: spin-independent virtual-photon
+cross section averaged over the measured |𝑡|-range, presented as a function of 𝜙. The cross sections obtained in the present measurement using the 2016 data (in
+red) are compared to the previous ones (in blue). The inner error bars indicate the statistical uncertainty, the outer error bars the quadratic sum of statistical and
+systematic uncertainties. The 2016 data points are shown at the corresponding bin centre. For better visibility the 2012 data points are shifted horizontally with
+respect to the present results. The triangles connected by the dashed line represent the Goloskokov–Kroll predictions [18,19,28,40] for the experimental bins and
+the dotted line is a ﬁt to the 𝜙 distribution of the 2016 data using Eq. (5). (For interpretation of the references to colour in this ﬁgure legend, the reader is referred
+to the web version of this article.)
+
+The spin-independent virtual-photon cross section is calculated as the                  lower-energy photon in ECAL0 and ECAL1. The third group contains
+average of the two spin-dependent cross sections:                                       the systematic uncertainties related to the selection of pure exclusive 𝜋 0
+⟨             ⟩       (⟨             ⟩+ ⟨               ⟩− )                            events. Here, variations of the 𝜒 2 requirement for the kinematic ﬁt from
+      ∗   0 ′                ∗   0 ′            ∗   0 ′
+  d𝜎 γ p→𝜋 p        1    d𝜎 γ p→𝜋 p         d𝜎 γ p→𝜋 p                                  4 to 10, of the fraction of non-exclusive background from 3 to 13 %,
+                 =                     +                     .    (17)
+    d|𝑡|d𝜙          2      d|𝑡|d𝜙             d|𝑡|d𝜙                                    and of the LEPTO normalisation factor by 20 % are evaluated using the
+                 𝑛𝑖                         𝑛𝑖                       𝑛𝑖
+                                                                                        data. The small systematic uncertainty due to undetected 𝜔-production
+The cross section can be integrated over the full 2𝜋-range in 𝜙 in order
+                                                                                        is estimated by Monte Carlo in each kinematic range. Radiative correc-
+to study its |𝑡|-dependence:
+⟨               ⟩           ⟨             ⟩                                             tions are not applied, but a maximum estimate of their size, obtained by
+       ∗    0 ′
+   d𝜎 γ p→𝜋 p        ∑            ∗   0 ′
+                              d𝜎 γ p→𝜋 p                                                A. Afanasev [38] using the method discussed in Ref. [39] was consid-
+                   =    Δ𝜙𝑖                 .                       (18)
+       d|𝑡|           𝑖
+                                d|𝑡|d𝜙                                                  ered as the systematic uncertainty. It depends on the kinematic limits
+                 𝑛                               𝑛𝑖
+                                                                                        chosen and varies slightly over the |𝑡| and 𝜙-ranges. The largest sys-
+Similar to the study of the 𝜙-modulation of the cross section, the |𝑡|-                 tematic eﬀects come from the third group, mainly from the uncertainty
+averaged cross section in the measured Δ|𝑡| range is determined as:                     related to the estimation of the non-exclusive background as described
+     ⟨             ⟩                      ⟨             ⟩
+  1
+           ∗   0 ′
+       d𝜎 γ p→𝜋 p           1    ∑              ∗   0 ′
+                                            d𝜎 γ p→𝜋 p
+                                                                                        in Section 5.
+                     = ∑            Δ|𝑡|𝑛                 .       (19)                      Using the 𝜙-distribution of the spin-independent cross section, the
+Δ|𝑡|       d𝜙             𝑛 Δ|𝑡|𝑛 𝑛           d|𝑡|d𝜙                                                        d𝜎        d𝜎      d𝜎TT     d𝜎LT
+                      𝑖                                         𝑛𝑖                      contributions, i.e. d|𝑡|T + 𝜖 d|𝑡|L , d|𝑡| and d|𝑡| , can be extracted accord-
+    The systematic uncertainties are evaluated separately for each of the               ing to Eq. (5). To determine the systematic uncertainties of these ob-
+results presented below. Table 2 shows the estimated relative system-                   servables the following method was applied. Parameters characteriz-
+atic uncertainties on the measured |𝑡| and 𝜙-dependent cross sections                                                                            1               2
+                                                                                        ing each systematic eﬀect given in Table 2 were varied, Δ|𝑡| ⟨ dd𝜙𝜎 ⟩ was
+in the full kinematic range. The systematic uncertainties are arranged                                       d𝜎      d𝜎    d𝜎         d𝜎
+in four groups. The ﬁrst group contains the systematic uncertainties on                 re-evaluated and d|𝑡|T + 𝜖 d|𝑡|L , d|𝑡|
+                                                                                                                             TT       LT
+                                                                                                                                and d|𝑡| were extracted by ﬁtting
+the determination of the beam ﬂux for both muon charges. The sec-                       the corresponding angular distribution with only statistical uncertain-
+ond group contains the systematic eﬀects related to the uncertainties                   ties and the largest variations of these observables yield the systematic
+in the acceptance determination and in the energy thresholds for the                    uncertainties given in Table 2.
+
+                                                                                    6
+                                                                                                                                                                                           Physics Letters B 870 (2025) 139832
+
+
+                                      Table 3
+                                      Numerical values of the cross sections shown in Fig. 4 with the mean values of |𝑡| and 𝜙 in each bin.
+                                                               [          ]          ⟨          ⟩[               ]                                           ⟨        ⟩[               ]
+                                                                                         d𝜎                                                            1         d𝜎
+                                        |𝑡|-range         ⟨|𝑡|⟩ (GeV/𝑐) 2                d|𝑡|
+                                                                                                        nb
+                                                                                                     (GeV/𝑐) 2
+                                                                                                                            𝜙-range       ⟨𝜙⟩ [rad]   Δ|𝑡|       d𝜙
+                                                                                                                                                                              nb
+                                                                                                                                                                           (GeV/𝑐) 2
+
+                                                                                                              |                    −3𝜋                                        |
+                                       0.08 – 0.15        0.12                        9.82 ± 1.08stat +− 1.18 |
+                                                                                                         1.00 |sys
+                                                                                                                             −𝜋 –         –2.66       0.54 ± 0.10stat +− 0.10 |
+                                                                                                                                                                         0.09 |sys
+                                                                                                                                    4
+                                                                                                       + 1.38 |             −3𝜋    −𝜋                                  + 0.16 |
+                                       0.15 – 0.22        0.18                       11.51 ± 1.42stat − 1.16 |                   –        –1.95       1.39 ± 0.16stat − 0.13 |
+                                                                                                              |sys           4      2                                         |sys
+                                                                                                              |              −𝜋    −𝜋                                         |
+                                       0.22 – 0.36        0.28                        6.82 ± 0.56stat +− 1.06 |
+                                                                                                         0.89 |sys
+                                                                                                                                 –        –1.22       1.52 ± 0.16stat +− 0.18 |
+                                                                                                                                                                         0.15 |sys
+                                                                                                                              2     4
+                                                                                                       + 0.68 |              −𝜋                                        + 0.13 |
+                                       0.36 – 0.50        0.42                        4.41 ± 0.45stat − 0.58 |                   –0       –0.46       0.57 ± 0.09stat − 0.11 |
+                                                                                                              |sys            4                                               |sys
+                                                                                                              |                    𝜋                                          |
+                                       0.50 – 0.64        0.57                        4.90 ± 0.60stat +− 0.78 |
+                                                                                                         0.63 |sys
+                                                                                                                                0–         0.49       0.67 ± 0.10stat +− 0.15 |
+                                                                                                                                                                         0.13 |sys
+                                                                                                                                   4
+                                                                                                                               𝜋   𝜋                                   + 0.21 |
+                                                                                                                                 –         1.21       1.79 ± 0.16stat − 0.17 |
+                                                                                                                               4   2                                          |sys
+                                                                                                                 |             𝜋   3𝜋                                         |
+                                       0.08 – 0.64        0.29                           6.72 ± 0.32stat +− 0.89 |
+                                                                                                            0.79 |sys
+                                                                                                                                 –         1.92       1.38 ± 0.16stat +− 0.16 |
+                                                                                                                                                                         0.13 |sys
+                                                                                                                               2    4
+                                                                                                                             3𝜋                                               |
+                                                                                                                                 –𝜋        2.70       0.70 ± 0.20stat +− 0.13 |
+                                                                                                                                                                         0.12 |sys
+                                                                                                                              4
+
+
+
+                                                                                                                                             d𝜎 LT
+                                                                                                                               The value of d|𝑡|   is found to be compatible with zero within sta-
+       Table 4
+                               nb
+       The contributions in (GeV/𝑐)                                                                                       tistical uncertainties and its systematic uncertainty is estimated to be
+                                    2 to the spin-independent cross section.
+
+          ⟨                    ⟩       ⟨           ⟩                ⟨           ⟩
+                                                                                                                          at least two-third of the absolute value of the systematic uncertainty on
+              d𝜎T      d𝜎                  d𝜎TT                         d𝜎LT                                              d𝜎TT
+              d|𝑡|
+                   + 𝜖 d|𝑡|L                d|𝑡|                         d|𝑡|                                                   . The extracted cross-section contributions could depend on the sin𝜙
+                                                                                                                           d|𝑡|
+          6.7 ± 0.3stat +− 0.9
+                               |
+                               |       −4.4 ± 0.5stat +− 0.3
+                                                             |
+                                                             |      0.1 ± 0.2stat +− 0.1
+                                                                                         |
+                                                                                         |                                term in the cross section (see Eq. (2)), if the opposite µ+ and µ− beam
+                           0.8 |sys                      0.3 |sys                    0.1 |sys
+                                                                                                                          polarisations do not have equal magnitude. Including the sin𝜙 term in
+                                                                                                                                                                    d𝜎LT
+                                                                                                                          the ﬁt leads to a very small change in d|𝑡|    , which is compatible with
+                                                                                                                          zero within statistical uncertainties, while there is no impact on the de-
+                                                                                                                                          d𝜎       d𝜎        d𝜎TT
+                                                                                                                          termination of d|𝑡|T + 𝜖 d|𝑡|L and d|𝑡| .
+
+
+
+                                                                                                                          7. Results for the spin-independent cross section
+
+                                                                                                                              The dependences of the measured cross sections on |𝑡| and on 𝜙 are
+                                                                                                                          shown in Fig. 4, with the numerical values given in Table 3. In order to
+                                                                                                                          obtain the |𝑡|-dependence, the cross section is integrated over 𝜙, while
+                                                                                                                          for the 𝜙-dependence it is averaged over |𝑡|. The kinematic domain
+                                                                                                                          of the measurement is given by 0.08 (GeV/𝑐) 2 < |𝑡| < 0.64 (GeV/𝑐) 2 ,
+                                                                                                                          1 (GeV/𝑐) 2 < 𝑄2 < 8 (GeV/𝑐) 2 , 6.4 GeV < 𝜈 < 40 GeV, while the
+                                                                                                                          average kinematics are: ⟨|𝑡|⟩ = 0.29 (GeV/𝑐) 2 , ⟨𝑄2 ⟩ = 2.27 (GeV/𝑐) 2 ;
+                                                                                                                          ⟨𝜈⟩ = 10.16 GeV, ⟨𝑥Bj ⟩ = 0.134, ⟨𝑊 ⟩ = 4.1 GeV/𝑐 2 , ⟨𝑦⟩ = 0.064 and
+                                                                                                                          ⟨𝜖⟩ = 0.997.
+                                                                                                                                                  d𝜎
+                                                                                                                              The cross section ⟨ d|𝑡| ⟩ shown in the left panel of Fig. 4 decreases with
+Fig. 6. Spin-independent virtual-photon cross section in ﬁve |𝑡|-ranges pre-                                              increasing |𝑡| for values of |𝑡| larger than 0.2 GeV/𝑐 2 , while at smaller
+sented as a function of 𝜙. The inner error bars indicate the statistical uncertainty,                                     |𝑡| the trend seems to be the opposite. The measured cross section is
+the outer error bars the quadratic sum of statistical and systematic uncertainties.
+                                                                                                                          reasonably well described by the predictions of the Goloskokov–Kroll
+The ﬁve curves are ﬁts of the 𝜙 distributions using Eq. (5).
+                                                                                                                          (GK) model from 2016 [18,19,40]. Cross sections are calculated within
+                                                                                                                          the handbag approach, which is based on factorisation in hard parton
+                                                                                                                          subprocesses and GPDs. The latter are constructed from double distri-
+                                                                                                                          butions with parameters given in [28,40]. The result of the GK model is
+                                                                                                                          obtained by integrating over the same kinematic range as for the data.
+                                                                                                                                                     1 2
+                                                                                                                              The cross section Δ|𝑡|   ⟨ dd𝜙𝜎 ⟩ averaged over the full |𝑡|-range is shown
+                                                                                                                          in the right panel of Fig. 4. In order to extract the diﬀerent contributions
+                                                                                                                          to the spin-independent cross section, a binned likelihood ﬁt is applied
+                                                                                                                          to the data according to Eq. (5) using the integral of the ﬁt function in
+                                                                                                                          each bin. The average value of the virtual-photon polarisation parameter
+                                                                                                                          is used in the ﬁt. The results are presented in Table 4.
+                                                                                                                              We observe a longitudinal–transverse interference contribution com-
+                                                                                                                          patible with zero within statistical uncertainties, while the transverse–
+                                                                                                                          transverse interference contribution is large and negative, and of the
+                                                                                                                          same order of magnitude as the sum of transverse and longitudinal
+                                                                                                                          contributions. The exclusive 𝜋 0 production cross section depends on the
+                                                                                                                          GPDs ̃ 𝐻, ̃𝐸, 𝐻T and 𝐸 T (see Eqs. (6)–(8)). As explained in the intro-
+                                                                     d𝜎             d𝜎
+Fig. 7. Extracted contributions to the cross section, d|𝑡|T + 𝜖 d|𝑡|L , d|𝑡|TT and d|𝑡|LT ,
+                                                                                            d𝜎                   d𝜎       duction, the contribution of the chiral-odd GPD 𝐸 T is dominant due to
+as a function of |𝑡|. Open points correspond to the ﬁt of all three contributions,
+                                                                                                                          the relative sign of 𝑢 and 𝑑 quark contributions for the 𝜋 0 production,
+                                                                                  d𝜎
+solid points correspond to the ﬁt of two contributions with the assumption d|𝑡|LT =                                       in contrast to the contributions to the other GPDs. Our observation of
+0. The triangles connected by the dashed line represent the Goloskokov–Kroll                                              a large contribution from 𝜎TT and a slight dip in the diﬀerential cross
+                                                                                                                                    d𝜎
+predictions [18,19,28,40] for the experimental bins.                                                                      section ⟨ d|𝑡| ⟩ as |𝑡| decreases to zero supports this expectation, which is
+                                                                                                                          also described by the GK model [18,19,28,40].
+
+                                                                                                                      7
+                                                                                                                                                                                               Physics Letters B 870 (2025) 139832
+
+
+                                      Table 5
+                                      Numerical values of the cross sections shown in Fig. 5 with the mean values of |𝑡| and 𝜙 in each bin.
+                                                                       [          ]       ⟨           ⟩[               ]                                         ⟨        ⟩[               ]
+                                                                                              d𝜎                                                           1         d𝜎
+                                          |𝑡|-range               ⟨|𝑡|⟩ (GeV/𝑐) 2             d|𝑡|
+                                                                                                              nb
+                                                                                                           (GeV/𝑐) 2
+                                                                                                                                 𝜙-range      ⟨𝜙⟩ [rad]   Δ|𝑡|       d𝜙
+                                                                                                                                                                                  nb
+                                                                                                                                                                               (GeV/𝑐) 2
+
+                                                                                                                    |                   −3𝜋                                       |
+                                          0.08 – 0.15             0.12                    15.92 ± 1.86stat +− 1.69  |
+                                                                                                               1.51 |sys
+                                                                                                                                  −𝜋 –        –2.64       0.59 ± 0.13stat +− 0.12 |
+                                                                                                                                                                             0.11 |sys
+                                                                                                                                         4
+                                                                                                            + 1.70 |             −3𝜋    −𝜋                                 + 0.21 |
+                                          0.15 – 0.22             0.18                    16.05 ± 1.98stat − 1.49 |                   –       –1.97       1.91 ± 0.26stat − 0.19 |
+                                                                                                                    |sys          4      2                                        |sys
+                                                                                                                    |             −𝜋    −𝜋                                        |
+                                          0.22 – 0.36             0.28                    10.36 ± 1.07stat +− 1.34  |
+                                                                                                               1.12 |sys
+                                                                                                                                      –       –1.23       1.76 ± 0.25stat +− 0.19 |
+                                                                                                                                                                             0.17 |sys
+                                                                                                                                   2     4
+                                                                                                            + 0.90 |              −𝜋                                       + 0.15 |
+                                          0.36 – 0.50             0.42                     5.32 ± 0.73stat − 0.82 |                   –0      –0.40       0.76 ± 0.15stat − 0.13 |
+                                                                                                                   |sys            4                                              |sys
+                                                                                                                   |                    𝜋                                         |
+                                          0.50 – 0.64             0.57                     4.37 ± 0.74stat +− 0.69 |
+                                                                                                              0.59 |sys
+                                                                                                                                     0–        0.49       1.13 ± 0.20stat +− 0.20 |
+                                                                                                                                                                             0.17 |sys
+                                                                                                                                        4
+                                                                                                                                    𝜋   𝜋                                  + 0.29 |
+                                                                                                                                      –        1.20       2.90 ± 0.32stat − 0.24 |
+                                                                                                                                    4   2                                         |sys
+                                                                                                                    |               𝜋   3𝜋                                        |
+                                          0.08 – 0.64             0.28                      9.04 ± 0.50stat +− 1.08 |
+                                                                                                               0.99 |sys
+                                                                                                                                      –        1.90       1.86 ± 0.27stat +− 0.19 |
+                                                                                                                                                                             0.17 |sys
+                                                                                                                                    2    4
+                                                                                                                                  3𝜋                                              |
+                                                                                                                                      –𝜋       2.67       0.59 ± 0.16stat +− 0.12 |
+                                                                                                                                                                             0.12 |sys
+                                                                                                                                   4
+
+
+
+
+Fig. 8. Left: spin-independent virtual-photon cross section integrated over the full 2𝜋-range in 𝜙, presented as a function of |𝑡|. Right: spin-independent virtual-photon
+cross section averaged over the measured |𝑡|-range, presented as a function of 𝜙. Both ﬁgures show the results for the four 𝑄2 -ranges. The inner error bars indicate the
+statistical uncertainty, the outer error bars the quadratic sum of statistical and systematic uncertainties. The four curves are ﬁts of the 𝜙 distributions using Eq. (5).
+
+
+
+
+Fig. 9. Left: spin-independent virtual-photon cross section integrated over the full 2𝜋-range in 𝜙, presented as a function of |𝑡|. Right: spin-independent virtual-photon
+cross section averaged over the measured |𝑡|-range, presented as a function of 𝜙. Both ﬁgures show the results for the three 𝜈-ranges. The inner error bars indicate the
+statistical uncertainty, the outer error bars the quadratic sum of statistical and systematic uncertainties. The three curves are ﬁts of the 𝜙 distributions using Eq. (5).
+
+Table 6                                                                                                                        formed in the previously accessible kinematic domain: 0.08 (GeV/𝑐) 2 <
+                        nb
+The contributions in (GeV/𝑐) 2 to the spin-independent cross section in the kine-                                              |𝑡| < 0.64 (GeV/𝑐) 2 , 1 (GeV/𝑐) 2 < 𝑄2 < 5 (GeV/𝑐) 2 , 8.5 GeV
+matic domain of Ref. [27].                                                                                                     < 𝜈 < 28 GeV and the average kinematics for this comparison
+                 ⟨                    ⟩           ⟨           ⟩                       ⟨           ⟩
+                     d𝜎T      d𝜎
+                          + 𝜖 d|𝑡|L
+                                                      d𝜎TT                                d𝜎LT                                 are ⟨|𝑡|⟩ = 0.28 GeV/𝑐 2 , ⟨𝑄2 ⟩ = 2.16 GeV/𝑐 2 , ⟨𝜈⟩ = 12.34 GeV,
+                     d|𝑡|                              d|𝑡|                                d|𝑡|
+                                                                                                                               ⟨𝑥Bj ⟩ = 0.103, ⟨𝑊 ⟩ = 4.61 GeV/𝑐 2 , ⟨𝑦⟩ = 0.078, ⟨𝜖⟩ = 0.996. The dif-
+                                      |                                 |                                  |
+ 2016 data       9.0 ± 0.5stat +− 1.1 |
+                                  1.0 |sys
+                                                  −6.6 ± 0.8stat +− 0.5 |
+                                                                    0.5 |sys
+                                                                                      0.7 ± 0.3stat +− 0.4 |
+                                                                                                       0.4 |sys                ferential cross sections of exclusive 𝜋 0 production for the two in-
+                                + 1.1 |                           + 0.7 |                            + 0.3 |
+ 2012 data       8.1 ± 0.9stat − 1.0 |            −6.0 ± 1.3stat − 0.7 |              1.4 ± 0.5stat − 0.2 |                    dependent sets of data are presented as a function of |𝑡| and 𝜙 in
+                                      |sys                              |sys                               |sys
+                                                                                                                               Fig. 5 and the numerical values using the 2016 data set are given in
+                                                                                                                               Table 5.
+                                                                                                                                   Our results are compared to the prediction of the GK model [18,
+8. Comparison to previously published results                                                                                                                                          d𝜎
+                                                                                                                               19,28,40]. The measured diﬀerential cross sections ⟨ d|𝑡|  ⟩ are found to
+                                                                                                                                                                           d𝜎
+   In order to check the compatibility with the results obtained                                                               be compatible. However, the decrease of ⟨ d|𝑡| ⟩ with |𝑡| observed in the
+using the COMPASS 2012 data [27], the analysis is also per-                                                                    present data is not as large as it was in [27]. Hence the new result is
+
+                                                                                                                           8
+                                                                                                                                                                         Physics Letters B 870 (2025) 139832
+
+
+                                 Table 7
+                                 Average values of the kinematic variables for the 5 |𝑡|-bins using the full 𝜈 and 𝑄2 -ranges.
+                                                                [          ]                                [          ]
+                                   |𝑡|-range               ⟨𝑄2 ⟩ (GeV/𝑐) 2            ⟨𝜈⟩ [GeV]        ⟨|𝑡|⟩ (GeV/𝑐) 2          ⟨𝑊 ⟩ [GeV/𝑐 2 ]   ⟨𝑥Bj ⟩   ⟨𝑦⟩     ⟨𝜖⟩
+
+                                   0.08 – 0.15             1.93                       11.76            0.12                     4.43              0.104    0.074   0.996
+                                   0.15 – 0.22             2.11                       10.32            0.18                     4.16              0.123    0.065   0.997
+                                   0.22 – 0.36             2.33                        9.86            0.28                     4.04              0.140    0.062   0.997
+                                   0.36 – 0.50             2.41                        9.29            0.42                     3.92              0.150    0.059   0.998
+                                   0.50 – 0.64             2.65                        9.35            0.57                     3.89              0.165    0.059   0.998
+
+                                                           𝑄2 ∈ [1, 8]                𝜈 ∈ [6.4, 40]
+
+
+
+
+                                                                          d𝜎         d𝜎   d𝜎          d𝜎
+Fig. 10. Extracted contributions to the cross section, d|𝑡|T + 𝜖 d|𝑡|L , d|𝑡|TT and d|𝑡|LT , as a function of 𝑄2 (left) and 𝜈 (right). Open points correspond to the ﬁt of the three
+                                                                                                                           d𝜎
+contributions, solid points correspond to the ﬁt of two contributions with the assumption d|𝑡|LT = 0.
+
+
+
+
+        Table 8                                                                                                   points. The results are given in Table 8. We observe large and opposite
+        The extracted contributions to the cross section in nb∕(GeV/𝑐) 2 for                                                        d𝜎       d𝜎        d𝜎TT
+                                                                                                                  contributions of d|𝑡|T + 𝜖 d|𝑡|L and d|𝑡| . Their absolute values decrease
+        the ﬁve |𝑡|-ranges.
+                                  ⟨                    ⟩            ⟨            ⟩                                with |𝑡| for |𝑡| > 0.2 GeV/𝑐 2 and do not exclude a small decrease towards
+                  [          ]        d𝜎T      d𝜎                        d𝜎TT
+         |𝑡|-range (GeV/𝑐) 2          d|𝑡|
+                                           + 𝜖 d|𝑡|L                      d|𝑡|                                    smaller |𝑡|. This could indicate the dominance of the chiral-odd GPD 𝐸 𝑇
+                                                        |                                 |                       compared to the other involved GPDs (see Eqs. (6)–(8)).
+         0.08 – 0.15               9.8 ± 1.1stat +− 1.2 |
+                                                    1.0 |sys
+                                                                    −8.2 ± 1.7stat +− 0.6 |
+                                                                                      0.6 |sys
+                                                  + 1.4 |                           + 0.5 |
+         0.15 – 0.22              11.5 ± 1.4stat − 1.2 |            −6.3 ± 2.2stat − 0.5 |
+                                                        |sys                              |sys
+                                                        |                                 |                       10. Dependence of the cross section on photon virtuality 𝑸𝟐 and
+         0.22 – 0.36               6.8 ± 0.6stat +− 1.0 |
+                                                    0.9 |sys
+                                                                    −4.1 ± 0.9stat +− 0.3 |
+                                                                                      0.3 |sys
+                                                  + 0.7 |                           + 0.3 |                       photon energy 𝝂
+         0.36 – 0.50               4.4 ± 0.4stat − 0.6 |            −3.8 ± 0.7stat − 0.3 |
+                                                        |sys                              |sys
+                                                        |                                 |
+         0.50 – 0.64               4.9 ± 0.6stat +− 0.7 |
+                                                    0.7 |sys
+                                                                    −2.8 ± 0.9stat +− 0.2 |
+                                                                                      0.2 |sys
+                                                                                                                      The spin-independent cross section is also studied in four 𝑄2 -ranges
+                                                                                                                  using the full 𝜈 and |𝑡|-ranges (see Fig. 8 ), and in three 𝜈-ranges using
+                                                                                                                  the full 𝑄2 and |𝑡|-ranges (see Fig. 9 ). All numerical values are given in
+slightly closer to the predictions. The 𝜙-distributions of the cross sec-                                         Tables A.12–A.18. The corresponding kinematic variables are reported
+tions averaged over the |𝑡|-range are in good agreement for the two data                                          in Tables 9 and 10.
+sets and also with the GK prediction. In conclusion, the measured cross                                               The diﬀerential cross sections studied as a function of |𝑡| (left part
+sections and the extracted contributions from the ﬁt using the present                                            of Figs. 8 and 9) show a maximum around |𝑡| = 0.2 (GeV/𝑐) 2 , as it was
+data (see Table 6) are statistically compatible with the results from                                             already mentioned. However, no maximum is observed at small 𝑄2 or
+Ref. [27].                                                                                                        large 𝜈, which corresponds to 𝑥Bj < 0.1 (see Tables 9 and 10). Here,
+                                                                                                                  signiﬁcant longitudinal contributions are expected, which decrease with
+9. Study of the 𝝓-dependent cross section in diﬀerent |𝒕|-ranges                                                  increasing |𝑡|. This was already emphasised in Ref. [22].
+                                                                                                                      The diﬀerential cross section is shown as a function of 𝜙 in the right
+   The 𝜙-modulation of the spin-independent cross section is studied                                              parts of Fig. 8 (in the four 𝑄2 -ranges) and of Fig. 9 (in the three 𝜈-
+in ﬁve |𝑡|-ranges using the full 𝜈 and 𝑄2 -ranges. The bin limits and                                             ranges) together with ﬁts using Eq. (5). The contributions to the cross
+                                                                                                                            d𝜎       d𝜎      d𝜎TT     d𝜎LT
+the average kinematics are reported in Table 7. The corresponding                                                 section, d|𝑡|T + 𝜖 d|𝑡|L , d|𝑡| and d|𝑡| , obtained from the ﬁts, are presented
+ﬁve diﬀerential cross sections of exclusive 𝜋 0 production are presented                                          as a function of 𝑄2 and 𝜈 in Fig. 10. As in Fig. 7, results with two or
+as a function of 𝜙 in Fig. 6 and the numerical values are given in                                                three contributions in the ﬁt are presented. Again no diﬀerences are
+                                                                                                                                                 d𝜎LT
+Table A.19.                                                                                                       observed using the assumption d|𝑡|  = 0. The numerical values are given
+   Fits of the 𝜙 distributions in the ﬁve |𝑡|-ranges are applied using                                                                                                                   d𝜎       d𝜎
+                                                             d𝜎      d𝜎                                           in Table 11. A strong decrease of the absolute values of d|𝑡|T + 𝜖 d|𝑡|L and
+Eq. (5). The extracted contributions to the cross section, d|𝑡|T + 𝜖 d|𝑡|L ,
+                                                                                                                  d𝜎TT
+d𝜎TT     d𝜎LT                                                                                                              with increasing 𝜈 is observed, while the decrease is weaker with
+        and    , are presented as a function of |𝑡| in Fig. 7. Open points                                         d|𝑡|
+ d|𝑡|     d|𝑡|
+                                                                      d𝜎LT
+                                                                                                                  increasing 𝑄2 . These results provide valuable input for modelling GPDs
+correspond to the ﬁt of the three contributions. The contribution d|𝑡|                                            and exclusive 𝜋 0 production cross sections. Furthermore, they should
+is found compatible with zero within the statistical uncertainties. A ﬁt                                          facilitate the study of next-to-leading order corrections and higher-twist
+                                             d𝜎LT
+of only the two ﬁrst contributions assuming d|𝑡|  = 0 is shown as solid                                           contributions (as proposed in Ref. [22]).
+
+                                                                                                              9
+                                                                                                                                                               Physics Letters B 870 (2025) 139832
+
+
+                              Table 9
+                              Values of the kinematic variables for the four 𝑄2 -ranges using the full 𝜈 and |𝑡|-ranges.
+                                                            [          ]                              [          ]
+                                  𝑄2 -range            ⟨𝑄2 ⟩ (GeV/𝑐) 2           ⟨𝜈⟩ [GeV]       ⟨|𝑡|⟩ (GeV/𝑐) 2      ⟨𝑊 ⟩ [GeV/𝑐 2 ]   ⟨𝑥Bj ⟩   ⟨𝑦⟩     ⟨𝜖⟩
+
+                                  1.0 – 1.5            1.22                      10.54           0.27                 4.29              0.072    0.067   0.997
+                                  1.5 – 2.1            1.77                       9.81           0.27                 4.09              0.109    0.062   0.997
+                                  2.1 – 3.2            2.58                       9.82           0.31                 4.00              0.157    0.062   0.997
+                                  3.2 – 8.0            4.33                      10.39           0.33                 3.90              0.247    0.065   0.997
+
+                                                                                 𝜈 ∈ [6.4, 40]   |𝑡| ∈ [0.08, 0.64]
+
+
+
+
+                              Table 10
+                              Values of the kinematic variables for the three 𝜈-bins using the full |𝑡| and 𝑄2 -ranges.
+                                                              [          ]                            [          ]
+                                  𝜈-range                ⟨𝑄2 ⟩ (GeV/𝑐) 2           ⟨𝜈⟩ [GeV]     ⟨|𝑡|⟩ (GeV/𝑐) 2      ⟨𝑊 ⟩ [GeV/𝑐 2 ]   ⟨𝑥Bj ⟩   ⟨𝑦⟩     ⟨𝜖⟩
+
+                                   6.4 – 8.5             2.15                       7.35         0.31                 3.53              0.156    0.046   0.999
+                                   8.5 – 13.9            2.50                      10.32         0.29                 4.20              0.131    0.065   0.998
+                                  13.9 – 40.0            2.09                      21.08         0.24                 6.12              0.057    0.133   0.989
+
+                                                         𝑄2 ∈ [1, 8]                             |𝑡| ∈ [0.08, 0.64]
+
+
+
+     Table 11                                                                                                Data availability
+     The extracted contributions to the cross section in nb∕(GeV/𝑐) 2 for
+     the 4 𝑄2 -ranges and for the 3 𝜈-ranges.                                                                     Data will be made available on request.
+               [          ]   ⟨                    ⟩             ⟨           ⟩
+                                  d𝜎T      d𝜎                        d𝜎TT
+      𝑄2 -range (GeV/𝑐) 2         d|𝑡|
+                                       + 𝜖 d|𝑡|L                      d|𝑡|
+                                                                                                             Funding
+                                                    |                                  |
+      1.0 – 1.5               13.9 ± 0.9stat +− 1.8 |
+                                                1.6 |sys
+                                                                 −9.8 ± 1.2stat +− 0.7 |
+                                                                                   0.7 |sys
+                                                    |                                  |
+      1.5 – 2.1               11.7 ± 0.8stat +− 1.6 |
+                                                1.4 |sys
+                                                                 −9.8 ± 1.2stat +− 0.7 |
+                                                                                   0.7 |sys                     Supported by the Higher Education and Science Committee of the
+                                                    |                                  |
+      2.1 – 3.2                9.2 ± 0.7stat +− 1.2 |
+                                                1.0 |sys
+                                                                 −5.9 ± 1.0stat +− 0.4 |
+                                                                                   0.4 |sys
+                                                                                                             Republic of Armenia (Armenia). Supported by MEYS, Grants MEYS
+                                                    |                                  |
+      3.2 – 8.0                4.6 ± 0.4stat +− 0.6 |
+                                                0.5 |sys
+                                                                 −3.1 ± 0.5stat +− 0.2 |
+                                                                                   0.2 |sys
+                                                                                                             LM2023040, MEYS LM2018104, MEYS LTT17018 and GAUK60121,
+                                                                                                             CZ.02.01.01/00/22_008/0004632 “FORTE”, co-funded by the EU and
+      𝜈-range [GeV]
+                                                                                                             Charles University Grant Charles University PRIMUS/22/SCI/017
+                                                    |                                    |
+       6.4 – 8.5              39.7 ± 2.5stat +− 4.7 |
+                                                3.7 |sys
+                                                                 −26.2 ± 3.9stat +− 2.0  |
+                                                                                     1.7 |sys
+                                                                                                             (Czech Republic). Supported by BMBF - Bundesministerium für Bildung
+                                              + 2.1 |                            + 0.7 |                     und Forschung (Germany). Supported by B. Sen fund (India). Supported
+       8.5 – 13.9             17.1 ± 1.2stat − 1.7 |             −9.7 ± 1.8stat − 0.7 |
+                                                    |sys                               |sys
+                                                    |                                  |                     by the Israel Academy of Sciences and Humanities (Israel). Supported
+      13.9 – 40.0              2.2 ± 0.2stat +− 0.3 |
+                                                0.3 |sys
+                                                                 −1.7 ± 0.4stat +− 0.1 |
+                                                                                   0.2 |sys
+                                                                                                             by MEXT and JSPS, Grants MEXT18002006, 20540299, JSPS18540281
+                                                                                                             and 26247032, the Daiko and Yamada Foundations (Japan). Sup-
+                                                                                                             ported by NCN, Grant NCN2020/37/B/ST2/01547 (Poland). Sup-
+                                                                                                             ported by FCT, Grants DOI FCT10.54499/CERN/FIS-PAR/0022/2019
+11. Summary and conclusion                                                                                   and DOI 10.54499/CERN/FIS-PAR/0016/2021 (Portugal). Supported
+                                                                                                             by the Ministry of Science and Technology (Taiwan). Supported by the
+    We have measured the |𝑡| and 𝜙-dependence of the spin-independent                                        National Science Foundation, Grant no. PHY-1506416 (USA).
+virtual-photon–proton cross section using hard exclusive 𝜋 0 muoproduc-
+tion with µ+ and µ− beams in a wide kinematic range with the photon                                          Declaration of competing interest
+virtuality ranging from 1 to 8 (GeV/𝑐) 2 and the photon energy from 6.4
+to 40 GeV. Fitting the azimuthal distribution in diﬀerent |𝑡|-ranges from                                        The authors declare that they have no known competing ﬁnancial
+0.08 to 0.64 (GeV/𝑐) 2 shows a large negative transverse-transverse inter-                                   interests or personal relationships that could have appeared to inﬂuence
+ference contribution opposite to the sum of the transversely and longitu-                                    the work reported in this paper.
+dinally polarised virtual-photon contributions. This could indicate clear
+evidence of an impact of the chiral-odd GPD 𝐸 𝑇 . The |𝑡|-dependence at                                      Acknowledgements
+small values of 𝑥Bj indicates that the longitudinally polarised virtual-
+photon contribution is not negligible. The measured dependences of                                               We gratefully acknowledge the support of the CERN management
+these contributions on 𝑄2 and 𝜈 provide valuable input for new model                                         and staﬀ and the skill and eﬀort of the technicians of our collaborating
+calculations including higher twists and next-to-leading order correc-                                       institutes. We would like to express our gratitude to Peter Kroll, Sergei
+tions.                                                                                                       Goloskokov, and Kornelia Passek-Kumericki for their continuous theo-
+                                                                                                             retical support.
+
+                                                                                                             Appendix
+
+
+
+
+                                                                                                        10
+                                                                                                                                        Physics Letters B 870 (2025) 139832
+
+
+Table A.12
+Numerical values of the cross sections shown in Fig. 8 for 1 (GeV/𝑐) 2 < 𝑄2 < 1.5 (GeV/𝑐) 2 with the mean
+values of |𝑡| and 𝜙 in each bin.
+                     [          ]   ⟨          ⟩[               ]                                         ⟨        ⟩[               ]
+                                        d𝜎                                                          1         d𝜎
+  |𝑡|-range     ⟨|𝑡|⟩ (GeV/𝑐) 2         d|𝑡|
+                                                       nb
+                                                    (GeV/𝑐) 2
+                                                                         𝜙-range      ⟨𝜙⟩ [rad]    Δ|𝑡|       d𝜙
+                                                                                                                           nb
+                                                                                                                        (GeV/𝑐) 2
+
+                                                             |                  −3𝜋                                       |
+ 0.08 – 0.15    0.11                31.40 ± 4.37stat +− 3.20 |
+                                                        2.89 |sys
+                                                                          −𝜋 –        −2.67       1.61 ± 0.35stat +− 0.28 |
+                                                                                                                     0.27 |sys
+                                                                                 4
+                                                             |           −3𝜋    −𝜋                                        |
+ 0.15 – 0.22    0.18                27.79 ± 3.52stat +− 2.97 |
+                                                        2.67 |sys
+                                                                              –       −1.95       2.53 ± 0.36stat +− 0.30 |
+                                                                                                                     0.27 |sys
+                                                                          4      2
+                                                             |            −𝜋    −𝜋                                        |
+ 0.22 – 0.36    0.28                13.67 ± 1.68stat +− 1.98 |
+                                                        1.72 |sys
+                                                                              –       −1.21       2.99 ± 0.43stat +− 0.33 |
+                                                                                                                     0.29 |sys
+                                                                           2     4
+                                                             |            −𝜋                                              |
+ 0.36 – 0.50    0.42                 7.01 ± 1.04stat +− 1.35 |
+                                                        1.27 |sys
+                                                                              –0      −0.45       1.22 ± 0.29stat +− 0.21 |
+                                                                                                                     0.18 |sys
+                                                                           4
+                                                             |                  𝜋                                         |
+ 0.50 – 0.64    0.58                 5.42 ± 0.92stat +− 1.04 |
+                                                        0.93 |sys
+                                                                             0–        0.51       1.12 ± 0.26stat +− 0.22 |
+                                                                                                                     0.20 |sys
+                                                                                4
+                                                                            𝜋   𝜋                                         |
+                                                                              –        1.24       4.30 ± 0.64stat +− 0.45 |
+                                                                                                                     0.37 |sys
+                                                                            4   2
+                                                             |              𝜋   3𝜋                                        |
+ 0.08 – 0.64    0.27                13.91 ± 0.89stat +− 1.71 |
+                                                        1.59 |sys
+                                                                              –        1.96       3.00 ± 0.45stat +− 0.33 |
+                                                                                                                     0.30 |sys
+                                                                            2    4
+                                                                          3𝜋                                       + 0.20 |
+                                                                              –𝜋       2.74       0.94 ± 0.27stat − 0.21 |
+                                                                           4                                              |sys
+
+Table A.13
+Numerical values of the cross sections shown in Fig. 8 for 1.5 (GeV/𝑐) 2 < 𝑄2 < 2.1 (GeV/𝑐) 2 with the mean
+values of |𝑡| and 𝜙 in each bin.
+                     [          ]   ⟨          ⟩[               ]                                         ⟨        ⟩[               ]
+                                        d𝜎                                                          1         d𝜎
+  |𝑡|-range     ⟨|𝑡|⟩ (GeV/𝑐) 2         d|𝑡|
+                                                       nb
+                                                    (GeV/𝑐) 2
+                                                                         𝜙-range      ⟨𝜙⟩ [rad]    Δ|𝑡|       d𝜙
+                                                                                                                           nb
+                                                                                                                        (GeV/𝑐) 2
+
+                                                             |                  −3𝜋                                       |
+ 0.08 – 0.15    0.12                27.65 ± 3.99stat +− 2.88 |
+                                                        2.27 |sys
+                                                                          −𝜋 –        −2.61       1.16 ± 0.31stat +− 0.21 |
+                                                                                                                     0.19 |sys
+                                                                                 4
+                                                             |           −3𝜋    −𝜋                                        |
+ 0.15 – 0.22    0.18                19.87 ± 2.77stat +− 2.25 |
+                                                        1.83 |sys
+                                                                              –       −1.94       2.68 ± 0.43stat +− 0.31 |
+                                                                                                                     0.26 |sys
+                                                                          4      2
+                                                             |            −𝜋    −𝜋                                        |
+ 0.22 – 0.36    0.28                11.33 ± 1.36stat +− 1.69 |
+                                                        1.38 |sys
+                                                                              –       −1.26       2.78 ± 0.36stat +− 0.31 |
+                                                                                                                     0.26 |sys
+                                                                           2     4
+                                                             |            −𝜋                                              |
+ 0.36 – 0.50    0.42                 7.28 ± 1.16stat +− 1.51 |
+                                                        1.38 |sys
+                                                                              –0      −0.47       0.79 ± 0.23stat +− 0.21 |
+                                                                                                                     0.20 |sys
+                                                                           4
+                                                             |                  𝜋                                         |
+ 0.50 – 0.64    0.57                 4.55 ± 0.94stat +− 1.46 |
+                                                        1.39 |sys
+                                                                             0–        0.47       0.91 ± 0.23stat +− 0.24 |
+                                                                                                                     0.22 |sys
+                                                                                4
+                                                                            𝜋   𝜋                                         |
+                                                                              –        1.26       3.23 ± 0.51stat +− 0.34 |
+                                                                                                                     0.27 |sys
+                                                                            4   2
+                                                             |              𝜋   3𝜋                                        |
+ 0.08 – 0.64    0.27                11.67 ± 0.79stat +− 1.56 |
+                                                        1.37 |sys
+                                                                              –        1.91       2.70 ± 0.44stat +− 0.29 |
+                                                                                                                     0.23 |sys
+                                                                            2    4
+                                                                          3𝜋                                       + 0.21 |
+                                                                              –𝜋       2.69       0.62 ± 0.21stat − 0.20 |
+                                                                           4                                              |sys
+
+Table A.14
+Numerical values of the cross sections shown in Fig. 8 for 2.1 (GeV/𝑐) 2 < 𝑄2 < 3.2 (GeV/𝑐) 2 with the mean
+values of |𝑡| and 𝜙 in each bin.
+                     [          ]   ⟨          ⟩[               ]                                         ⟨        ⟩[               ]
+                                        d𝜎                                                          1         d𝜎
+  |𝑡|-range     ⟨|𝑡|⟩ (GeV/𝑐) 2         d|𝑡|
+                                                       nb
+                                                    (GeV/𝑐) 2
+                                                                         𝜙-range      ⟨𝜙⟩ [rad]    Δ|𝑡|       d𝜙
+                                                                                                                           nb
+                                                                                                                        (GeV/𝑐) 2
+
+                                                             |                  −3𝜋                                       |
+ 0.08 – 0.15    0.12                12.59 ± 2.21stat +− 1.54 |
+                                                        1.26 |sys
+                                                                          −𝜋 –        −2.72       0.74 ± 0.23stat +− 0.15 |
+                                                                                                                     0.13 |sys
+                                                                                 4
+                                                             |           −3𝜋    −𝜋                                        |
+ 0.15 – 0.22    0.19                15.76 ± 2.42stat +− 1.83 |
+                                                        1.47 |sys
+                                                                              –       −1.97       1.78 ± 0.31stat +− 0.22 |
+                                                                                                                     0.18 |sys
+                                                                          4      2
+                                                             |            −𝜋    −𝜋                                        |
+ 0.22 – 0.36    0.29                 9.94 ± 1.30stat +− 1.34 |
+                                                        1.01 |sys
+                                                                              –       −1.22       1.56 ± 0.26stat +− 0.19 |
+                                                                                                                     0.16 |sys
+                                                                           2     4
+                                                             |            −𝜋                                              |
+ 0.36 – 0.50    0.43                 6.06 ± 1.05stat +− 1.18 |
+                                                        1.05 |sys
+                                                                              –0      −0.50       1.02 ± 0.27stat +− 0.19 |
+                                                                                                                     0.16 |sys
+                                                                           4
+                                                             |                  𝜋                                         |
+ 0.50 – 0.64    0.57                 6.66 ± 1.25stat +− 0.92 |
+                                                        0.65 |sys
+                                                                             0–        0.54       0.87 ± 0.24stat +− 0.18 |
+                                                                                                                     0.16 |sys
+                                                                                4
+                                                                            𝜋   𝜋                                  + 0.27 |
+                                                                              –        1.18       2.61 ± 0.40stat − 0.21 |
+                                                                            4   2                                         |sys
+                                                             |              𝜋   3𝜋                                        |
+ 0.08 – 0.64    0.31                 9.20 ± 0.66stat +− 1.18 |
+                                                        0.99 |sys
+                                                                              –        1.88       2.29 ± 0.38stat +− 0.25 |
+                                                                                                                     0.19 |sys
+                                                                            2    4
+                                                                          3𝜋                                       + 0.16 |
+                                                                              –𝜋       2.68       0.84 ± 0.25stat − 0.14 |
+                                                                           4                                              |sys
+
+Table A.15
+Numerical values of the cross sections shown in Fig. 8 for 3.2 (GeV/𝑐) 2 < 𝑄2 < 8.0 (GeV/𝑐) 2 with the mean
+values of |𝑡| and 𝜙 in each bin.
+                     [          ]   ⟨          ⟩[               ]                                        ⟨        ⟩[                ]
+                                        d𝜎                                                         1         d𝜎
+  |𝑡|-range     ⟨|𝑡|⟩ (GeV/𝑐) 2         d|𝑡|
+                                                       nb
+                                                    (GeV/𝑐) 2
+                                                                         𝜙-range      ⟨𝜙⟩ [rad]   Δ|𝑡|       d𝜙
+                                                                                                                          nb
+                                                                                                                       (GeV/𝑐) 2
+
+                                                            |                   −3𝜋                                       |
+  0.08 – 0.15   0.12                5.58 ± 1.29stat +− 0.74 |
+                                                       0.62 |sys
+                                                                          −𝜋 –        −2.60       0.35 ± 0.13stat +− 0.07 |
+                                                                                                                     0.06 |sys
+                                                                                 4
+                                                            |            −3𝜋    −𝜋                                        |
+  0.15 – 0.22   0.19                6.88 ± 1.31stat +− 0.89 |
+                                                       0.73 |sys
+                                                                              –       −1.92       1.00 ± 0.19stat +− 0.12 |
+                                                                                                                     0.09 |sys
+                                                                          4      2
+                                                            |             −𝜋    −𝜋                                        |
+  0.22 – 0.36   0.29                5.07 ± 0.70stat +− 0.79 |
+                                                       0.63 |sys
+                                                                              –       −1.16       1.21 ± 0.21stat +− 0.13 |
+                                                                                                                     0.11 |sys
+                                                                           2     4
+                                                            |             −𝜋                                              |
+  0.36 – 0.50   0.42                3.42 ± 0.58stat +− 0.51 |
+                                                       0.40 |sys
+                                                                              –0      −0.42       0.38 ± 0.10stat +− 0.10 |
+                                                                                                                     0.09 |sys
+                                                                           4
+                                                     + 0.52 |                   𝜋                                  + 0.11 |
+  0.50 – 0.64   0.57                3.86 ± 0.64stat − 0.35 |                 0–       0.44        0.53 ± 0.12stat − 0.10 |
+                                                            |sys                4                                         |sys
+                                                                            𝜋   𝜋                                         |
+                                                                              –       1.16        1.20 ± 0.19stat +− 0.14 |
+                                                                                                                     0.11 |sys
+                                                                            4   2
+                                                            |               𝜋   3𝜋                                        |
+  0.08-0.64     0.33                4.65 ± 0.36stat +− 0.61 |
+                                                       0.51 |sys
+                                                                              –       1.93        0.82 ± 0.17stat +− 0.09 |
+                                                                                                                     0.07 |sys
+                                                                            2    4
+                                                                          3𝜋                                       + 0.08 |
+                                                                              –𝜋      2.67        0.43 ± 0.16stat − 0.06 |
+                                                                           4                                              |sys
+
+
+
+
+                                                                    11
+                                                                                                                                            Physics Letters B 870 (2025) 139832
+
+
+Table A.16
+Numerical values of the cross sections shown in Fig. 9 for 6.4 GeV < 𝜈 < 8.5 GeV with the mean values of
+|𝑡| and 𝜙 in each bin.
+                     [          ]   ⟨          ⟩[               ]                                             ⟨        ⟩[               ]
+                                        d𝜎                                                              1         d𝜎
+ |𝑡|-range      ⟨|𝑡|⟩ (GeV/𝑐) 2         d|𝑡|
+                                                       nb
+                                                    (GeV/𝑐) 2
+                                                                             𝜙-range      ⟨𝜙⟩ [rad]    Δ|𝑡|       d𝜙
+                                                                                                                               nb
+                                                                                                                            (GeV/𝑐) 2
+
+                                                             |                      −3𝜋                                       |
+ 0.08 – 0.15    0.12                34.22 ± 4.22stat +− 5.13 |
+                                                        4.48 |sys
+                                                                              −𝜋 –        −2.67       3.84 ± 0.99stat +− 0.64 |
+                                                                                                                         0.50 |sys
+                                                                                     4
+                                                             |               −3𝜋    −𝜋                                        |
+ 0.15 – 0.22    0.18                54.80 ± 6.83stat +− 6.80 |
+                                                        5.48 |sys
+                                                                                  –       −1.93       7.57 ± 1.22stat +− 0.79 |
+                                                                                                                         0.61 |sys
+                                                                              4      2
+                                                             |                −𝜋    −𝜋                                        |
+ 0.22 – 0.36    0.28                40.05 ± 3.84stat +− 5.25 |
+                                                        3.72 |sys
+                                                                                  –       −1.22       9.38 ± 1.14stat +− 0.99 |
+                                                                                                                         0.76 |sys
+                                                                               2     4
+                                                             |                −𝜋                                              |
+ 0.36 – 0.50    0.43                35.11 ± 4.81stat +− 4.53 |
+                                                        3.16 |sys
+                                                                                  –0      −0.51       3.98 ± 0.68stat +− 0.77 |
+                                                                                                                         0.63 |sys
+                                                                               4
+                                                             |                      𝜋                                         |
+ 0.50 – 0.64    0.57                39.30 ± 6.72stat +− 5.11 |
+                                                        3.18 |sys
+                                                                                 0–        0.49       4.16 ± 0.91stat +− 0.78 |
+                                                                                                                         0.64 |sys
+                                                                                    4
+                                                                                𝜋   𝜋                                         |
+                                                                                  –        1.23       9.55 ± 1.18stat +− 1.03 |
+                                                                                                                         0.79 |sys
+                                                                                4   2
+                                                             |                  𝜋   3𝜋                                        |
+ 0.08 – 0.64    0.31                39.75 ± 2.49stat +− 4.73 |
+                                                        3.70 |sys
+                                                                                  –        1.94       9.40 ± 1.79stat +− 0.98 |
+                                                                                                                         0.74 |sys
+                                                                                2    4
+                                                                              3𝜋                                       + 0.46 |
+                                                                                  –𝜋       2.74       2.73 ± 0.64stat − 0.37 |
+                                                                               4                                              |sys
+
+
+
+
+Table A.17
+Numerical values of the cross sections shown in Fig. 9 for 8.5 GeV < 𝜈 < 13.9 GeV with the mean values of
+|𝑡| and 𝜙 in each bin.
+                     [          ]   ⟨          ⟩[               ]                                             ⟨        ⟩[               ]
+                                        d𝜎                                                              1         d𝜎
+  |𝑡|-range     ⟨|𝑡|⟩ (GeV/𝑐) 2         d|𝑡|
+                                                       nb
+                                                    (GeV/𝑐) 2
+                                                                             𝜙-range      ⟨𝜙⟩ [rad]    Δ|𝑡|       d𝜙
+                                                                                                                               nb
+                                                                                                                            (GeV/𝑐) 2
+
+                                                             |                      −3𝜋                                       |
+ 0.08 – 0.15    0.12                19.69 ± 3.00stat +− 2.24 |
+                                                        1.87 |sys
+                                                                              −𝜋 –        −2.67       1.76 ± 0.49stat +− 0.29 |
+                                                                                                                         0.25 |sys
+                                                                                     4
+                                                      + 3.34 |               −3𝜋    −𝜋                                 + 0.42 |
+ 0.15 – 0.22    0.18                29.78 ± 4.48stat − 2.77 |                     –       −1.97       3.93 ± 0.62stat − 0.34 |
+                                                             |sys             4      2                                        |sys
+                                                             |                −𝜋    −𝜋                                        |
+ 0.22 – 0.36    0.29                19.63 ± 2.43stat +− 2.67 |
+                                                        2.12 |sys
+                                                                                  –       −1.20       3.76 ± 0.60stat +− 0.39 |
+                                                                                                                         0.32 |sys
+                                                                               2     4
+                                                             |                −𝜋                                              |
+ 0.36 – 0.50    0.42                10.83 ± 1.62stat +− 1.61 |
+                                                        1.34 |sys
+                                                                                  –0      −0.40       1.49 ± 0.39stat +− 0.31 |
+                                                                                                                         0.27 |sys
+                                                                               4
+                                                             |                      𝜋                                         |
+ 0.50 – 0.64    0.57                12.66 ± 2.40stat +− 1.65 |
+                                                        1.16 |sys
+                                                                                 0–        0.46       1.81 ± 0.37stat +− 0.36 |
+                                                                                                                         0.32 |sys
+                                                                                    4
+                                                                                𝜋   𝜋                                         |
+                                                                                  –        1.20       3.97 ± 0.51stat +− 0.42 |
+                                                                                                                         0.33 |sys
+                                                                                4   2
+                                                                      |         𝜋   3𝜋                                 + 0.33 |
+ 0.08 – 0.64    0.30                17.06 ±          1.16stat +− 2.05 |
+                                                                 1.74 |sys
+                                                                                  –        1.91       3.12 ± 0.51stat − 0.27 |
+                                                                                2    4                                        |sys
+                                                                              3𝜋                                              |
+                                                                                  –𝜋       2.69       1.88 ± 0.62stat +− 0.30 |
+                                                                                                                         0.27 |sys
+                                                                               4
+
+
+
+
+Table A.18
+Numerical values of the cross sections shown in Fig. 9 for 13.9 GeV < 𝜈 < 40.0 GeV with the mean values
+of |𝑡| and 𝜙 in each bin.
+                     [          ]   ⟨          ⟩[               ]                                            ⟨        ⟩[                ]
+                                        d𝜎                                                             1         d𝜎
+  |𝑡|-range     ⟨|𝑡|⟩ (GeV/𝑐) 2         d|𝑡|
+                                                       nb
+                                                    (GeV/𝑐) 2
+                                                                             𝜙-range      ⟨𝜙⟩ [rad]   Δ|𝑡|       d𝜙
+                                                                                                                              nb
+                                                                                                                           (GeV/𝑐) 2
+
+                                                            |                       −3𝜋                                       |
+  0.08 – 0.15   0.12                5.92 ± 1.26stat +− 0.56 |
+                                                       0.73 |sys
+                                                                              −𝜋 –        -2.56       0.11 ± 0.05stat +− 0.02 |
+                                                                                                                         0.03 |sys
+                                                                                     4
+                                                     + 0.38 |                −3𝜋    −𝜋                                 + 0.05 |
+  0.15 – 0.22   0.18                3.80 ± 0.93stat − 0.48 |                      –       -1.94       0.42 ± 0.12stat − 0.05 |
+                                                            |sys              4      2                                        |sys
+                                                            |                 −𝜋    −𝜋                                        |
+  0.22 – 0.36   0.27                2.06 ± 0.43stat +− 0.30 |
+                                                       0.32 |sys
+                                                                                  –       -1.25       0.53 ± 0.15stat +− 0.06 |
+                                                                                                                         0.06 |sys
+                                                                               2     4
+                                                     + 0.22 |                 −𝜋                                       + 0.03 |
+  0.36 – 0.50   0.41                0.96 ± 0.30stat − 0.23 |                      –0      -0.40       0.16 ± 0.06stat − 0.04 |
+                                                            |sys               4                                              |sys
+                                                            |                       𝜋                                         |
+  0.50 – 0.64   0.56                0.91 ± 0.29stat +− 0.14 |
+                                                       0.14 |sys
+                                                                                 0–        0.56       0.23 ± 0.08stat +− 0.04 |
+                                                                                                                         0.04 |sys
+                                                                                    4
+                                                                                𝜋   𝜋                                  + 0.07 |
+                                                                                  –        1.20       0.73 ± 0.14stat − 0.07 |
+                                                                                4   2                                         |sys
+                                                            |                   𝜋   3𝜋                                        |
+  0.08 – 0.64   0.24                2.21 ± 0.25stat +− 0.26 |
+                                                       0.31 |sys
+                                                                                  –        1.89       0.41 ± 0.10stat +− 0.04 |
+                                                                                                                         0.05 |sys
+                                                                                2    4
+                                                                              3𝜋                                       + 0.04 |
+                                                                                  –𝜋       2.59       0.23 ± 0.13stat − 0.06 |
+                                                                               4                                              |sys
+
+
+
+
+                                                                      12
+                                                                                                              Physics Letters B 870 (2025) 139832
+
+
+Table A.19                                                      The COMPASS Collaboration
+Numerical values of the cross sections shown in
+Fig. 6 with the mean values of 𝜙 in each of the
+equally spaced bins.                                            G. D. Alexeev28 , M. G. Alexeev20,19 , C. Alice20,19 ,
+     0.08 (GeV/𝑐) < |𝑡| < 0.15 (GeV/𝑐)
+                   2                        2                   A. Amoroso20,19 , V. Andrieux33 , V. Anosov28 , K. Augsten4 ,
+                              ⟨ ⟩[            ]                 W. Augustyniak23 , C. D. R. Azevedo26 , B. Badelek25 , J. Barth8 ,
+                           1    d𝜎
+     ⟨𝜙⟩ [rad]                         nb
+                          Δ|𝑡| d𝜙   (GeV/𝑐) 2
+                                                                R. Beck8 , J. Beckers12 , Y. Bedfer6 , J. Bernhard30 , M. Bodlak5 ,
+                                                    |
+     -2.61                  0.59 ± 0.30stat +− 0.10 |
+                                               0.09 |sys
+                                                                F. Bradamante17 , A. Bressan18,17 , W.-C. Chang31 ,
+                                             + 0.14 |           C. Chatterjee17,a , M. Chiosso20,19 , S.-U. Chung12,i,i1 ,
+     -1.94                  1.27 ± 0.32stat − 0.11 |
+                                                    |sys
+     -1.22                  3.10 ± 0.84stat +− 0.33
+                                                    |
+                                                    |           A. Cicuttin17,16 , P. M. M. Correia26 , M. L. Crespo17,16 ,
+                                               0.27 |sys
+                                                    |           D. D’Ago18,17 , S. Dalla Torre17 , S. S. Dasgupta14 ,
+     -0.47                  0.88 ± 0.33stat +− 0.17 |
+                                               0.15 |sys
+                                                    |           S. Dasgupta17,e , F. Delcarro20,19 , I. Denisenko28 ,
+      0.53                  0.75 ± 0.26stat +− 0.15 |
+                                               0.13 |sys
+                                                    |
+                                                                O. Yu. Denisov19 , M. Dehpour5 , S. V. Donskov29 , N. Doshita22 ,
+      1.16                  3.22 ± 0.58stat +− 0.34 |
+                                               0.28 |sys        Ch. Dreisbach12 , W. Dünnweberb,b1 , R. R. Dusaev1,29 ,
+                                                    |
+      1.89                  1.95 ± 0.36stat +− 0.21 |
+                                               0.17 |sys        D. Ecker12 , D. Eremeev29 , P. Faccioli27 , M. Faesslerb,b1 ,
+                                                    |
+      2.73                  0.74 ± 0.59stat +− 0.12 |
+                                               0.11 |sys        M. Finger5,† , M. Finger jr.5 , H. Fischer10 , K. J. Flöthner8 ,
+                                                                W. Florian17,16 , J. M. Friedrich12 , V. Frolov28 , L.G. Garcia
+     0.15 (GeV/𝑐) 2 < |𝑡| < 0.22 (GeV/𝑐) 2
+                                ⟨ ⟩ [            ]              Ordòñez17,16 , O. P. Gavrichtchouk28 , S. Gerassimov29,12 ,
+                             1    d𝜎
+     ⟨𝜙⟩ [rad]              Δ|𝑡| d𝜙
+                                           nb
+                                       (GeV/𝑐) 2                J. Giarra11 , D. Giordano20,19 , M. Gorzellik10 , A. Grasso20,19 ,
+                                                    |           A. Gridin28 , M. Grosse Perdekamp33 , B. Grube12 , M. Grüner8 ,
+     -2.70                  1.23 ± 0.49stat +− 0.21 |
+                                               0.18 |sys
+                                             + 0.34 |
+                                                                A. Guskov28 , P. Haas12 , D. von Harrach11 , M. Hoﬀmann8,a ,
+     -1.98                  3.18 ± 0.74stat − 0.28 |
+                                                    |sys        N. d’Hose6,a,* , C.-Y. Hsieh31 , S. Ishimoto22,h , A. Ivanov28 ,
+                                                    |
+     -1.19                  1.69 ± 0.38stat +− 0.18 |
+                                               0.15 |sys        T. Iwata22 , V. Jary4 , R. Joosten8 , P. Jörg10 , E. Kabuß11,a ,
+                                             + 0.22 |
+     -0.51                  1.13 ± 0.39stat − 0.19 |            F. Kaspar12 , A. Kerbizi18,17 , B. Ketzer8 , G. V. Khaustov29 ,
+                                                    |sys
+                                                    |
+      0.52                  0.56 ± 0.26stat +− 0.11 |
+                                               0.09 |sys        F. Klein9 , J. H. Koivuniemi7,33 , V. N. Kolosov29 ,
+                                             + 0.29 |
+      1.26                  2.68 ± 0.48stat − 0.23 |
+                                                    |sys
+                                                                K. Kondo Horikawa22 , I. Konorov29,12 , A. Yu. Korzenev28 ,
+                                                    |           A. M. Kotzinian1,19 , O. M. Kouznetsov28 , A. Koval23 , Z. Kral5 ,
+      1.98                  2.31 ± 0.55stat +− 0.25 |
+                                               0.20 |sys
+
+      2.72                                   + 0.32 |
+                            1.86 ± 1.25stat − 0.29 |            F. Kunne6 , K. Kurek23 , R. P. Kurjata24 , K. Lavickova4,l,* ,
+                                                    |sys
+                                                                S. Levorato17 , Y.-S. Lian31,k , J. Lichtenstadt15 , P.-J. Lin32,6,a ,
+     0.22 (GeV/𝑐) 2 < |𝑡| < 0.36 (GeV/𝑐) 2                      R. Longo33 , V. E. Lyubovitskij29,d , A. Maggiora19 , N. Makke17 ,
+                                ⟨ ⟩ [            ]
+     ⟨𝜙⟩ [rad]               1    d𝜎       nb                   G. K. Mallot30,10 , A. Maltsev28 , A. Martin18,17 , J. Marzec24 ,
+                            Δ|𝑡| d𝜙    (GeV/𝑐) 2
+                                                                J. Matoušek5 , T. Matsuda21 , C. Menezes Pires27 , F. Metzger8 ,
+                                                    |
+     -2.65                  0.66 ± 0.22stat +− 0.14 |
+                                               0.13 |sys        W. Meyer7 , M. Mikhasenko13,c , E. Mitrofanov28 , D. Miura22 ,
+                                                    |
+     -1.92                  1.50 ± 0.29stat +− 0.19 |
+                                               0.16 |sys        Y. Miyachi22 , R. Molina17,16 , A. Moretti18,17 , A. Nagaytsev28 ,
+                                                    |           D. Neyret6 , M. Niemiec25 , J. Nový4 , W.-D. Nowak11 ,
+     -1.24                  1.24 ± 0.25stat +− 0.16 |
+                                               0.13 |sys
+                                                    |           G. Nukazuka22,n , A. G. Olshevsky28 , M. Ostrick11 ,
+     -0.43                  0.78 ± 0.21stat +− 0.20 |
+                                               0.18 |sys
+
+      0.48                  0.93 ± 0.26stat +− 0.24
+                                                    |
+                                                    |           D. Panzieri19,f,f1 , B. Parsamyan1,19,30,* , S. Paul12 , H. Pekeler8 ,
+                                               0.22 |sys
+                                             + 0.28 |           J.-C. Peng33 , M. Pešek5 , D. V. Peshekhonov28 , M. Pešková5,m,* ,
+      1.21                  2.26 ± 0.38stat − 0.24 |
+                                                    |sys        S. Platchkov6 , J. Pochodzalla11 , V. A. Polyakov29 ,
+                                                    |
+      1.93                  0.99 ± 0.21stat +− 0.12 |
+                                               0.11 |sys
+                                                                C. Quintans27 , G. Reicherz7 , C. Riedl33 , D. I. Ryabchikov29,12 ,
+                                             + 0.07 |
+      2.63                  0.33 ± 0.12stat − 0.07 |
+                                                    |sys        A. Rychter24 , A. Rymbekova28 , V. D. Samoylenko29 ,
+     0.36 (GeV/𝑐) 2 < |𝑡| < 0.50 (GeV/𝑐) 2                      A. Sandacz23,a , S. Sarkar14 , I. A. Savin28,† , G. Sbrizzai17 ,
+                             1
+                                ⟨ ⟩ [
+                                  d𝜎
+                                                 ]              H. Schmieden9 , A. Selyunin28 , L. Sinha14 , D. Spülbeck8 ,
+     ⟨𝜙⟩ [rad]                             nb
+                            Δ|𝑡| d𝜙    (GeV/𝑐) 2                A. Srnka2 , M. Stolarski23 , M. Sulc3 , H. Suzuki22,g ,
+                                                    |           S. Tessaro17 , F. Tessarotto17,* , A. Thiel8 , F. Tosello19 ,
+     -2.67                  0.22 ± 0.09stat +− 0.05 |
+                                               0.04 |sys
+
+     -1.95                                   + 0.13 |
+                            1.05 ± 0.30stat − 0.11 |            A. Townsend33,j , T. Triloki17,a , V. Tskhay29 , B. Valinoti17,16 ,
+                                                    |sys
+                                                    |           B. M. Veit11 , J.F.C.A. Veloso26 , B. Ventura6 , A. Vidon6 ,
+     -1.20                  1.28 ± 0.27stat +− 0.16 |
+                                               0.14 |sys
+                                             + 0.05 |
+                                                                A. Vijayakumar33 , M. Virius4 , M. Wagner8 , S. Wallner12 ,
+     -0.43                  0.19 ± 0.10stat − 0.04 |
+                                                    |sys        K. Zaremba24 , M. Zavertyaev29 , M. Zemko5,4 ,
+                                                    |
+      0.50                  0.42 ± 0.14stat +− 0.11 |
+                                               0.10 |sys        E. Zemlyanichkina28 , M. Ziembicki24
+                                                    |
+      1.21                  1.00 ± 0.21stat +− 0.13 |
+                                               0.11 |sys
+                                                    |
+      1.91                  1.01 ± 0.23stat +− 0.13 |
+                                               0.11 |sys        1 A.I. Alikhanyan National Science Laboratory, 2 Alikhanyan Br. Street, 0036,
+                                                    |
+      2.72                  0.44 ± 0.18stat +− 0.09 |
+                                               0.09 |sys        Yerevan, ArmeniaA
+                                                                2 Institute of Scientiﬁc Instruments of the CAS, 61264 Brno, Czech RepublicB
+     0.50 (GeV/𝑐) 2 < |𝑡| < 0.64 (GeV/𝑐) 2
+                                                                3 Technical University in Liberec, 46117 Liberec, Czech RepublicB
+                                ⟨ ⟩ [            ]
+                             1    d𝜎                            4 Czech Technical University in Prague, 16636 Prague, Czech RepublicB
+     ⟨𝜙⟩ [rad]              Δ|𝑡| d𝜙
+                                           nb
+                                       (GeV/𝑐) 2
+                                                                5 Charles University, Faculty of Mathematics and Physics, 12116 Prague,
+                                                    |
+     -2.66                  0.35 ± 0.17stat +− 0.07 |
+                                               0.07 |sys        Czech RepublicB
+                                             + 0.09 |
+     -1.96                  0.74 ± 0.24stat − 0.08 |            6 IRFU, CEA, Université Paris-Saclay, 91191 Gif-sur-Yvette, France
+                                                    |sys
+                                                    |           7 Universität Bochum, Institut für Experimentalphysik, 44780 Bochum,
+     -1.22                  1.18 ± 0.26stat +− 0.15 |
+                                               0.13 |sys
+                                             + 0.07 |           GermanyC
+     -0.46                  0.28 ± 0.10stat − 0.07 |
+                                                    |sys        8 Universität Bonn, Helmholtz-Institut für Strahlen- und Kernphysik, 53115
+                                                    |
+      0.42                  0.68 ± 0.20stat +− 0.17 |
+                                               0.16 |sys        Bonn, GermanyC
+                                             + 0.12 |
+      1.25                  0.94 ± 0.26stat − 0.10 |            9 Universität Bonn, Physikalisches Institut, 53115 Bonn, GermanyC
+                                                    |sys
+                                                    |           10 Universität Freiburg, Physikalisches Institut, 79104 Freiburg, GermanyC
+      1.88                  1.39 ± 0.45stat +− 0.17 |
+                                               0.15 |sys
+                                             + 0.15 |
+                                                                11 Universität Mainz, Institut für Kernphysik, 55099 Mainz, GermanyC
+      2.78                  0.69 ± 0.32stat − 0.13 |
+                                                    |sys        12 Technische Universität München, Physik Dept., 85748 Garching, GermanyC
+
+                                                           13
+                                                                                                                                            Physics Letters B 870 (2025) 139832
+
+
+13 Ludwig-Maximilians-Universität, 80539 München, Germany                             E
+                                                                                        Supported by the Israel Academy of Sciences and Humanities (Israel)
+14 Matrivani Institute of Experimental Research & Education, Calcutta-700             F
+                                                                                        Supported by MEXT and JSPS, Grants 18002006, 20540299, 18540281 and
+030, IndiaD                                                                           26247032, the Daiko and Yamada Foundations (Japan)
+15 Tel Aviv University, School of Physics and Astronomy, 69978 Tel Aviv,              G
+                                                                                        Supported by NCN, Grant 2020/37/B/ST2/01547 (Poland)
+                                                                                      H
+IsraelE                                                                                  Supported by FCT, Grants DOI 10.54499/CERN/FIS-PAR/0022/2019 and
+16 Abdus Salam ICTP, 34151 Trieste, Italy                                             DOI 10.54499/CERN/FIS-PAR/0016/2021 (Portugal)
+17 Trieste Section of INFN, 34127 Trieste, Italy                                      I
+                                                                                        Supported by the Ministry of Science and Technology (Taiwan)
+18 University of Trieste, Dept. of Physics, 34127 Trieste, Italy                      J
+                                                                                        Supported by the National Science Foundation, Grant no. PHY-1506416
+19 Torino Section of INFN, 10125 Torino, Italy                                        (USA)
+20 University of Torino, Dept. of Physics, 10125 Torino, Italy
+21 University of Miyazaki, Miyazaki 889-2192, JapanF                                  References
+22 Yamagata University, Yamagata 992-8510, JapanF
+23 National Centre for Nuclear Research, 02-093 Warsaw, PolandG                        [1] D. Müller, D. Robaschik, B. Geyer, F.-M. Dittes, J. Hořejší, Wave functions, evolution
+24 Warsaw University of Technology, Institute of Radioelectronics, 00-665                  equations and evolution kernels from light ray operators of QCD, Fortsch. Phys. 42
+                                                                                           (1994) 101–141. arXiv preprint arXiv:hep-ph/9812448. https://doi.org/10.1002/
+Warsaw, PolandG
+25 University of Warsaw, Faculty of Physics, 02-093 Warsaw, PolandG                        prop.2190420202
+                                                                                       [2] X.-D. Ji, Gauge-invariant decomposition of nucleon spin, Phys. Rev. Lett. 78
+26 University of Aveiro, I3N, Dept. of Physics, 3810-193 Aveiro, PortugalH                 (1997) 610–613. arXiv preprint arXiv:hep-ph/9603249. https://doi.org/10.1103/
+27 LIP, 1649-003 Lisbon, PortugalH                                                         PhysRevLett.78.610
+28 Aﬃliated with an international laboratory covered by a cooperation                  [3] X.-D. Ji, Deeply virtual compton scattering, Phys. Rev. D 55 (1997) 7114–
+                                                                                           7125. arXiv preprint arXiv:hep-ph/9609381. https://doi.org/10.1103/PhysRevD.
+agreement with CERN
+29 Aﬃliated with an institute formerly covered by a cooperation agreement                  55.7114
+                                                                                       [4] A.V. Radyushkin, Scaling limit of deeply virtual compton scattering, Phys. Lett.
+with CERN                                                                                  B 380 (1996) 417–425. arXiv preprint arXiv:hep-ph/9604317. https://doi.org/10.
+30 CERN, 1211 Geneva 23, Switzerland                                                       1016/0370-2693(96)00528-X
+31 Academia Sinica, Institute of Physics, Taipei 11529, TaiwanI                        [5] A.V. Radyushkin, Nonforward parton distributions, Phys. Rev. D 56 (1997)
+32 Center for High Energy and High Field Physics and Dept. of Physics,                     5524–5557. arXiv preprint arXiv:hep-ph/9704207. https://doi.org/10.1103/
+                                                                                           PhysRevD.56.5524
+National Central University, 300 Zhongda Rd., Zhongli 320317, TaiwanI                  [6] J.C. Collins, L. Frankfurt, M. Strikman, Factorization for hard exclusive electro-
+33 University of Illinois at Urbana-Champaign, Dept. of Physics, Urbana, IL                production of mesons in QCD, Phys. Rev. D 56 (1997) 2982–3006. arXiv preprint
+61801-3080, USAJ                                                                           arXiv:hep-ph/9611433. https://doi.org/10.1103/PhysRevD.56.2982
+                                                                                       [7] A. Airapetian, et al., HERMES, Cross-sections for hard exclusive electroproduction of
+* Corresponding author                                                                     pi+ mesons on a hydrogen target, Phys. Lett. B 659 (2008) 486–492. arXiv preprint
+                                                                                           arXiv:0707.0222. https://doi.org/10.1016/j.physletb.2007.11.079
+a Supported by the European Union’s Horizon 2020 research and innovation
+                                                                                       [8] P.E. Bosted, et al., CLAS, Target and beam-target spin asymmetries in exclusive pion
+programme under grant agreement STRONG–2020 - No 824093                                    electroproduction for 𝑄2 > 1 GeV2 . II. 𝑒𝑝 → 𝑒𝜋 0 𝑝, Phys. Rev. C 95 (3) (2017) 035207.
+b Retired from Ludwig-Maximilians-Universität, 80539 München, Germany                      arXiv preprint arXiv:1611.04987. https://doi.org/10.1103/PhysRevC.95.035207
+b1 Supported by the DFG cluster of excellence ‘Origin and Structure of the             [9] S. Diehl, et al., CLAS, A multidimensional study of the structure function ratio
+                                                                                           𝜎LT’/𝜎0 from hard exclusive 𝜋+ electro-production oﬀ protons in the GPD regime,
+Universe’ (www.universe-cluster.de) (Germany)                                              Phys. Lett. B 839 (2023) 137761. arXiv preprint arXiv:2210.14557. https://doi.org/
+c Also at ORIGINS Excellence Cluster, 85748 Garching, Germany
+                                                                                           10.1016/j.physletb.2023.137761
+d Also at Institut für Theoretische Physik, Universität Tübingen, 72076               [10] R. De Masi, et al., CLAS, Measurement of e p → e p π0 beam spin asymme-
+Tübingen, Germany                                                                          tries above the resonance region, Phys. Rev. C 77 (2008) 042201. arXiv preprint
+e Present address: NISER, Centre for Medical and Radiation Physics,                        arXiv:0711.4736. https://doi.org/10.1103/PhysRevC.77.042201
+                                                                                      [11] I. Bedlinskiy, et al., CLAS, Measurement of exclusive π0 electroproduction structure
+Bubaneswar, India                                                                          functions and their relationship to transversity GPDs, Phys. Rev. Lett. 109 (2012)
+f Also at University of Eastern Piedmont, 15100 Alessandria, Italy
+                                                                                           112001. arXiv preprint arXiv:1206.6355. https://doi.org/10.1103/PhysRevLett.
+f1 Supported by the Funds for Research 2019-22 of the University of Eastern                109.112001
+Piedmont                                                                              [12] I. Bedlinskiy, et al., CLAS, Exclusive π0 electroproduction at 𝑊 > 2 GeV with CLAS,
+g Also at Chubu University, Kasugai, Aichi 487-8501, Japan                                 Phys. Rev. C 90 (2) (2014) 025205. [Addendum: Phys.Rev.C 90, 039901 (2014)].
+h Also at KEK, 1-1 Oho, Tsukuba, Ibaraki 305-0801, Japan                                   arXiv preprint arXiv:1405.0988. https://doi.org/10.1103/PhysRevC.90.039901
+                                                                                      [13] A. Kim, et al., CLAS, Beam spin asymmetry measurements of deeply virtual
+i Also at Dept. of Physics, Pusan National University, Busan 609-735, Republic
+                                                                                           π0 production with CLAS12, Phys. Lett. B 849 (2024) 138459. arXiv preprint
+of Korea                                                                                   arXiv:2307.07874. https://doi.org/10.1016/j.physletb.2024.138459
+i1 Also at Physics Dept., Brookhaven National Laboratory, Upton, NY 11973,            [14] E. Fuchey, et al., Exclusive neutral pion electroproduction in the deeply virtual
+USA                                                                                        regime, Phys. Rev. C 83 (2011) 025201. arXiv preprint arXiv:1003.2938. https:
+j Also at Fairmont State University, Department of Natural Sciences, 1201                  //doi.org/10.1103/PhysRevC.83.025201
+                                                                                      [15] M. Defurne, et al., Jeﬀerson Lab Hall A, Rosenbluth separation of the π0 electro-
+Locust Ave, Fairmont, West Virginia 26554, USA                                             production cross section, Phys. Rev. Lett. 117 (26) (2016) 262001. arXiv preprint
+k Also at Dept. of Physics, National Kaohsiung Normal University, Kaohsiung                arXiv:1608.01003. https://doi.org/10.1103/PhysRevLett.117.262001
+County 824, Taiwan                                                                    [16] M. Mazouz, et al., Jeﬀerson Lab Hall A, Rosenbluth separation of the π0 electropro-
+l Supported by the FORTE project CZ.02.01.01/00/22 co-funded by the                        duction cross section oﬀ the neutron, Phys. Rev. Lett. 118 (22) (2017) 222002. arXiv
+                                                                                           preprint arXiv:1702.00835. https://doi.org/10.1103/PhysRevLett.118.222002
+European Union and Ministry of Education, Youth and Sports, by the Martina            [17] M. Dlamini, et al., Jeﬀerson Lab Hall A, Deep exclusive electroproduction of π0 at
+Roeselová Memorial Fellowship grant by the IOCB Tech Foundation and by the                 high 𝑄2 in the quark valence regime, Phys. Rev. Lett. 127 (15) (2021) 152301. arXiv
+SGS24/149/OHK4/3T/14 project, Czech Republic                                               preprint arXiv:2011.11125. https://doi.org/10.1103/PhysRevLett.127.152301
+m Supported by the grant GAUK 60121, issued by Charles University, Faculty            [18] S.V. Goloskokov, P. Kroll, An attempt to understand exclusive π+ electroproduction,
+of Mathematics and Physics, and the grant SVV No. 260576, Czech Republic                   Eur. Phys. J. C 65 (2010) 137–151. arXiv preprint arXiv:0906.0460. https://doi.org/
+n Also at RIKEN Nishina Center for Accelerator-Based Science, Wako, Saitama                10.1140/epjc/s10052-009-1178-9
+                                                                                      [19] S.V. Goloskokov, P. Kroll, Transversity in hard exclusive electroproduction of pseu-
+351-0198, Japan                                                                            doscalar mesons, Eur. Phys. J. A 47 (2011) 112. arXiv preprint arXiv:1106.4897.
+† Deceased                                                                                 https://doi.org/10.1140/epja/i2011-11112-6
+                                                                                      [20] S. Ahmad, G.R. Goldstein, S. Liuti, Nucleon tensor charge from exclusive π0 elec-
+A                                                                                          troproduction, Phys. Rev. D 79 (2009) 054014. arXiv preprint arXiv:0805.3568.
+  Supported by the Higher Education and Science Committee of the Republic
+                                                                                           https://doi.org/10.1103/PhysRevD.79.054014
+of Armenia (Armenia)                                                                  [21] S.V. Goloskokov, Y.-P. Xie, X. Chen, Exclusive π0 production at EIC of China
+B
+  Supported by MEYS, Grants LM2023040, LM2018104, LTT17018 and                             within handbag approach, Chin. Phys. C 46 (12) (2022) 123101. arXiv preprint
+GAUK60121, CZ.02.01.01/00/22_008/0004632 "FORTE", co-funded by the EU                      arXiv:2206.06547. https://doi.org/10.1088/1674-1137/ac878c
+and Charles University Grant PRIMUS/22/SCI/017 (Czech Republic)                       [22] G. Duplančić, P. Kroll, P.-K. Kornelija, L. Szymanowski, Twist-3 contribution to
+C                                                                                          deeply virtual electroproduction of pions, Phys. Rev. D 109 (3) (2024) 034008. arXiv
+  Supported by BMBF - Bundesministerium für Bildung und Forschung
+                                                                                           preprint arXiv:2312.13164. https://doi.org/10.1103/PhysRevD.109.034008
+(Germany)                                                                             [23] M. Diehl, Generalized parton distributions with helicity ﬂip, Eur. Phys. J. C 19
+D
+  Supported by B. Sen fund (India)                                                         (2001) 485–492. arXiv preprint arXiv:hep-ph/0101335. https://doi.org/10.1007/
+                                                                                           s100520100635
+
+                                                                                 14
+                                                                                                                                                        Physics Letters B 870 (2025) 139832
+
+
+[24] M. Diehl, P. Hagler, Spin densities in the transverse plane and generalized transver-        [32] P. Abbon, et al., COMPASS, The COMPASS setup for physics with hadron beams,
+     sity distributions, Eur. Phys. J. C 44 (2005) 87–101. arXiv preprint arXiv:hep-                   Nucl. Instrum. Meth. A 779 (2015) 69–115. arXiv preprint arXiv:1410.1797. https:
+     ph/0504175. https://doi.org/10.1140/epjc/s2005-02342-6                                            //doi.org/10.1016/j.nima.2015.01.035
+[25] M. Burkardt, Transverse deformation of parton distributions and transversity de-             [33] R.P. Mount, The measurement of intense particle beams, Nucl. Instrum. Meth. 187
+     composition of angular momentum, Phys. Rev. D 72 (2005) 094020. arXiv preprint                    (1981) 401–405. https://doi.org/10.1016/0029-554X(81)90367-0
+     arXiv:hep-ph/0505189. https://doi.org/10.1103/PhysRevD.72.094020                             [34] C. Adolph, et al., COMPASS, Leading order determination of the gluon polarisation
+[26] M. Burkardt, Transversity decomposition of quark angular momentum, Phys. Lett.                    from DIS events with high-𝑝T hadron pairs, Phys. Lett. B 718 (2013) 922–930. arXiv
+     B 639 (2006) 462–464. https://doi.org/10.1016/j.physletb.2006.01.076                              preprint arXiv:1202.4064. https://doi.org/10.1016/j.physletb.2012.11.056
+[27] M.G. Alexeev, et al., COMPASS, Measurement of the cross section for hard exclusive           [35] A. Sandacz, P. Sznajder, HEPGEN – generator for hard exclusive leptoproductio
+     π0 muoproduction on the proton, Phys. Lett. B 805 (2020) 135454. arXiv preprint                   (2012). bibinfointerrefarXiv preprint arXiv:1207.0333.
+     arXiv:1903.12030. https://doi.org/10.1016/j.physletb.2020.135454                             [36] C. Regali, Exclusive event generation for the COMPASS-II experiment at CERN and
+[28] M. Gorzellik, Cross-section measurement of exclusive 𝜋 0 muoproduction and                        improvements for the Monte-Carlo chain, Ph.D. thesis, University of Freiburg, 2016.
+     ﬁrmware design for an FPGA-based detector readout, Ph.D. thesis, University of                    https://doi.org/10.6094/UNIFR/11449.
+     Freiburg, 2018. https://doi.org/10.6094/UNIFR/15945.                                         [37] T. Szameitat, New Geant4-based Monte Carlo software for the COMPASS-II experi-
+[29] L.N. Hand, Experimental investigation of pion electroproduction, Phys. Rev. 129                   ment at CERN, Ph.D. thesis, University of Freiburg, 2017. https://doi.org/10.6094/
+     (1963) 1834–1846. https://doi.org/10.1103/PhysRev.129.1834                                        UNIFR/11686.
+[30] A. Bacchetta, U. D’Alesio, M. Diehl, C.A. Miller, Single-spin asymmetries: the trento        [38] A. Afanasev, Private communications., 2023
+     conventions, Phys. Rev. D 70 (2004) 117504. arXiv preprint arXiv:hep-ph/0410050.             [39] A. Afanasev, I. Akushevich, V. Burkert, K. Joo, QED radiative corrections in processes
+     https://doi.org/10.1103/PhysRevD.70.117504                                                        of exclusive pion electroproduction, Phys. Rev. D 66 (2002) 074004. arXiv preprint
+[31] P. Abbon, et al., COMPASS, The COMPASS experiment at CERN, Nucl. Instrum.                         arXiv:hep-ph/0208183. https://doi.org/10.1103/PhysRevD.66.074004
+     Meth. A 577 (2007) 455–518. arXiv preprint arXiv:hep-ex/0703049. https://doi.                [40] S.V. Goloskokov, P. Kroll,. Private communications and code exchange to calculate
+     org/10.1016/j.nima.2007.03.026                                                                    theoretical values in each COMPASS kinematic bin.
+
+
+
+
+                                                                                             15
+

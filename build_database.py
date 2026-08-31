@@ -234,12 +234,17 @@ for q in json.load(open("data/clas6_zhao_eta_alu.json")):
       Q2=q["Q2"], xB=q["xB"], t=-abs(q["t"]), value=q["alpha"], stat=q["stat"],
       syst=q["syst"], Ebeam=5.776, in_fit="yes",
       source="Zhao et al., PLB 789 426 (2019), figure extraction")
-for g in json.load(open("data/clas12_kim_alu.json")):
-    for q in g["pts"]:
-        A(exp="CLAS12_y24", meson="pi0", target="p", observable="A_LU^sinphi",
-          Q2=g["Q2"], xB=g["xB"], t=-abs(q["t"]), value=q["A"], stat=q["dA"],
-          syst=np.nan, Ebeam=10.6, in_fit="yes",
-          source="Kim et al., PLB 849 138459 (2024), figure extraction")
+# CLAS12: the published supplemental gives sigma_LT'/sigma_0 directly, with the
+# exact bin averages.  Our earlier figure extraction stored those values divided
+# by sqrt(2 eps (1-eps)) instead of left alone, so they were too large by about
+# a factor four once the fit multiplied by that factor again.
+for _l in open("data/clas12_kim_sigLTp.data"):
+    if _l.startswith("#") or not _l.strip(): continue
+    _v = [float(_z) for _z in _l.split()]
+    A(exp="CLAS12_y24", meson="pi0", target="p", observable="sigma_LT'/sigma_0",
+      Q2=_v[0], xB=_v[1], t=-_v[2], value=_v[3], stat=_v[4], syst=_v[5],
+      Ebeam=10.6, in_fit="yes",
+      source="Kim et al., PLB 849 138459 (2024), supplemental tables III and IV")
 EG = json.load(open("data/eg1dvcs_pi0_target_asym.json"))
 KIN = {"1.94": 0.25, "2.83": 0.40}
 REC = {"E154M5":"A_UL^sinphi","E154M6":"A_UL^sinphi","E154M7":"A_UL^sin2phi",

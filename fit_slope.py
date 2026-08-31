@@ -36,8 +36,14 @@ PI0=load_sf("data/strfun_pi0.data"); ETA=load_sf("data/strfun_eta.data")
 BSA=json.load(open("data/clas6_demasi_alu.json"))
 BSA_PTS=[(b['xB'],b['Q2'],q['t'],q['alpha'],q['err']) for b in BSA for q in b['pts'] if q['err']>0]
 EBSA=[(d['xB'],d['Q2'],d['t'],d['alpha'],math.hypot(d['stat'],d['syst'])) for d in json.load(open("data/clas6_zhao_eta_alu.json"))]
-C12=json.load(open("data/clas12_kim_alu.json"))
-C12_PTS=[(r['xB'],r['Q2'],q['t'],q['A'],q['dA']) for r in C12 for q in r['pts'] if q['dA']>0]
+# CLAS12: the published quantity is the ratio sigma_LT'/sigma_0 itself
+# (Kim et al. PLB 849 138459, supplemental tables III and IV), not the sin-phi
+# asymmetry moment, so it is compared without the sqrt(2 eps (1-eps)) factor.
+C12_PTS=[]
+for _l in open("data/clas12_kim_sigLTp.data"):
+    if _l.startswith("#") or not _l.strip(): continue
+    _v=[float(_z) for _z in _l.split()]
+    C12_PTS.append((_v[1],_v[0],_v[2],_v[3],math.hypot(_v[4],_v[5])))
 EG1=json.load(open("data/eg1dvcs_pi0_target_asym.json"))
 RECS={"E154M5":"AULsin","E154M6":"AULsin","E154M7":"AULsin2","E154M8":"AULsin2",
       "E154M9":"ALLc","E154M10":"ALLc","E154M11":"ALLcos","E154M12":"ALLcos"}
@@ -62,13 +68,19 @@ def blocks(p):
             e=amp.epsilon(d["xB"],d["Q2"],E_XS)
             rr+=[(d["U"]-(s["T"]+e*s["L"]))/d["dU"],(d["TT"]-s["TT"])/d["dTT"],(d["LT"]-s["LT"])/d["dLT"]]
         out[tag]=rr
-    for pts,ch,E,tag in ((BSA_PTS,"pi0p",E_BSA,"bsa_pi0"),(EBSA,"etap",E_BSA,"bsa_eta"),
-                         (C12_PTS,"pi0p",E_C12,"bsa_c12")):
+    for pts,ch,E,tag in ((BSA_PTS,"pi0p",E_BSA,"bsa_pi0"),(EBSA,"etap",E_BSA,"bsa_eta")):
         rr=[]
         for (xB,Q2,t,a,da) in pts:
             v=amp.bsa_sinphi(p,ch,-t,xB,Q2,E)
             rr.append(((a-v)/da) if v is not None else 5.0)
         out[tag]=rr
+    rr=[]
+    for (xB,Q2,t,a,da) in C12_PTS:
+        s=amp.structure(p,"pi0p",-t,xB,Q2)
+        if s is None: rr.append(5.0); continue
+        e=amp.epsilon(xB,Q2,E_C12)
+        rr.append((a-s["LTp"]/(s["T"]+e*s["L"]))/da)
+    out["bsa_c12"]=rr
     rr=[]
     for (key,Q2,xB,mt,A,dA) in EG1_PTS:
         s=amp.structure(p,"pi0p",-mt,xB,Q2)
