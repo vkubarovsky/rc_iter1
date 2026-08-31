@@ -29,12 +29,12 @@ for line in open("data/halla_pi0.data"):
 def ha_res(p, which):
     r=[]
     for d in HALLA:
-        if which=="n_only" and d["tgt"]!="n_U": continue
+        if which=="n_only" and d["tgt"]!="n_T": continue
         ch="pi0p" if d["tgt"]=="p_T" else "pi0n"
         s=amp.structure(p,ch,-d["mt"],d["xB"],d["Q2"])
         if s is None: r+=[10.,10.,10.]; continue
         e=amp.epsilon(d["xB"],d["Q2"],E_HALLA)
-        pred = s["T"] if d["tgt"]=="p_T" else s["T"]+e*s["L"]
+        pred = s["T"]        # both Hall-A sets are Rosenbluth separated sigma_T
         for val,err,mod in ((d["s"],d["ds"],pred),(d["LT"],d["dLT"],s["LT"]),(d["TT"],d["dTT"],s["TT"])):
             r.append((val-mod)/math.hypot(err,SYST*abs(val)))
     return r
