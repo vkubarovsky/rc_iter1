@@ -1,0 +1,6 @@
+y21 and y11 chi2 are always shown, whether or not they are in the fit
+
+   variant  par     chi2 chi2/ndf
+      base   26   1160.8   1.6304 | nQ H_T +1.48 ET +1.20 | ET u/d 1.14/ 6.27 | CLAS  1136.1 n  24.7/12 y21   960.4/108 y11  142.5/42
+      +y21   26   1530.6   1.8666 | nQ H_T +1.19 ET +1.29 | ET u/d 1.10/ 5.64 | CLAS  1195.3 n  25.8/12 y21   309.5/108 y11  109.6/42
+  +y21+y11   26   1634.8   1.8965 | nQ H_T +1.20 ET +1.25 | ET u/d 1.11/ 5.52 | CLAS  1206.7 n  28.5/12 y21   299.9/108 y11   99.8/42

@@ -1,0 +1,9 @@
+Hall-A neutron is IN every fit below; the listed block is removed.
+P2, for reference: neutron sigma_TT chi2 = 1.2, n/p = 0.50.  Measured n/p = 0.28 +- 0.07.
+
+ nothing dropped | neutron sigma_TT chi2   13.2/4   n/p  0.97 | |ETd/ETu|  0.82  slope ET d  6.27 | pi0  550.5  eta  235.7  bsa_pi0  246.4  bsa_eta    3.4  bsa_c12   40.7  eg1   59.4
+          no eg1 | neutron sigma_TT chi2    3.0/4   n/p  0.62 | |ETd/ETu|  0.41  slope ET d  7.62 | pi0  504.2  eta  212.5  bsa_pi0  265.4  bsa_eta    4.1  bsa_c12   47.5  eg1 1792.4
+          no BSA | neutron sigma_TT chi2    6.6/4   n/p  0.68 | |ETd/ETu|  0.49  slope ET d  6.68 | pi0  508.7  eta  208.2  bsa_pi0  744.6  bsa_eta    8.0  bsa_c12   48.0  eg1   87.0
+       no CLAS12 | neutron sigma_TT chi2   13.7/4   n/p  0.98 | |ETd/ETu|  0.83  slope ET d  6.27 | pi0  550.3  eta  236.3  bsa_pi0  244.6  bsa_eta    3.7  bsa_c12   48.5  eg1   57.0
+  no eg1, no BSA | neutron sigma_TT chi2    4.0/4   n/p  0.62 | |ETd/ETu|  0.42  slope ET d  6.65 | pi0  504.1  eta  200.7  bsa_pi0  463.2  bsa_eta    6.7  bsa_c12   58.8  eg1  660.9
+       only xsec | neutron sigma_TT chi2    4.0/4   n/p  0.62 | |ETd/ETu|  0.42  slope ET d  6.65 | pi0  504.1  eta  200.7  bsa_pi0  463.2  bsa_eta    6.7  bsa_c12   58.8  eg1  660.9
