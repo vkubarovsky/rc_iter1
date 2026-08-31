@@ -34,13 +34,13 @@ for meson, src, ref in (("pi0","sf_pi0_both.txt","PRC 90 025205 (2014)"),
         # sits in the exponent of the slope, and for the steep Ebar_T^d that
         # rounding is worth up to 5% on the amplitude.
         r = dict(exp="CLAS6_y12", meson=meson, target="p",
-                 Q2=v[5], xB=v[6], t=-v[7],
-                 Q2_bin=v[0], xB_bin=v[1], t_bin=-v[2],
+                 Q2=v[6], xB=v[7], t=-v[8],
+                 Q2_bin=v[0], xB_bin=v[1], t_bin=-v[2], group=f"{meson}{int(v[5]):02d}",
                  eps=v[3], npts_phi=int(v[4]), Ebeam=5.75, sigma_meaning="sigma_U",
-                 chi2ndf_phi=v[8], chi2ndf_phi_rc=v[18], in_fit="yes",
+                 chi2ndf_phi=v[9], chi2ndf_phi_rc=v[19], in_fit="yes",
                  source=ref+" supplemental, phi table")
-        for k, c in zip(SF, range(9, 18)):   r[k]      = v[c]
-        for k, c in zip(SF, range(19, 28)):  r[k+"_rc"] = v[c]
+        for k, c in zip(SF, range(10, 19)):  r[k]      = v[c]
+        for k, c in zip(SF, range(20, 29)):  r[k+"_rc"] = v[c]
         rows_x.append(r)
 
 # --- Hall-A E07-007, Rosenbluth separated -----------------------------------
@@ -50,7 +50,7 @@ for line in open("data/halla_pi0.data"):
     v = line.split(); p = v[0] == "p_T"
     Q2 = float(v[1])
     r = dict(exp="HallA_y16" if p else "HallA_y17", meson="pi0", target="p" if p else "n",
-             Q2=Q2, xB=float(v[2]), t=-float(v[3]), Q2_bin=np.nan, xB_bin=np.nan, t_bin=np.nan, eps=np.nan, npts_phi=np.nan,
+             Q2=Q2, xB=float(v[2]), t=-float(v[3]), Q2_bin=np.nan, xB_bin=np.nan, t_bin=np.nan, group=None, eps=np.nan, npts_phi=np.nan,
              Ebeam=EB[Q2] if p else "E07-007 pair", sigma_meaning="sigma_T",
              chi2ndf_phi=np.nan, chi2ndf_phi_rc=np.nan,
              in_fit="yes" if not p else "no",
@@ -65,7 +65,7 @@ for line in open("data/halla_more.data"):
     if line.startswith("#") or not line.strip(): continue
     v = line.split()
     r = dict(exp=v[0], meson="pi0", target="p", Q2=float(v[3]), xB=float(v[4]),
-             t=-abs(float(v[5])), Q2_bin=np.nan, xB_bin=np.nan, t_bin=np.nan, eps=np.nan, npts_phi=np.nan, Ebeam=float(v[15]),
+             t=-abs(float(v[5])), Q2_bin=np.nan, xB_bin=np.nan, t_bin=np.nan, group=None, eps=np.nan, npts_phi=np.nan, Ebeam=float(v[15]),
              sigma_meaning="sigma_U", chi2ndf_phi=np.nan, chi2ndf_phi_rc=np.nan,
              in_fit="no",
              source="PRL 127 152301 (2021)" if v[0]=="HallA_y21" else "PRC 83 025201 (2011)",
@@ -76,7 +76,7 @@ for line in open("data/halla_more.data"):
 # --- COMPASS ----------------------------------------------------------------
 d = pd.read_excel("/Users/vpk/hepgen_mac/data/All_experiment.xlsx")
 for _, q in d[d.exp == "COMPASS_y20"].iterrows():
-    r = dict(exp="COMPASS_y20", meson="pi0", target="p", Q2=q.Q2, xB=q.xB, t=-abs(q.t), Q2_bin=np.nan, xB_bin=np.nan, t_bin=np.nan,
+    r = dict(exp="COMPASS_y20", meson="pi0", target="p", Q2=q.Q2, xB=q.xB, t=-abs(q.t), Q2_bin=np.nan, xB_bin=np.nan, t_bin=np.nan, group=None,
              eps=np.nan, npts_phi=np.nan, Ebeam=q.Ebeam, sigma_meaning="sigma_U",
              chi2ndf_phi=np.nan, chi2ndf_phi_rc=np.nan, in_fit="no",
              source="COMPASS, Phys. Lett. B 805 135454 (2020)", **blank_rc())
@@ -130,7 +130,7 @@ for k, g in Aa.groupby(["exp","observable"], sort=False):
         t=f"{g.t.min():.4f}..{g.t.max():.4f}", Ebeam=str(g.Ebeam.iloc[0]),
         RC_refit="no", in_fit=g.in_fit.iloc[0], source=g.source.iloc[0]))
 S = pd.DataFrame(sets)
-cols = ["exp","meson","target","Q2","xB","t","Q2_bin","xB_bin","t_bin","eps","npts_phi",
+cols = ["exp","meson","target","group","Q2","xB","t","Q2_bin","xB_bin","t_bin","eps","npts_phi",
         "Ebeam","sigma_meaning","chi2ndf_phi","chi2ndf_phi_rc","in_fit","source"] + SF + [c+"_rc" for c in SF]
 X = X[[c for c in cols if c in X.columns]]
 with pd.ExcelWriter("pi0_eta_database.xlsx", engine="openpyxl") as w:

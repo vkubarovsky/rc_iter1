@@ -65,19 +65,26 @@ for i in range(len(d)):
         groups[(q2[i], xb[i])] = [i]
 
 own = np.full(len(d), -1, int)
+grp_of_bin = np.full(len(P), -1, int)     # which (Q2,xB) group each published bin is in
 norphan = 0
-for k, idx in groups.items():
+for gi, (k, idx) in enumerate(groups.items()):
     idx = np.array(idx)
     cand = np.where((np.abs(P[:,0]-np.mean(q2[idx])) < 0.12)
                     & (np.abs(P[:,1]-np.mean(xb[idx])) < 0.015))[0]
     if len(cand) == 0:
         norphan += len(idx); continue
+    grp_of_bin[cand] = gi
     for i in idx:
         j = cand[int(np.argmin(np.abs(P[cand,2]-t[i])))]
         if abs(P[j,2]-t[i]) < 0.06:
             own[i] = j
         else:
             norphan += 1
+LBL = {}
+for gi in range(len(groups)):
+    m = grp_of_bin == gi
+    if m.any():
+        LBL[gi] = (round(float(np.mean(P[m,0])), 2), round(float(np.mean(P[m,1])), 3))
 print(f"{CH}: {len(groups)} (Q2,xB) groups; "
       f"{int((own>=0).sum())} phi points assigned, {norphan} in unpublished t bins")
 
@@ -89,7 +96,8 @@ for b in range(len(P)):
         continue
     eps = epsilon(np.mean(q2[s]), np.mean(xb[s]))
     fL, fT, fI = 2*np.pi, 2*np.pi/eps, 2*np.pi/np.sqrt(2*eps*(1+eps))
-    out = [P[b,0], P[b,1], P[b,2], eps, len(s),
+    gi = int(grp_of_bin[b]); q2l, xbl = LBL[gi]
+    out = [q2l, xbl, P[b,2], eps, len(s), gi,
            np.mean(q2[s]), np.mean(xb[s]), np.mean(t[s])]
     # Systematics are the PUBLISHED ones, carried as a relative error.  Our own
     # propagation would have to assume how the phi points are correlated; the
@@ -107,13 +115,13 @@ for b in range(len(P)):
     rows.append(out)
 rows = np.array(rows)
 np.savetxt(OUT, rows, fmt="%12.6f", header=(
-    "Q2 xB t eps npts Q2mean xBmean tmean | chi2ndf sigU stat syst sigLT stat syst sigTT stat syst  (ORIGINAL, r=1)"
+    "Q2bin xBbin tbin eps npts group Q2 xB t | chi2ndf sigU stat syst sigLT stat syst sigTT stat syst  (ORIGINAL, r=1)"
     " | chi2ndf sigU stat syst sigLT stat syst sigTT stat syst  (REFITTED, new RC)"))
 print(f"{CH}: {len(rows)} published bins -> {OUT}")
 
 # --- validation against the published numbers ------------------------------
 lab = ("sigma_U", "sigma_LT", "sigma_TT")
-for k, col in enumerate((9, 12, 15)):
+for k, col in enumerate((10, 13, 16)):
     pv, ov = P[:len(rows), 3+3*k], rows[:, col]
     if len(pv) == len(ov):
         rel = (ov-pv)/np.maximum(np.abs(pv), 1e-9)
