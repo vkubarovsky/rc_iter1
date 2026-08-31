@@ -22,6 +22,7 @@ WPEN=float(os.environ.get("WPEN","30.0"))    # penalty stiffness
 XLO,XHI=0.10,0.60
 
 E_XS,E_BSA,E_EG1,E_C12=5.75,5.776,5.9,10.6
+MP,MPI=0.9382720813,0.1349768
 KIN={"1.94":0.25,"2.83":0.40}
 def load_sf(fn):
     rows=[]
@@ -34,7 +35,18 @@ def load_sf(fn):
     return rows
 PI0=load_sf("data/strfun_pi0.data"); ETA=load_sf("data/strfun_eta.data")
 BSA=json.load(open("data/clas6_demasi_alu.json"))
-BSA_PTS=[(b['xB'],b['Q2'],q['t'],q['alpha'],q['err']) for b in BSA for q in b['pts'] if q['err']>0]
+def _physical(xB,Q2,mt):
+    """Six De Masi bin centres sit below threshold, |t| < |t_min|, where the
+    model has nothing to say.  They used to enter the residual with a flat
+    penalty of 5 each -- 150 units of chi2, more than half of that block --
+    while carrying almost no information (their errors are 0.054 to 0.089)."""
+    W2=MP*MP+Q2*(1-xB)/xB; W=math.sqrt(W2)
+    Eg=(W2-Q2-MP*MP)/(2*W); pg=math.sqrt(Eg*Eg+Q2)
+    Ep=(W2+MPI*MPI-MP*MP)/(2*W); pp=math.sqrt(max(Ep*Ep-MPI*MPI,0.0))
+    return mt > -(MPI*MPI-Q2-2*(Eg*Ep-pg*pp))
+BSA_PTS=[(b['xB'],b['Q2'],q['t'],q['alpha'],q['err']) for b in BSA for q in b['pts']
+         if q['err']>0 and _physical(b['xB'],b['Q2'],q['t'])]
+print(f"De Masi: {len(BSA_PTS)} of {sum(len(b['pts']) for b in BSA)} points are above threshold")
 EBSA=[(d['xB'],d['Q2'],d['t'],d['alpha'],math.hypot(d['stat'],d['syst'])) for d in json.load(open("data/clas6_zhao_eta_alu.json"))]
 # CLAS12: the published quantity is the ratio sigma_LT'/sigma_0 itself
 # (Kim et al. PLB 849 138459, supplemental tables III and IV), not the sin-phi
