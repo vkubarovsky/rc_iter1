@@ -29,12 +29,18 @@ def blank_rc():
 for meson, src, ref in (("pi0","sf_pi0_both.txt","PRC 90 025205 (2014)"),
                         ("eta","sf_eta_both.txt","PRC 95 035202 (2017)")):
     for v in np.loadtxt(src):
-        r = dict(exp="CLAS6_y12", meson=meson, target="p", Q2=v[0], xB=v[1], t=-v[2],
+        # Q2, xB, t are the means over the phi points of the bin.  The published
+        # bin label is rounded to two decimals, which is not enough for t: it
+        # sits in the exponent of the slope, and for the steep Ebar_T^d that
+        # rounding is worth up to 5% on the amplitude.
+        r = dict(exp="CLAS6_y12", meson=meson, target="p",
+                 Q2=v[5], xB=v[6], t=-v[7],
+                 Q2_bin=v[0], xB_bin=v[1], t_bin=-v[2],
                  eps=v[3], npts_phi=int(v[4]), Ebeam=5.75, sigma_meaning="sigma_U",
-                 chi2ndf_phi=v[5], chi2ndf_phi_rc=v[15], in_fit="yes",
+                 chi2ndf_phi=v[8], chi2ndf_phi_rc=v[18], in_fit="yes",
                  source=ref+" supplemental, phi table")
-        for k, c in zip(SF, range(6, 15)):   r[k]      = v[c]
-        for k, c in zip(SF, range(16, 25)):  r[k+"_rc"] = v[c]
+        for k, c in zip(SF, range(9, 18)):   r[k]      = v[c]
+        for k, c in zip(SF, range(19, 28)):  r[k+"_rc"] = v[c]
         rows_x.append(r)
 
 # --- Hall-A E07-007, Rosenbluth separated -----------------------------------
@@ -44,7 +50,7 @@ for line in open("data/halla_pi0.data"):
     v = line.split(); p = v[0] == "p_T"
     Q2 = float(v[1])
     r = dict(exp="HallA_y16" if p else "HallA_y17", meson="pi0", target="p" if p else "n",
-             Q2=Q2, xB=float(v[2]), t=-float(v[3]), eps=np.nan, npts_phi=np.nan,
+             Q2=Q2, xB=float(v[2]), t=-float(v[3]), Q2_bin=np.nan, xB_bin=np.nan, t_bin=np.nan, eps=np.nan, npts_phi=np.nan,
              Ebeam=EB[Q2] if p else "E07-007 pair", sigma_meaning="sigma_T",
              chi2ndf_phi=np.nan, chi2ndf_phi_rc=np.nan,
              in_fit="yes" if not p else "no",
@@ -59,7 +65,7 @@ for line in open("data/halla_more.data"):
     if line.startswith("#") or not line.strip(): continue
     v = line.split()
     r = dict(exp=v[0], meson="pi0", target="p", Q2=float(v[3]), xB=float(v[4]),
-             t=-abs(float(v[5])), eps=np.nan, npts_phi=np.nan, Ebeam=float(v[15]),
+             t=-abs(float(v[5])), Q2_bin=np.nan, xB_bin=np.nan, t_bin=np.nan, eps=np.nan, npts_phi=np.nan, Ebeam=float(v[15]),
              sigma_meaning="sigma_U", chi2ndf_phi=np.nan, chi2ndf_phi_rc=np.nan,
              in_fit="no",
              source="PRL 127 152301 (2021)" if v[0]=="HallA_y21" else "PRC 83 025201 (2011)",
@@ -70,7 +76,7 @@ for line in open("data/halla_more.data"):
 # --- COMPASS ----------------------------------------------------------------
 d = pd.read_excel("/Users/vpk/hepgen_mac/data/All_experiment.xlsx")
 for _, q in d[d.exp == "COMPASS_y20"].iterrows():
-    r = dict(exp="COMPASS_y20", meson="pi0", target="p", Q2=q.Q2, xB=q.xB, t=-abs(q.t),
+    r = dict(exp="COMPASS_y20", meson="pi0", target="p", Q2=q.Q2, xB=q.xB, t=-abs(q.t), Q2_bin=np.nan, xB_bin=np.nan, t_bin=np.nan,
              eps=np.nan, npts_phi=np.nan, Ebeam=q.Ebeam, sigma_meaning="sigma_U",
              chi2ndf_phi=np.nan, chi2ndf_phi_rc=np.nan, in_fit="no",
              source="COMPASS, Phys. Lett. B 805 135454 (2020)", **blank_rc())
@@ -114,19 +120,32 @@ for k, g in X.groupby(["exp","meson","target"], sort=False):
     sets.append(dict(kind="cross section", dataset=" ".join(k),
         observable=g.sigma_meaning.iloc[0] + ", sigma_LT, sigma_TT", rows=len(g),
         Q2=f"{g.Q2.min():.2f}-{g.Q2.max():.2f}", xB=f"{g.xB.min():.3f}-{g.xB.max():.3f}",
-        t=f"{g.t.min():.2f}..{g.t.max():.2f}",
+        t=f"{g.t.min():.4f}..{g.t.max():.4f}",
         Ebeam=", ".join(sorted({str(v) for v in g.Ebeam})),
         RC_refit="yes" if g.s_u_rc.notna().any() else "no",
         in_fit=g.in_fit.iloc[0], source=g.source.iloc[0]))
 for k, g in Aa.groupby(["exp","observable"], sort=False):
     sets.append(dict(kind="asymmetry", dataset=k[0], observable=k[1], rows=len(g),
         Q2=f"{g.Q2.min():.2f}-{g.Q2.max():.2f}", xB=f"{g.xB.min():.3f}-{g.xB.max():.3f}",
-        t=f"{g.t.min():.2f}..{g.t.max():.2f}", Ebeam=str(g.Ebeam.iloc[0]),
+        t=f"{g.t.min():.4f}..{g.t.max():.4f}", Ebeam=str(g.Ebeam.iloc[0]),
         RC_refit="no", in_fit=g.in_fit.iloc[0], source=g.source.iloc[0]))
 S = pd.DataFrame(sets)
+cols = ["exp","meson","target","Q2","xB","t","Q2_bin","xB_bin","t_bin","eps","npts_phi",
+        "Ebeam","sigma_meaning","chi2ndf_phi","chi2ndf_phi_rc","in_fit","source"] + SF + [c+"_rc" for c in SF]
+X = X[[c for c in cols if c in X.columns]]
 with pd.ExcelWriter("pi0_eta_database.xlsx", engine="openpyxl") as w:
     S.to_excel(w, sheet_name="datasets", index=False)
     X.to_excel(w, sheet_name="cross_sections", index=False)
     Aa.to_excel(w, sheet_name="asymmetries", index=False)
+    # t and xB carry more digits than Excel shows by default
+    sh = w.sheets["cross_sections"]
+    fmt = {"Q2":"0.0000","xB":"0.00000","t":"0.00000","t_bin":"0.00","eps":"0.0000"}
+    for j, c in enumerate(X.columns, start=1):
+        if c in fmt:
+            for i in range(2, len(X)+2): sh.cell(row=i, column=j).number_format = fmt[c]
+    sa = w.sheets["asymmetries"]
+    for j, c in enumerate(Aa.columns, start=1):
+        if c in ("t","xB","Q2"):
+            for i in range(2, len(Aa)+2): sa.cell(row=i, column=j).number_format = "0.00000"
 print(f"cross_sections {len(X)}   asymmetries {len(Aa)}   datasets {len(S)}\n")
 print(S.to_string(index=False))

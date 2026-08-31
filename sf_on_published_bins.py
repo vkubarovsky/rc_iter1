@@ -89,7 +89,8 @@ for b in range(len(P)):
         continue
     eps = epsilon(np.mean(q2[s]), np.mean(xb[s]))
     fL, fT, fI = 2*np.pi, 2*np.pi/eps, 2*np.pi/np.sqrt(2*eps*(1+eps))
-    out = [P[b,0], P[b,1], P[b,2], eps, len(s)]
+    out = [P[b,0], P[b,1], P[b,2], eps, len(s),
+           np.mean(q2[s]), np.mean(xb[s]), np.mean(t[s])]
     # Systematics are the PUBLISHED ones, carried as a relative error.  Our own
     # propagation would have to assume how the phi points are correlated; the
     # collaboration already did that work, and on published bins their numbers
@@ -105,14 +106,14 @@ for b in range(len(P)):
                 fT*p[2], fT*e[2], sy[2]]
     rows.append(out)
 rows = np.array(rows)
-np.savetxt(OUT, rows, fmt="%10.4f", header=(
-    "Q2 xB t eps npts | chi2ndf sigU stat syst sigLT stat syst sigTT stat syst  (ORIGINAL, r=1)"
+np.savetxt(OUT, rows, fmt="%12.6f", header=(
+    "Q2 xB t eps npts Q2mean xBmean tmean | chi2ndf sigU stat syst sigLT stat syst sigTT stat syst  (ORIGINAL, r=1)"
     " | chi2ndf sigU stat syst sigLT stat syst sigTT stat syst  (REFITTED, new RC)"))
 print(f"{CH}: {len(rows)} published bins -> {OUT}")
 
 # --- validation against the published numbers ------------------------------
 lab = ("sigma_U", "sigma_LT", "sigma_TT")
-for k, col in enumerate((6, 9, 12)):
+for k, col in enumerate((9, 12, 15)):
     pv, ov = P[:len(rows), 3+3*k], rows[:, col]
     if len(pv) == len(ov):
         rel = (ov-pv)/np.maximum(np.abs(pv), 1e-9)
