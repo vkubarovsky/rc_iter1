@@ -127,8 +127,11 @@ for rec, key in REC.items():
     for row in EG[rec]["rows"]:
         Q2, mt, A, dA = row[0], row[1], row[2], row[3]
         ds = row[4] if len(row) > 4 else 0.0
+        # the group label is the kinematic setting, not the moment: eg1 has two
+        # settings, and labelling by the moment put both into one panel and made
+        # the model curve zig-zag between them
         _eg.append((Q2, KIN[f"{Q2:.2f}"], mt, key, A, math.hypot(dA, ds),
-                    amp.epsilon(KIN[f"{Q2:.2f}"], Q2, 5.9), key))
+                    amp.epsilon(KIN[f"{Q2:.2f}"], Q2, 5.9), f"eg1_Q{Q2:.2f}"))
 def _pred_eg1(p, row):
     Q2, xB, mt, key, _, _, e, _ = row
     s = amp.structure(p, "pi0p", -mt, xB, Q2)
