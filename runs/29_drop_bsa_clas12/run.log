@@ -1,0 +1,47 @@
+De Masi: 56 of 62 points are above threshold
+=== 29_drop_bsa_clas12: chi2/ndf = 1.7189 (1488.5/866)
+   fit    clas6_pi0:     454.8/288     1.58
+   fit    clas6_eta:     220.6/207     1.07
+   fit      halla_n:      29.6/12      2.46
+   fit    halla_y16:      75.7/21      3.61
+   fit    halla_y11:     178.7/112     1.60
+   fit    halla_y21:     334.7/144     2.32
+          clas12_xs:    3315.8/438     7.57
+            compass:    5339.2/10    533.92
+   fit   bsa_demasi:     113.0/56      2.02
+   fit     bsa_zhao:       7.1/12      0.59
+         bsa_clas12:      96.1/30      3.20
+   fit          eg1:      74.5/40      1.86
+   01_clas6_pi0_in_U.png                            chi2    141.7/96
+   01_clas6_pi0_in_LT.png                           chi2    183.8/96
+   01_clas6_pi0_in_TT.png                           chi2    129.3/96
+   02_clas6_eta_in_U.png                            chi2    107.3/69
+   02_clas6_eta_in_LT.png                           chi2     46.7/69
+   02_clas6_eta_in_TT.png                           chi2     66.5/69
+   03_halla_n_in_T.png                              chi2      0.9/4
+   03_halla_n_in_LT.png                             chi2     10.4/4
+   03_halla_n_in_TT.png                             chi2     18.3/4
+   04_halla_y16_in_T.png                            chi2     21.1/7
+   04_halla_y16_in_LT.png                           chi2     30.1/7
+   04_halla_y16_in_TT.png                           chi2     24.5/7
+   05_halla_y11_in_U.png                            chi2     43.4/28
+   05_halla_y11_in_LT.png                           chi2     61.4/28
+   05_halla_y11_in_TT.png                           chi2     42.5/28
+   05_halla_y11_in_LTp.png                          chi2     31.4/28
+   06_halla_y21_in_U.png                            chi2     87.1/36
+   06_halla_y21_in_LT.png                           chi2     94.2/36
+   06_halla_y21_in_TT.png                           chi2     99.8/36
+   06_halla_y21_in_LTp.png                          chi2     53.6/36
+   07_clas12_xs_out_U.png                           chi2    326.2/146
+   07_clas12_xs_out_LT.png                          chi2   2420.4/146
+   07_clas12_xs_out_TT.png                          chi2    569.2/146
+   08_compass_out_U.png                             chi2   4345.6/5
+   08_compass_out_TT.png                            chi2    993.6/5
+   09_bsa_demasi_in_A_LU^sinphi.png                 chi2    113.0/56
+   10_bsa_zhao_in_A_LU^sinphi.png                   chi2      7.1/12
+   11_bsa_clas12_out_sigma_LTp_over_sigma_0.png     chi2     96.1/30
+   12_eg1_in_AULsin.png                             chi2     21.3/10
+   12_eg1_in_AULsin2.png                            chi2      7.2/10
+   12_eg1_in_ALLc.png                               chi2     21.7/10
+   12_eg1_in_ALLcos.png                             chi2     24.2/10
+plots -> runs/29_drop_bsa_clas12/plots
