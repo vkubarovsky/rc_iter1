@@ -57,24 +57,39 @@ def panels(key, obs, p, fitted, out, ylog=False):
     tot = ntot = 0
     for i, g in enumerate(gs):
         a = ax.flat[i]; a.set_visible(True)
-        t = np.array([r[2] for r in g]); v = np.array([r[4] for r in g])
+        # a projection must be drawn against the variable it scans: the COMPASS
+        # Q2 and nu projections all sit at nearly the same <|t|>, so plotting them
+        # against |t| makes a nu dependence look like a t dependence
+        gl = str(g[0][7])
+        xv, axlab = ([r[2] for r in g], r"$-t$  [GeV$^2$]")
+        if gl == "compass_Q2": xv, axlab = ([r[0] for r in g], r"$Q^2$  [GeV$^2$]")
+        elif gl == "compass_nu":
+            xv, axlab = ([r[0]/(2*0.9382720813*r[1]) for r in g], r"$\nu$  [GeV]")
+        t = np.array(xv); v = np.array([r[4] for r in g])
         e = np.array([r[5] for r in g])
         o = np.argsort(t); t, v, e = t[o], v[o], e[o]
         a.errorbar(t, v, e, fmt='o', ms=4, color=col, ecolor=col, capsize=2, zorder=3)
         m = np.array([s["predict"](p, r) if s["predict"](p, r) is not None else np.nan
                       for r in [g[j] for j in o]], dtype=float)
         good = np.isfinite(m)
-        if good.sum() > 1:
+        if good.sum() > 1 and key != "compass":
             a.plot(t[good], m[good], '-', lw=1.8, color=C_MOD, zorder=2)
-        a.plot(t[good], m[good], 's', ms=3, color=C_MOD, zorder=2)
+        a.plot(t[good], m[good], 's', ms=5 if key == "compass" else 3,
+               color=C_MOD, zorder=2)
         c = float(np.nansum(((v-m)/e)**2)); n = int(good.sum())
         tot += c; ntot += n
-        a.text(0.97, 0.95, f"$Q^2$={g[0][0]:.2f}\n$x_B$={g[0][1]:.3f}\n"
-                           f"$\\chi^2$={c:.1f}/{n}",
+        # a panel whose kinematics vary inside the group must say so, not quote
+        # the first row and pretend the rest sit there too
+        qs = [r[0] for r in g]; xs = [r[1] for r in g]
+        qlab = (f"$Q^2$={qs[0]:.2f}" if max(qs)-min(qs) < 0.05*qs[0]
+                else f"$Q^2$={min(qs):.2f}-{max(qs):.2f}")
+        xlab = (f"$x_B$={xs[0]:.3f}" if max(xs)-min(xs) < 0.05*xs[0]
+                else f"$x_B$={min(xs):.3f}-{max(xs):.3f}")
+        a.text(0.97, 0.95, f"{qlab}\n{xlab}\n$\\chi^2$={c:.1f}/{n}",
                transform=a.transAxes, ha='right', va='top', fontsize=7.5)
         a.grid(alpha=.25, lw=.5); a.tick_params(labelsize=8)
         if ylog and (v > 0).all(): a.set_yscale('log')
-        if i//nc == nr-1 or i+nc >= len(gs): a.set_xlabel(r'$-t$  [GeV$^2$]', fontsize=9)
+        a.set_xlabel(axlab, fontsize=9)
         if i % nc == 0: a.set_ylabel(OBSLAB.get(obs, obs), fontsize=9)
     tag = "IN THE FIT" if fitted else "NOT in the fit  (blind prediction)"
     fig.suptitle(f"{s['label']}   —   {OBSLAB.get(obs,obs)}   —   {tag}\n"

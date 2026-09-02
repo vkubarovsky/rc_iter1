@@ -76,10 +76,41 @@ SETS = [
          XS[XS.exp == "HallA_y21"], "U", "pi0p", None, obs=("U","LT","TT","LTp")),
   _mk_xs("clas12_xs", "CLAS12 cross sections, preliminary",
          XS[XS.exp == "CLAS12_y25"], "U", "pi0p", 10.604),
-  _mk_xs("compass", "COMPASS 2025, $|t|$ projection",
-         XS[(XS.exp == "COMPASS_y25") & (XS.group == "compass_t")], "U", "pi0p",
-         160.0, obs=("U","TT")),
+
 ]
+
+# ---- COMPASS: predicted by averaging over the published (Q2,nu,|t|) grid ------
+# PLB 870 139832 builds the cross section on a four-dimensional grid and combines
+# the cells with the weight of the cell volume, equation (16).  One cell spans xB
+# from 0.02 to 0.47, so evaluating the model at the quoted <Q2>, <xB> is not the
+# measured quantity: it overshoots by a factor five to eight, while the grid
+# average agrees to 1.0-1.7.
+import compass_grid as _CG
+_CROWS, _CBIN = [], {}
+for _l in open("data/compass_y25.data"):
+    if _l.startswith("#") or not _l.strip(): continue
+    _v = _l.split()
+    _pr, _lo, _up = _v[0], float(_v[1]), float(_v[2])
+    _q2r = (_lo, _up) if _pr == "Q2" else None
+    _nur = (_lo, _up) if _pr == "nu" else None
+    _tr  = (_lo, _up) if _pr in ("t", "ref27") else None
+    for _o, _iv, _is_ in (("U", 9, 10), ("TT", 13, 14)):
+        _sy = 0.5*(float(_v[_iv+2]) + float(_v[_iv+3]))
+        _key = (_pr, _lo, _up, _o)
+        _CBIN[_key] = (_q2r, _nur, _tr)
+        _CROWS.append((float(_v[3]), float(_v[7]), float(_v[5]), _o, float(_v[_iv]),
+                       math.hypot(float(_v[_is_]), _sy), float(_v[8]), f"compass_{_pr}", _key))
+_CCACHE = {}
+def _pred_compass(p, row):
+    key = row[8]
+    ck = (id(p), key)
+    if ck not in _CCACHE:
+        q2r, nur, tr = _CBIN[key]
+        _CCACHE[ck] = _CG.average(p, key[3], q2r, nur, tr)
+    return _CCACHE[ck]
+SETS.append(dict(key="compass", label="COMPASS 2025, averaged over the grid",
+                 kind="xs", ch="pi0p", rows=[r[:8] + (r[8],) for r in _CROWS],
+                 predict=_pred_compass))
 
 # ---- asymmetries -------------------------------------------------------------
 def _asym_rows(sel, E):

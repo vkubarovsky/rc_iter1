@@ -1,0 +1,112 @@
+{
+ "tag": "scan_bd_tied",
+ "fitted": [
+  "bsa_clas12",
+  "bsa_demasi",
+  "bsa_zhao",
+  "clas6_eta",
+  "clas6_pi0",
+  "eg1",
+  "halla_n",
+  "halla_y11",
+  "halla_y16",
+  "halla_y21"
+ ],
+ "npar": 26,
+ "sets": {
+  "clas6_pi0": {
+   "chi2": 476.02967757158257,
+   "n": 288,
+   "fitted": true,
+   "label": "CLAS6 $\\pi^0$ structure functions"
+  },
+  "clas6_eta": {
+   "chi2": 215.66967230433931,
+   "n": 207,
+   "fitted": true,
+   "label": "CLAS6 $\\eta$ structure functions"
+  },
+  "halla_n": {
+   "chi2": 31.09978847694321,
+   "n": 12,
+   "fitted": true,
+   "label": "Hall-A neutron, $\\sigma_T$ separated (2017)"
+  },
+  "halla_y16": {
+   "chi2": 79.91461174367265,
+   "n": 21,
+   "fitted": true,
+   "label": "Hall-A proton, $\\sigma_T$ separated (2016)"
+  },
+  "halla_y11": {
+   "chi2": 181.13110616634324,
+   "n": 112,
+   "fitted": true,
+   "label": "Hall-A proton 6 GeV (2011)"
+  },
+  "halla_y21": {
+   "chi2": 339.41364398822475,
+   "n": 144,
+   "fitted": true,
+   "label": "Hall-A proton 12 GeV (2021)"
+  },
+  "clas12_xs": {
+   "chi2": 3533.577212354944,
+   "n": 438,
+   "fitted": false,
+   "label": "CLAS12 cross sections, preliminary"
+  },
+  "compass": {
+   "chi2": 5893.843831056449,
+   "n": 10,
+   "fitted": false,
+   "label": "COMPASS 2025, $|t|$ projection"
+  },
+  "bsa_demasi": {
+   "chi2": 130.19573426621557,
+   "n": 56,
+   "fitted": true,
+   "label": "CLAS6 $\\pi^0$ beam-spin asymmetry"
+  },
+  "bsa_zhao": {
+   "chi2": 4.95936233928445,
+   "n": 12,
+   "fitted": true,
+   "label": "CLAS6 $\\eta$ beam-spin asymmetry"
+  },
+  "bsa_clas12": {
+   "chi2": 63.136769974123084,
+   "n": 30,
+   "fitted": true,
+   "label": "CLAS12 $\\sigma_{LT'}/\\sigma_0$"
+  },
+  "eg1": {
+   "chi2": 74.23877711393612,
+   "n": 40,
+   "fitted": true,
+   "label": "eg1-dvcs, polarised target"
+  }
+ },
+ "chi2_fitted": 1595.789143944665,
+ "n_fitted": 922,
+ "ndf": 896,
+ "chi2_ndf": 1.7810146695810993,
+ "slopes_xB025": {
+  "H_T^u": 1.5365541758416963,
+  "H_T^d": 1.5365541758416963,
+  "Ebar_T^u": 1.1182771519269865,
+  "Ebar_T^d": 5.629262655343076,
+  "T00": 1.8355806887480752
+ },
+ "phases": {
+  "H_T": -1.321933467952538,
+  "Ebar_T": 0.5000000000000001,
+  "T00": 0.5105633093307004
+ },
+ "ratios": {
+  "du_HT": -0.16733933723596683,
+  "du_ET": 0.9093951967830339,
+  "n_over_p": 1.02885513380318,
+  "sigL_over_sigT": 0.08976545086352615
+ }
+}

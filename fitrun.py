@@ -12,10 +12,17 @@ from scipy.optimize import least_squares
 import amplitudes as amp, fit_slope as F, datasets as D
 
 W = 30.0
+BMAX  = float(os.environ.get("BMAX", "12"))    # ceiling on the slope at xB = 1
+BDMAX = os.environ.get("BDMAX")                # separate ceiling for b of H_T^d
 BL = {"H_T^u": (1, 2), "H_T^d": (5, 6), "Ebar_T^u": (9, 10), "Ebar_T^d": (14, 12),
       "T00": (16, 21)}
 BSLOT = [1, 5, 9, 14, 16]
 TIES = {7: 3, 27: 11, 6: 2, 12: 10}
+# b of H_T^d tied to b of H_T^u.  Left free, the fit runs it to whatever ceiling
+# it is given -- 12, 18, 25 -- and buys 2 units of chi2 over 896 points, while
+# the normalisation N_d compensates by a factor sixteen.  It is a flat valley,
+# not a measurement.
+if os.environ.get("TIE_BD", "1") == "1": TIES[5] = 1
 FROZEN = {23, 28, 29, 30, 31, 32, 33}
 FREE = [i for i in range(37) if i not in set(TIES) | FROZEN]
 
@@ -28,7 +35,10 @@ def bounds():
     HI = np.array(list(F.HI) + [12., 5., 8., 5., 8., math.pi, math.pi, math.pi, 2.0, 2.0])
     LO[3] = LO[11] = LO[17] = -12.; HI[3] = HI[11] = HI[17] = 12.
     LO[12] = -8.; HI[12] = 8.; LO[13] = -1e4; HI[13] = 1e4; LO[14] = -2.; HI[14] = 12.
-    for i in BSLOT: LO[i] = 0.0
+    for i in BSLOT:
+        LO[i] = 0.0
+        HI[i] = BMAX          # 12 was inherited from a generic bounds array, not chosen
+    if BDMAX is not None: HI[5] = float(BDMAX)
     return LO, HI
 
 def expand(x):
