@@ -51,7 +51,10 @@ def panels(key, obs, p, fitted, out, ylog=False):
     if not rows: return None
     gs = cluster(rows)
     nr, nc = grid(len(gs))
-    fig, ax = plt.subplots(nr, nc, figsize=(3.2*nc, 2.5*nr), squeeze=False)
+    # a one- or two-panel figure used to come out narrower than its own title,
+    # which was then clipped at both ends; and points at the edge were cut
+    W = max(3.3*nc, 9.0); H = max(2.6*nr, 2.6)
+    fig, ax = plt.subplots(nr, nc, figsize=(W, H + 0.75), squeeze=False)
     for a in ax.flat: a.set_visible(False)
     col = C_IN if fitted else C_OUT
     tot = ntot = 0
@@ -88,6 +91,7 @@ def panels(key, obs, p, fitted, out, ylog=False):
         a.text(0.97, 0.95, f"{qlab}\n{xlab}\n$\\chi^2$={c:.1f}/{n}",
                transform=a.transAxes, ha='right', va='top', fontsize=7.5)
         a.grid(alpha=.25, lw=.5); a.tick_params(labelsize=8)
+        a.margins(x=0.10, y=0.12)
         if ylog and (v > 0).all(): a.set_yscale('log')
         a.set_xlabel(axlab, fontsize=9)
         if i % nc == 0: a.set_ylabel(OBSLAB.get(obs, obs), fontsize=9)
@@ -95,7 +99,7 @@ def panels(key, obs, p, fitted, out, ylog=False):
     fig.suptitle(f"{s['label']}   —   {OBSLAB.get(obs,obs)}   —   {tag}\n"
                  f"$\\chi^2$ = {tot:.1f} / {ntot} = {tot/max(ntot,1):.2f} per point",
                  fontsize=11)
-    fig.tight_layout(rect=[0, 0, 1, 1-0.055*(2 if nr < 3 else 1)])
+    fig.tight_layout(rect=[0, 0, 1, 1 - 0.75/(H + 0.75)])
     fig.savefig(out, dpi=130); plt.close(fig)
     return tot, ntot
 
