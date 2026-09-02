@@ -19,7 +19,17 @@ XS = pd.read_csv("db_csv/cross_sections.csv")
 AS = pd.read_csv("db_csv/asymmetries.csv")
 SYST_N = 0.10          # the neutron xlsx carries no systematics
 
-def _rows_xs(sel, meaning, ebeam=None, obs=("U", "LT", "TT"), rc=False, addsyst=0.0):
+def _rows_xs(sel, meaning, ebeam=None, obs=("U", "LT", "TT"), rc=False, addsyst=0.0,
+             ltscale=False):
+    """ltscale converts the Drechsel-Tiator normalisation of the 2011 Hall-A paper.
+
+    PRC 83 025201 writes the decomposition with eps_L where CLAS6 -- and the 2016,
+    2017 and 2021 Hall-A papers, and we -- use eps, and defines eps_L/eps =
+    4 M^2 xB^2 / Q^2 = gamma^2 just below its equation (9).  Matching the cos phi
+    modulation gives sigma_LT(ours) = gamma * sigma_TL(theirs), and the same for
+    sigma_LT'.  gamma is 0.43 to 0.51 at their settings, so their numbers are
+    about twice ours.  sigma_U needs no conversion: the paper publishes the
+    constant term itself.  sigma_TT neither: its weight is eps in both."""
     out = []
     for _, r in sel.iterrows():
         e = r.eps if np.isfinite(r.eps) else amp.epsilon(r.xB, r.Q2,
@@ -35,6 +45,11 @@ def _rows_xs(sel, meaning, ebeam=None, obs=("U", "LT", "TT"), rc=False, addsyst=
             if not np.isfinite(v): continue
             err = math.hypot(st if np.isfinite(st) else 0.0,
                              sy if np.isfinite(sy) else 0.0)
+            if ltscale and o in ("LT", "LTp"):
+                g = 2*0.9382720813*r.xB/math.sqrt(r.Q2)
+                v *= g; st = st*g if np.isfinite(st) else st
+                sy = sy*g if np.isfinite(sy) else sy
+                err *= g
             if addsyst: err = math.hypot(err, addsyst*abs(v))
             if err <= 0: err = SYST_N * abs(v)
             if err <= 0: continue
@@ -55,8 +70,8 @@ def _pred_xs(p, row, ch):
     raise ValueError(obs)
 
 def _mk_xs(key, label, sel, meaning, ch, ebeam=None, obs=("U","LT","TT"), rc=False,
-           addsyst=0.0):
-    rows = _rows_xs(sel, meaning, ebeam, obs, rc, addsyst)
+           addsyst=0.0, ltscale=False):
+    rows = _rows_xs(sel, meaning, ebeam, obs, rc, addsyst, ltscale)
     return dict(key=key, label=label, kind="xs", ch=ch, rows=rows,
                 predict=lambda p, r, ch=ch: _pred_xs(p, r, ch))
 
@@ -71,7 +86,8 @@ SETS = [
   _mk_xs("halla_y16", "Hall-A proton, $\\sigma_T$ separated (2016)",
          XS[XS.exp == "HallA_y16"], "T", "pi0p", 5.55, addsyst=SYST_N),
   _mk_xs("halla_y11", "Hall-A proton 6 GeV (2011)",
-         XS[XS.exp == "HallA_y11"], "U", "pi0p", 5.752, obs=("U","LT","TT","LTp")),
+         XS[XS.exp == "HallA_y11"], "U", "pi0p", 5.752, obs=("U","LT","TT","LTp"),
+         ltscale=True),
   _mk_xs("halla_y21", "Hall-A proton 12 GeV (2021)",
          XS[XS.exp == "HallA_y21"], "U", "pi0p", None, obs=("U","LT","TT","LTp")),
   _mk_xs("clas12_xs", "CLAS12 cross sections, preliminary",
