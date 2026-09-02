@@ -165,6 +165,33 @@ for key, label, exp, ch, E in (
     SETS.append(dict(key=key, label=label, kind="asym", ch=ch, rows=rows,
                      predict=lambda p, r, ch=ch, E=E: _pred_bsa(p, r, ch, E)))
 
+# ---- De Masi at the phi level ------------------------------------------------
+# The CLAS database export gives the asymmetry as a function of phi in each of 60
+# bins, 703 points.  Fitting the model straight to those removes the intermediate
+# step: no choice between a plain sin fit and the full form, and the denominator
+# is supplied by the model's own sigma_LT and sigma_TT rather than assumed.
+import pickle as _pickle
+_DM = _pickle.load(open("data/demasi_phi.pkl", "rb"))
+_dmrows = []
+for _nm, _d in _DM:
+    for _r in _d:
+        if _r[5] <= 0: continue
+        _dmrows.append((float(_r[1]), float(_r[0]), float(_r[2]), "A_phi",
+                        float(_r[4]), float(_r[5]),
+                        amp.epsilon(float(_r[0]), float(_r[1]), 5.776), _nm,
+                        math.radians(float(_r[3]))))
+def _pred_dmphi(p, row):
+    Q2, xB, mt, _, _, _, e, _, phi = row
+    s = amp.structure(p, "pi0p", -mt, xB, Q2)
+    if s is None: return None
+    s0 = s["T"] + e*s["L"]
+    den = (1 + math.sqrt(2*e*(1+e))*s["LT"]/s0*math.cos(phi)
+             + e*s["TT"]/s0*math.cos(2*phi))
+    if abs(den) < 1e-6: return None
+    return math.sqrt(2*e*(1-e))*s["LTp"]/s0*math.sin(phi)/den
+SETS.append(dict(key="bsa_demasi_phi", label="CLAS6 $\\pi^0$ BSA, phi distributions",
+                 kind="asym", ch="pi0p", rows=_dmrows, predict=_pred_dmphi))
+
 EG = json.load(open("data/eg1dvcs_pi0_target_asym.json"))
 KIN = {"1.94": 0.25, "2.83": 0.40}
 REC = {"E154M5": "AULsin", "E154M6": "AULsin", "E154M7": "AULsin2", "E154M8": "AULsin2",
