@@ -12,7 +12,8 @@ import matplotlib.pyplot as plt
 import amplitudes as amp, datasets as D
 
 C_IN, C_OUT, C_MOD = "#123a5e", "#9a4f2b", "#0d6a72"
-OBSLAB = {"U": r"$\sigma_U=\sigma_T+\epsilon\sigma_L$", "T": r"$\sigma_T$",
+OBSLAB = {"A_phi": r"$A_{LU}(\phi)$",
+          "U": r"$\sigma_U=\sigma_T+\epsilon\sigma_L$", "T": r"$\sigma_T$",
           "LT": r"$\sigma_{LT}$", "TT": r"$\sigma_{TT}$", "LTp": r"$\sigma_{LT'}$",
           "A_LU^sinphi": r"$A_{LU}^{\sin\phi}$",
           "sigma_LT'/sigma_0": r"$\sigma_{LT'}/\sigma_0$",
@@ -66,6 +67,8 @@ def panels(key, obs, p, fitted, out, ylog=False):
         gl = str(g[0][7])
         xv, axlab = ([r[2] for r in g], r"$-t$  [GeV$^2$]")
         if gl == "compass_Q2": xv, axlab = ([r[0] for r in g], r"$Q^2$  [GeV$^2$]")
+        elif key == "bsa_demasi_phi":
+            xv, axlab = ([math.degrees(r[8]) for r in g], r"$\phi$  [deg]")
         elif gl == "compass_nu":
             xv, axlab = ([r[0]/(2*0.9382720813*r[1]) for r in g], r"$\nu$  [GeV]")
         t = np.array(xv); v = np.array([r[4] for r in g])
@@ -122,7 +125,8 @@ def summary_figure(rec, out):
                 f"dark = in the fit,  brown = left out (blind prediction)", fontsize=11)
     fig.tight_layout(); fig.savefig(out, dpi=130); plt.close(fig)
 
-PLAN = [("clas6_pi0", ("U","LT","TT")), ("clas6_eta", ("U","LT","TT")),
+PLAN = [("bsa_demasi_phi", ("A_phi",)),
+        ("clas6_pi0", ("U","LT","TT")), ("clas6_eta", ("U","LT","TT")),
         ("halla_n", ("T","LT","TT")), ("halla_y16", ("T","LT","TT")),
         ("halla_y11", ("U","LT","TT","LTp")), ("halla_y21", ("U","LT","TT","LTp")),
         ("clas12_xs", ("U","LT","TT")), ("compass", ("U","TT")),
