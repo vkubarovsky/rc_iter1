@@ -1,0 +1,116 @@
+{
+ "tag": "76_drop_bsa_demasi",
+ "fitted": [
+  "bsa_clas12",
+  "bsa_zhao",
+  "clas6_eta",
+  "clas6_pi0",
+  "eg1",
+  "halla_n",
+  "halla_y11",
+  "halla_y16"
+ ],
+ "npar": 25,
+ "sets": {
+  "clas6_pi0": {
+   "chi2": 442.7101554948744,
+   "n": 288,
+   "fitted": true,
+   "label": "CLAS6 $\\pi^0$ structure functions"
+  },
+  "clas6_eta": {
+   "chi2": 214.95825062866993,
+   "n": 207,
+   "fitted": true,
+   "label": "CLAS6 $\\eta$ structure functions"
+  },
+  "halla_n": {
+   "chi2": 34.28096000927642,
+   "n": 12,
+   "fitted": true,
+   "label": "Hall-A neutron, $\\sigma_T$ separated (2017)"
+  },
+  "halla_y16": {
+   "chi2": 80.92894516173358,
+   "n": 21,
+   "fitted": true,
+   "label": "Hall-A proton, $\\sigma_T$ separated (2016)"
+  },
+  "halla_y11": {
+   "chi2": 154.3751603527385,
+   "n": 112,
+   "fitted": true,
+   "label": "Hall-A proton 6 GeV (2011)"
+  },
+  "halla_y21": {
+   "chi2": 1970.7578555331609,
+   "n": 144,
+   "fitted": false,
+   "label": "Hall-A proton 12 GeV (2021)"
+  },
+  "clas12_xs": {
+   "chi2": 2682.3802433486776,
+   "n": 438,
+   "fitted": false,
+   "label": "CLAS12 cross sections, preliminary"
+  },
+  "compass": {
+   "chi2": 107.55062341233278,
+   "n": 26,
+   "fitted": false,
+   "label": "COMPASS 2025, averaged over the grid"
+  },
+  "bsa_demasi": {
+   "chi2": 286.05183223874815,
+   "n": 56,
+   "fitted": false,
+   "label": "CLAS6 $\\pi^0$ beam-spin asymmetry"
+  },
+  "bsa_zhao": {
+   "chi2": 12.953040288743821,
+   "n": 12,
+   "fitted": true,
+   "label": "CLAS6 $\\eta$ beam-spin asymmetry"
+  },
+  "bsa_clas12": {
+   "chi2": 18.110112338738443,
+   "n": 30,
+   "fitted": true,
+   "label": "CLAS12 $\\sigma_{LT'}/\\sigma_0$"
+  },
+  "bsa_demasi_phi": {
+   "chi2": 735.9484716172997,
+   "n": 703,
+   "fitted": false,
+   "label": "CLAS6 $\\pi^0$ BSA, phi distributions"
+  },
+  "eg1": {
+   "chi2": 54.56570380867854,
+   "n": 40,
+   "fitted": true,
+   "label": "eg1-dvcs, polarised target"
+  }
+ },
+ "chi2_fitted": 1012.8823280834538,
+ "n_fitted": 722,
+ "ndf": 697,
+ "chi2_ndf": 1.4532027662603355,
+ "slopes_xB025": {
+  "H_T^u": 1.515010689202112,
+  "H_T^d": 1.515010689202112,
+  "Ebar_T^u": 1.1177847194272665,
+  "Ebar_T^d": 5.967127583556698,
+  "T00": 1.9572660323601512
+ },
+ "phases": {
+  "H_T": -1.3472350770888495,
+  "Ebar_T": 0.5000000000000001,
+  "T00": 0.5191291201587206
+ },
+ "ratios": {
+  "du_HT": -0.13113930332654808,
+  "du_ET": 0.8971365451356113,
+  "n_over_p": 1.0263776126362747,
+  "sigL_over_sigT": 0.07512747143079362
+ }
+}

@@ -229,11 +229,17 @@ for g in json.load(open("data/clas6_demasi_alu.json")):
           Q2=g["Q2"], xB=g["xB"], t=-abs(q["t"]), value=q["alpha"], stat=q["err"],
           syst=np.nan, Ebeam=5.776, in_fit="yes",
           source="De Masi et al., PRC 77 042201(R) (2008), figure extraction")
-for q in json.load(open("data/clas6_zhao_eta_alu.json")):
+# Zhao: read from the vector figure of the published PDF, not by eye.  The paper
+# never went to arXiv, so the PDF is all there is, but its figure 5 is vector and
+# the numbers come out exactly.  The earlier digitisation had the values right to
+# 0.007 but the statistical errors low by 1.3 -- they had been measured from the
+# edge of the marker rather than its centre -- and a flat systematic of 0.087
+# where the figure draws a step function of t running 0.022 to 0.064.
+for _v in np.loadtxt("data/zhao_vector.data"):
     A(exp="CLAS6_zhao", meson="eta", target="p", observable="A_LU^sinphi",
-      Q2=q["Q2"], xB=q["xB"], t=-abs(q["t"]), value=q["alpha"], stat=q["stat"],
-      syst=q["syst"], Ebeam=5.776, in_fit="yes",
-      source="Zhao et al., PLB 789 426 (2019), figure extraction")
+      Q2=_v[0], xB=_v[1], t=-abs(_v[2]), value=_v[3], stat=_v[4], syst=_v[5],
+      Ebeam=5.776, in_fit="yes",
+      source="Zhao et al., PLB 789 426 (2019), figure 5 read from the vector PDF")
 # CLAS12: the published supplemental gives sigma_LT'/sigma_0 directly, with the
 # exact bin averages.  Our earlier figure extraction stored those values divided
 # by sqrt(2 eps (1-eps)) instead of left alone, so they were too large by about
