@@ -325,7 +325,29 @@ cols = ["exp","meson","target","group","proj","bin_lo","bin_up",
         "tp_low","tp_up","Q2_bin","xB_bin","t_bin","eps","npts_phi",
         "Ebeam","sigma_meaning","chi2ndf_phi","chi2ndf_phi_rc","in_fit","source"] + SF + SFP + [c+"_rc" for c in SF]
 X = X[[c for c in cols if c in X.columns]]
+# a sheet that says where this file came from, so a copy of it can always be
+# traced back to the commit that built it
+import subprocess, datetime
+try:
+    _sha = subprocess.run(["git","rev-parse","--short","HEAD"], capture_output=True,
+                          text=True).stdout.strip()
+except Exception:
+    _sha = "unknown"
+PROV = pd.DataFrame([
+ dict(field="built",       value=datetime.date.today().isoformat()),
+ dict(field="built_by",    value="rc_iter1/build_database.py"),
+ dict(field="rc_iter1_commit", value=_sha),
+ dict(field="sheets",      value="datasets, cross_sections, asymmetries, bsa_phi, theory"),
+ dict(field="rows",        value=f"{len(X)} cross sections, {len(Aa)} asymmetry moments, "
+                                 f"{len(P)} phi points, {len(T)} theory"),
+ dict(field="convention",  value="data as published; the model is converted, never the data"),
+ dict(field="dispatch",    value="observable on the asymmetry sheets, sigma_meaning on the "
+                                 "cross sections, says what each row is"),
+ dict(field="units",       value="nb/GeV^2 throughout; t is the physical Mandelstam t, negative"),
+ dict(field="theory_sheet",value="Goloskokov-Kroll calculation, NOT data, all errors are zero"),
+])
 with pd.ExcelWriter("pi0_eta_database.xlsx", engine="openpyxl") as w:
+    PROV.to_excel(w, sheet_name="provenance", index=False)
     S.to_excel(w, sheet_name="datasets", index=False)
     X.to_excel(w, sheet_name="cross_sections", index=False)
     Aa.to_excel(w, sheet_name="asymmetries", index=False)
