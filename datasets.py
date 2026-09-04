@@ -15,8 +15,12 @@ import numpy as np
 import pandas as pd
 import amplitudes as amp
 
+# Everything the fit reads comes from the workbook, exported sheet by sheet.
+# Nothing is loaded from anywhere else: a second source is how the old De Masi
+# amplitudes, with their errors 1.5 times too small, survived unnoticed.
 XS = pd.read_csv("db_csv/cross_sections.csv")
 AS = pd.read_csv("db_csv/asymmetries.csv")
+PH = pd.read_csv("db_csv/bsa_phi.csv")
 SYST_N = 0.10          # the neutron xlsx carries no systematics
 
 def _rows_xs(sel, meaning, ebeam=None, obs=("U", "LT", "TT"), rc=False, addsyst=0.0,
@@ -102,27 +106,24 @@ SETS = [
 # measured quantity: it overshoots by a factor five to eight, while the grid
 # average agrees to 1.0-1.7.
 import compass_grid as _CG
-_CROWS, _CBIN = [], {}
-for _l in open("data/compass_y25.data"):
-    if _l.startswith("#") or not _l.strip(): continue
-    _v = _l.split()
-    _pr, _lo, _up = _v[0], float(_v[1]), float(_v[2])
-    _q2r = (_lo, _up) if _pr == "Q2" else None
-    _nur = (_lo, _up) if _pr == "nu" else None
-    _tr  = (_lo, _up) if _pr in ("t", "ref27") else None
-    for _o, _iv, _is_ in (("U", 9, 10), ("TT", 13, 14)):
-        _sy = 0.5*(float(_v[_iv+2]) + float(_v[_iv+3]))
-        _key = (_pr, _lo, _up, _o)
-        _CBIN[_key] = (_q2r, _nur, _tr)
-        _CROWS.append((float(_v[3]), float(_v[7]), float(_v[5]), _o, float(_v[_iv]),
-                       math.hypot(float(_v[_is_]), _sy), float(_v[8]), f"compass_{_pr}", _key))
-_CCACHE = {}
+_CROWS, _CBIN, _CCACHE = [], {}, {}
+for _, _r in XS[XS.exp == "COMPASS_y25"].iterrows():
+    _pr = str(_r.proj)
+    _rng = (float(_r.bin_lo), float(_r.bin_up))
+    for _o, _v, _st, _sy in (("U", _r.s_u, _r.stat_U, _r.sys_U),
+                             ("TT", _r.s_TT, _r.stat_TT, _r.sys_TT)):
+        if not np.isfinite(_v): continue
+        _key = (_pr, _rng[0], _rng[1], _o)
+        _CBIN[_key] = (_rng if _pr == "Q2" else None,
+                       _rng if _pr == "nu" else None,
+                       _rng if _pr in ("t", "ref27") else None)
+        _CROWS.append((float(_r.Q2), float(_r.xB), abs(float(_r.t)), _o, float(_v),
+                       math.hypot(_st, _sy), float(_r.eps), f"compass_{_pr}", _key))
 def _pred_compass(p, row):
-    key = row[8]
-    ck = (id(p), key)
+    ck = (id(p), row[8])
     if ck not in _CCACHE:
-        q2r, nur, tr = _CBIN[key]
-        _CCACHE[ck] = _CG.average(p, key[3], q2r, nur, tr)
+        q2r, nur, tr = _CBIN[row[8]]
+        _CCACHE[ck] = _CG.average(p, row[8][3], q2r, nur, tr)
     return _CCACHE[ck]
 SETS.append(dict(key="compass", label="COMPASS 2025, averaged over the grid",
                  kind="xs", ch="pi0p", rows=[r[:8] + (r[8],) for r in _CROWS],
@@ -170,16 +171,13 @@ for key, label, exp, ch, E in (
 # bins, 703 points.  Fitting the model straight to those removes the intermediate
 # step: no choice between a plain sin fit and the full form, and the denominator
 # is supplied by the model's own sigma_LT and sigma_TT rather than assumed.
-import pickle as _pickle
-_DM = _pickle.load(open("data/demasi_phi.pkl", "rb"))
 _dmrows = []
-for _nm, _d in _DM:
-    for _r in _d:
-        if _r[5] <= 0: continue
-        _dmrows.append((float(_r[1]), float(_r[0]), float(_r[2]), "A_phi",
-                        float(_r[4]), float(_r[5]),
-                        amp.epsilon(float(_r[0]), float(_r[1]), 5.776), _nm,
-                        math.radians(float(_r[3]))))
+for _, _r in PH.iterrows():
+    if _r.stat <= 0: continue
+    _dmrows.append((float(_r.Q2), float(_r.xB), abs(float(_r.t)), "A_phi",
+                    float(_r.value), float(_r.stat),
+                    amp.epsilon(float(_r.xB), float(_r.Q2), 5.776), str(_r.bin),
+                    math.radians(float(_r.phi))))
 def _pred_dmphi(p, row):
     Q2, xB, mt, _, _, _, e, _, phi = row
     s = amp.structure(p, "pi0p", -mt, xB, Q2)
@@ -192,20 +190,16 @@ def _pred_dmphi(p, row):
 SETS.append(dict(key="bsa_demasi_phi", label="CLAS6 $\\pi^0$ BSA, phi distributions",
                  kind="asym", ch="pi0p", rows=_dmrows, predict=_pred_dmphi))
 
-EG = json.load(open("data/eg1dvcs_pi0_target_asym.json"))
-KIN = {"1.94": 0.25, "2.83": 0.40}
-REC = {"E154M5": "AULsin", "E154M6": "AULsin", "E154M7": "AULsin2", "E154M8": "AULsin2",
-       "E154M9": "ALLc", "E154M10": "ALLc", "E154M11": "ALLcos", "E154M12": "ALLcos"}
+MOM = {"A_UL^sinphi": "AULsin", "A_UL^sin2phi": "AULsin2",
+       "A_LL^const": "ALLc", "A_LL^cosphi": "ALLcos"}
 _eg = []
-for rec, key in REC.items():
-    for row in EG[rec]["rows"]:
-        Q2, mt, A, dA = row[0], row[1], row[2], row[3]
-        ds = row[4] if len(row) > 4 else 0.0
-        # the group label is the kinematic setting, not the moment: eg1 has two
-        # settings, and labelling by the moment put both into one panel and made
-        # the model curve zig-zag between them
-        _eg.append((Q2, KIN[f"{Q2:.2f}"], mt, key, A, math.hypot(dA, ds),
-                    amp.epsilon(KIN[f"{Q2:.2f}"], Q2, 5.9), f"eg1_Q{Q2:.2f}"))
+for _, _r in AS[AS.exp == "eg1dvcs"].iterrows():
+    _e = math.hypot(_r.stat if np.isfinite(_r.stat) else 0.0,
+                    _r.syst if np.isfinite(_r.syst) else 0.0)
+    if _e <= 0: continue
+    _k = MOM[_r.observable]
+    _eg.append((float(_r.Q2), float(_r.xB), abs(float(_r.t)), _k, float(_r.value), _e,
+                amp.epsilon(float(_r.xB), float(_r.Q2), 5.9), _k))
 def _pred_eg1(p, row):
     Q2, xB, mt, key, _, _, e, _ = row
     s = amp.structure(p, "pi0p", -mt, xB, Q2)
