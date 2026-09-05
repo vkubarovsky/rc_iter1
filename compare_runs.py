@@ -1,8 +1,9 @@
 """One table over every run in runs/."""
-import glob, json, os
+import glob, json, os, sys
 import datasets as D
 recs = []
-for f in sorted(glob.glob("runs/*/summary.json")):
+pat = sys.argv[1] if len(sys.argv) > 1 else "*"
+for f in sorted(glob.glob(f"runs/{pat}/summary.json")):
     recs.append(json.load(open(f)))
 print(f"{'run':>20}{'chi2/ndf':>10}{'chi2':>10}{'ndf':>6}   " +
       "".join(f"{k[:10]:>11}" for k in D.ALL))
@@ -10,7 +11,10 @@ print("-"*(46+11*len(D.ALL)))
 for r in recs:
     row = f"{r['tag']:>20}{r['chi2_ndf']:10.4f}{r['chi2_fitted']:10.1f}{r['ndf']:6d}   "
     for k in D.ALL:
-        s = r["sets"][k]; x = s["chi2"]/max(s["n"], 1)
+        s = r["sets"].get(k)
+        if s is None:
+            row += f"{'-':>11}"; continue
+        x = s["chi2"]/max(s["n"], 1)
         row += f"{('*' if s['fitted'] else ' ')}{x:10.2f}"
     print(row)
 print("\n* = the set was in that fit;  the number is chi2 per point.")

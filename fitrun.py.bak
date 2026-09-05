@@ -24,15 +24,6 @@ TIES = {7: 3, 27: 11, 6: 2, 12: 10}
 # not a measurement.
 if os.environ.get("TIE_BD", "1") == "1": TIES[5] = 1
 FROZEN = {23, 28, 29, 30, 31, 32, 33}
-
-# Sets whose papers quote an overall normalisation uncertainty.  It multiplies
-# every point of the set together, so it cannot go into the per-point errors:
-# it gets one free scale with a Gaussian prior of the stated width instead.
-#   bsa_demasi_phi  3.5%   beam polarisation, De Masi PRC 77 042201(R) p.3
-#   halla_y16       3.12%  Defurne PRL 117 262001 table III
-#   halla_n         3.1%   Mazouz PRL 118 222002 p.4, the same table
-NORMS = {"bsa_demasi_phi": 0.035, "halla_y16": 0.0312, "halla_n": 0.031}
-LAM_LO, LAM_HI = 0.7, 1.3
 FREE = [i for i in range(37) if i not in set(TIES) | FROZEN]
 
 def slopes(p, x):
@@ -40,13 +31,8 @@ def slopes(p, x):
     return {k: (p[b] + p[bp]*L) for k, (b, bp) in BL.items()}
 
 def bounds():
-    # Slots 34, 35, 36 are the d-relative phases of H_T, Ebar_T and T00; they enter
-    # as exp(i p) and belong on [-pi, pi].  35 and 36 used to carry a magnitude and
-    # kept its old window [0.5, 2.0] after the slots were reused, which pinned both
-    # phases at 0.5 and also made the computed-phase branch (p[35] <= -9) of
-    # amplitudes.py unreachable.
-    LO = np.array(list(F.LO) + [-12., -5., -5., -5., -5., -math.pi, -math.pi, -math.pi, -math.pi, -math.pi])
-    HI = np.array(list(F.HI) + [12., 5., 8., 5., 8., math.pi, math.pi, math.pi, math.pi, math.pi])
+    LO = np.array(list(F.LO) + [-12., -5., -5., -5., -5., -math.pi, -math.pi, -math.pi, 0.5, 0.5])
+    HI = np.array(list(F.HI) + [12., 5., 8., 5., 8., math.pi, math.pi, math.pi, 2.0, 2.0])
     LO[3] = LO[11] = LO[17] = -12.; HI[3] = HI[11] = HI[17] = 12.
     LO[12] = -8.; HI[12] = 8.; LO[13] = -1e4; HI[13] = 1e4; LO[14] = -2.; HI[14] = 12.
     for i in BSLOT:
@@ -62,16 +48,13 @@ def expand(x):
 
 def fit(keys, seeds=("fitpar_production_pub.npy", "fitpar_n_n_and_p.npy")):
     LO, HI = bounds()
-    nn = [k for k in keys if k in NORMS]      # normalised sets actually in this fit
-    nf = len(FREE)
     def resid(x):
-        p = expand(x[:nf]); lam = dict(zip(nn, x[nf:])); r = []
+        p = expand(x); r = []
         for k in keys:
-            s = D.BY[k]; L = lam.get(k, 1.0)
+            s = D.BY[k]
             for row in s["rows"]:
                 v = s["predict"](p, row)
-                r.append((row[4] - L*v)/row[5] if v is not None else 5.0)
-        for k in nn: r.append((lam[k] - 1.0)/NORMS[k])
+                r.append((row[4] - v)/row[5] if v is not None else 5.0)
         for xx in (0.05, 0.35, 1.00):
             sl = slopes(p, xx)
             for n in BL: r.append(W*min(0.0, sl[n]))
@@ -87,35 +70,28 @@ def fit(keys, seeds=("fitpar_production_pub.npy", "fitpar_n_n_and_p.npy")):
                 q = q*(1 + jitter*rng.standard_normal(37))
             for t, s in TIES.items(): q[t] = q[s]
             q = np.clip(q, LO, HI)
-            x0 = np.concatenate([q[FREE], np.ones(len(nn))])
-            xlo = np.concatenate([LO[FREE], np.full(len(nn), LAM_LO)])
-            xhi = np.concatenate([HI[FREE], np.full(len(nn), LAM_HI)])
             try:
-                r = least_squares(resid, x0, bounds=(xlo, xhi),
+                r = least_squares(resid, q[FREE], bounds=(LO[FREE], HI[FREE]),
                                   x_scale='jac', xtol=1e-13, ftol=1e-13, gtol=1e-13,
                                   max_nfev=60000)
             except Exception:
                 continue
             c = float(np.sum(r.fun**2))
             if best is None or c < best[0]: best = (c, r.x)
-    return expand(best[1][:nf]), dict(zip(nn, (float(v) for v in best[1][nf:])))
+    return expand(best[1])
 
-def summarise(p, keys, tag, lam=None):
-    lam = lam or {}
+def summarise(p, keys, tag):
     used = set(keys)
-    npar = len(FREE) + len(lam)
-    rec = dict(tag=tag, fitted=sorted(used), npar=npar, norms=lam, sets={})
+    rec = dict(tag=tag, fitted=sorted(used), npar=len(FREE), sets={})
     cf = nf = 0.0, 0
     cf, nf = 0.0, 0
     for k in D.ALL:
-        c, n = D.chi2(p, k, lam.get(k, 1.0))
-        rec["sets"][k] = dict(chi2=c, n=n, fitted=k in used, label=D.BY[k]["label"],
-                              norm=lam.get(k))
+        c, n = D.chi2(p, k)
+        rec["sets"][k] = dict(chi2=c, n=n, fitted=k in used, label=D.BY[k]["label"])
         if k in used: cf += c; nf += n
-    cf += sum(((v - 1.0)/NORMS[k])**2 for k, v in lam.items())   # the priors count
     rec["chi2_fitted"] = cf; rec["n_fitted"] = nf
-    rec["ndf"] = nf - npar
-    rec["chi2_ndf"] = cf/max(nf - npar, 1)
+    rec["ndf"] = nf - len(FREE)
+    rec["chi2_ndf"] = cf/max(nf - len(FREE), 1)
     s25 = slopes(p, 0.25)
     HT, ET, LL = amp._flavour(p, -0.3, 0.25, 2.2)
     sp = amp.structure(p, "pi0p", -0.27, 0.36, 1.75)
@@ -133,14 +109,12 @@ if __name__ == "__main__":
     tag = sys.argv[1]
     keys = D.ALL if sys.argv[2] == "all" else sys.argv[2].split(",")
     out = f"runs/{tag}"; os.makedirs(out, exist_ok=True)
-    p, lam = fit(keys)
+    p = fit(keys)
     np.save(f"{out}/fitpar.npy", p)
-    rec = summarise(p, keys, tag, lam)
+    rec = summarise(p, keys, tag)
     json.dump(rec, open(f"{out}/summary.json", "w"), indent=1)
     print(f"=== {tag}: chi2/ndf = {rec['chi2_ndf']:.4f} "
           f"({rec['chi2_fitted']:.1f}/{rec['ndf']})")
-    for k, v in rec["norms"].items():
-        print(f"   norm {k:>16} = {v:.4f}  ({(v-1)/NORMS[k]:+.2f} sigma)")
     for k in D.ALL:
         s = rec["sets"][k]
         mark = "fit " if s["fitted"] else "    "

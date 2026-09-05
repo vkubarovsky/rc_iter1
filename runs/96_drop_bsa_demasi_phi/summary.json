@@ -1,0 +1,133 @@
+{
+ "tag": "96_drop_bsa_demasi_phi",
+ "fitted": [
+  "bsa_clas12",
+  "bsa_zhao",
+  "clas6_eta",
+  "clas6_pi0",
+  "eg1",
+  "halla_n",
+  "halla_y11",
+  "halla_y16"
+ ],
+ "npar": 27,
+ "norms": {
+  "halla_n": 0.9724874100901387,
+  "halla_y16": 1.0821746403319954
+ },
+ "sets": {
+  "clas6_pi0": {
+   "chi2": 441.55026636228973,
+   "n": 288,
+   "fitted": true,
+   "label": "CLAS6 $\\pi^0$ structure functions",
+   "norm": null
+  },
+  "clas6_eta": {
+   "chi2": 216.67451384750993,
+   "n": 207,
+   "fitted": true,
+   "label": "CLAS6 $\\eta$ structure functions",
+   "norm": null
+  },
+  "halla_n": {
+   "chi2": 23.025617132814784,
+   "n": 12,
+   "fitted": true,
+   "label": "Hall-A neutron, $\\sigma_T$ separated (2017)",
+   "norm": 0.9724874100901387
+  },
+  "halla_y16": {
+   "chi2": 94.29379473419473,
+   "n": 21,
+   "fitted": true,
+   "label": "Hall-A proton, $\\sigma_T$ separated (2016)",
+   "norm": 1.0821746403319954
+  },
+  "halla_y11": {
+   "chi2": 151.264448843385,
+   "n": 112,
+   "fitted": true,
+   "label": "Hall-A proton 6 GeV (2011)",
+   "norm": null
+  },
+  "halla_y21": {
+   "chi2": 1938.5857165903572,
+   "n": 144,
+   "fitted": false,
+   "label": "Hall-A proton 12 GeV (2021)",
+   "norm": null
+  },
+  "clas12_xs": {
+   "chi2": 2658.9631414788273,
+   "n": 438,
+   "fitted": false,
+   "label": "CLAS12 cross sections, preliminary",
+   "norm": null
+  },
+  "compass": {
+   "chi2": 106.45421381363725,
+   "n": 26,
+   "fitted": false,
+   "label": "COMPASS 2025, averaged over the grid",
+   "norm": null
+  },
+  "bsa_demasi": {
+   "chi2": 147.58103014256773,
+   "n": 56,
+   "fitted": false,
+   "label": "CLAS6 $\\pi^0$ beam-spin asymmetry",
+   "norm": null
+  },
+  "bsa_zhao": {
+   "chi2": 13.824983232543737,
+   "n": 12,
+   "fitted": true,
+   "label": "CLAS6 $\\eta$ beam-spin asymmetry",
+   "norm": null
+  },
+  "bsa_clas12": {
+   "chi2": 17.94550442599315,
+   "n": 30,
+   "fitted": true,
+   "label": "CLAS12 $\\sigma_{LT'}/\\sigma_0$",
+   "norm": null
+  },
+  "bsa_demasi_phi": {
+   "chi2": 677.8486833657735,
+   "n": 663,
+   "fitted": false,
+   "label": "CLAS6 $\\pi^0$ BSA, phi distributions",
+   "norm": null
+  },
+  "eg1": {
+   "chi2": 54.6367991698037,
+   "n": 40,
+   "fitted": true,
+   "label": "eg1-dvcs, polarised target",
+   "norm": null
+  }
+ },
+ "chi2_fitted": 1020.940505149333,
+ "n_fitted": 722,
+ "ndf": 695,
+ "chi2_ndf": 1.4689791440997597,
+ "slopes_xB025": {
+  "H_T^u": 1.5172159012496627,
+  "H_T^d": 1.5172159012496627,
+  "Ebar_T^u": 1.0969509985079182,
+  "Ebar_T^d": 5.880174060900087,
+  "T00": 1.950196592294614
+ },
+ "phases": {
+  "H_T": -1.3438649622384098,
+  "Ebar_T": 0.22160110539873093,
+  "T00": 0.43101248483187815
+ },
+ "ratios": {
+  "du_HT": -0.2086222080319655,
+  "du_ET": 0.950173527483836,
+  "n_over_p": 1.0642037824990407,
+  "sigL_over_sigT": 0.07328583913760589
+ }
+}

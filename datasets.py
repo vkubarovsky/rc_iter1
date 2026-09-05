@@ -21,7 +21,12 @@ import amplitudes as amp
 XS = pd.read_csv("db_csv/cross_sections.csv")
 AS = pd.read_csv("db_csv/asymmetries.csv")
 PH = pd.read_csv("db_csv/bsa_phi.csv")
-SYST_N = 0.10          # the neutron xlsx carries no systematics
+# Last-resort floor for a row that carries no uncertainty at all.  It is NOT a
+# systematic: every set now brings its own from its paper.  Hall-A 2016 quotes a
+# 2% point-to-point already inside its published errors plus a 3.12% overall
+# normalisation, and Hall-A 2017 a bin-dependent band read from its figure 5;
+# both normalisations are fitted as nuisances in fitrun.py, not added here.
+SYST_N = 0.10
 
 def _rows_xs(sel, meaning, ebeam=None, obs=("U", "LT", "TT"), rc=False, addsyst=0.0,
              ltscale=False):
@@ -86,9 +91,9 @@ SETS = [
   _mk_xs("clas6_eta", "CLAS6 $\\eta$ structure functions",
          C6[C6.meson == "eta"], "U", "etap", 5.75, rc=True),
   _mk_xs("halla_n", "Hall-A neutron, $\\sigma_T$ separated (2017)",
-         XS[XS.exp == "HallA_y17"], "T", "pi0n", 5.55, addsyst=SYST_N),
+         XS[XS.exp == "HallA_y17"], "T", "pi0n", 5.55),
   _mk_xs("halla_y16", "Hall-A proton, $\\sigma_T$ separated (2016)",
-         XS[XS.exp == "HallA_y16"], "T", "pi0p", 5.55, addsyst=SYST_N),
+         XS[XS.exp == "HallA_y16"], "T", "pi0p", 5.55),
   _mk_xs("halla_y11", "Hall-A proton 6 GeV (2011)",
          XS[XS.exp == "HallA_y11"], "U", "pi0p", 5.752, obs=("U","LT","TT","LTp"),
          ltscale=True),
@@ -171,11 +176,18 @@ for key, label, exp, ch, E in (
 # bins, 703 points.  Fitting the model straight to those removes the intermediate
 # step: no choice between a plain sin fit and the full form, and the denominator
 # is supplied by the model's own sigma_LT and sigma_TT rather than assumed.
+# |A_LU| cannot exceed 1, so a point whose error is half that carries no
+# information about anything; 40 of the 703 are in that state, one with an error
+# of 576.  They cost nothing to keep -- together they hold 23.5 of the set's
+# chi2 -- but they inflate ndf, which flatters every chi2/ndf we quote.
+DM_ERRMAX = 0.5
 _dmrows = []
 for _, _r in PH.iterrows():
-    if _r.stat <= 0: continue
+    _e = math.hypot(float(_r.stat),
+                    float(_r.syst) if np.isfinite(_r.syst) else 0.0)
+    if _e <= 0 or _e > DM_ERRMAX: continue
     _dmrows.append((float(_r.Q2), float(_r.xB), abs(float(_r.t)), "A_phi",
-                    float(_r.value), float(_r.stat),
+                    float(_r.value), _e,
                     amp.epsilon(float(_r.xB), float(_r.Q2), 5.776), str(_r.bin),
                     math.radians(float(_r.phi))))
 def _pred_dmphi(p, row):
@@ -215,12 +227,13 @@ SETS.append(dict(key="eg1", label="eg1-dvcs, polarised target", kind="asym",
 BY = {s["key"]: s for s in SETS}
 ALL = [s["key"] for s in SETS]
 
-def chi2(p, key):
+def chi2(p, key, scale=1.0):
+    """scale is the fitted normalisation of the set, 1 when it has none."""
     s = BY[key]; c = 0.0; n = 0
     for r in s["rows"]:
         v = s["predict"](p, r)
         if v is None: continue
-        c += ((r[4] - v)/r[5])**2; n += 1
+        c += ((r[4] - scale*v)/r[5])**2; n += 1
     return c, n
 
 if __name__ == "__main__":
