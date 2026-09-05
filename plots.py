@@ -46,7 +46,7 @@ def grid(n):
     if n > 25: c = 6
     return int(math.ceil(n/c)), c
 
-def panels(key, obs, p, fitted, out, ylog=False):
+def panels(key, obs, p, fitted, out, ylog=False, scale=1.0):
     s = D.BY[key]
     rows = [r for r in s["rows"] if r[3] == obs]
     if not rows: return None
@@ -75,8 +75,11 @@ def panels(key, obs, p, fitted, out, ylog=False):
         e = np.array([r[5] for r in g])
         o = np.argsort(t); t, v, e = t[o], v[o], e[o]
         a.errorbar(t, v, e, fmt='o', ms=4, color=col, ecolor=col, capsize=2, zorder=3)
-        m = np.array([s["predict"](p, r) if s["predict"](p, r) is not None else np.nan
-                      for r in [g[j] for j in o]], dtype=float)
+        # scale is the normalisation fitted for this set, 1 for a set without
+        # one.  Drawing the model unscaled would misrepresent the fit for the
+        # three sets that carry a nuisance.
+        m = np.array([s["predict"](p, r)*scale if s["predict"](p, r) is not None
+                      else np.nan for r in [g[j] for j in o]], dtype=float)
         good = np.isfinite(m)
         if good.sum() > 1 and key != "compass":
             a.plot(t[good], m[good], '-', lw=1.8, color=C_MOD, zorder=2)
@@ -86,12 +89,17 @@ def panels(key, obs, p, fitted, out, ylog=False):
         tot += c; ntot += n
         # a panel whose kinematics vary inside the group must say so, not quote
         # the first row and pretend the rest sit there too
-        qs = [r[0] for r in g]; xs = [r[1] for r in g]
+        qs = [r[0] for r in g]; xs = [r[1] for r in g]; ts = [r[2] for r in g]
         qlab = (f"$Q^2$={qs[0]:.2f}" if max(qs)-min(qs) < 0.05*qs[0]
                 else f"$Q^2$={min(qs):.2f}-{max(qs):.2f}")
         xlab = (f"$x_B$={xs[0]:.3f}" if max(xs)-min(xs) < 0.05*xs[0]
                 else f"$x_B$={min(xs):.3f}-{max(xs):.3f}")
-        a.text(0.97, 0.95, f"{qlab}\n{xlab}\n$\\chi^2$={c:.1f}/{n}",
+        # t too, when it is fixed inside the panel.  In the phi distributions it
+        # is the only variable that tells one panel from the next, and without it
+        # a row of six different t bins reads as six copies of the same plot.
+        tlab = (f"\n$-t$={ts[0]:.3f}" if max(ts)-min(ts) < 0.05*max(ts[0], 1e-9)
+                else "")
+        a.text(0.97, 0.95, f"{qlab}\n{xlab}{tlab}\n$\\chi^2$={c:.1f}/{n}",
                transform=a.transAxes, ha='right', va='top', fontsize=7.5)
         a.grid(alpha=.25, lw=.5); a.tick_params(labelsize=8)
         a.margins(x=0.10, y=0.12)
@@ -147,6 +155,7 @@ if __name__ == "__main__":
         for j, o in enumerate(obs):
             name = o.replace("/", "_over_").replace("'", "p")
             f = f"{d}/plots/{ORDER[key]+1:02d}_{key}_{mark}_{name}.png"
-            r = panels(key, o, p, fitted, f)
+            r = panels(key, o, p, fitted, f,
+                       scale=rec.get("norms", {}).get(key, 1.0))
             if r: print(f"   {os.path.basename(f):48s} chi2 {r[0]:8.1f}/{r[1]}")
     print(f"plots -> {d}/plots")
