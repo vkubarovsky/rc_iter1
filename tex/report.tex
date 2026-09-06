@@ -26,7 +26,8 @@ parametrisation but to establish what the data themselves demand of the
 amplitudes, so that any model can be measured against it.  The fit has \npar{}
 free parameters and gives $\chi^2/\mathrm{ndf} = \chindf$ (\chitot/\ndf).
 Four conclusions survive a full leave-one-out analysis: the flavour ratio
-$n/p$ rests on four neutron points and is not measured; one polarised-target
+$n/p$ is separated by four neutron points and by nothing else; one
+polarised-target
 experiment alone fixes the relative phase of two transverse amplitudes;
 $\sig{LT}$ is the model's systematic failure, seen independently in three data
 sets; and a single power $Q^{n_Q}$ cannot span $Q^2$ from $1.2$ to
@@ -264,7 +265,8 @@ At $Q^2 = 1.75\ \mathrm{GeV}^2$, $x_B = 0.36$, $-t = 0.27\ \mathrm{GeV}^2$:
 \frac{n}{p}\Big|_{\sig{TT}} = \rnoverp, \qquad
 \frac{\sig{L}}{\sig{T}} = \rsigLoversigT .
 \]
-The $n/p$ ratio is quoted with a warning; see section~\ref{sec:notmeasured}.
+The $n/p$ ratio carries a caveat that is not a formality; see
+section~\ref{sec:notmeasured}.
 
 \section{What the leave-one-out analysis shows}
 
@@ -309,19 +311,53 @@ series~B reproduces the series~8 reference to four figures, from a different
 starting point.  The minima are real and not wherever the optimiser happened to
 land.
 
-\section{What the data do not determine}
+\section{What the data determine weakly, or not at all}
 \label{sec:notmeasured}
 
 This section is the point of the exercise, and is stated as plainly as the
 numbers allow.
 
-\paragraph{$n/p$ is not measured.}  It rests on four neutron points with
-uncertainties of 42 to 90\,\%.  Remove them and $n/p$ goes from $1.06$ to
-$2.15$; nothing else in the database constrains it.  During one day of
+\paragraph{$n/p$ is separated by four points.}  The statement needs care,
+because two different things are true of it.
+
+The neutron channel is $\langle X\rangle \propto X_u + 2X_d$ against the
+proton's $2X_u + X_d$, so the $d$ block enters the neutron with twice the
+weight it has in the proton.  Since $\sig{TT} = \sum|T_{01}|^2 -
+\sum|U_{01}|^2$ and $U_{01}$ is built from $\bar E_T$, the ratio $n/p$ in
+$\sig{TT}$ is essentially a measurement of $\bar E_T^d$ relative to
+$\bar E_T^u$.
+
+The fitted $t$-slopes of those two blocks differ by a factor eight,
+$b_d = 5.37 \pm 0.36$ against $b_u = 0.68 \pm 0.05$, which invites the
+suspicion that this is the same flat valley that forced $b_d = b_u$ in the
+$H_T$ sector.  It is not.  Imposing the same tie on $\bar E_T$ costs
+\emph{2662 units of $\chi^2$ for one parameter} --- $\chi^2/\mathrm{ndf}$ from
+$1.39$ to $3.13$ --- and the damage is spread over the whole database, not
+carried by the neutron: CLAS6 $\pi^0$ goes from $1.68$ to $3.04$ per point,
+CLAS6 $\eta$ from $1.04$ to $5.05$, eg1 from $1.85$ to $12.38$.  For
+comparison, the same tie in the $H_T$ sector costs two units, which is what a
+flat valley actually looks like.  The steepness of $\bar E_T^d$ is therefore a
+requirement of the data, not an artefact.  (That test was started from the
+unconstrained solution and is an upper bound on the constrained minimum; given
+a factor $2.25$ in $\chi^2$ the conclusion does not depend on how tight the
+bound is.)
+
+What the neutron supplies is not the steepness but the \emph{separation}.  In
+the proton combination $2X_u + X_d$ the normalisation $N_d$ and the slope $b_d$
+of the $d$ block are degenerate --- $d$ sits at half the weight of $u$ and can
+trade one against the other.  The neutron combination breaks that degeneracy,
+and it is the only thing in the database that does.  Removing the four neutron
+points moves $n/p$ from $1.06$ to $2.15$, and the movement is traceable almost
+entirely to $b(\bar E_T^d)$ relaxing from $5.32$ to $3.57$; changing that one
+parameter alone already carries $n/p$ to $1.45$.
+
+So $n/p$ is constrained, but by four points with uncertainties of 42 to
+90\,\%, and it is the least robust number in this report.  During one day of
 otherwise minor and justified changes --- correcting systematics, adding a
-normalisation nuisance, repairing a parameter bound --- the fitted value moved
-through $1.00$, $1.02$, $0.98$, $1.04$, $1.06$ while $\chi^2/\mathrm{ndf}$
-changed in the third decimal.
+normalisation nuisance, repairing a parameter bound --- it moved through
+$1.00$, $1.02$, $0.98$, $1.04$, $1.06$ while $\chi^2/\mathrm{ndf}$ changed in
+the third decimal.  It should be quoted with that history attached, and a fifth
+neutron point would be worth more than a thousand proton points.
 
 \paragraph{One experiment fixes a phase.}  $\sig{T'} = 2\,\mathrm{Re}\langle
 T_{01}, U_{01}\rangle$ by eq.~(\ref{eq:gram}); the unpolarised data fix only the

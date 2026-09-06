@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1788708415.29693 "report.tex" "report.pdf" "report" 1788708422.63491 0
+["pdflatex"] 1788715148.38121 "report.tex" "report.pdf" "report" 1788715153.60597 0
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -149,9 +149,9 @@
   "figs/13_eg1_in_ALLcos.png" 1788708021.96742 29347 6268d07d6d3c39fcc68223b40f10487c ""
   "figs/13_eg1_in_AULsin.png" 1788708021.96758 32388 9cc1fdd04ac5c3fb553816a80354ff80 ""
   "figs/13_eg1_in_AULsin2.png" 1788708021.96773 27747 db3451e205fd92e99569ec17756b5474 ""
-  "report.aux" 1788708422.52837 10890 d8b7b99c354f4e565d0eec00a8036e71 "pdflatex"
-  "report.out" 1788708422.5297 2152 58ddd60f27cf7817fdca7c4049dab6c9 "pdflatex"
-  "report.tex" 1788708415.20854 23826 1943712d37a8b18900e6255ed5d85ff2 ""
+  "report.aux" 1788715153.5313 10932 9050416545b11ec2169b8d7eda72cc44 "pdflatex"
+  "report.out" 1788715153.53207 2236 8f1e4c29739e3b20044ace7773f7fef2 "pdflatex"
+  "report.tex" 1788715143.08513 25978 502d2486ed24669573fae8c2cbdb832b ""
   "tab_blocks.tex" 1788708347.76555 579 6f358bab701ba55fbc9ce6805c840720 ""
   "tab_head.tex" 1788708347.76542 289 0a3868e2e4b1e67f1370e4fcdc049d2a ""
   "tab_norms.tex" 1788708347.76568 332 55a87e668400a8505cdbf8043bbeaf19 ""

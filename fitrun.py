@@ -23,6 +23,10 @@ TIES = {7: 3, 27: 11, 6: 2, 12: 10}
 # the normalisation N_d compensates by a factor sixteen.  It is a flat valley,
 # not a measurement.
 if os.environ.get("TIE_BD", "1") == "1": TIES[5] = 1
+# TEST, off by default: the same tie in the Ebar_T sector.  b_d there comes out
+# eight times steeper than b_u and is held by four neutron points alone, which
+# is what H_T's flat valley looked like before b_d was tied to b_u.
+if os.environ.get("TIE_BET", "0") == "1": TIES[14] = 9
 FROZEN = {23, 28, 29, 30, 31, 32, 33}
 
 # Sets whose papers quote an overall normalisation uncertainty.  It multiplies
