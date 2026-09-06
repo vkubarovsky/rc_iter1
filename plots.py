@@ -11,7 +11,11 @@ import matplotlib; matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import amplitudes as amp, datasets as D
 
-C_IN, C_OUT, C_MOD = "#123a5e", "#9a4f2b", "#0d6a72"
+# Data red, model blue.  The fitted-data navy and the model teal were close
+# enough to be one colour wherever the model is drawn as markers rather than a
+# line -- the COMPASS panels, where it is a grid average and no curve is drawn.
+# Whether a set was fitted is still said in the title of every figure.
+C_IN, C_OUT, C_MOD = "#8c1d1d", "#c2621b", "#1a5fb4"
 OBSLAB = {"A_phi": r"$A_{LU}(\phi)$",
           "U": r"$\sigma_U=\sigma_T+\epsilon\sigma_L$", "T": r"$\sigma_T$",
           "LT": r"$\sigma_{LT}$", "TT": r"$\sigma_{TT}$", "LTp": r"$\sigma_{LT'}$",
@@ -130,7 +134,7 @@ def summary_figure(rec, out):
     a.grid(axis='y', alpha=.3, lw=.5)
     a.set_title(f"run {rec['tag']}   —   fitted $\\chi^2$/ndf = {rec['chi2_ndf']:.3f}"
                 f"  ({rec['chi2_fitted']:.1f}/{rec['ndf']})\n"
-                f"dark = in the fit,  brown = left out (blind prediction)", fontsize=11)
+                f"dark red = in the fit,  orange = left out (blind prediction)", fontsize=11)
     fig.tight_layout(); fig.savefig(out, dpi=130); plt.close(fig)
 
 PLAN = [("bsa_demasi_phi", ("A_phi",)),

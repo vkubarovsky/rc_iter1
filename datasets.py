@@ -210,8 +210,13 @@ for _, _r in AS[AS.exp == "eg1dvcs"].iterrows():
                     _r.syst if np.isfinite(_r.syst) else 0.0)
     if _e <= 0: continue
     _k = MOM[_r.observable]
+    # Slot 7 is the panel label.  It used to hold the moment name, which put the
+    # two (Q2, xB) settings of the experiment into one panel: the model then
+    # zig-zagged, because consecutive points in t belonged to different
+    # kinematics.  It must be the setting.
     _eg.append((float(_r.Q2), float(_r.xB), abs(float(_r.t)), _k, float(_r.value), _e,
-                amp.epsilon(float(_r.xB), float(_r.Q2), 5.9), _k))
+                amp.epsilon(float(_r.xB), float(_r.Q2), 5.9),
+                f"Q2={float(_r.Q2):.2f} xB={float(_r.xB):.3f}"))
 def _pred_eg1(p, row):
     Q2, xB, mt, key, _, _, e, _ = row
     s = amp.structure(p, "pi0p", -mt, xB, Q2)
