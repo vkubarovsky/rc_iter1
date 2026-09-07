@@ -278,36 +278,36 @@ described brings no unique information.
 \begin{table}[htb]
 \centering\small
 \caption{Blind $\chi^2$ per point of the set that was removed, and the effect
-on two derived quantities.  Series~8 has 9 sets, series~B adds Hall A 2021.}
+on two derived quantities.  Series~8 has 9 sets and no Hall A 2021; series~D has 10, with it, and is fitted to the corrected $x_B$.}
 \label{tab:loo}
 \begin{tabular}{lccrr}
 \toprule
-removed & blind, series 8 & blind, series B & $d/u|_{H_T}$ & $n/p$\\
+removed & blind, series 8 & blind, series D & $d/u|_{H_T}$ & $n/p$\\
 \midrule
---- (reference) & --- & --- & $-0.311$ & $1.062$\\
-CLAS6 $\pi^0$ & 2.89 & 3.52 & $-0.322$ & 0.973\\
-CLAS6 $\eta$ & \textbf{218.9} & \textbf{2.81} & $-0.475$ & 1.220\\
-Hall A neutron & 10.06 & \textbf{13.06} & $+0.401$ & \textbf{2.153}\\
-Hall A 2016 & 6.18 & 5.90 & $-0.335$ & 1.039\\
-Hall A 2011 & 2.66 & 1.93 & $-0.354$ & 1.094\\
-Hall A 2021 & --- & 13.10 & $-0.238$ & 1.037\\
-De Masi $\phi$ & 1.02 & 1.02 & $-0.277$ & 1.072\\
-Zhao & 2.25 & 1.90 & $-0.237$ & 1.086\\
-CLAS12 BSA & 2.88 & 2.59 & $-0.334$ & 1.044\\
-eg1-dvcs & \textbf{40.16} & \textbf{41.48} & $-0.405$ & 0.648\\
+--- (reference) & --- & --- & $-0.314$ & $1.070$\\
+CLAS6 $\pi^0$ & 2.89 & 3.69 & $-0.328$ & 0.974\\
+CLAS6 $\eta$ & \textbf{218.9} & \textbf{2.90} & $-0.463$ & 1.236\\
+Hall A neutron & 10.06 & \textbf{13.48} & $+0.407$ & \textbf{2.195}\\
+Hall A 2016 & 6.18 & 6.03 & $-0.340$ & 1.046\\
+Hall A 2011 & 2.66 & 1.81 & $-0.348$ & 1.098\\
+Hall A 2021 & --- & 11.05 & $-0.238$ & 1.037\\
+De Masi $\phi$ & 1.02 & 1.02 & $-0.283$ & 1.080\\
+Zhao & 2.25 & 1.73 & $-0.247$ & 1.093\\
+CLAS12 BSA & 2.88 & 2.59 & $-0.335$ & 1.055\\
+eg1-dvcs & \textbf{40.16} & \textbf{66.54} & $-0.403$ & 0.652\\
 \bottomrule
 \end{tabular}
 \end{table}
 
 \paragraph{Hall A 2021 has taken the flavour separation over from $\eta$.}
 Without it, removing the $\eta$ data left the model predicting $\eta$ at 219
-per point.  With it in the fit that collapses to 2.81.  Hall A 2021 reaches
+per point.  With it in the fit that collapses to 2.90.  Hall A 2021 reaches
 $x_B = 0.60$, the highest in the database, and now covers the region that only
 the $\eta$ cancellation used to probe.  $\eta$ still moves $d/u|_{H_T}$ from
-$-0.311$ to $-0.475$ when dropped; it is no longer irreplaceable.
+$-0.314$ to $-0.463$ when dropped; it is no longer irreplaceable.
 
 \paragraph{The reference fit is reproducible.}  Removing Hall A 2021 from
-series~B reproduces the series~8 reference to four figures, from a different
+series~D reproduces the series~8 reference to four figures, from a different
 starting point.  The minima are real and not wherever the optimiser happened to
 land.
 
@@ -317,47 +317,37 @@ land.
 This section is the point of the exercise, and is stated as plainly as the
 numbers allow.
 
-\paragraph{$n/p$ is separated by four points.}  The statement needs care,
-because two different things are true of it.
-
+\paragraph{$n/p$ is soft against the model, not only against the data.}
 The neutron channel is $\langle X\rangle \propto X_u + 2X_d$ against the
-proton's $2X_u + X_d$, so the $d$ block enters the neutron with twice the
-weight it has in the proton.  Since $\sig{TT} = \sum|T_{01}|^2 -
-\sum|U_{01}|^2$ and $U_{01}$ is built from $\bar E_T$, the ratio $n/p$ in
-$\sig{TT}$ is essentially a measurement of $\bar E_T^d$ relative to
-$\bar E_T^u$.
+proton's $2X_u + X_d$, so the $d$ block enters the neutron with twice the weight
+it has in the proton.  Since $\sig{TT} = \sum|T_{01}|^2 - \sum|U_{01}|^2$ and
+$U_{01}$ is built from $\bar E_T$, the ratio $n/p$ in $\sig{TT}$ is essentially a
+statement about $\bar E_T^d$ relative to $\bar E_T^u$.
 
 The fitted $t$-slopes of those two blocks differ by a factor eight,
-$b_d = 5.37 \pm 0.36$ against $b_u = 0.68 \pm 0.05$, which invites the
-suspicion that this is the same flat valley that forced $b_d = b_u$ in the
-$H_T$ sector.  It is not.  Imposing the same tie on $\bar E_T$ costs
-\emph{2662 units of $\chi^2$ for one parameter} --- $\chi^2/\mathrm{ndf}$ from
-$1.39$ to $3.13$ --- and the damage is spread over the whole database, not
-carried by the neutron: CLAS6 $\pi^0$ goes from $1.68$ to $3.04$ per point,
-CLAS6 $\eta$ from $1.04$ to $5.05$, eg1 from $1.85$ to $12.38$.  For
-comparison, the same tie in the $H_T$ sector costs two units, which is what a
-flat valley actually looks like.  The steepness of $\bar E_T^d$ is therefore a
-requirement of the data, not an artefact.  (That test was started from the
-unconstrained solution and is an upper bound on the constrained minimum; given
-a factor $2.25$ in $\chi^2$ the conclusion does not depend on how tight the
-bound is.)
+$b_d = 5.28 \pm 0.36$ against $b_u = 0.67 \pm 0.05$.  That invites the suspicion
+that it is the flat valley which forced $b_d = b_u$ in the $H_T$ sector, where
+the same tie costs two units of $\chi^2$.  It is not: tying them in
+$\bar E_T$ costs $194.5$ units for one parameter, which excludes the tie
+decisively.
 
-What the neutron supplies is not the steepness but the \emph{separation}.  In
-the proton combination $2X_u + X_d$ the normalisation $N_d$ and the slope $b_d$
-of the $d$ block are degenerate --- $d$ sits at half the weight of $u$ and can
-trade one against the other.  The neutron combination breaks that degeneracy,
-and it is the only thing in the database that does.  Removing the four neutron
-points moves $n/p$ from $1.06$ to $2.15$, and the movement is traceable almost
-entirely to $b(\bar E_T^d)$ relaxing from $5.32$ to $3.57$; changing that one
-parameter alone already carries $n/p$ to $1.45$.
+But look at who pays.  The cost falls on the \emph{proton} sets --- CLAS6
+$\pi^0$ $+73.8$, Hall A 2016 $+50.3$, eg1 $+34.7$, Hall A 2011 $+26.8$ --- while
+the neutron, the set whose four points are supposed to be carrying this ratio,
+fits \emph{better} under the tie, $1.72 \to 0.65$ per point, and CLAS6 $\eta$
+improves as well.  Under that constrained variant $n/p$ is $0.52$ instead of
+$1.05$: half the value, at a $\chi^2$ the neutron itself prefers.
 
-So $n/p$ is constrained, but by four points with uncertainties of 42 to
-90\,\%, and it is the least robust number in this report.  During one day of
-otherwise minor and justified changes --- correcting systematics, adding a
-normalisation nuisance, repairing a parameter bound --- it moved through
-$1.00$, $1.02$, $0.98$, $1.04$, $1.06$ while $\chi^2/\mathrm{ndf}$ changed in
-the third decimal.  It should be quoted with that history attached, and a fifth
-neutron point would be worth more than a thousand proton points.
+So the steep $d$ slope is a requirement of the proton data, and the neutron
+points do not pin $n/p$ --- they are comfortable with a value twice smaller.
+The quoted $\rnoverp$ is what the unconstrained fit returns, and the $194$ units
+say the data prefer it, but the number is soft against a change of model
+assumption in a way that no error bar expresses.  Its history over one day of
+minor and justified changes --- corrected systematics, a normalisation nuisance,
+a repaired bound, a corrected $x_B$ --- runs $1.00$, $1.02$, $0.98$, $1.04$,
+$1.06$, $1.05$, with $\chi^2/\mathrm{ndf}$ moving in the third decimal.  A fifth
+neutron point would be worth more than a thousand proton points, and a
+measurement that constrained $\bar E_T^d$ directly would be worth more still.
 
 \paragraph{One experiment fixes a phase.}  $\sig{T'} = 2\,\mathrm{Re}\langle
 T_{01}, U_{01}\rangle$ by eq.~(\ref{eq:gram}); the unpolarised data fix only the

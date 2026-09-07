@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  6 SEP 2026 13:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  6 SEP 2026 21:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -518,177 +518,177 @@ Overfull \hbox (30.09491pt too wide) detected at line 117
 <figs/00_chi2_summary.png, id=138, 722.7pt x 332.442pt>
 File: figs/00_chi2_summary.png Graphic file (type png)
 <use figs/00_chi2_summary.png>
-Package pdftex.def Info: figs/00_chi2_summary.png  used on input line 416.
+Package pdftex.def Info: figs/00_chi2_summary.png  used on input line 406.
 (pdftex.def)             Requested size: 472.31577pt x 217.26666pt.
 <figs/02_clas6_pi0_in_U.png, id=140, 1192.455pt x 805.53253pt>
 File: figs/02_clas6_pi0_in_U.png Graphic file (type png)
 <use figs/02_clas6_pi0_in_U.png>
-Package pdftex.def Info: figs/02_clas6_pi0_in_U.png  used on input line 421.
+Package pdftex.def Info: figs/02_clas6_pi0_in_U.png  used on input line 411.
 (pdftex.def)             Requested size: 472.31577pt x 319.0607pt.
 <figs/02_clas6_pi0_in_LT.png, id=141, 1192.455pt x 805.53253pt>
 File: figs/02_clas6_pi0_in_LT.png Graphic file (type png)
 <use figs/02_clas6_pi0_in_LT.png>
-Package pdftex.def Info: figs/02_clas6_pi0_in_LT.png  used on input line 427.
+Package pdftex.def Info: figs/02_clas6_pi0_in_LT.png  used on input line 417.
 (pdftex.def)             Requested size: 472.31577pt x 319.0607pt.
 <figs/02_clas6_pi0_in_TT.png, id=142, 1192.455pt x 805.53253pt>
 File: figs/02_clas6_pi0_in_TT.png Graphic file (type png)
 <use figs/02_clas6_pi0_in_TT.png>
-Package pdftex.def Info: figs/02_clas6_pi0_in_TT.png  used on input line 432.
+Package pdftex.def Info: figs/02_clas6_pi0_in_TT.png  used on input line 422.
 (pdftex.def)             Requested size: 472.31577pt x 319.0607pt.
 <figs/03_clas6_eta_in_U.png, id=143, 1192.455pt x 805.53253pt>
 File: figs/03_clas6_eta_in_U.png Graphic file (type png)
 <use figs/03_clas6_eta_in_U.png>
-Package pdftex.def Info: figs/03_clas6_eta_in_U.png  used on input line 437.
+Package pdftex.def Info: figs/03_clas6_eta_in_U.png  used on input line 427.
 (pdftex.def)             Requested size: 472.31577pt x 319.0607pt.
 <figs/03_clas6_eta_in_LT.png, id=144, 1192.455pt x 805.53253pt>
 File: figs/03_clas6_eta_in_LT.png Graphic file (type png)
 <use figs/03_clas6_eta_in_LT.png>
-Package pdftex.def Info: figs/03_clas6_eta_in_LT.png  used on input line 442.
+Package pdftex.def Info: figs/03_clas6_eta_in_LT.png  used on input line 432.
 (pdftex.def)             Requested size: 472.31577pt x 319.0607pt.
 <figs/03_clas6_eta_in_TT.png, id=145, 1192.455pt x 805.53253pt>
 File: figs/03_clas6_eta_in_TT.png Graphic file (type png)
 <use figs/03_clas6_eta_in_TT.png>
-Package pdftex.def Info: figs/03_clas6_eta_in_TT.png  used on input line 447.
+Package pdftex.def Info: figs/03_clas6_eta_in_TT.png  used on input line 437.
 (pdftex.def)             Requested size: 472.31577pt x 319.0607pt.
 <figs/04_halla_n_in_T.png, id=146, 650.43pt x 241.82654pt>
 File: figs/04_halla_n_in_T.png Graphic file (type png)
 <use figs/04_halla_n_in_T.png>
-Package pdftex.def Info: figs/04_halla_n_in_T.png  used on input line 452.
+Package pdftex.def Info: figs/04_halla_n_in_T.png  used on input line 442.
 (pdftex.def)             Requested size: 340.06792pt x 126.43684pt.
 <figs/04_halla_n_in_LT.png, id=147, 650.43pt x 241.82654pt>
 File: figs/04_halla_n_in_LT.png Graphic file (type png)
 <use figs/04_halla_n_in_LT.png>
-Package pdftex.def Info: figs/04_halla_n_in_LT.png  used on input line 453.
+Package pdftex.def Info: figs/04_halla_n_in_LT.png  used on input line 443.
 (pdftex.def)             Requested size: 340.06792pt x 126.43684pt.
 <figs/04_halla_n_in_TT.png, id=148, 650.43pt x 241.82654pt>
 File: figs/04_halla_n_in_TT.png Graphic file (type png)
 <use figs/04_halla_n_in_TT.png>
-Package pdftex.def Info: figs/04_halla_n_in_TT.png  used on input line 460.
+Package pdftex.def Info: figs/04_halla_n_in_TT.png  used on input line 450.
 (pdftex.def)             Requested size: 340.06792pt x 126.43684pt.
 <figs/05_halla_y16_in_T.png, id=149, 650.43pt x 429.72853pt>
 File: figs/05_halla_y16_in_T.png Graphic file (type png)
 <use figs/05_halla_y16_in_T.png>
-Package pdftex.def Info: figs/05_halla_y16_in_T.png  used on input line 461.
+Package pdftex.def Info: figs/05_halla_y16_in_T.png  used on input line 451.
 (pdftex.def)             Requested size: 340.06792pt x 224.67975pt.
 <figs/05_halla_y16_in_LT.png, id=150, 650.43pt x 429.72853pt>
 File: figs/05_halla_y16_in_LT.png Graphic file (type png)
 <use figs/05_halla_y16_in_LT.png>
-Package pdftex.def Info: figs/05_halla_y16_in_LT.png  used on input line 468.
+Package pdftex.def Info: figs/05_halla_y16_in_LT.png  used on input line 458.
 (pdftex.def)             Requested size: 340.06792pt x 224.67975pt.
 <figs/05_halla_y16_in_TT.png, id=151, 650.43pt x 429.72853pt>
 File: figs/05_halla_y16_in_TT.png Graphic file (type png)
 <use figs/05_halla_y16_in_TT.png>
-Package pdftex.def Info: figs/05_halla_y16_in_TT.png  used on input line 469.
+Package pdftex.def Info: figs/05_halla_y16_in_TT.png  used on input line 459.
 (pdftex.def)             Requested size: 340.06792pt x 224.67975pt.
 <figs/06_halla_y11_in_U.png, id=152, 650.43pt x 429.72853pt>
 File: figs/06_halla_y11_in_U.png Graphic file (type png)
 <use figs/06_halla_y11_in_U.png>
-Package pdftex.def Info: figs/06_halla_y11_in_U.png  used on input line 474.
+Package pdftex.def Info: figs/06_halla_y11_in_U.png  used on input line 464.
 (pdftex.def)             Requested size: 472.31577pt x 312.05994pt.
 <figs/06_halla_y11_in_LT.png, id=153, 650.43pt x 429.72853pt>
 File: figs/06_halla_y11_in_LT.png Graphic file (type png)
 <use figs/06_halla_y11_in_LT.png>
-Package pdftex.def Info: figs/06_halla_y11_in_LT.png  used on input line 481.
+Package pdftex.def Info: figs/06_halla_y11_in_LT.png  used on input line 471.
 (pdftex.def)             Requested size: 340.06792pt x 224.67975pt.
 <figs/06_halla_y11_in_TT.png, id=154, 650.43pt x 429.72853pt>
 File: figs/06_halla_y11_in_TT.png Graphic file (type png)
 <use figs/06_halla_y11_in_TT.png>
-Package pdftex.def Info: figs/06_halla_y11_in_TT.png  used on input line 482.
+Package pdftex.def Info: figs/06_halla_y11_in_TT.png  used on input line 472.
 (pdftex.def)             Requested size: 340.06792pt x 224.67975pt.
 <figs/06_halla_y11_in_LTp.png, id=155, 650.43pt x 429.72853pt>
 File: figs/06_halla_y11_in_LTp.png Graphic file (type png)
 <use figs/06_halla_y11_in_LTp.png>
-Package pdftex.def Info: figs/06_halla_y11_in_LTp.png  used on input line 487.
+Package pdftex.def Info: figs/06_halla_y11_in_LTp.png  used on input line 477.
 (pdftex.def)             Requested size: 472.31577pt x 312.05994pt.
 <figs/07_halla_y21_in_U.png, id=156, 714.91708pt x 617.63054pt>
 File: figs/07_halla_y21_in_U.png Graphic file (type png)
 <use figs/07_halla_y21_in_U.png>
-Package pdftex.def Info: figs/07_halla_y21_in_U.png  used on input line 492.
+Package pdftex.def Info: figs/07_halla_y21_in_U.png  used on input line 482.
 (pdftex.def)             Requested size: 472.31577pt x 408.04266pt.
 <figs/07_halla_y21_in_LT.png, id=157, 714.91708pt x 617.63054pt>
 File: figs/07_halla_y21_in_LT.png Graphic file (type png)
 <use figs/07_halla_y21_in_LT.png>
-Package pdftex.def Info: figs/07_halla_y21_in_LT.png  used on input line 499.
+Package pdftex.def Info: figs/07_halla_y21_in_LT.png  used on input line 489.
 (pdftex.def)             Requested size: 340.06792pt x 293.79222pt.
 <figs/07_halla_y21_in_TT.png, id=158, 714.91708pt x 617.63054pt>
 File: figs/07_halla_y21_in_TT.png Graphic file (type png)
 <use figs/07_halla_y21_in_TT.png>
-Package pdftex.def Info: figs/07_halla_y21_in_TT.png  used on input line 500.
+Package pdftex.def Info: figs/07_halla_y21_in_TT.png  used on input line 490.
 (pdftex.def)             Requested size: 340.06792pt x 293.79222pt.
 <figs/07_halla_y21_in_LTp.png, id=159, 714.91708pt x 617.63054pt>
 File: figs/07_halla_y21_in_LTp.png Graphic file (type png)
 <use figs/07_halla_y21_in_LTp.png>
-Package pdftex.def Info: figs/07_halla_y21_in_LTp.png  used on input line 505.
+Package pdftex.def Info: figs/07_halla_y21_in_LTp.png  used on input line 495.
 (pdftex.def)             Requested size: 472.31577pt x 408.04266pt.
 <figs/08_clas12_xs_out_U.png, id=160, 1430.39008pt x 993.43454pt>
 File: figs/08_clas12_xs_out_U.png Graphic file (type png)
 <use figs/08_clas12_xs_out_U.png>
-Package pdftex.def Info: figs/08_clas12_xs_out_U.png  used on input line 510.
+Package pdftex.def Info: figs/08_clas12_xs_out_U.png  used on input line 500.
 (pdftex.def)             Requested size: 472.31577pt x 328.03146pt.
 <figs/08_clas12_xs_out_LT.png, id=161, 1430.39008pt x 993.43454pt>
 File: figs/08_clas12_xs_out_LT.png Graphic file (type png)
 <use figs/08_clas12_xs_out_LT.png>
-Package pdftex.def Info: figs/08_clas12_xs_out_LT.png  used on input line 516.
+Package pdftex.def Info: figs/08_clas12_xs_out_LT.png  used on input line 506.
 (pdftex.def)             Requested size: 472.31577pt x 328.03146pt.
 <figs/08_clas12_xs_out_TT.png, id=162, 1430.39008pt x 993.43454pt>
 File: figs/08_clas12_xs_out_TT.png Graphic file (type png)
 <use figs/08_clas12_xs_out_TT.png>
-Package pdftex.def Info: figs/08_clas12_xs_out_TT.png  used on input line 522.
+Package pdftex.def Info: figs/08_clas12_xs_out_TT.png  used on input line 512.
 (pdftex.def)             Requested size: 472.31577pt x 328.03146pt.
 <figs/09_compass_in_U.png, id=163, 650.43pt x 429.72853pt>
 File: figs/09_compass_in_U.png Graphic file (type png)
 <use figs/09_compass_in_U.png>
-Package pdftex.def Info: figs/09_compass_in_U.png  used on input line 527.
+Package pdftex.def Info: figs/09_compass_in_U.png  used on input line 517.
 (pdftex.def)             Requested size: 340.06792pt x 224.67975pt.
 <figs/09_compass_in_TT.png, id=164, 650.43pt x 429.72853pt>
 File: figs/09_compass_in_TT.png Graphic file (type png)
 <use figs/09_compass_in_TT.png>
-Package pdftex.def Info: figs/09_compass_in_TT.png  used on input line 528.
+Package pdftex.def Info: figs/09_compass_in_TT.png  used on input line 518.
 (pdftex.def)             Requested size: 340.06792pt x 224.67975pt.
 <figs/01_bsa_demasi_phi_in_A_phi.png, id=165, 1430.39008pt x 1932.94453pt>
 File: figs/01_bsa_demasi_phi_in_A_phi.png Graphic file (type png)
 <use figs/01_bsa_demasi_phi_in_A_phi.png>
 Package pdftex.def Info: figs/01_bsa_demasi_phi_in_A_phi.png  used on input lin
-e 536.
+e 526.
 (pdftex.def)             Requested size: 472.31577pt x 638.25711pt.
 <figs/10_bsa_demasi_out_A_LUsinphi.png, id=168, 1192.455pt x 617.63054pt>
 File: figs/10_bsa_demasi_out_A_LUsinphi.png Graphic file (type png)
 <use figs/10_bsa_demasi_out_A_LUsinphi.png>
 Package pdftex.def Info: figs/10_bsa_demasi_out_A_LUsinphi.png  used on input l
-ine 545.
+ine 535.
 (pdftex.def)             Requested size: 354.23682pt x 183.4717pt.
 <figs/11_bsa_zhao_in_A_LUsinphi.png, id=169, 650.43pt x 429.72853pt>
 File: figs/11_bsa_zhao_in_A_LUsinphi.png Graphic file (type png)
 <use figs/11_bsa_zhao_in_A_LUsinphi.png>
 Package pdftex.def Info: figs/11_bsa_zhao_in_A_LUsinphi.png  used on input line
- 546.
+ 536.
 (pdftex.def)             Requested size: 354.23682pt x 234.0433pt.
 <figs/12_bsa_clas12_in_sigma_LTp_over_sigma_0.png, id=170, 953.964pt x 617.6305
 4pt>
 File: figs/12_bsa_clas12_in_sigma_LTp_over_sigma_0.png Graphic file (type png)
 <use figs/12_bsa_clas12_in_sigma_LTp_over_sigma_0.png>
 Package pdftex.def Info: figs/12_bsa_clas12_in_sigma_LTp_over_sigma_0.png  used
- on input line 553.
+ on input line 543.
 (pdftex.def)             Requested size: 472.31577pt x 305.79874pt.
 <figs/13_eg1_in_ALLc.png, id=171, 650.43pt x 241.82654pt>
 File: figs/13_eg1_in_ALLc.png Graphic file (type png)
 <use figs/13_eg1_in_ALLc.png>
-Package pdftex.def Info: figs/13_eg1_in_ALLc.png  used on input line 558.
+Package pdftex.def Info: figs/13_eg1_in_ALLc.png  used on input line 548.
 (pdftex.def)             Requested size: 340.06792pt x 126.43684pt.
 <figs/13_eg1_in_ALLcos.png, id=172, 650.43pt x 241.82654pt>
 File: figs/13_eg1_in_ALLcos.png Graphic file (type png)
 <use figs/13_eg1_in_ALLcos.png>
-Package pdftex.def Info: figs/13_eg1_in_ALLcos.png  used on input line 559.
+Package pdftex.def Info: figs/13_eg1_in_ALLcos.png  used on input line 549.
 (pdftex.def)             Requested size: 340.06792pt x 126.43684pt.
 <figs/13_eg1_in_AULsin.png, id=173, 650.43pt x 241.82654pt>
 File: figs/13_eg1_in_AULsin.png Graphic file (type png)
 <use figs/13_eg1_in_AULsin.png>
-Package pdftex.def Info: figs/13_eg1_in_AULsin.png  used on input line 566.
+Package pdftex.def Info: figs/13_eg1_in_AULsin.png  used on input line 556.
 (pdftex.def)             Requested size: 340.06792pt x 126.43684pt.
 <figs/13_eg1_in_AULsin2.png, id=174, 650.43pt x 241.82654pt>
 File: figs/13_eg1_in_AULsin2.png Graphic file (type png)
 <use figs/13_eg1_in_AULsin2.png>
-Package pdftex.def Info: figs/13_eg1_in_AULsin2.png  used on input line 567.
+Package pdftex.def Info: figs/13_eg1_in_AULsin2.png  used on input line 557.
 (pdftex.def)             Requested size: 340.06792pt x 126.43684pt.
 
 
@@ -738,7 +738,7 @@ la_n_in_LT.png>]
 .png> <./figs/13_eg1_in_ALLcos.png>]
 
 [27 <./figs/13_eg1_in_AULsin.png> <./figs/13_eg1_in_AULsin2.png>]
-Overfull \hbox (22.09021pt too wide) in paragraph at lines 574--582
+Overfull \hbox (22.09021pt too wide) in paragraph at lines 564--572
 \OT1/cmr/m/n/10.95 (-20) hand. The data are \OT1/cmtt/m/n/10.95 pi0[]eta[]datab
 ase.xlsx\OT1/cmr/m/n/10.95 (-20) , md5 \OT1/cmtt/m/n/10.95 04c3adf9d6e6b8d2b1b3
 729f4ff79d1d\OT1/cmr/m/n/10.95 (-20) ; \OT1/cmtt/m/n/10.95 export[]db.py
@@ -757,11 +757,11 @@ Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: 8F1E4C29739E3B20044ACE7773F7FEF2;2236.
  ) 
 Here is how much of TeX's memory you used:
- 12981 strings out of 473190
- 205366 string characters out of 5715801
- 647945 words of memory out of 5000000
+ 12977 strings out of 473190
+ 205330 string characters out of 5715801
+ 648001 words of memory out of 5000000
  35847 multiletter control sequences out of 15000+600000
- 575007 words of font info for 154 fonts, out of 8000000 for 9000
+ 574896 words of font info for 152 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,11n,79p,1003b,456s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
@@ -787,7 +787,7 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf
 ist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2025/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2025/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on report.pdf (28 pages, 4246089 bytes).
+Output written on report.pdf (28 pages, 4248479 bytes).
 PDF statistics:
  448 PDF objects out of 1000 (max. 8388607)
  300 compressed objects within 3 object streams

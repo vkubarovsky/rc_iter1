@@ -1,7 +1,7 @@
 """Generate every number in the report from the run, so nothing is transcribed."""
 import json, os, numpy as np, fitrun as R, datasets as D
 
-TAG = "C0_with_compass"
+TAG = "C1_with_compass"
 d = f"runs/{TAG}"
 p = np.load(f"{d}/fitpar.npy"); rec = json.load(open(f"{d}/summary.json"))
 keys = rec["fitted"]; lamd = rec["norms"]; nn = [k for k in keys if k in R.NORMS]
